@@ -1,0 +1,159 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Note: Helvetica World and Garet might need custom font files */
+
+:root {
+  /* Color Theme */
+  --primary-color: #e82124;
+  --primary-color-light: #f04d4f;
+  --primary-color-dark: #c11518;
+  --text-color: #333333;
+  --bg-color: #ffffff;
+  --light-gray: #f8f8f8;
+  
+  /* Animation Variables */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica World', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.subheadline {
+  font-family: 'Garet', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+}
+
+body, p, span, button, input, textarea, select {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Animated Underline Effect */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width var(--transition-medium);
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* Custom Cursor Styles */
+.cursor-help {
+  cursor: help;
+}
+
+.cursor-wait {
+  cursor: wait;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+/* Smart AI-like pointer effect */
+.ai-pointer {
+  position: relative;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.ai-pointer:hover {
+  transform: scale(1.02);
+}
+
+.ai-pointer::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(232, 33, 36, 0.1);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  z-index: -1;
+}
+
+.ai-pointer:hover::before {
+  opacity: 1;
+}
+
+/* Smooth Animation Classes */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--transition-slow) forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp var(--transition-slow) forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideRight var(--transition-slow) forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  body, p, span, button, input, textarea, select {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+} 
