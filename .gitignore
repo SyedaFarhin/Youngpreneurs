@@ -157,3 +157,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+echo "public/assets/videoplayback.mp4" >> .gitignore
+
