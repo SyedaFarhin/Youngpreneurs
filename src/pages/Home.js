@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import heroVideo from '../assets/videoplayback.mp4';
+import heroVideo from '../assets/videoplayback.mp4';
 import AnimatedLink from '../components/AnimatedLink';
 
 const Home = () => {
@@ -18,16 +18,10 @@ const Home = () => {
     <>
       <section className="hero-section" style={{ position: "relative", overflow: "hidden" }}>
         {/* Background Video */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="hero-video"
-        >
-          {/* <source src={heroVideo} type="video/mp4" /> */}
-          Your browser does not support the video tag.
-        </video>
+        <video autoPlay muted loop playsInline className="hero-video">
+  <source src="/assets/videoplayback.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 
         {/* Content
