@@ -25,7 +25,7 @@ const Home = () => {
           playsInline
           className="hero-video"
         >
-          {/* <source src={heroVideo} type="video/mp4" /> */}
+          <source src={heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
