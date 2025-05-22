@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import heroVideo from '../assets/videoplayback.mp4';
+import heroVideo from '../assets/videoplayback.mp4';
 import AnimatedLink from '../components/AnimatedLink';
 
 const Home = () => {

@@ -37,8 +37,10 @@ const ForParents = () => {
           padding: var(--spacing-xl) 0;
           position: relative;
           overflow: hidden;
+         
         }
 
+        
         .page-header::before {
           content: '';
           position: absolute;
@@ -69,6 +71,7 @@ const ForParents = () => {
           margin: 0 auto;
           position: relative;
           z-index: 1;
+          padding-top: 4rem;
         }
 
         .section {
