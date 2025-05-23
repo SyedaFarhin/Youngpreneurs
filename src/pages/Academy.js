@@ -11,7 +11,7 @@ const StyledSection = styled.section`
 `;
 
 const PageHeader = styled.section`
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-success));
   color: var(--color-white);
   text-align: center;
   padding: var(--spacing-3xl) 0;
@@ -306,7 +306,7 @@ const Academy = () => {
         </Container>
       </StyledSection>
 
-      <StyledSection style={{ background: 'linear-gradient(135deg, var(--color-primary), var(--color-primary-dark))', color: 'var(--color-white)' }}>
+      <StyledSection style={{ background: 'linear-gradient(135deg, var(--color-primary), var(--color-success))', color: 'var(--color-white)' }}>
         <Container className="text-center">
           <h2 className="mb-4">Ready to Join YoungPreneur Academy?</h2>
           <p className="mb-4" style={{ opacity: 0.9 }}>

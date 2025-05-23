@@ -1,5 +1,116 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import styled from 'styled-components';
+
+// Styled Components
+const StyledSection = styled.section`
+  font-family: 'Poppins', sans-serif;
+  padding: 4rem 0;
+`;
+
+const PageHeader = styled(StyledSection)`
+  background: linear-gradient(135deg, #e82124 0%, #eb4c4b 100%);
+  color: white;
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/patterns/dots.svg') repeat;
+    opacity: 0.1;
+    animation: slide 20s linear infinite;
+  }
+`;
+
+const StoryCard = styled(Card)`
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 100%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(232, 33, 36, 0.15);
+  }
+
+  .card-title {
+    color: #347c53;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-subtitle {
+    color: #e82124;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .card-text {
+    color: #2d2d2d;
+    opacity: 0.8;
+    line-height: 1.7;
+  }
+`;
+
+const SchoolCard = styled(Card)`
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(52, 124, 83, 0.15);
+  }
+
+  .card-title {
+    color: #347c53;
+    font-weight: 600;
+  }
+`;
+
+const CTAButton = styled.a`
+  display: inline-block;
+  background: #e82124;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 15px rgba(232, 33, 36, 0.2);
+
+  &:hover {
+    background: #eb4c4b;
+    transform: translateY(-2px);
+    color: white;
+    box-shadow: 0 6px 20px rgba(232, 33, 36, 0.3);
+  }
+`;
+
+const Lead = styled.p`
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+          font-weight: 300;
+          color: var(--text-light);
+          opacity: 0.9;
+
+         text-align: center;
+          position: relative;
+          z-index: 1;
+          padding-top: 4rem;
+          
+`;
 
 const SuccessStories = () => {
   const stories = [
@@ -39,18 +150,20 @@ const SuccessStories = () => {
 
   return (
     <>
-      <section className="page-header bg-primary text-white text-center py-5">
+      <PageHeader>
         <Container>
-          <h1>Success Stories</h1>
-          <p className="lead">Meet our young entrepreneurs who turned their ideas into reality</p>
-        </Container>
-      </section>
+          {/* <h1 className="display-4 fw-bold mb-4">Success Stories</h1> */}
+          {/* <p className="lead mb-0">Meet our young entrepreneurs who turned their ideas into reality</p> */}
+        <Lead>Meet our young entrepreneurs who turned their ideas into reality</Lead>
 
-      <section className="section">
+        </Container>
+      </PageHeader>
+
+      <StyledSection>
         <Container>
           <div className="text-center mb-5">
-            <h2>Student Entrepreneurs</h2>
-            <p>
+            <h2 className="mb-4" style={{ color: '#347c53' }}>Student Entrepreneurs</h2>
+            <p className="lead" style={{ color: '#2d2d2d', opacity: 0.8 }}>
               These young innovators participated in our programs and have achieved remarkable success 
               with their entrepreneurial ventures. Their stories inspire us and demonstrate the 
               impact of entrepreneurship education.
@@ -60,39 +173,44 @@ const SuccessStories = () => {
           {stories.map((story, index) => (
             <Row key={story.id} className={`mb-5 ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
               <Col lg={6} className="mb-4">
-                <Card className="border-0 shadow h-100">
-                  <Card.Body>
+                <StoryCard>
+                  <Card.Body className="p-4">
                     <Card.Title>{story.name}, Age {story.age}</Card.Title>
-                    <Card.Subtitle className="mb-3 text-primary">{story.project}</Card.Subtitle>
+                    <Card.Subtitle className="mb-3">{story.project}</Card.Subtitle>
                     <Card.Text>{story.story}</Card.Text>
-                    <p>
-                      <strong>Achievements:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </p>
-                    <p>
-                      <strong>What they learned:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Nullam id dolor id nibh ultricies vehicula ut id elit."
-                    </p>
+                    <div className="mt-4">
+                      <h6 style={{ color: '#347c53' }}>Achievements</h6>
+                      <p className="mb-3" style={{ color: '#2d2d2d', opacity: 0.8 }}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nullam id dolor id nibh ultricies vehicula ut id elit.
+                      </p>
+                      <h6 style={{ color: '#347c53' }}>What they learned</h6>
+                      <p className="mb-0" style={{ color: '#2d2d2d', opacity: 0.8 }}>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nullam id dolor id nibh ultricies vehicula ut id elit."
+                      </p>
+                    </div>
                   </Card.Body>
-                </Card>
+                </StoryCard>
               </Col>
               <Col lg={6} className="d-flex align-items-center">
                 <img 
                   src={story.image} 
                   alt={`${story.name}'s project`} 
                   className="img-fluid rounded shadow" 
+                  style={{ borderRadius: '12px' }}
                 />
               </Col>
             </Row>
           ))}
         </Container>
-      </section>
+      </StyledSection>
 
-      <section className="section bg-light">
+      <StyledSection style={{ background: '#f8f9fa' }}>
         <Container>
           <div className="text-center mb-5">
-            <h2>School Success Stories</h2>
-            <p>
+            <h2 className="mb-4" style={{ color: '#347c53' }}>School Success Stories</h2>
+            <p className="lead" style={{ color: '#2d2d2d', opacity: 0.8 }}>
               Schools that have partnered with Youngpreneurs have seen impressive results, with students 
               developing entrepreneurial mindsets and valuable skills that extend beyond the classroom.
             </p>
@@ -100,40 +218,40 @@ const SuccessStories = () => {
 
           <Row>
             <Col md={6} className="mb-4">
-              <Card className="h-100">
-                <Card.Body>
+              <SchoolCard>
+                <Card.Body className="p-4">
                   <Card.Title>School 1</Card.Title>
-                  <Card.Text>
+                  <Card.Text style={{ color: '#2d2d2d', opacity: 0.8 }}>
                     After implementing our entrepreneurship curriculum, this school saw a 30% increase in 
                     student engagement and a growing culture of innovation among both students and teachers.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </SchoolCard>
             </Col>
             <Col md={6} className="mb-4">
-              <Card className="h-100">
-                <Card.Body>
+              <SchoolCard>
+                <Card.Body className="p-4">
                   <Card.Title>School 2</Card.Title>
-                  <Card.Text>
+                  <Card.Text style={{ color: '#2d2d2d', opacity: 0.8 }}>
                     This school integrated entrepreneurship education across all subjects, resulting in 
                     improved problem-solving skills and creative thinking among students.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </SchoolCard>
             </Col>
           </Row>
         </Container>
-      </section>
+      </StyledSection>
 
-      <section className="section text-center">
+      <StyledSection className="text-center">
         <Container>
-          <h2 className="mb-4">Join Our Success Stories</h2>
-          <p className="mb-4">
+          <h2 className="mb-4" style={{ color: '#347c53' }}>Join Our Success Stories</h2>
+          <p className="lead mb-4" style={{ color: '#2d2d2d', opacity: 0.8 }}>
             You could be the next success story! Join our programs and start your entrepreneurial journey today.
           </p>
-          <a href="/contact" className="btn btn-primary btn-lg">Get Started</a>
+          <CTAButton href="/contact">Get Started</CTAButton>
         </Container>
-      </section>
+      </StyledSection>
     </>
   );
 };
