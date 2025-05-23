@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-
+import '../styles/global.css';
+import styled from 'styled-components';
 const Media = () => {
   const newsItems = [
     {
@@ -57,32 +58,50 @@ const Media = () => {
       excerpt: 'Organization recognized for innovative approach to developing entrepreneurial skills in students.'
     }
   ];
+  const Lead = styled.p`
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+          font-weight: 300;
+          color: var(--text-light);
+          opacity: 0.9;
+
+         text-align: center;
+          position: relative;
+          z-index: 1;
+          padding-top: 4rem;
+          
+`;
 
   return (
     <>
-      <section className="page-header bg-primary text-white text-center py-5">
+      <section className="page-header" style={{ 
+        background: 'linear-gradient(135deg, var(--primary-red), var(--deep-green))',
+        color: 'var(--white)',
+        padding: 'var(--spacing-xl) 0'
+      }}>
         <Container>
-          <h1>Media & Press</h1>
-          <p className="lead">Latest news, articles, and press releases about Youngpreneurs</p>
+          <h1 className="display-4 mb-3">Media & Press</h1>
+          {/* <p className="lead mb-0">Latest news, articles, and press releases about Youngpreneurs</p> */}
+        <Lead>Latest news, articles, and press releases about Youngpreneurs</Lead>
+
         </Container>
       </section>
 
       <section className="section">
         <Container>
           <div className="section-title">
-            <h2>In the News</h2>
+            <h2 style={{ color: 'var(--primary-red)' }}>In the News</h2>
           </div>
           <Row>
             {newsItems.map(item => (
               <Col lg={6} className="mb-4" key={item.id}>
-                <Card className="h-100 shadow-sm">
+                <Card className="h-100">
                   <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
+                    <Card.Title style={{ color: 'var(--deep-green)' }}>{item.title}</Card.Title>
+                    <Card.Subtitle className="mb-3" style={{ color: 'var(--accent-gold)' }}>
                       {item.source} | {item.date}
                     </Card.Subtitle>
                     <Card.Text>{item.excerpt}</Card.Text>
-                    <a href={item.link} className="card-link">Read full article</a>
+                    <a href={item.link} className="btn btn-primary">Read full article</a>
                   </Card.Body>
                 </Card>
               </Col>
@@ -91,20 +110,22 @@ const Media = () => {
         </Container>
       </section>
 
-      <section className="section bg-light">
+      <section className="section" style={{ backgroundColor: 'var(--light-gray)' }}>
         <Container>
           <div className="section-title">
-            <h2>Press Releases</h2>
+            <h2 style={{ color: 'var(--primary-red)' }}>Press Releases</h2>
           </div>
           <Row>
             {pressReleases.map(release => (
               <Col md={4} className="mb-4" key={release.id}>
                 <Card className="h-100">
                   <Card.Body>
-                    <Card.Title>{release.title}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">{release.date}</Card.Subtitle>
+                    <Card.Title style={{ color: 'var(--deep-green)' }}>{release.title}</Card.Title>
+                    <Card.Subtitle className="mb-3" style={{ color: 'var(--accent-gold)' }}>
+                      {release.date}
+                    </Card.Subtitle>
                     <Card.Text>{release.excerpt}</Card.Text>
-                    <a href="#" className="card-link">View full release</a>
+                    <a href="#" className="btn btn-primary">View full release</a>
                   </Card.Body>
                 </Card>
               </Col>
@@ -116,13 +137,13 @@ const Media = () => {
       <section className="section">
         <Container>
           <div className="section-title">
-            <h2>Media Resources</h2>
+            <h2 style={{ color: 'var(--primary-red)' }}>Media Resources</h2>
           </div>
           <Row>
             <Col md={6} className="mb-4">
               <Card className="h-100">
                 <Card.Body>
-                  <Card.Title>Press Kit</Card.Title>
+                  <Card.Title style={{ color: 'var(--deep-green)' }}>Press Kit</Card.Title>
                   <Card.Text>
                     Download our press kit containing logos, photos, and information about Youngpreneurs Future Titans.
                   </Card.Text>
@@ -133,7 +154,7 @@ const Media = () => {
             <Col md={6} className="mb-4">
               <Card className="h-100">
                 <Card.Body>
-                  <Card.Title>Media Inquiries</Card.Title>
+                  <Card.Title style={{ color: 'var(--deep-green)' }}>Media Inquiries</Card.Title>
                   <Card.Text>
                     For interview requests, additional information, or other media inquiries, please contact our media relations team.
                   </Card.Text>
@@ -145,10 +166,10 @@ const Media = () => {
         </Container>
       </section>
 
-      <section className="section bg-light">
+      <section className="section" style={{ backgroundColor: 'var(--light-gray)' }}>
         <Container>
           <div className="section-title">
-            <h2>Social Media</h2>
+            <h2 style={{ color: 'var(--primary-red)' }}>Social Media</h2>
           </div>
           <div className="text-center mb-4">
             <p>Follow us on social media for the latest updates, event announcements, and success stories.</p>
@@ -156,26 +177,26 @@ const Media = () => {
           <Row className="justify-content-center text-center">
             <Col md={3} sm={6} className="mb-4">
               <a href="#" className="social-link">
-                <i className="fab fa-facebook-f fa-3x text-primary mb-3"></i>
-                <h4>Facebook</h4>
+                <i className="fab fa-facebook-f fa-3x mb-3" style={{ color: 'var(--primary-red)' }}></i>
+                <h4 style={{ color: 'var(--deep-green)' }}>Facebook</h4>
               </a>
             </Col>
             <Col md={3} sm={6} className="mb-4">
               <a href="#" className="social-link">
-                <i className="fab fa-twitter fa-3x text-primary mb-3"></i>
-                <h4>Twitter</h4>
+                <i className="fab fa-twitter fa-3x mb-3" style={{ color: 'var(--primary-red)' }}></i>
+                <h4 style={{ color: 'var(--deep-green)' }}>Twitter</h4>
               </a>
             </Col>
             <Col md={3} sm={6} className="mb-4">
               <a href="#" className="social-link">
-                <i className="fab fa-instagram fa-3x text-primary mb-3"></i>
-                <h4>Instagram</h4>
+                <i className="fab fa-instagram fa-3x mb-3" style={{ color: 'var(--primary-red)' }}></i>
+                <h4 style={{ color: 'var(--deep-green)' }}>Instagram</h4>
               </a>
             </Col>
             <Col md={3} sm={6} className="mb-4">
               <a href="#" className="social-link">
-                <i className="fab fa-linkedin-in fa-3x text-primary mb-3"></i>
-                <h4>LinkedIn</h4>
+                <i className="fab fa-linkedin-in fa-3x mb-3" style={{ color: 'var(--primary-red)' }}></i>
+                <h4 style={{ color: 'var(--deep-green)' }}>LinkedIn</h4>
               </a>
             </Col>
           </Row>

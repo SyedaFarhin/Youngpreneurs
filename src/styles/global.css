@@ -2,23 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Color System */
+  /* Color Palette */
   --color-primary: #e82124;
-  --color-primary-light: #f3545c;
-  --color-primary-dark: #8b3427;
   --color-accent: #e5c16f;
-  --color-accent-light: #f0d9a3;
-  --color-accent-dark: #ce7a63;
   --color-success: #347c53;
-  --color-success-light: #4a9d6d;
-  --color-success-dark: #2a6342;
   --color-soft-pink: #f48c94;
-  --color-soft-pink-light: #f9b3b9;
-  --color-soft-pink-dark: #eb4c4b;
   
   /* Neutral Colors */
   --color-white: #ffffff;
-  --color-black: #000000;
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
   --color-gray-300: #dee2e6;
@@ -28,44 +19,55 @@
   --color-gray-700: #495057;
   --color-gray-800: #343a40;
   --color-gray-900: #212529;
-
-  /* Typography */
-  --font-family-base: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   
-  /* Font Sizes */
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-base: 1rem;     /* 16px */
-  --font-size-lg: 1.125rem;   /* 18px */
-  --font-size-xl: 1.25rem;    /* 20px */
-  --font-size-2xl: 1.5rem;    /* 24px */
-  --font-size-3xl: 1.875rem;  /* 30px */
-  --font-size-4xl: 2.25rem;   /* 36px */
+  /* Typography */
+  --font-family-base: 'Poppins', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
   
   /* Spacing */
-  --spacing-xs: 0.25rem;    /* 4px */
-  --spacing-sm: 0.5rem;     /* 8px */
-  --spacing-md: 1rem;       /* 16px */
-  --spacing-lg: 1.5rem;     /* 24px */
-  --spacing-xl: 2rem;       /* 32px */
-  --spacing-2xl: 3rem;      /* 48px */
-  --spacing-3xl: 4rem;      /* 64px */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
   
   /* Border Radius */
   --border-radius-sm: 0.25rem;
   --border-radius-md: 0.5rem;
   --border-radius-lg: 1rem;
+  --border-radius-xl: 1.5rem;
   --border-radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   
   /* Transitions */
   --transition-base: all 0.3s ease;
   --transition-fast: all 0.15s ease;
   --transition-slow: all 0.5s ease;
   
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* Z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
 }
 
 /* Base Styles */
@@ -82,7 +84,8 @@ html {
 
 body {
   font-family: var(--font-family-base);
-  line-height: 1.5;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
   color: var(--color-gray-800);
   background-color: var(--color-white);
   -webkit-font-smoothing: antialiased;
@@ -97,12 +100,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-gray-900);
 }
 
-h1 { font-size: var(--font-size-4xl); }
-h2 { font-size: var(--font-size-3xl); }
-h3 { font-size: var(--font-size-2xl); }
-h4 { font-size: var(--font-size-xl); }
-h5 { font-size: var(--font-size-lg); }
-h6 { font-size: var(--font-size-base); }
+h1 { font-size: var(--font-size-5xl); }
+h2 { font-size: var(--font-size-4xl); }
+h3 { font-size: var(--font-size-3xl); }
+h4 { font-size: var(--font-size-2xl); }
+h5 { font-size: var(--font-size-xl); }
+h6 { font-size: var(--font-size-lg); }
 
 p {
   margin-bottom: var(--spacing-md);
@@ -121,14 +124,21 @@ a:hover {
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: var(--spacing-sm) var(--spacing-lg);
-  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
   font-weight: 500;
+  line-height: 1.5;
   text-align: center;
-  transition: var(--transition-base);
+  text-decoration: none;
+  vertical-align: middle;
   cursor: pointer;
-  border: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-md);
+  transition: var(--transition-base);
 }
 
 .btn-primary {
@@ -138,69 +148,60 @@ a:hover {
 
 .btn-primary:hover {
   background-color: var(--color-success);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--color-accent);
+  color: var(--color-gray-900);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-soft-pink);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 /* Cards */
 .card {
-  background: var(--color-white);
-  border-radius: var(--border-radius-md);
+  background-color: var(--color-white);
+  border: none;
+  border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
   transition: var(--transition-base);
-  overflow: hidden;
 }
 
 .card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }
 
-/* Responsive Container */
-.container {
+/* Forms */
+.form-control {
+  display: block;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-gray-700);
+  background-color: var(--color-white);
+  background-clip: padding-box;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--border-radius-md);
+  transition: var(--transition-base);
 }
 
-/* Utility Classes */
-.text-center { text-align: center; }
-.text-primary { color: var(--color-primary); }
-.text-accent { color: var(--color-accent); }
-.text-success { color: var(--color-success); }
-.text-soft-pink { color: var(--color-soft-pink); }
-
-.bg-primary { background-color: var(--color-primary); }
-.bg-accent { background-color: var(--color-accent); }
-.bg-success { background-color: var(--color-success); }
-.bg-soft-pink { background-color: var(--color-soft-pink); }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  
-  .container {
-    padding: 0 var(--spacing-sm);
-  }
+.form-control:focus {
+  color: var(--color-gray-700);
+  background-color: var(--color-white);
+  border-color: var(--color-primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(232, 33, 36, 0.25);
 }
 
 /* Accessibility */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-/* Focus Styles */
-:focus {
+:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
@@ -209,7 +210,6 @@ a:hover {
 .loading {
   opacity: 0.7;
   pointer-events: none;
-  transition: var(--transition-base);
 }
 
 /* Animations */
@@ -218,25 +218,48 @@ a:hover {
   to { opacity: 1; }
 }
 
-@keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes slideDown {
-  from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Animation Classes */
-.fade-in {
-  animation: fadeIn var(--transition-slow) forwards;
+/* Responsive Design */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
 }
 
-.slide-up {
-  animation: slideUp var(--transition-slow) forwards;
-}
-
-.slide-down {
-  animation: slideDown var(--transition-slow) forwards;
+/* Print Styles */
+@media print {
+  body {
+    color: var(--color-gray-900);
+    background: var(--color-white);
+  }
+  
+  .no-print {
+    display: none !important;
+  }
 } 
