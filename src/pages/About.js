@@ -1,367 +1,265 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import styled from 'styled-components';
-import '../styles/global.css';
+import teamImage from '../assets/about-main.jpg'; 
+import visionIcon from '../assets/vision.png';  
+import missionIcon from '../assets/mission.png'; 
 
-// Styled Components
-const PageHeader = styled.section`
-  background: linear-gradient(135deg, var(--color-primary), var(--color-success));
-  padding: var(--spacing-3xl) 0;
-  position: relative;
-  overflow: hidden;
-  animation: fadeInDown 1s ease-out both;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/patterns/dots.svg') repeat;
-    opacity: 0.1;
-    animation: slide 20s linear infinite;
-  }
-`;
-
-const Headline = styled.h1`
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: var(--spacing-md);
-  animation: slideUp 1s ease-out;
-  text-align: center;
-`;
-
-const Subheadline = styled.p`
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  font-weight: 300;
-  color: var(--color-white);
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  animation: fadeIn 1.5s ease-out;
-`;
-
-const StyledSection = styled.section`
-  padding: var(--spacing-3xl) 0;
-  font-family: var(--font-family-base);
-`;
-
-const SectionTitle = styled.h2`
-  color: var(--color-success);
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 600;
-  margin-bottom: var(--spacing-lg);
-  position: relative;
-  display: inline-block;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: var(--color-accent);
-    transition: var(--transition-base);
-  }
-`;
-
-const StyledCard = styled(Card)`
-  border: none;
-  border-radius: var(--border-radius-lg);
-  background: var(--color-white);
-  box-shadow: var(--shadow-md);
-  transition: var(--transition-base);
-  height: 100%;
-  overflow: hidden;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+const AboutUs = () => {
+  return (
+<div>
+<style>
+{`
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: wrap;
   }
 
-  .card-body {
-    padding: var(--spacing-xl);
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 100px;
+  }
+
+  .about-heading {
+    color: #e63946;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .about-title {
+    color: #264653;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .about-paragraph {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .about-image {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 100px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .vision-mission-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .card {
+    flex: 1;
+    min-width: 280px;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .vision-card {
+    background: linear-gradient(to bottom right, #b30000, #8b0000);
+    color: #ffffff;
+  }
+
+  .mission-card {
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  .card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .card-title {
-    color: var(--color-success);
-    font-weight: 600;
-    margin-bottom: var(--spacing-md);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
   }
 
   .card-text {
-    color: var(--color-gray-700);
+    font-size: 16px;
     line-height: 1.6;
   }
-`;
 
-const About = () => {
-  return (
-    <>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  @media (max-width: 768px) {
+    .vision-mission-container {
+      flex-direction: column;
+      padding: 20px;
+    }
 
-        :root {
-          --primary-red: #e82124;
-          --accent-gold: #e5c16f;
-          --deep-green: #347c53;
-          --soft-pink: #f48c94;
-          --text-dark: #2d2d2d;
-          --text-light: #ffffff;
-          --background-light: #ffffff;
-          --background-off: #f8f9fa;
-          --spacing-xs: 0.5rem;
-          --spacing-sm: 1rem;
-          --spacing-md: 2rem;
-          --spacing-lg: 3rem;
-          --spacing-xl: 5rem;
-          --border-radius: 12px;
-          --transition: all 0.3s ease;
-        }
+    .card {
+      padding: 25px 15px;
+    }
 
-        body {
-          font-family: 'Poppins', sans-serif;
-          color: var(--text-dark);
-          line-height: 1.6;
-        }
+    .card-title {
+      font-size: 18px;
+    }
 
-        .page-header {
-          background: linear-gradient(135deg, var(--primary-red), #9b0e10);
-          padding: var(--spacing-xl) 0;
-          position: relative;
-          overflow: hidden;
-        }
+    .card-text {
+      font-size: 15px;
+    }
 
-        .page-header::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: url('/patterns/dots.svg') repeat;
-          opacity: 0.1;
-          animation: slide 20s linear infinite;
-        }
+    .about-us {
+      flex-direction: column;
+      padding: 20px;
+    }
 
-        .subheadline {
-          font-size: clamp(1.1rem, 2vw, 1.5rem);
-          font-weight: 300;
-          color: var(--text-light);
-          opacity: 0.9;
-          max-width: 600px;
-          margin: 0 auto;
-          text-align: center;
+    .about-title {
+      font-size: 24px;
+    }
 
-          position: absolute;
-          top: 68%; /* Adjust this value to move it up/down */
-          left: 50%;
-          transform: translateX(-50%);
+    .about-paragraph {
+      font-size: 15px;
+    }
 
-          z-index: 1;
-        }
+    .about-image img {
+      max-width: 100%;
+    }
+  }
 
-        .section {
-          padding: var(--spacing-xl) 0;
-        }
+  /* NEW: Entrepreneurial section styles */
+  .entrepreneurial-wrapper {
+    background: linear-gradient(to bottom right, #450000, #000000);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
 
-        .headline-sm {
-          font-size: clamp(1.5rem, 3vw, 2rem);
-          font-weight: 600;
-          color: var(--primary-red);
-          margin-bottom: var(--spacing-md);
-          position: relative;
-          display: inline-block;
-        }
+  .entrepreneurial-wrapper h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
 
-        .headline-sm::after {
-          content: '';
-          position: absolute;
-          bottom: -8px;
-          left: 0;
-          width: 40px;
-          height: 3px;
-          background: var(--accent-gold);
-          transition: var(--transition);
-        }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
 
-        .offer-card {
-          border: none;
-          border-radius: var(--border-radius);
-          background: var(--background-light);
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-          transition: var(--transition);
-          height: 100%;
-          overflow: hidden;
-        }
+  .info-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+  }
 
-        .offer-card:hover {
-          transform: translateY(-8px);
-          box-shadow: 0 8px 30px rgba(232, 33, 36, 0.15);
-        }
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
 
-        .offer-card .card-body {
-          padding: var(--spacing-md);
-        }
+    .entrepreneurial-wrapper h2 {
+      font-size: 22px;
+    }
 
-        .offer-card .card-title {
-          color: var(--deep-green);
-          font-weight: 600;
-          margin-bottom: var(--spacing-sm);
-        }
+    .info-box {
+      font-size: 15px;
+    }
+  }
+`}
+</style>
 
-        .bg-light {
-          background-color: var(--background-off) !important;
-        }
 
-        .journey-text {
-          max-width: 800px;
-          margin: 0 auto;
-          font-size: 1.1rem;
-          line-height: 1.8;
-        }
-
-        .journey-text p {
-          margin-bottom: var(--spacing-md);
-        }
-
-        @keyframes slide {
-          from { transform: translateX(0); }
-          to { transform: translateX(-100%); }
-        }
-
-        @media (max-width: 768px) {
-          .section {
-            padding: var(--spacing-lg) 0;
-          }
-          
-          .offer-card {
-            margin-bottom: var(--spacing-md);
-          }
-        }
-      `}</style>
-
-      <PageHeader>
-        <Container>
-          <Headline>About YoungPreneurs</Headline>
-          <Subheadline>
-            Empowering the next generation of entrepreneurs through education, mentorship, and real-world experience.
-          </Subheadline>
-        </Container>
-      </PageHeader>
-
-      <StyledSection>
-        <Container>
-          <Row className="mb-5 align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0">
-              <SectionTitle>Our Mission</SectionTitle>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                At YoungPreneurs, we believe that entrepreneurship education should be accessible to all students. 
-                Our mission is to empower young minds with the skills, knowledge, and mindset needed to succeed 
-                in an ever-changing world. Through our innovative programs and dedicated mentorship, we help 
-                students develop critical thinking, problem-solving abilities, and the confidence to pursue 
-                their entrepreneurial dreams.
-              </p>
-            </Col>
-            <Col lg={6}>
-              <img 
-                src={require('../assets/about-main.jpg')} 
-                alt="YoungPreneurs Mission" 
-                className="img-fluid rounded shadow-lg" 
-                style={{ borderRadius: 'var(--border-radius-lg)' }}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
-
-      <StyledSection style={{ background: 'var(--color-gray-100)' }}>
-        <Container>
-          <SectionTitle className="text-center">Our Values</SectionTitle>
-          <Row>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <Card.Title>Innovation</Card.Title>
-                  <Card.Text>
-                    We foster creativity and encourage students to think outside the box, 
-                    developing innovative solutions to real-world problems.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <Card.Title>Excellence</Card.Title>
-                  <Card.Text>
-                    We maintain high standards in everything we do, from curriculum design 
-                    to program delivery and student support.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <Card.Title>Impact</Card.Title>
-                  <Card.Text>
-                    We measure our success by the positive impact we create in students' 
-                    lives and their communities.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
-
-      <StyledSection>
-        <Container>
-          <Row>
-            <Col lg={6} className="mb-4">
-              <SectionTitle>Our Journey</SectionTitle>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                Founded in 2020, YoungPreneurs has grown from a small initiative to a comprehensive 
-                entrepreneurship education platform. Our journey has been marked by continuous learning, 
-                adaptation, and a deep commitment to our students' success.
-              </p>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                Today, we work with schools, educators, and industry partners to deliver high-quality 
-                entrepreneurship education that prepares students for the challenges and opportunities 
-                of the future.
-              </p>
-            </Col>
-            <Col lg={6}>
-              <SectionTitle>Our Team</SectionTitle>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                Our team consists of experienced educators, successful entrepreneurs, and industry 
-                professionals who are passionate about nurturing the next generation of business leaders. 
-                Together, we bring diverse perspectives and expertise to create an enriching learning 
-                environment for our students.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
-
-      <StyledSection style={{ background: 'linear-gradient(135deg, var(--color-primary), var(--color-success))', color: 'var(--color-white)' }}>
-        <Container className="text-center">
-          <h2 className="mb-4">Join Our Community</h2>
-          <p className="mb-4" style={{ opacity: 0.9 }}>
-            Be part of a growing network of young entrepreneurs and changemakers.
+<div className="about-us">
+        <div className="about-text">
+          <h4 className="about-heading">ABOUT US</h4>
+          <h2 className="about-title">Youngpreneurs – Empowering Tomorrow’s Leaders</h2>
+          <p className="about-paragraph">
+            The future belongs to those who dare to dream, build, and lead. At <strong>Youngpreneurs</strong>, we don’t just teach
+            entrepreneurship—we <strong>ignite it</strong>. Our mission is to equip young minds with the mindset, skills, and confidence
+            to turn bold ideas into real-world ventures.
           </p>
-          <a href="/contact" className="btn btn-light btn-lg">
-            Get Started
-          </a>
-        </Container>
-      </StyledSection>
-    </>
+          <p className="about-paragraph">
+            Entrepreneurship isn’t a talent you’re born with—it’s <strong>a mindset you develop</strong>. Through immersive workshops,
+            business simulations, and expert mentorship, students cultivate resilience, problem-solving skills, and the power to lead.
+          </p>
+        </div>
+        <div className="about-image">
+          <img src={teamImage} alt="Young team of entrepreneurs" />
+        </div>
+      </div>
+
+
+
+      <div className="vision-mission-container">
+        <div className="card vision-card">
+          <img src={missionIcon} alt="Vision Icon" style={{ display: "block", margin: "0 auto 20px auto" }}/>
+          <div className="card-title">Our Vision</div>
+          <div className="card-text">
+            Create the next generation of global thinkers and entrepreneurs equipped to tackle 21st century challenges.
+          </div>
+        </div>
+        <div className="card mission-card">
+          <img src={visionIcon} alt="Mission Icon" style={{ display: "block", margin: "0 auto 20px auto",height: "50px",width: "100px", }}/>
+          <div className="card-title">Our Mission</div>
+          <div className="card-text">
+            Our goal is simple: To train young people in the entrepreneurial mindset and business principles, empowering them to innovate, solve problems, and lead with confidence.
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div className="entrepreneurial-wrapper">
+  <h2 style={{color: 'white'}}>Building an Entrepreneurial India, One Teen at a Time</h2>
+  <div className="grid-container">
+  <div className="info-box">
+          In an age powered by AI and automation, where traditional roles are rapidly evolving, one mindset stands out as future-proof — the entrepreneurial mindset. It is not just about launching startups. It’s about being a problem solver, a creator, a leader, and a change-maker.
+        </div>
+        <div className="info-box">
+          Future Titans by Youngpreneurs is a national movement to inspire, equip, and empower students from Classes 8 to 12 to think like entrepreneurs — and act like one. We’re shifting India from a job-seeking economy to a creator economy by nurturing entrepreneurial skills early on — critical thinking, empathy, risk-taking, resilience, and innovation.
+        </div>
+        <div className="info-box">
+          To kickstart this journey, every participant attends 5 power-packed, globally-led online workshops taught by:
+          <br /><br />
+          Prof. Fred Katz, Professor of Entrepreneurship, Johns Hopkins University (USA)<br />
+          Sandipan Chattopadhyay, Ex-CTO of Justdial, MD of Xelpmoc (India’s innovation engine)
+        </div>
+        <div className="info-box">
+          Our mission is clear: stir creativity, spark purpose, and seed the next generation of nation-builders.
+        </div>
+  </div>
+</div>
+
+    </div>
   );
 };
 
-export default About;
+export default AboutUs;
