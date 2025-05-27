@@ -1,197 +1,227 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-
-// Styled Components
-const StyledSection = styled.section`
-  font-family: 'Poppins', sans-serif;
-  padding: 4rem 0;
-`;
-
-const PageHeader = styled(StyledSection)`
-  background: linear-gradient(135deg, #e82124 0%, #eb4c4b 100%);
-  color: white;
-  padding: 6rem 0;
-`;
-
-const SectionTitle = styled.h2`
-  color: #347c53;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  position: relative;
-  
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    
-    height: 3px;
-    background: #e5c16f;
-  }
-`;
-
-const StyledCard = styled(Card)`
-  border: none;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  .card-title {
-    color: #347c53;
-    font-weight: 600;
-  }
-`;
-
-const CTAButton = styled(Button)`
-  background: #e82124;
-  border: none;
-  padding: 0.8rem 2rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    background: #eb4c4b;
-    transform: translateY(-2px);
-  }
-`;
-
-const FeatureList = styled.ul`
-  list-style: none;
-  padding: 0;
-  
-  li {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-    position: relative;
-    
-    &:before {
-      content: '•';
-      color: #e5c16f;
-      position: absolute;
-      left: 0;
-    }
-  }
-`;
-
-const Lead = styled.p`
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-          font-weight: 300;
-          color: var(--text-light);
-          opacity: 0.9;
-
-         text-align: center;
-          position: relative;
-          z-index: 1;
-          padding-top: 4rem;
-          
-`;
-
-
-
-
+import backgroundImage from '../assets/forschools.jpg';
 const ForSchools = () => {
   return (
     <>
-      <PageHeader>
-        <Container>
-          <Lead>Partner with Youngpreneurs to bring entrepreneurship education to your students</Lead>
-
-        </Container>
-      </PageHeader>
-
-      <StyledSection>
-        <Container>
-          <Row className="align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0">
-              <SectionTitle>Why Partner With Us?</SectionTitle>
-              <p className="text-muted mb-4">
-                Integrating entrepreneurship education into your school curriculum helps prepare 
-                students for the future of work and develop essential 21st-century skills.
-              </p>
-              <FeatureList>
-                <li>Complement your existing curriculum</li>
-                <li>Foster creativity and critical thinking</li>
-                <li>Build communication and presentation skills</li>
-                <li>Teach financial literacy</li>
-                <li>Develop leadership abilities</li>
-                <li>Connect classroom learning to real-world applications</li>
-              </FeatureList>
-            </Col>
-            <Col lg={6}>
-              <img 
-                src={require('../assets/schools.jpg')} 
-                alt="Students in classroom" 
-                className="img-fluid rounded-3 shadow-lg" 
-                loading="lazy"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
-
-      <StyledSection className="bg-light">
-        <Container>
-          <SectionTitle className="text-center">Our School Programs</SectionTitle>
-          <Row>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body className="p-4">
-                  <Card.Title className="mb-3">In-School Workshops</Card.Title>
-                  <Card.Text className="text-muted">
-                    Interactive sessions led by our experienced facilitators, 
-                    designed to fit into your school schedule and curriculum.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body className="p-4">
-                  <Card.Title className="mb-3">Entrepreneurship Clubs</Card.Title>
-                  <Card.Text className="text-muted">
-                    Support and resources for establishing and running successful 
-                    entrepreneurship clubs as extracurricular activities.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body className="p-4">
-                  <Card.Title className="mb-3">Teacher Training</Card.Title>
-                  <Card.Text className="text-muted">
-                    Professional development for educators interested in integrating 
-                    entrepreneurship education into their teaching.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
-
-      <StyledSection className="text-center">
-        <Container>
-          <SectionTitle className="text-center">Ready to Partner With Us?</SectionTitle>
-          <p className="text-muted mb-4">
-            Contact us to discuss how we can bring entrepreneurship education to your school.
+      <div className="cards-container">
+        <div className="card">
+          <h3>Workshops and Bootcamps That Matter</h3>
+          <p>
+            Students don’t just compete—they <strong>learn, build, and pitch like real entrepreneurs</strong>. 
+            Our exclusive training ensures they master problem-solving, leadership, and business strategy.
           </p>
-          <Link to="/contact">
-            <CTAButton size="lg">
-              Get in Touch
-            </CTAButton>
-          </Link>
-        </Container>
-      </StyledSection>
+        </div>
+        <div className="card">
+          <h3>Train-the-Trainer Program</h3>
+          <p>
+            <strong>Empower your educators to shape young innovators!</strong> 
+            We provide <strong>specialized training sessions</strong> for teachers, equipping them with 
+            <strong> entrepreneurial frameworks, real-world business strategies</strong>, and 
+            <strong> hands-on teaching methodologies</strong>. This ensures they can 
+            <strong> mentor students effectively</strong>, foster problem-solving skills, and create a dynamic learning 
+            environment that <strong>turns classrooms into innovation hubs!</strong>
+          </p>
+        </div>
+        <div className="card">
+          <h3>Be the Torchbearer of Innovation!</h3>
+          <p>
+            [Title Sponsor], in partnership with The Times of India and Youngpreneurs, proudly presents 
+            the “Torchbearer of Innovation” award—an accolade that recognizes schools championing entrepreneurial 
+            spirit among students. 
+            <br /><br />
+            By encouraging participation in the Future Titans competition, your institution will be celebrated as a 
+            true torchbearer of innovation, receiving a prestigious trophy and certificate in honor of your commitment 
+            to fostering young visionaries.
+          </p>
+        </div>
+        <div className="card">
+          <h3>Official Recognition and Certification</h3>
+          <p>
+            Get an <strong>exclusive certification</strong> from 
+            <strong> The Times of India and Youngpreneurs Academy</strong>, proving your school nurtures innovation and 
+            leadership. Stand out as a <strong>pioneer in shaping future-ready education!</strong>
+          </p>
+        </div>
+        <div className="card">
+          <h3>National Media Spotlight</h3>
+          <p>
+            Partner schools get featured in <strong>The Times of India and top media platforms</strong>. 
+            <strong> Boost your school’s reputation</strong>, attract top students, and become the 
+            <strong> go-to institution for future leaders.</strong>
+          </p>
+        </div>
+        <div className="card">
+          <h3>Real-World Impact</h3>
+          <p>
+            Schools producing top talent will be <strong>honoured for their contribution to nurturing young changemakers.</strong> 
+            <strong> Your students succeed, your school shines.</strong>
+          </p>
+        </div>
+      </div>
+      <div className="encouragement-section"  style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="overlay">
+          <div className="content">
+            <h2>Why Encourage Your Students?</h2>
+            <p>
+              With ₹40 Lakhs in funding, incubation, and mentorship from India’s top entrepreneurs, 
+              Future Titans is where big dreams turn into real-world success stories.
+            </p>
+            <p>
+              This is bigger than a competition—it’s a revolution. And the schools that back their 
+              students today will be the institutions that shape tomorrow.
+            </p>
+            <p><strong>Is your school ready to make history?</strong></p>
+            <button>JOIN THE MOVEMENT</button>
+          </div>
+        </div>
+      </div>
+
+      <style>{`
+        .cards-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+          padding: 60px 40px;
+          max-width: 1200px;
+          margin: 0 auto;
+          margin-top: 100px;
+        }
+
+        .card {
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+          padding: 30px 20px;
+          text-align: center;
+        }
+
+        .card h3 {
+          font-size: 20px;
+          color: #2c4a3f;
+          margin-bottom: 15px;
+        }
+
+        .card p {
+          font-size: 15px;
+          color: #333;
+          line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+          .cards-container {
+            padding: 40px 20px;
+            gap: 20px;
+          }
+
+          .card h3 {
+            font-size: 18px;
+          }
+
+          .card p {
+            font-size: 14px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .card h3 {
+            font-size: 16px;
+          }
+
+          .card p {
+            font-size: 13.5px;
+          }
+        }
+
+        .encouragement-section {
+          position: relative;
+         
+          background-size: cover;
+          background-position: center;
+          color: #fff;
+          min-height: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+      .overlay {
+  position: absolute; /* Add this */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Covers full height of the parent */
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  z-index: 1;
+}
+
+
+       
+
+        .content h2 {
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          color: white;
+        }
+
+        .content p {
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 15px;
+           max-width: 800px;
+        }
+
+        .content strong {
+          font-weight: bold;
+        }
+
+        button {
+          background-color: #e50914;
+          color: white;
+          border: none;
+          padding: 14px 24px;
+          border-radius: 30px;
+          font-size: 14px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+          background-color: #c20710;
+        }
+
+        @media (max-width: 768px) {
+          .content h2 {
+            font-size: 26px;
+          }
+
+          .content p {
+            font-size: 15px;
+          }
+
+          button {
+            padding: 12px 20px;
+            font-size: 13px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .content h2 {
+            font-size: 22px;
+          }
+
+          .content p {
+            font-size: 14px;
+          }
+        }
+      `}</style>
     </>
   );
 };
 
-export default ForSchools; 
+export default ForSchools;

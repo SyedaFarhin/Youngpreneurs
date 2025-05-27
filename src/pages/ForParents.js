@@ -1,252 +1,246 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import '../styles/global.css';
-
-// Styled Components
-const PageHeader = styled.section`
-  background: linear-gradient(135deg, var(--color-primary), var(--color-success));
-  padding: var(--spacing-3xl) 0;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/patterns/dots.svg') repeat;
-    opacity: 0.1;
-    animation: slide 20s linear infinite;
-  }
-`;
-
-const StyledSection = styled.section`
-  padding: var(--spacing-3xl) 0;
-  font-family: var(--font-family-base);
-`;
-
-const SectionTitle = styled.h2`
-  color: var(--color-success);
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 600;
-  margin-bottom: var(--spacing-lg);
-  position: relative;
-  display: inline-block;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 60px;
-    height: 3px;
-    background: var(--color-accent);
-    transition: var(--transition-base);
-  }
-`;
-
-const StyledCard = styled(Card)`
-  border: none;
-  border-radius: var(--border-radius-lg);
-  background: var(--color-white);
-  box-shadow: var(--shadow-md);
-  transition: var(--transition-base);
-  height: 100%;
-  overflow: hidden;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-  }
-
-  .card-body {
-    padding: var(--spacing-xl);
-  }
-
-  .card-title {
-    color: var(--color-success);
-    font-weight: 600;
-    margin-bottom: var(--spacing-md);
-  }
-
-  .card-text {
-    color: var(--color-gray-700);
-    line-height: 1.6;
-  }
-`;
-
-const CTAButton = styled(Link)`
-  display: inline-block;
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: var(--spacing-md) var(--spacing-2xl);
-  font-size: var(--font-size-lg);
-  font-weight: 500;
-  border-radius: var(--border-radius-full);
-  text-decoration: none;
-  transition: var(--transition-base);
-
-  &:hover {
-    background: var(--color-success);
-    color: var(--color-white);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-  }
-`;
 
 const ForParents = () => {
   return (
-    <>
-      <PageHeader>
-        <Container>
-          <h1 className="text-center text-white mb-4" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>
-            For Parents
-          </h1>
-          <p className="text-center text-white" style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)', opacity: 0.9 }}>
-            Supporting your child's entrepreneurial journey
-          </p>
-        </Container>
-      </PageHeader>
+    <section className="game-changer">
+      {/* Left Content */}
+      <div className="left-content">
+        <h5>A MESSAGE TO PARENTS</h5>
+        <p>
+          Imagine a future where your child stands out not just for their academic achievements, but for their ability to innovate, lead, and turn ideas into real-world solutions.
+        </p>
+        <p>
+          <strong>Future Titans – India’s Entrepreneurial Hunt</strong>, in collaboration with <strong>The Times of India</strong> and <strong>Youngpreneurs</strong>, offers more than just a competition—it’s a transformative opportunity for young minds to shape their entrepreneurial journey.
+        </p>
+        <button className="cta-btn">GET STARTED</button>
+      </div>
 
-      <StyledSection>
-        <Container>
-          <Row className="mb-5 align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0">
-              <SectionTitle>Why Entrepreneurship Education?</SectionTitle>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                In today's rapidly changing world, entrepreneurial skills are more valuable than ever. 
-                Our programs help students develop critical thinking, problem-solving abilities, and 
-                the confidence to pursue their ideas. As a parent, you'll see your child grow in ways 
-                that traditional education alone cannot provide.
-              </p>
-            </Col>
-            <Col lg={6}>
-              <img 
-                src={require('../assets/parents-main.jpg')} 
-                alt="Entrepreneurship Education" 
-                className="img-fluid rounded shadow-lg" 
-                style={{ borderRadius: 'var(--border-radius-lg)' }}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
+      {/* Right Content */}
+      <div className="right-content">
+        <h4>WHY THIS COMPETITION A GAME-CHANGER</h4>
+        <div className="cards">
+          <div className="card red-card">
+            <div className="icon">📶</div>
+            <h5>Real-World Learning</h5>
+            <p>They’ll learn to think critically, solve real-world problems, and create innovative solutions through hands-on workshops and mentoring.</p>
+          </div>
+          <div className="card">
+            <div className="icon">🛠️</div>
+            <h5>Prestigious Platform</h5>
+            <p>As part of an TOI-backed competition, they’ll gain national recognition and credibility.</p>
+          </div>
+          <div className="card">
+            <div className="icon">📺</div>
+            <h5>Unparalleled Opportunities</h5>
+            <p>The winners will receive ₹5 lakhs in funding to kickstart their entrepreneurial journey!</p>
+          </div>
+          <div className="card">
+            <div className="icon">💰</div>
+            <h5>Skill Development</h5>
+            <p>From pitching to problem-solving, your child will master skills that colleges and employers value.</p>
+          </div>
+        </div>
+      </div>
 
-      <StyledSection style={{ background: 'var(--color-gray-100)' }}>
-        <Container>
-          <SectionTitle className="text-center">Benefits for Your Child</SectionTitle>
-          <Row>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <Card.Title>Skill Development</Card.Title>
-                  <Card.Text>
-                    Students learn practical skills like financial literacy, marketing, 
-                    and project management that will serve them throughout their lives.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <Card.Title>Confidence Building</Card.Title>
-                  <Card.Text>
-                    Through hands-on experience and mentorship, students develop the 
-                    confidence to take initiative and lead.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <Card.Title>Future Readiness</Card.Title>
-                  <Card.Text>
-                    Our programs prepare students for the challenges and opportunities 
-                    of the future job market and business world.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
+      <section className="cta-section">
+      <p className="cta-text">
+        Don’t let your child miss this opportunity to shine, learn, and grow into the leader of tomorrow.
+      </p>
+      <p className="cta-team"><strong>Youngpreneurs Competition Team</strong></p>
+      <button className="cta-button">REGISTER NOW</button>
+       </section>
 
-      <StyledSection>
-        <Container>
-          <Row>
-            <Col lg={6} className="mb-4">
-              <SectionTitle>Parent Involvement</SectionTitle>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                We believe in the power of parent involvement in a child's entrepreneurial journey. 
-                Our programs include opportunities for parents to:
-              </p>
-              <ul style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  Attend workshops and events
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  Connect with other parents and mentors
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  Support your child's projects and ideas
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  Learn about entrepreneurship education
-                </li>
-              </ul>
-            </Col>
-            <Col lg={6}>
-              <SectionTitle>Program Details</SectionTitle>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                Our programs are designed to be flexible and accessible, with options for different 
-                schedules and learning styles. We offer:
-              </p>
-              <ul style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  Weekend workshops and events
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  After-school programs
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  Summer intensives
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  Online learning opportunities
-                </li>
-              </ul>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
 
-      <StyledSection style={{ background: 'linear-gradient(135deg, var(--color-primary), var(--color-success))', color: 'var(--color-white)' }}>
-        <Container className="text-center">
-          <h2 className="mb-4">Ready to Get Started?</h2>
-          <p className="mb-4" style={{ opacity: 0.9 }}>
-            Join us in nurturing your child's entrepreneurial spirit.
-          </p>
-          <CTAButton to="/contact">
-            Enroll Now
-          </CTAButton>
-        </Container>
-      </StyledSection>
-    </>
+
+
+      <style>{`
+        .game-changer {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 50px 30px;
+          background-color: #ec5c5c;
+          color: white;
+          justify-content: center;
+        }
+
+        .left-content {
+          flex: 1 1 40%;
+          padding: 20px;
+          max-width: 500px;
+          margin-top: 150px;
+        }
+
+        .left-content h5 {
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 15px;
+        }
+
+        .left-content p {
+          font-size: 18px;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+
+        .left-content strong {
+          font-weight: bold;
+        }
+
+        .cta-btn {
+          background: white;
+          color: #ec5c5c;
+          border: none;
+          padding: 12px 25px;
+          font-weight: bold;
+          border-radius: 30px;
+          cursor: pointer;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+
+        .cta-btn:hover {
+          background-color: #f5f5f5;
+        }
+
+        .right-content {
+          flex: 1 1 55%;
+          padding: 20px;
+          max-width: 700px;
+          margin-top: 100px;
+        }
+
+        .right-content h4 {
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+
+        .card {
+          background-color: white;
+          color: #333;
+          border-radius: 12px;
+          padding: 20px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .card.red-card {
+          background-color:rgb(238, 176, 176);
+          color: white;
+        }
+
+        .card .icon {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .card h5 {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+        .card p {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+
+        @media (max-width: 900px) {
+          .game-changer {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .left-content,
+          .right-content {
+            flex: 1 1 100%;
+            max-width: 100%;
+          }
+
+          .cards {
+            grid-template-columns: 1fr;
+          }
+        }
+
+
+       .cta-section {
+  width: 100vw;
+  margin: 0;
+  padding: 100px 20px;
+  background-color: #fff;
+  
+  text-align: center;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+        .cta-text {
+          font-size: 26px;
+          color: #2c4a3f;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+
+        .cta-team {
+          font-size: 22px;
+          color: #ec1e26;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+
+        .cta-button {
+          background-color: #ec1e26;
+          color: white;
+          padding: 12px 30px;
+          font-size: 14px;
+          border: none;
+          border-radius: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+
+        .cta-button:hover {
+          background-color: #c81b21;
+        }
+
+        @media (max-width: 768px) {
+          .cta-text {
+            font-size: 20px;
+          }
+
+          .cta-team {
+            font-size: 18px;
+          }
+
+          .cta-button {
+            padding: 10px 24px;
+            font-size: 13px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .cta-text {
+            font-size: 18px;
+          }
+
+          .cta-team {
+            font-size: 16px;
+          }
+        }
+      `}</style>
+    </section>
   );
 };
 
-export default ForParents; 
+export default ForParents;
