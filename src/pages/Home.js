@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
@@ -28,20 +29,6 @@ const Home = () => {
           <source src={heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
-
-        {/* Content
-        <div>
-          <h1 className="hero-title">
-            <span className="text-primary-red">Youngpreneurs</span> <span className="text-primary-gold">Future Titans</span>
-          </h1>
-          <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Driving Change through Entrepreneurship</h2>
-          <Link to="/contact">
-            <Button variant="primary" size="lg" className="hero-button" data-aos="fade-up" data-aos-delay="400">Join Us Today</Button>
-          </Link>
-        </div> */}
-
-  
       </section>
 
       <section className="section parallax-section">
