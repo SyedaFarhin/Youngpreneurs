@@ -1,326 +1,179 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import '../styles/global.css';
+import classImage from '../assets/classroom.jpg'; // Replace with actual path
 
-// Styled Components
-const StyledSection = styled.section`
-  padding: var(--spacing-3xl) 0;
-  font-family: var(--font-family-base);
-`;
-
-const PageHeader = styled.section`
-  background: linear-gradient(135deg, var(--color-primary), var(--color-success));
-  color: var(--color-white);
-  text-align: center;
-  padding: var(--spacing-3xl) 0;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/patterns/dots.svg') repeat;
-    opacity: 0.1;
-    animation: slide 20s linear infinite;
-  }
-
-  h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
-    margin-bottom: var(--spacing-md);
-    animation: fadeInDown 1s ease-out;
-  }
-
-  p {
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
-    font-weight: 300;
-    opacity: 0.9;
-    max-width: 600px;
-    margin: 0 auto;
-    animation: fadeInUp 1s ease-out;
-  }
-`;
-
-const StyledCard = styled(Card)`
-  border: none;
-  border-radius: var(--border-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition-base);
-  height: 100%;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-  }
-
-  .card-body {
-    padding: var(--spacing-xl);
-  }
-
-  .card-title {
-    color: var(--color-success);
-    font-weight: 600;
-    margin-bottom: var(--spacing-md);
-  }
-
-  .card-text {
-    color: var(--color-gray-700);
-    line-height: 1.6;
-  }
-`;
-
-const IconWrapper = styled.div`
-  width: 64px;
-  height: 64px;
-  border-radius: var(--border-radius-full);
-  background: ${props => props.color || 'var(--color-primary)'};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto var(--spacing-lg);
-  color: var(--color-white);
-  font-size: 1.5rem;
-  transition: var(--transition-base);
-
-  &:hover {
-    transform: scale(1.1);
-  }
-`;
-
-const CTAButton = styled(Button)`
-  background: var(--color-primary);
-  border: none;
-  padding: var(--spacing-md) var(--spacing-2xl);
-  font-size: var(--font-size-lg);
-  font-weight: 500;
-  border-radius: var(--border-radius-full);
-  transition: var(--transition-base);
-
-  &:hover {
-    background: var(--color-success);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-  }
-`;
-
-const Academy = () => {
+const WelcomeSection = () => {
   return (
     <>
-      <PageHeader>
-        <Container>
-          <h1>YoungPreneur Academy</h1>
-          <p>Comprehensive entrepreneurship education for students</p>
-        </Container>
-      </PageHeader>
-
-      <StyledSection>
-        <Container>
-          <Row className="mb-5 align-items-center">
-            <Col lg={6} className="mb-4 mb-lg-0">
-              <h2 className="mb-4" style={{ color: 'var(--color-success)' }}>About YoungPreneur Academy</h2>
-              <p className="mb-4" style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                YoungPreneur Academy offers comprehensive entrepreneurship education for students, 
-                teaching them business skills, design thinking, and leadership through practical 
-                experience. Our curriculum is designed by educators and entrepreneurs to provide 
-                students with the knowledge and tools they need to succeed in an entrepreneurial world.
-              </p>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                Through workshops, hands-on projects, and mentorship, students develop not only 
-                business acumen but also valuable soft skills like critical thinking, problem-solving, 
-                teamwork, and communication.
-              </p>
-            </Col>
-            <Col lg={6}>
-              <img 
-                src={require('../assets/academy-main.jpg')} 
-                alt="YoungPreneur Academy" 
-                className="img-fluid rounded shadow-lg" 
-                style={{ borderRadius: 'var(--border-radius-lg)' }}
-              />
-            </Col>
-          </Row>
-
-          <div className="text-center mb-5">
-            <h2 style={{ color: 'var(--color-success)' }}>Academy Programs</h2>
+      <section className="welcome-section">
+        <div className="welcome-content">
+          <div className="text-column">
+            <h2>
+              <span className="highlight">Welcome to Future Titans – USA, INDIA Initiative:</span><br />
+              <span className="subheading">Building India’s Tomorrow, Today</span>
+            </h2>
+            <p className="theme">Theme: Build Like a Titan</p>
+            <p>
+              In the age of AI and the creator economy, an entrepreneurial mindset is no longer optional — it’s a life skill.
+              Whether you start a business or not, thinking like a creator, innovator, and problem-solver is what will set you apart.
+              That’s the mission behind Future Titans, brought to you by Youngpreneurs — a national movement to unlock the potential of teenagers across India.
+              This isn’t just another competition. It’s a nationwide call to action to spark innovation, creativity, and leadership among students from Class 8 to 12.
+            </p>
+            <button className="register-btn">REGISTER NOW</button>
           </div>
-          <Row>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <IconWrapper color="var(--color-accent)">
-                    <i className="fas fa-calendar-week"></i>
-                  </IconWrapper>
-                  <Card.Title>Weekend Workshops</Card.Title>
-                  <Card.Text>
-                    Intensive weekend sessions focusing on specific entrepreneurial skills and 
-                    topics, perfect for busy students.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <IconWrapper color="var(--color-soft-pink)">
-                    <i className="fas fa-sun"></i>
-                  </IconWrapper>
-                  <Card.Title>Summer Intensives</Card.Title>
-                  <Card.Text>
-                    Week-long immersive programs during school breaks, where students develop and 
-                    pitch their own business ideas.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={4} className="mb-4">
-              <StyledCard>
-                <Card.Body>
-                  <IconWrapper color="var(--color-success)">
-                    <i className="fas fa-graduation-cap"></i>
-                  </IconWrapper>
-                  <Card.Title>Year-Round Programs</Card.Title>
-                  <Card.Text>
-                    Comprehensive curriculum delivered throughout the academic year, integrated 
-                    with school schedules.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
+          <div className="image-column">
+            <div className="image-container">
+              <img src={classImage} alt="Classroom" />
+              <div className="overlay-box">
+                <h4>Awards & Recognition</h4>
+                <ul>
+                  <li>Top 3 Winners – ₹10 Lakhs each in seed funding + Incubation</li>
+                  <li>Top Female Entrepreneur – ₹10 Lakhs in seed funding</li>
+                  <li>Top 50 Finalists – Incubation + Trophy</li>
+                  <li>All Participants – Certificate of Completion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <StyledSection style={{ background: 'var(--color-gray-100)' }}>
-        <Container>
-          <h2 className="text-center mb-5" style={{ color: 'var(--color-success)' }}>What Students Learn</h2>
-          <Row>
-            <Col md={6} lg={3} className="mb-4">
-              <StyledCard>
-                <Card.Body className="text-center">
-                  <IconWrapper color="var(--color-primary)">
-                    <i className="fas fa-lightbulb"></i>
-                  </IconWrapper>
-                  <Card.Title>Ideation</Card.Title>
-                  <Card.Text>
-                    Techniques for generating, evaluating, and refining business ideas.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={6} lg={3} className="mb-4">
-              <StyledCard>
-                <Card.Body className="text-center">
-                  <IconWrapper color="var(--color-accent)">
-                    <i className="fas fa-chart-line"></i>
-                  </IconWrapper>
-                  <Card.Title>Business Fundamentals</Card.Title>
-                  <Card.Text>
-                    Understanding markets, business models, and financial planning.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={6} lg={3} className="mb-4">
-              <StyledCard>
-                <Card.Body className="text-center">
-                  <IconWrapper color="var(--color-soft-pink)">
-                    <i className="fas fa-comments"></i>
-                  </IconWrapper>
-                  <Card.Title>Communication</Card.Title>
-                  <Card.Text>
-                    Pitching ideas, public speaking, and persuasive presentation skills.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-            <Col md={6} lg={3} className="mb-4">
-              <StyledCard>
-                <Card.Body className="text-center">
-                  <IconWrapper color="var(--color-success)">
-                    <i className="fas fa-users"></i>
-                  </IconWrapper>
-                  <Card.Title>Leadership</Card.Title>
-                  <Card.Text>
-                    Team management, decision-making, and collaborative problem-solving.
-                  </Card.Text>
-                </Card.Body>
-              </StyledCard>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
+      {/* CSS inside style tag */}
+      <style>{`
+        .welcome-section {
+          background: #f8f8f8;
+          padding: 60px 20px;
+          border-radius: 20px;
+          margin: 20px;
+        }
 
-      <StyledSection>
-        <Container>
-          <Row>
-            <Col lg={6} className="mb-4">
-              <h2 className="mb-4" style={{ color: 'var(--color-success)' }}>Learning Methodology</h2>
-              <p className="mb-4" style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                Our approach combines theory with practice, ensuring students don't just learn about 
-                entrepreneurship but experience it firsthand. Key elements of our methodology include:
-              </p>
-              <ul className="list-unstyled" style={{ color: 'var(--color-gray-700)' }}>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  <strong>Experiential Learning:</strong> Students work on real projects and solve actual challenges.
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  <strong>Mentorship:</strong> Guidance from experienced entrepreneurs and industry professionals.
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  <strong>Design Thinking:</strong> A human-centered approach to problem-solving and innovation.
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  <strong>Peer Learning:</strong> Collaboration and feedback among students to enhance understanding.
-                </li>
-                <li className="mb-3">
-                  <i className="fas fa-check-circle text-success me-2"></i>
-                  <strong>Reflection:</strong> Regular opportunities to analyze and learn from experiences.
-                </li>
-              </ul>
-            </Col>
-            <Col lg={6}>
-              <h2 className="mb-4" style={{ color: 'var(--color-success)' }}>Our Instructors</h2>
-              <p className="mb-4" style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                YoungPreneur Academy instructors are a diverse group of educators, entrepreneurs, and 
-                industry professionals passionate about nurturing the next generation of business leaders. 
-                They bring real-world experience and expertise to the classroom, providing students with 
-                insights that go beyond textbook learning.
-              </p>
-              <p style={{ color: 'var(--color-gray-700)', lineHeight: '1.8' }}>
-                All instructors undergo rigorous training in our curriculum and teaching methodology, 
-                ensuring consistency in the quality of education across all our programs.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
+        .welcome-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+        }
 
-      <StyledSection style={{ background: 'linear-gradient(135deg, var(--color-primary), var(--color-success))', color: 'var(--color-white)' }}>
-        <Container className="text-center">
-          <h2 className="mb-4">Ready to Join YoungPreneur Academy?</h2>
-          <p className="mb-4" style={{ opacity: 0.9 }}>
-            Enroll today and start your journey to becoming a successful entrepreneur.
-          </p>
-          <Link to="/contact">
-            <CTAButton variant="light">
-              Enroll Now
-            </CTAButton>
-          </Link>
-        </Container>
-      </StyledSection>
+        .text-column {
+          flex: 1 1 55%;
+          padding: 20px;
+        }
+
+        .text-column h2 {
+          font-size: 24px;
+          margin-bottom: 16px;
+          line-height: 1.4;
+        }
+
+        .highlight {
+          color: #d62828;
+          font-weight: bold;
+        }
+
+        .subheading {
+          color: #204e3d;
+          font-weight: 600;
+        }
+
+        .theme {
+          color: #2e6f57;
+          font-weight: 600;
+          margin: 10px 0;
+        }
+
+        .text-column p {
+          color: #333;
+          margin-bottom: 16px;
+          line-height: 1.6;
+        }
+
+        .register-btn {
+          background-color: #e4002b;
+          color: #fff;
+          padding: 12px 24px;
+          border: none;
+          font-weight: bold;
+          border-radius: 25px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .register-btn:hover {
+          background-color: #c70024;
+        }
+
+        .image-column {
+          flex: 1 1 40%;
+          padding: 20px;
+          position: relative;
+        }
+
+        .image-container {
+          position: relative;
+          border-radius: 20px;
+          overflow: hidden;
+        }
+
+        .image-container img {
+          width: 100%;
+          height: auto;
+          border-radius: 20px;
+          display: block;
+        }
+
+        .overlay-box {
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          right: 20px;
+          background-color: rgba(255, 255, 255, 0.9);
+          padding: 20px;
+          border-radius: 12px;
+          font-size: 14px;
+          color: #000;
+        }
+
+        .overlay-box h4 {
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        .overlay-box ul {
+          margin: 0;
+          padding-left: 20px;
+        }
+
+        .overlay-box li {
+          margin-bottom: 6px;
+        }
+
+        @media (max-width: 768px) {
+          .welcome-content {
+            flex-direction: column;
+          }
+
+          .text-column,
+          .image-column {
+            flex: 1 1 100%;
+            padding: 10px;
+          }
+
+          .text-column h2 {
+            font-size: 20px;
+          }
+
+          .overlay-box {
+            position: relative;
+            margin-top: 10px;
+            left: auto;
+            right: auto;
+            bottom: auto;
+          }
+        }
+      `}</style>
     </>
   );
 };
 
-export default Academy; 
+export default WelcomeSection;
