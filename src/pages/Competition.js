@@ -7,6 +7,7 @@ import classImage from '../assets/classroom.jpg';
 import juliya from '../assets/juliya.jpeg';
 import sandipan from '../assets/sandipan.jpeg';
 import suman from '../assets/suman.jpeg';
+import presentation from '../assets/presentation.jpg';
 // Replace with actual path
 
 
@@ -158,7 +159,166 @@ const Competition = () => {
         ))}
       </Slider>
       </div>
-      {/* CSS inside style tag */}
+
+
+      <div className="competition-section">
+        {/* Card 1 */}
+        <div className="card">
+          <h3>Competition Format</h3>
+          <p><strong>Round 1: Idea Submission (Virtual)</strong></p>
+          <h4>Task</h4>
+          <p>Submit a 1–3 page business idea proposal or a 2–3 page pitch deck</p>
+          <h4>Details to Include</h4>
+          <p>Problem statement, proposed solution, target audience, feasibility and innovation</p>
+          <h4>Judging Criteria</h4>
+          <p>Clarity of idea, relevance to the problem, innovation, and scalability</p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="card">
+          <h3>Key Takeaways</h3>
+          <ul className="check-list">
+            <li>Exclusive Access to 2 High-Impact Workshops (2–3 hours each) on Idea Validation</li>
+            <li>Step-by-Step Guidance on Crafting a Winning Business Proposal</li>
+            <li>Master the Art of Defining a Problem and Presenting a Strong Solution</li>
+            <li>Exclusive Insights with two of India’s Leading Celebrity Entrepreneurs</li>
+            <li>Certificate of Participation</li>
+          </ul>
+        </div>
+
+        {/* Card 3 */}
+        <div className="card">
+          <h3>Competition Format</h3>
+          <p><strong>Round 2: Business Plan (Virtual)</strong></p>
+          <h4>Task</h4>
+          <p>Shortlisted participants will develop a detailed business plan covering market research, operational strategy, financial model, and marketing.</p>
+          <h4>Submission Format</h4>
+          <p>Written business plan (4–5 pages) OR recorded pitch video</p>
+          <h4>Judging Criteria</h4>
+          <p>Feasibility, depth of research, and financial viability</p>
+        </div>
+
+        {/* Card 4 */}
+        <div className="card">
+          <h3>Key Takeaways</h3>
+          <ul className="check-list">
+            <li>2 Expert-Led Workshops (2–3 hours each) on market research and finances</li>
+            <li>Guidance on Crafting a Winning Business Plan or Video Pitch</li>
+            <li>Exclusive Insights from two of India’s Leading Investors</li>
+            <li>Certificate of Participation</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div className="live-pitch-section">
+        <div className="live-pitch-text">
+          <h2>Live Pitch (Finale)</h2>
+
+          <div className="info-block">
+            <div className="icon-box">🚀</div>
+            <div className="info-content">
+              <h4>Task</h4>
+              <p>Present a compelling business pitch, covering budgeting, pricing, and profitability.</p>
+            </div>
+          </div>
+
+          <div className="info-block">
+            <div className="icon-box purple">📽</div>
+            <div className="info-content">
+              <h4>Setup</h4>
+              <p>Physical or virtual presentation with slides, demos, or props.</p>
+            </div>
+          </div>
+
+          <div className="info-block">
+            <div className="icon-box">⏸</div>
+            <div className="info-content">
+              <h4>Scoring</h4>
+              <p>Judges will evaluate each pitch on a scale of 1–10 across all criteria.</p>
+            </div>
+          </div>
+
+          <div className="info-block">
+            <div className="icon-box">⏯</div>
+            <div className="info-content">
+              <h4>Advancement</h4>
+              <p>Top-scoring entries (e.g., top 20%) move to the next round.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="live-pitch-image">
+          <img src={presentation} alt="Pitch Presentation" />
+          {/* Replace the image URL above with your actual image path if needed */}
+        </div>
+      </div>
+      
+
+      <div className="criteria-section">
+        <div className="criteria-image">
+          <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg" alt="Team working on UI" />
+          {/* Replace with your image path if local */}
+        </div>
+
+        <div className="criteria-content">
+          <h2>Judging Criteria</h2>
+
+          <div className="criteria-item">
+            <div className="icon-box">🚀</div>
+            <div className="criteria-text">
+              <h4>Creativity and Innovation (30%)</h4>
+              <p>Is the idea fresh, unique, and impactful?</p>
+            </div>
+          </div>
+
+          <div className="criteria-item">
+            <div className="icon-box purple">📽</div>
+            <div className="criteria-text">
+              <h4>Problem Relevance (20%)</h4>
+              <p>Does it solve a real-world issue?</p>
+            </div>
+          </div>
+
+          <div className="criteria-item">
+            <div className="icon-box">⏸</div>
+            <div className="criteria-text">
+              <h4>Feasibility (20%)</h4>
+              <p>Can this be built and scaled?</p>
+            </div>
+          </div>
+
+          <div className="criteria-item">
+            <div className="icon-box">⏸</div>
+            <div className="criteria-text">
+              <h4>Impact (20%)</h4>
+              <p>What change does it bring?</p>
+            </div>
+          </div>
+
+          <div className="criteria-item">
+            <div className="icon-box">⏸</div>
+            <div className="criteria-text">
+              <h4>Presentation (10%)</h4>
+              <p>How well is the idea communicated?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="cta-section">
+        <h2>Ready to Build, Pitch and Scale?</h2>
+        <p>
+          This isn’t just a competition—it’s a launchpad for 
+          <strong> India’s future entrepreneurs.</strong> If you have the vision, the passion, and the drive to build something extraordinary, 
+          <strong> Future Titans is where your journey begins.</strong>
+        </p>
+        <p className="cta-highlight">
+          Do you have what it takes to be the next big name in entrepreneurship? Let’s find out!
+        </p>
+        <a href="#register" className="cta-register-button">REGISTER NOW</a>
+      </div>
       <style>{`
         .welcome-section {
           background: #f8f8f8;
@@ -450,6 +610,293 @@ const Competition = () => {
   font-size: 30px;
 }
 
+  .competition-section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          padding: 40px 20px;
+        }
+
+        .card {
+          background: #fff;
+          border-radius: 16px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          padding: 24px;
+          flex: 1 1 300px;
+          max-width: 350px;
+        }
+
+        .card h3 {
+          color: #e60023;
+          margin-bottom: 16px;
+          font-size: 20px;
+        }
+
+        .card h4 {
+          color: #1a1a1a;
+          font-size: 16px;
+          margin-top: 16px;
+          margin-bottom: 8px;
+        }
+
+        .card p {
+          margin: 6px 0;
+          color: #333;
+          font-size: 14px;
+          line-height: 1.6;
+        }
+
+        .check-list {
+          list-style: none;
+          padding-left: 0;
+        }
+
+        .check-list li {
+          position: relative;
+          padding-left: 24px;
+          margin-bottom: 10px;
+          font-size: 14px;
+          color: #333;
+        }
+
+        .check-list li::before {
+          content: '✔';
+          position: absolute;
+          left: 0;
+          color: red;
+        }
+
+        @media (max-width: 768px) {
+          .competition-section {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .card {
+            max-width: 90%;
+          }
+        }
+.live-pitch-section {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: center;
+          padding: 40px 20px;
+          gap: 40px;
+        }
+
+        .live-pitch-text {
+          flex: 1 1 400px;
+          max-width: 600px;
+        }
+
+        .live-pitch-text h2 {
+          color: #e60023;
+          font-size: 24px;
+          margin-bottom: 24px;
+        }
+
+        .info-block {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
+
+        .icon-box {
+          width: 32px;
+          height: 32px;
+          background-color: #f44336;
+          color: white;
+          font-size: 18px;
+          border-radius: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 12px;
+        }
+
+        .icon-box.purple {
+          background-color: #9c27b0;
+        }
+
+        .info-content h4 {
+          margin: 0;
+          color: #1a1a1a;
+          font-size: 16px;
+        }
+
+        .info-content p {
+          margin: 4px 0 0;
+          color: #555;
+          font-size: 14px;
+        }
+
+        .live-pitch-image {
+          flex: 1 1 300px;
+          max-width: 500px;
+        }
+
+        .live-pitch-image img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+          .live-pitch-section {
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+          }
+
+          .live-pitch-text, .live-pitch-image {
+            max-width: 100%;
+          }
+
+          .icon-box {
+            margin-right: 10px;
+          }
+        }
+          .criteria-section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 40px 20px;
+          gap: 40px;
+        }
+
+        .criteria-image {
+          flex: 1 1 300px;
+          max-width: 500px;
+        }
+
+        .criteria-image img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+
+        .criteria-content {
+          flex: 1 1 400px;
+          max-width: 600px;
+        }
+
+        .criteria-content h2 {
+          color: #e60023;
+          font-size: 24px;
+          margin-bottom: 24px;
+        }
+
+        .criteria-item {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
+
+        .icon-box {
+          width: 32px;
+          height: 32px;
+          background-color: #f44336;
+          color: white;
+          font-size: 18px;
+          border-radius: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 12px;
+        }
+
+        .icon-box.purple {
+          background-color: #9c27b0;
+        }
+
+        .criteria-text h4 {
+          margin: 0;
+          font-size: 16px;
+          color: #1a1a1a;
+        }
+
+        .criteria-text p {
+          margin: 4px 0 0;
+          font-size: 14px;
+          color: #555;
+        }
+
+        @media (max-width: 768px) {
+          .criteria-section {
+            flex-direction: column;
+            text-align: left;
+          }
+
+          .criteria-content, .criteria-image {
+            max-width: 100%;
+          }
+        }
+          .cta-section {
+          background-color: #f2f2f2;
+          text-align: center;
+          padding: 60px 20px;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .cta-section h2 {
+          font-size: 28px;
+          color: #e60023;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .cta-section p {
+          font-size: 16px;
+          color: #555;
+          max-width: 800px;
+          margin: 0 auto 16px auto;
+          line-height: 1.6;
+        }
+
+        .cta-section p strong {
+          color: #333;
+        }
+
+        .cta-highlight {
+          color: #2d2d2d;
+          font-weight: bold;
+        }
+
+        .cta-register-button {
+          display: inline-block;
+          background-color: #e60023;
+          color: white;
+          font-weight: bold;
+          padding: 12px 28px;
+          border-radius: 999px;
+          text-decoration: none;
+          font-size: 14px;
+          margin-top: 30px;
+          transition: background-color 0.3s ease;
+        }
+
+        .cta-register-button:hover {
+          background-color: #cc001f;
+        }
+
+        @media (max-width: 768px) {
+          .cta-section h2 {
+            font-size: 22px;
+          }
+
+          .cta-section p {
+            font-size: 14px;
+          }
+
+          .cta-register-button {
+            font-size: 13px;
+            padding: 10px 24px;
+          }
+        }
       `}</style>
     </>
   );
