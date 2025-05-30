@@ -1,259 +1,168 @@
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import styled from 'styled-components';
+import React, { useRef } from "react";
 
-// Styled Components
-const StyledSection = styled.section`
-  font-family: 'Poppins', sans-serif;
-  padding: 4rem 0;
-`;
+import group1 from '../assets/group1.jpg';
+import group2 from '../assets/group2.jpg';
+import group3 from '../assets/group3.jpg';
 
-const PageHeader = styled(StyledSection)`
-  background: linear-gradient(135deg, #e82124 0%, #eb4c4b 100%);
-  color: white;
-  padding: 6rem 0;
-  position: relative;
-  overflow: hidden;
+import speech1 from '../assets/speech1.jpg';
+import speech2 from '../assets/speech2.jpg';
+import speech3 from '../assets/speech3.jpg';
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/patterns/dots.svg') repeat;
-    opacity: 0.1;
-    animation: slide 20s linear infinite;
-  }
-`;
+const demoImages1 = [group1, group2, group3];
+const demoImages2 = [speech1, speech2, speech3];
 
-const StoryCard = styled(Card)`
-  border: none;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  height: 100%;
-  background: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 30px rgba(232, 33, 36, 0.15);
-  }
-
-  .card-title {
-    color: #347c53;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .card-subtitle {
-    color: #e82124;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-
-  .card-text {
-    color: #2d2d2d;
-    opacity: 0.8;
-    line-height: 1.7;
-  }
-`;
-
-const SchoolCard = styled(Card)`
-  border: none;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  background: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 30px rgba(52, 124, 83, 0.15);
-  }
-
-  .card-title {
-    color: #347c53;
-    font-weight: 600;
-  }
-`;
-
-const CTAButton = styled.a`
-  display: inline-block;
-  background: #e82124;
-  color: white;
-  padding: 1rem 2.5rem;
-  border-radius: 8px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: none;
-  box-shadow: 0 4px 15px rgba(232, 33, 36, 0.2);
-
-  &:hover {
-    background: #eb4c4b;
-    transform: translateY(-2px);
-    color: white;
-    box-shadow: 0 6px 20px rgba(232, 33, 36, 0.3);
-  }
-`;
-
-const Lead = styled.p`
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-          font-weight: 300;
-          color: var(--text-light);
-          opacity: 0.9;
-
-         text-align: center;
-          position: relative;
-          z-index: 1;
-          padding-top: 4rem;
-          
-`;
 
 const SuccessStories = () => {
-  const stories = [
-    {
-      id: 1,
-      name: 'Student 1',
-      age: 16,
-      project: 'Eco-friendly School Supplies',
-      story: 'Started with an idea for sustainable school supplies and developed it into a small business that now supplies eco-friendly products to schools across the region.',
-      image: require('../assets/success1.jpg')
-    },
-    {
-      id: 2,
-      name: 'Student 2',
-      age: 15,
-      project: 'Community Tutoring App',
-      story: 'Developed an app that connects student tutors with peers who need academic help, creating a platform that has facilitated thousands of tutoring sessions.',
-      image: require('../assets/success2.jpg')
-    },
-    {
-      id: 3,
-      name: 'Student 3',
-      age: 17,
-      project: 'Recycled Fashion',
-      story: 'Launched a clothing line made from upcycled materials, promoting sustainable fashion and raising awareness about textile waste.',
-      image: require('../assets/success3.jpg')
-    },
-    {
-      id: 4,
-      name: 'Student 4',
-      age: 14,
-      project: 'Tech Workshop Initiative',
-      story: 'Created a program that brings coding and technology workshops to underserved schools, helping bridge the digital divide in education.',
-      image: require('../assets/success4.jpg')
+  const carousel1Ref = useRef(null);
+  const carousel2Ref = useRef(null);
+
+  const scrollCarousel = (ref, direction) => {
+    const scrollAmount = 420;
+    if (ref.current) {
+      ref.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth"
+      });
     }
-  ];
+  };
 
   return (
     <>
-      <PageHeader>
-        <Container>
-          {/* <h1 className="display-4 fw-bold mb-4">Success Stories</h1> */}
-          {/* <p className="lead mb-0">Meet our young entrepreneurs who turned their ideas into reality</p> */}
-        <Lead>Meet our young entrepreneurs who turned their ideas into reality</Lead>
+      <style>{`
+        .section-container {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin: auto;
+          gap: 50px;
+        }
 
-        </Container>
-      </PageHeader>
+        .section {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
 
-      <StyledSection>
-        <Container>
-          <div className="text-center mb-5">
-            <h2 className="mb-4" style={{ color: '#347c53' }}>Student Entrepreneurs</h2>
-            <p className="lead" style={{ color: '#2d2d2d', opacity: 0.8 }}>
-              These young innovators participated in our programs and have achieved remarkable success 
-              with their entrepreneurial ventures. Their stories inspire us and demonstrate the 
-              impact of entrepreneurship education.
+        .section.reverse {
+          flex-direction: row-reverse;
+        }
+
+        .text-content {
+          flex: 1;
+          min-width: 280px;
+          padding: 10px;
+        }
+
+        .text-content h2 {
+          color: #e60023;
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+
+        .text-content p {
+          color: #444;
+          line-height: 1.6;
+        }
+
+       .carousel-container {
+  flex: 1;
+  position: relative;
+  min-width: 300px;
+  max-width: 400px;
+  overflow: hidden; /* Hide overflowing images */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+
+        .carousel-button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          border: none;
+          color: white;
+          padding: 8px 12px;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+        .carousel-button.left {
+          left: 0;
+        }
+
+        .carousel-button.right {
+          right: 0;
+        }
+
+        @media (max-width: 768px) {
+          .section, .section.reverse {
+            flex-direction: column;
+          }
+
+          .carousel-button {
+            display: none;
+          }
+        }
+      `}</style>
+
+      <div className="section-container">
+
+        {/* First Section */}
+        <div className="section">
+          <div className="text-content">
+            <h2>Igniting Young Minds with Entrepreneurial Spirit</h2>
+            <p>
+              At Youngpreneurs, we bring your child dynamic workshops, immersive camps, and hands-on experiences designed to unlock their true potential. By fostering innovation, problem-solving, and leadership, we help them build an entrepreneurial mindset and become responsible global citizens.
             </p>
           </div>
+          <div className="carousel-container">
+            <button className="carousel-button left" onClick={() => scrollCarousel(carousel1Ref, "left")}>&#8249;</button>
+            <div className="carousel-track" ref={carousel1Ref}>
+              {demoImages1.map((src, index) => (
+                <img key={index} src={src} alt={`carousel-1-${index}`} />
+              ))}
+            </div>
+            <button className="carousel-button right" onClick={() => scrollCarousel(carousel1Ref, "right")}>&#8250;</button>
+          </div>
+        </div>
 
-          {stories.map((story, index) => (
-            <Row key={story.id} className={`mb-5 ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
-              <Col lg={6} className="mb-4">
-                <StoryCard>
-                  <Card.Body className="p-4">
-                    <Card.Title>{story.name}, Age {story.age}</Card.Title>
-                    <Card.Subtitle className="mb-3">{story.project}</Card.Subtitle>
-                    <Card.Text>{story.story}</Card.Text>
-                    <div className="mt-4">
-                      <h6 style={{ color: '#347c53' }}>Achievements</h6>
-                      <p className="mb-3" style={{ color: '#2d2d2d', opacity: 0.8 }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                      </p>
-                      <h6 style={{ color: '#347c53' }}>What they learned</h6>
-                      <p className="mb-0" style={{ color: '#2d2d2d', opacity: 0.8 }}>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam id dolor id nibh ultricies vehicula ut id elit."
-                      </p>
-                    </div>
-                  </Card.Body>
-                </StoryCard>
-              </Col>
-              <Col lg={6} className="d-flex align-items-center">
-                <img 
-                  src={story.image} 
-                  alt={`${story.name}'s project`} 
-                  className="img-fluid rounded shadow" 
-                  style={{ borderRadius: '12px' }}
-                />
-              </Col>
-            </Row>
-          ))}
-        </Container>
-      </StyledSection>
-
-      <StyledSection style={{ background: '#f8f9fa' }}>
-        <Container>
-          <div className="text-center mb-5">
-            <h2 className="mb-4" style={{ color: '#347c53' }}>School Success Stories</h2>
-            <p className="lead" style={{ color: '#2d2d2d', opacity: 0.8 }}>
-              Schools that have partnered with Youngpreneurs have seen impressive results, with students 
-              developing entrepreneurial mindsets and valuable skills that extend beyond the classroom.
+        {/* Second Section */}
+        <div className="section reverse">
+          <div className="text-content">
+            <h2>Camp Delta E: Where Ideas Take Flight</h2>
+            <p>
+              At Camp Delta E, students don’t just learn about entrepreneurship—they experience it! Through interactive lessons, engaging activities, and a real-world business simulation, they develop critical thinking, leadership, and communication skills.
             </p>
           </div>
+          <div className="carousel-container">
+            <button className="carousel-button left" onClick={() => scrollCarousel(carousel2Ref, "left")}>&#8249;</button>
+            <div className="carousel-track" ref={carousel2Ref}>
+              {demoImages2.map((src, index) => (
+                <img key={index} src={src} alt={`carousel-2-${index}`} />
+              ))}
+            </div>
+            <button className="carousel-button right" onClick={() => scrollCarousel(carousel2Ref, "right")}>&#8250;</button>
+          </div>
+        </div>
 
-          <Row>
-            <Col md={6} className="mb-4">
-              <SchoolCard>
-                <Card.Body className="p-4">
-                  <Card.Title>School 1</Card.Title>
-                  <Card.Text style={{ color: '#2d2d2d', opacity: 0.8 }}>
-                    After implementing our entrepreneurship curriculum, this school saw a 30% increase in 
-                    student engagement and a growing culture of innovation among both students and teachers.
-                  </Card.Text>
-                </Card.Body>
-              </SchoolCard>
-            </Col>
-            <Col md={6} className="mb-4">
-              <SchoolCard>
-                <Card.Body className="p-4">
-                  <Card.Title>School 2</Card.Title>
-                  <Card.Text style={{ color: '#2d2d2d', opacity: 0.8 }}>
-                    This school integrated entrepreneurship education across all subjects, resulting in 
-                    improved problem-solving skills and creative thinking among students.
-                  </Card.Text>
-                </Card.Body>
-              </SchoolCard>
-            </Col>
-          </Row>
-        </Container>
-      </StyledSection>
-
-      <StyledSection className="text-center">
-        <Container>
-          <h2 className="mb-4" style={{ color: '#347c53' }}>Join Our Success Stories</h2>
-          <p className="lead mb-4" style={{ color: '#2d2d2d', opacity: 0.8 }}>
-            You could be the next success story! Join our programs and start your entrepreneurial journey today.
-          </p>
-          <CTAButton href="/contact">Get Started</CTAButton>
-        </Container>
-      </StyledSection>
+      </div>
     </>
   );
 };
 
-export default SuccessStories; 
+export default SuccessStories;
