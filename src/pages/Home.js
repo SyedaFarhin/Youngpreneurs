@@ -13,6 +13,11 @@ import mentor2 from '../assets/sandipan.jpeg';
 import times from '../assets/ttoi.png';
 import home2 from '../assets/home2.jpg';
 import home4 from '../assets/home4.jpg';
+import insta from '../assets/insta.jpg';
+import linkedin from '../assets/linkedin.jpg';
+import email from '../assets/email.jpg';
+import youtube from '../assets/youtube.jpg';
+
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -224,6 +229,23 @@ const Home = () => {
       </div>
 
 
+      <div className="connect-section">
+  <h2 className="connect-title">Connect with Youngpreneurs</h2>
+  <div className="social-icons">
+    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+      <img src={youtube} alt="YouTube" />
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <img src={insta} alt="Instagram" />
+    </a>
+    <a href="mailto:youngpreneursfuturetitans@gmail.com">
+      <img src={email} alt="Email" />
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      <img src={linkedin} alt="LinkedIn" />
+    </a>
+  </div>
+  </div>
       <style>{`
         .container {
           padding: 60px 20px;
@@ -824,6 +846,60 @@ const Home = () => {
             font-size: 14px;
           }
         }
+          .connect-section {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .connect-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d31937;
+      margin-bottom: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      display: block;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-5px);
+    }
+
+    .social-icons img {
+      width: 300px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .social-icons {
+        gap: 20px;
+      }
+
+      .social-icons img {
+        width: 120px;
+        height: 80px;
+      }
+
+      .connect-title {
+        font-size: 22px;
+      }
+    }
       `}</style>
    
 
