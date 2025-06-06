@@ -8,6 +8,7 @@ import juliya from '../assets/juliya.jpeg';
 import pankaj from '../assets/pankaj.jpg';
 import jayesh from '../assets/jayesh.png';
 import sachin from '../assets/sachin.jpeg';
+import teamHeaderBg from "../assets/teamHeaderBg.jpg"
 
 
 const Team = () => {
@@ -86,6 +87,10 @@ const Team = () => {
     },
   ];
   return (
+    <>
+    <div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
     <div className="team-section">
       <h2 className="team-heading">MEET THE TEAM</h2>
       <p className="team-subtext">
@@ -108,9 +113,45 @@ const Team = () => {
       ))}
       </div>
 
-
+      
 
       <style>{`
+
+ .hero-section {
+          background-image: url(${teamHeaderBg});
+          background-size: cover;
+          background-position: center;
+          height: 520px; /* Same as your screenshot image */
+          width: 100%;
+          position: relative;
+        }
+
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 380px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-section {
+            height: 280px;
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         .team-section {
           text-align: center;
           padding: 60px 20px;
@@ -259,6 +300,7 @@ const Team = () => {
         }
       `}</style>
     </div>
+    </>
   );
 };
 
