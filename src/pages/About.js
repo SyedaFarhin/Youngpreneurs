@@ -2,12 +2,41 @@ import React from 'react';
 import teamImage from '../assets/about-main.jpg'; 
 import visionIcon from '../assets/vision.png';  
 import missionIcon from '../assets/mission.png'; 
-
+import headerBg from "../assets/headerBg.jpg"
 const AboutUs = () => {
   return (
 <div>
 <style>
 {`
+
+ .hero-section {
+          background-image: url(${headerBg});
+          background-size: cover;
+          background-position: center;
+          height: 520px; /* Same as your screenshot image */
+          width: 100%;
+          position: relative;
+        }
+
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 380px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-section {
+            height: 280px;
+          }
+        }
+
+
+
+
+
+
+
+
   .about-us {
     display: flex;
     flex-direction: row;
@@ -196,7 +225,16 @@ const AboutUs = () => {
 </style>
 
 
-<div className="about-us">
+
+
+
+
+<div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
+
+
+    <div className="about-us">
         <div className="about-text">
           <h4 className="about-heading">ABOUT US</h4>
           <h2 className="about-title">Youngpreneurs – Empowering Tomorrow’s Leaders</h2>
@@ -214,8 +252,6 @@ const AboutUs = () => {
           <img src={teamImage} alt="Young team of entrepreneurs" />
         </div>
       </div>
-
-
 
       <div className="vision-mission-container">
         <div className="card vision-card">

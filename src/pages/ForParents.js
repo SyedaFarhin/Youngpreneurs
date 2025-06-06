@@ -1,7 +1,13 @@
 import React from 'react';
-
+import forParentsHeader from "../assets/forParentsHeader.jpg"
 const ForParents = () => {
   return (
+
+<>
+<div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
+    
     <section className="game-changer">
       {/* Left Content */}
       <div className="left-content">
@@ -54,6 +60,32 @@ const ForParents = () => {
 
 
       <style>{`
+
+
+.hero-section {
+         background-image: url(${forParentsHeader});
+  background-size: cover;
+  
+  height: 720px;
+  width: 100%;
+  position: relative;
+  padding-top: 90px;
+  
+        }
+
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 380px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-section {
+            height: 280px;
+          }
+        }
+
+
         .game-changer {
           display: flex;
           flex-wrap: wrap;
@@ -240,6 +272,7 @@ const ForParents = () => {
         }
       `}</style>
     </section>
+    </>
   );
 };
 
