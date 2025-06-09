@@ -8,7 +8,8 @@ import juliya from '../assets/juliya.jpeg';
 import sandipan from '../assets/sandipan.jpeg';
 import suman from '../assets/suman.jpeg';
 import presentation from '../assets/presentation.jpg';
-// Replace with actual path
+import academyHeaderBg from '../assets/academyHeaderBg.png';
+
 
 
 const testimonials = [
@@ -67,6 +68,9 @@ const Competition = () => {
   };
   return (
     <>
+    <div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
       <section className="welcome-section">
         <div className="welcome-content">
           <div className="text-column">
@@ -320,6 +324,30 @@ const Competition = () => {
         <a href="#register" className="cta-register-button">REGISTER NOW</a>
       </div>
       <style>{`
+
+      .hero-section {
+         background-image: url(${academyHeaderBg});
+  background-size: cover;
+  
+  height: 920px;
+  width: 100%;
+  position: relative;
+  padding-top: 90px;
+  
+        }
+
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 380px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-section {
+            height: 280px;
+          }
+        }
+
         .welcome-section {
           background: #f8f8f8;
           padding: 60px 20px;

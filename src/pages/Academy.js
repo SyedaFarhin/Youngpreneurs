@@ -14,6 +14,10 @@ const Academy = () => {
   return (
     <>
       <style>{`
+
+      
+
+
         .youngpreneur-wrapper {
            position: relative;
           width: 100%;
@@ -358,6 +362,8 @@ const Academy = () => {
           }
         }
       `}</style>
+
+
 
       <div className="youngpreneur-wrapper">
         <div className="youngpreneur-overlay" />
