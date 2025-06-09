@@ -245,7 +245,7 @@ const Home = () => {
     </a>
   </div>
   </div>
-      <style>{`
+      {/* <style>{`
         .container {
           padding: 60px 20px;
           max-width: 1300px;
@@ -900,8 +900,127 @@ const Home = () => {
       }
     }
       `}</style>
-  
+   */}
 
+
+<style>{`
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .hero-video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .text-column {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+
+    .card-column {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .titans-section,
+    .game-changer-section,
+    .mentorship-section,
+    .workshop-section,
+    .academy-section,
+    .curriculum-section,
+    .connect-section {
+      padding: 2rem 1rem;
+      overflow-x: hidden;
+    }
+
+    .titans-right img,
+    .mentor-card img,
+    .logo,
+    .connect-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .curriculum-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .curriculum-left {
+      flex: 1 1 100%;
+      background-color: #f5f5f5;
+      min-height: 200px;
+    }
+
+    .curriculum-right {
+      flex: 1 1 100%;
+    }
+
+    @media (min-width: 768px) {
+      .text-column {
+        flex: 1 1 50%;
+        text-align: left;
+      }
+
+      .card-column {
+        flex: 1 1 50%;
+      }
+
+      .curriculum-left {
+        flex: 1 1 40%;
+      }
+
+      .curriculum-right {
+        flex: 1 1 60%;
+      }
+    }
+
+    /* Avoid body scroll due to internal children */
+    html, body {
+      overflow-x: hidden;
+    }
+
+    section, div {
+      max-width: 100vw;
+    }
+  `}</style>
    
     </>
   );
