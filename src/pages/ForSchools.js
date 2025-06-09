@@ -1,8 +1,13 @@
 import React from 'react';
 import backgroundImage from '../assets/forschools.jpg';
+import forSchoolsHeaderBg from "../assets/forSchoolsHeaderBg.jpeg"
+
 const ForSchools = () => {
   return (
     <>
+    <div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
       <div className="cards-container">
         <div className="card">
           <h3>Workshops and Bootcamps That Matter</h3>
@@ -77,6 +82,29 @@ const ForSchools = () => {
       </div>
 
       <style>{`
+      .hero-section {
+        background-image: url(${forSchoolsHeaderBg});
+background-size: cover;
+background-position: center -300px; /* push image down */
+height: 520px;
+width: 100%;
+position: relative;
+    
+          
+        }
+
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 380px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-section {
+            height: 280px;
+          }
+        }
+
         .cards-container {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
