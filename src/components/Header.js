@@ -163,7 +163,7 @@ const Header = () => {
         }
 
         .navbar-nav .nav-link-item {
-          color: white !important;
+          color: #FF0000 !important;
           font-weight: 500;
           padding: 0 12px;
           font-size: 14px;
@@ -228,7 +228,7 @@ const Header = () => {
           }
 
           .nav-link-item {
-            color: #333 !important;
+            color:  #333!important;
             padding: 10px 0;
           }
 
