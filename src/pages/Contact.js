@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
+import contactHeaderBg from "../assets/contactHeaderBg.jpg"
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -62,11 +64,41 @@ const Contact = () => {
 
   return (
     <>
-      <section className="page-header bg-primary text-white text-center py-5">
-        <Container>
-          <h1>Join Us</h1>
-          <p className="lead">Get in touch with the Youngpreneurs team</p>
-        </Container>
+
+<style>{`
+
+.hero-section {
+background-image: url(${contactHeaderBg});
+background-size: cover;
+background-position: center top; /* Align from top */
+height: 620px;
+width: 100%;
+position: relative;
+padding-top: 80px; /* Push content/image downward */
+box-sizing: border-box;
+background-repeat: no-repeat;
+}
+
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 380px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-section {
+      height: 280px;
+    }
+  }
+ `}</style>
+
+
+
+
+      <section>
+      <div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
       </section>
 
       <section className="section">

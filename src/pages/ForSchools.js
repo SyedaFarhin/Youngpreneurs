@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundImage from '../assets/forschools.jpg';
-import forSchoolsHeaderBg from "../assets/forSchoolsHeaderBg.jpeg"
+import forSchoolsHeaderBg from "../assets/forSchoolsHeaderBg.jpg"
 
 const ForSchools = () => {
   return (
@@ -8,6 +8,10 @@ const ForSchools = () => {
     <div className="hero-section">
         {/* You can place overlay text, buttons, or other elements here */}
       </div>
+
+      <div className="school-benefits-section">
+  <h2 className="school-benefits-heading">What’s in it for Your School?</h2>
+  </div>
       <div className="cards-container">
         <div className="card">
           <h3>Workshops and Bootcamps That Matter</h3>
@@ -85,10 +89,13 @@ const ForSchools = () => {
       .hero-section {
         background-image: url(${forSchoolsHeaderBg});
 background-size: cover;
-background-position: center -300px; /* push image down */
-height: 520px;
+background-position: center top; /* Align from top */
+height: 620px;
 width: 100%;
 position: relative;
+padding-top: 80px; /* Push content/image downward */
+box-sizing: border-box;
+background-repeat: no-repeat;
     
           
         }
@@ -109,10 +116,10 @@ position: relative;
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 30px;
-          padding: 60px 40px;
+          padding: 60px ;
           max-width: 1200px;
           margin: 0 auto;
-          margin-top: 100px;
+          
         }
 
         .card {
@@ -247,6 +254,24 @@ position: relative;
             font-size: 14px;
           }
         }
+          .school-benefits-section {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .school-benefits-heading {
+      font-size: 38px;
+      font-weight: bold;
+      color: #d31937; /* Bright red like in the image */
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .school-benefits-heading {
+        font-size: 22px;
+      }
+    }
       `}</style>
     </>
   );

@@ -10,6 +10,7 @@ import speech3 from '../assets/speech3.jpg';
 
 import Mark from '../assets/Mark-Zuckerberg.png';
 import Advait from '../assets/Advait-Thakur.png';
+import successStoriesHeaderBg from "../assets/successStoriesHeaderBg.jpg"
 
 
  
@@ -68,6 +69,42 @@ const SuccessStories = () => {
   return (
     <>
       <style>{`
+
+.hero-section {
+  background-image: url(${successStoriesHeaderBg});
+  background-size: contain;
+  background-position: center top; /* Align from top */
+  height: 520px;
+  width: 100%;
+  position: relative;
+  padding-top: 80px; /* Push content/image downward */
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 380px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-section {
+            height: 280px;
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
  .future-titans-container {
           text-align: center;
           padding: 40px 20px;
@@ -335,6 +372,11 @@ const SuccessStories = () => {
           }
         }
       `}</style>
+
+<div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
+
 
 <div className="future-titans-container">
         <h2 className="future-titans-heading">Future Titans in the Making</h2>
