@@ -1,5 +1,8 @@
 import React from "react";
 import vision from "../assets/vision.png"
+import mediaHeaderBg from "../assets/mediaHeaderBg.jpg"
+
+
 const mediaItems = [
   {
     logo: vision,
@@ -41,6 +44,11 @@ const mediaItems = [
 const Media = () => {
   return (
     <>
+    
+<div className="hero-section">
+        {/* You can place overlay text, buttons, or other elements here */}
+      </div>
+
  <div className="media-heading-container">
         <h1 className="media-heading">
           Recognized by leading media platforms for sparking India’s youth innovation wave
@@ -64,6 +72,31 @@ const Media = () => {
       </div>
 
       <style>{`
+
+      .hero-section {
+  background-image: url(${mediaHeaderBg});
+  background-size: cover;
+  background-position: center top; /* Align from top */
+  height: 620px;
+  width: 100%;
+  position: relative;
+  padding-top: 80px; /* Push content/image downward */
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+        @media (max-width: 768px) {
+          .hero-section {
+            height: 380px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-section {
+            height: 280px;
+          }
+        }
+
 
       .media-heading-container {
       margin-top:120px;
