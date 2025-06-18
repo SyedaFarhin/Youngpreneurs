@@ -603,11 +603,16 @@ const Home = () => {
           margin-top: 40px;
         }
 
-        .mentor-card {
-          text-align: center;
-          max-width: 200px;
-        }
-
+.mentor-card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center items horizontally */
+ 
+  text-align: center;
+  max-width: 200px;
+  height: 300px; /* Add a height if vertical centering is needed */
+ 
+}
         .mentor-card img {
           width: 100px;
           height: 100px;

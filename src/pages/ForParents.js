@@ -90,7 +90,7 @@ const ForParents = () => {
           display: flex;
           flex-wrap: wrap;
           padding: 50px 30px;
-          background-color: #ec5c5c;
+          background-color:rgb(192, 11, 11);
           color: white;
           justify-content: center;
         }
