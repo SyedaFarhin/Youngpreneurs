@@ -194,15 +194,15 @@ const Team = () => {
             padding: 0 10px;
           }
         }
-          .team-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 30px;
-          padding: 40px 20px;
-          background: #fff;
-        }
-
+        
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background: #fff;
+  padding-top: 60px; /* You can adjust this value as needed */
+}
         .team-card {
           background-color: #fff;
           border-radius: 12px;

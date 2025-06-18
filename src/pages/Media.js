@@ -1,44 +1,54 @@
 import React from "react";
-import vision from "../assets/vision.png"
+import businessStandard from "../assets/businesStandard.png"
+import bussinessworld from "../assets/bussinessworld.png"
+import et from "../assets/et.png"
+import telegraph from "../assets/telegraph.png"
+import cnbc from "../assets/cnbc.png"
+import ibns from "../assets/ibns.png"
+import enterpreneurIndia from "../assets/enterpreneurIndia.png"
+
+
+
 import mediaHeaderBg from "../assets/mediaHeaderBg.jpg"
 
 
 const mediaItems = [
   {
-    logo: vision,
+    logo: businessStandard,
     desc: "Three US-based entrepreneurs’ mission to make leaders out of Indian teens...",
     button: "Read More"
   },
   {
-    logo: vision,
+    logo: bussinessworld,
     desc: "Our Mission Is To Connect Education And Entrepreneur Ecosystem In India...",
     button: "Read More"
   },
   {
-    logo: vision,
+    logo: et,
     desc: "Meet eight budding teenpreneurs who are giving wings to their startup ideas...",
     button: "Read More"
   },
+  
   {
-    logo: vision,
-    desc: "",
-    button: "Read More"
-  },
-  {
-    logo: vision,
-    desc: "",
-    button: "Watch Now"
-  },
-  {
-    logo: vision,
+    logo: ibns,
     desc: "Kolkata: Students get hands-on training at the Youngpreneurs India Camp...",
     button: "Read More"
   },
   {
-    logo: vision,
+    logo: enterpreneurIndia,
     desc: "It's Time The Indian Students' Entrepreneurship Streak Is Tapped in School...",
     button: "Read More"
-  }
+  },
+  {
+    logo: telegraph,
+    desc: "",
+    button: "Read More"
+  },
+  {
+    logo: cnbc,
+    desc: "",
+    button: "Watch Now"
+  },
 ];
 
 const Media = () => {

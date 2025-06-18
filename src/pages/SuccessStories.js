@@ -10,6 +10,9 @@ import speech3 from '../assets/speech3.jpg';
 
 import Mark from '../assets/Mark-Zuckerberg.png';
 import Advait from '../assets/Advait-Thakur.png';
+import kaivalya from '../assets/kaivalya.png';
+import Aadithyan from '../assets/Aadithyan.png';
+
 import successStoriesHeaderBg from "../assets/successStoriesHeaderBg.jpg"
 
 
@@ -34,6 +37,20 @@ const testimonials = [
       
     stars: 5,
     text: "Mark Zuckerberg founded Facebook at 19, transforming social networking forever. From a college project to a global tech giant, he now leads Meta in 2025, driving innovations in AI, virtual reality, and the metaverse.",
+  },
+  {
+    name: "Kaivalya Vohra (Zepto) ",
+    image:kaivalya,
+      
+    stars: 5,
+    text: "Kaivalya Vohra co-founded Zepto at 19, disrupting India’s quick-commerce space with 10-minute grocery deliveries. By 21, he became one of India’s youngest entrepreneurs on the Hurun Rich List, shaping the future of e-commerce.",
+  },
+  {
+    name: "Aadithyan Rajesh (Trinet Solutions)  ",
+    image:Aadithyan,
+      
+    stars: 5,
+    text: "Aadithyan Rajesh started coding at 5, built his first app at 9, and founded Trinet Solutions at 13. Now 19, he continues to lead the company, delivering cutting-edge digital solutions while inspiring young entrepreneurs globally.",
   },
 ];
 
