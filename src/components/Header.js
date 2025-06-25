@@ -35,7 +35,7 @@ const Header = () => {
         }
 
         .navbar-nav .nav-link-item {
-          color: #FF0000 !important;
+          color:rgb(255, 255, 255) !important;
           font-weight: 500;
           padding: 0 12px;
           font-size: 14px;
@@ -91,7 +91,7 @@ const Header = () => {
 
         @media (max-width: 991px) {
           .navbar-collapse {
-            background-color: white;
+            background-color: #d21f26 ;
             padding: 1rem 0;
           }
 

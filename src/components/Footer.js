@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="footer-content" data-aos="fade-up">
+        <Row className="footer-content" >
           <Col md={4} className="footer-section">
             <img src={logo} alt="Youngpreneurs Logo" className="footer-logo" />
             <p className="footer-description">

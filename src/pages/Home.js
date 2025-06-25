@@ -231,16 +231,16 @@ const Home = () => {
       <div className="connect-section">
   <h2 className="connect-title">Connect with Youngpreneurs</h2>
   <div className="social-icons">
-    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.youtube.com/@youngpreneursindia4413" target="_blank" rel="noopener noreferrer">
       <img src={youtube} alt="YouTube" />
     </a>
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/youngpreneurs_india/?igsh=MWFqM2J2Z2swbHliaw%3D%3D#" target="_blank" rel="noopener noreferrer">
       <img src={insta} alt="Instagram" />
     </a>
     <a href="mailto:youngpreneursfuturetitans@gmail.com">
       <img src={email} alt="Email" />
     </a>
-    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.linkedin.com/company/youngpreneurs-ind/" target="_blank" rel="noopener noreferrer">
       <img src={linkedin} alt="LinkedIn" />
     </a>
   </div>
@@ -270,26 +270,6 @@ const Home = () => {
     section, div {
       max-width: 100vw;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
