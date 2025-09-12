@@ -29,7 +29,7 @@ const testimonials = [
     image:Advait,
       
     stars: 5,
-    text: "Sense child do state to defer mr of forty. Become but daughters latter but nor abroad wisdom waited. Was delivered gentleman acuteness but daughters. In as of whole as match asked.",
+    text: "Advait Thakur founded Apex Infosys India at 12, pioneering AI and cybersecurity solutions. By 16, he became a Google-certified developer. Now 20, he continues to drive innovation, inspiring young tech entrepreneurs worldwide.",
   },
   {
     name: "Mark Zuckerberg (Facebook)",

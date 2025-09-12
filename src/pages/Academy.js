@@ -375,7 +375,7 @@ const Academy = () => {
             We believe in the research-backed truth: <strong>“Entrepreneurs aren’t born; they are made.”</strong><br />
             Through <strong>experiential learning, mentorship, and real-world challenges</strong>, we train young minds to think like entrepreneurs, solve problems creatively, and turn ideas into thriving ventures.
           </p>
-          <a href="#register" className="register-button">REGISTER NOW</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1" className="register-button">REGISTER NOW</a>
         </div>
       </div>
 
@@ -392,7 +392,14 @@ const Academy = () => {
           <p>
             At Youngpreneur, students experience the <strong>power of entrepreneurship</strong> firsthand by <strong>bringing their own ideas to life</strong>. Our immersive programs extend beyond textbooks, offering hands-on learning through engaging activities, business simulations, and interactive workshops.
           </p>
-          <a href="#register" className="register-button">REGISTER NOW</a>
+         
+          <button
+  className="register-button"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1", "_blank")}
+>
+REGISTER NOW
+</button>
+
         </div>
       </div>
 

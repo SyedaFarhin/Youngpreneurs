@@ -18,7 +18,14 @@ const ForParents = () => {
         <p>
           <strong>Future Titans – India’s Entrepreneurial Hunt</strong>, in collaboration with <strong>The Times of India</strong> and <strong>Youngpreneurs</strong>, offers more than just a competition—it’s a transformative opportunity for young minds to shape their entrepreneurial journey.
         </p>
-        <button className="cta-btn">GET STARTED</button>
+       
+        <button
+  className="cta-button"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?usp=header", "_blank")}
+>
+GET STARTED
+</button>
+
       </div>
 
       {/* Right Content */}
@@ -53,7 +60,14 @@ const ForParents = () => {
         Don’t let your child miss this opportunity to shine, learn, and grow into the leader of tomorrow.
       </p>
       <p className="cta-team"><strong>Youngpreneurs Competition Team</strong></p>
-      <button className="cta-button">REGISTER NOW</button>
+   
+      <button
+  className="cta-button"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?usp=header", "_blank")}
+>
+REGISTER NOW
+</button>
+
        </section>
 
 
@@ -205,7 +219,7 @@ const ForParents = () => {
   width: 100vw;
   margin: 0;
   padding: 100px 20px;
-  background-color: #fff;
+  background-color: white;
   
   text-align: center;
   position: relative;

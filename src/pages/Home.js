@@ -54,7 +54,14 @@ const Home = () => {
           <p className="description">
             The world doesn’t wait for leaders—it creates them. Youngpreneurs is more than a program; it’s a movement that empowers students to think, build, and lead like entrepreneurs.
           </p>
-          <button className="start-button">Start Your Journey</button>
+         
+          <button
+  className="start-button"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+Start Your Journey
+</button>
+
         </div>
 
         <div className="card-column">
@@ -88,7 +95,14 @@ const Home = () => {
           <p>
             <strong>Bold ideas. Young innovators. Awards worth ₹40 Lakhs</strong> to fuel your dreams!
           </p>
-          <button className="register-button">REGISTER NOW</button>
+         
+          <button
+  className="register-button"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+REGISTER NOW
+</button>
+
         </div>
         <div className="titans-right">
           <img src={rightImg} alt="Students discussing startup ideas" />
@@ -161,7 +175,13 @@ const Home = () => {
           Pitch to top investors, founders, and industry leaders, with ₹40 Lakhs in prizes, incubation, and mentorship.
         </p>
         <p className="cta-text">Will your child get the chance to shape the future?</p>
-        <button className="cta-button">SECURE YOUR SPOT NOW</button>
+        <button
+  className="cta-button"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+  SECURE YOUR SPOT NOW
+</button>
+
       </section>
     
     
@@ -178,7 +198,14 @@ const Home = () => {
             <li>Financial and Business Strategy</li>
             <li>Leadership and Communication</li>
           </ul>
-          <button className="enroll-btn">ENROLL TODAY</button>
+          
+          <button
+  className="enroll-btn"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+ENROLL TODAY
+</button>
+
         </div>
       </section>
     
@@ -234,7 +261,7 @@ const Home = () => {
     <a href="https://www.youtube.com/@youngpreneursindia4413" target="_blank" rel="noopener noreferrer">
       <img src={youtube} alt="YouTube" />
     </a>
-    <a href="https://www.instagram.com/youngpreneurs_india/?igsh=MWFqM2J2Z2swbHliaw%3D%3D#" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/youngpreneurs.india?igsh=MThlOW93dXJtYjRpeQ==" target="_blank" rel="noopener noreferrer">
       <img src={insta} alt="Instagram" />
     </a>
     <a href="mailto:youngpreneursfuturetitans@gmail.com">

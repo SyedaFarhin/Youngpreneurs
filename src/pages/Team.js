@@ -1,13 +1,20 @@
 import React from "react";
 import devika from '../assets/devika.jpeg';
-import fred from '../assets/fred.jpg';
+import fred from '../assets/fred.jpeg';
 import sandipan from '../assets/sandipan.jpeg'; 
 import suman from '../assets/suman.jpeg';
-import partha from '../assets/partha.jpeg';
+import partha from '../assets/partha.jpg';
 import juliya from '../assets/juliya.jpeg';
 import pankaj from '../assets/pankaj.jpg';
 import jayesh from '../assets/jayesh.png';
 import sachin from '../assets/sachin.jpeg';
+import aaliya from '../assets/aaliya.jpg';
+import samim from '../assets/samim.jpg';
+import syeda from '../assets/syeda.jpg';
+import diya from '../assets/diya.jpg';
+import chitresh from '../assets/chitresh.jpg';
+import prashant from '../assets/prashant.jpg';
+
 import teamHeaderBg from "../assets/teamHeaderBg.jpg"
 
 
@@ -19,15 +26,15 @@ const Team = () => {
       description:
         "Wall Street Journal Featured | TedX Speaker | Nominated by Business Today as one of the most powerful women in business | CEO, Global Influencers Hub | Clark University",
       image: devika,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/devika-majumder?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Fred Katz",
       title: "Senior Advisor",
       description:
-        "Professor of Entrepreneurship, Johns Hopkins, USA | President / CEO, Wise Products Distributors",
+        "Senior Professional Faculty, Johns Hopkins Carey Business School | President / CEO, Wise Products Distributors",
       image: fred,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/fred-katz-748b242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Sandipan Chattopadhyay",
@@ -35,7 +42,7 @@ const Team = () => {
       description:
         "Ex-CTO Justdial | CEO & MD Xelpmoc | IIM | Indian Statistical Institute",
       image: sandipan,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/csandipan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Suman Bose",
@@ -43,7 +50,7 @@ const Team = () => {
       description:
         "Founder, Project KREEA | Ex-CEO & MD Siemens | Building India's Deeptech Hub",
       image: suman, // Replace with real image path or import
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/sumanbose?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Partha Ghosh",
@@ -51,7 +58,7 @@ const Team = () => {
       description:
         "Founder, Partha Ghosh Leadership Academy IIT Kharagpur | Ex - Senior Partner McKinsey & Company | Ex -- MIT | IIT Alumni MD, Partha S Ghosh & Associates | Prof. Of Leadership MIT (Massachusetts Institute of Technology)",
       image: partha,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/partha-ghosh-820b4a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Dr. Julia Stamm",
@@ -59,7 +66,7 @@ const Team = () => {
       description:
         "Dr. Julia Stamm | Founder & CEO, She Shapes AI, London, UK | The Futures Project | Responsible Tech and AI for Impact | Fellow, Royal Society of Arts | Fellow, Centre for Digital Governance, Hertie School",
       image: juliya,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/dr-julia-stamm/",
     },
     {
       name: "Pankaj Dubey",
@@ -67,7 +74,7 @@ const Team = () => {
       description:
         "Former Country Head & Managing Director, Polaris India | Founder, DSPN Consulting | Top 50 Indian Icon | ET Global Visionary Leader | HRD India 2025",
       image: pankaj, // Replace with actual image path
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/pankajdubey1967?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Jayesh Ranjan",
@@ -75,7 +82,7 @@ const Team = () => {
       description:
         "Special Chief Secretary, Information Technology (IT), Industries and Commerce (I&C) and Sports, Government of Telangana, Hyderabad (INDIA)",
       image: jayesh,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/jayesh-ranjan-37415963/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       name: "Sachin Kapoor",
@@ -83,8 +90,59 @@ const Team = () => {
       description:
         "Former Sr Director & Head of Business Development, LinkedIn India | Ex- Yahoo | Ex- Samsung | Founder & CEO Trumsy.Ai",
       image: sachin,
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/sachinkapoor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
+  ];
+  const doers = [
+    {
+      name: "Aaliya Khan",
+    
+      description:
+        "Narrative Architect",
+      image: aaliya,
+      
+    },
+    {
+      name: "SK Samim Mondal",
+      
+      description:
+        "The Fixer of All Things",
+      image: samim,
+      
+    },
+    {
+      name: "Syeda Farhin",
+     
+      description:
+        "Architect of Aesthetics",
+      image: syeda,
+      
+    },
+    {
+      name: "Diya Tikadar",
+     
+      description:
+        "Buzz Builder-in-Chief",
+      image: diya, // Replace with real image path or import
+      
+    },
+    {
+      name: "Chitresh Sen",
+     
+      description:
+        "Creative Disruptor",
+      image: chitresh,
+     
+    },
+    {
+      name: "Prashant Jadon",
+     
+      description:
+        "Technology Jedi",
+      image: prashant,
+      
+    },
+    
   ];
   return (
     <>
@@ -199,7 +257,7 @@ const Team = () => {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   background: #fff;
   padding-top: 60px; /* You can adjust this value as needed */
 }
@@ -212,7 +270,7 @@ const Team = () => {
           text-align: center;
           overflow: hidden;
           position: relative;
-          padding-bottom: 20px;
+          
         }
 
         .team-image {
@@ -300,6 +358,32 @@ const Team = () => {
         }
       `}</style>
     </div>
+
+
+
+
+
+    <div className="team-section">
+    <h2 className="team-heading">MEET THE TEAM</h2>
+    <div className="team-container">
+      {doers.map((member, index) => (
+        <div key={index} className="team-card">
+          <img src={member.image} alt={member.name} className="team-image" />
+         
+          <div className="team-info">
+          
+            <h3 className="team-name">{member.name}</h3>
+            <p className="team-description">{member.description}</p>
+          </div>
+        </div>
+      ))}
+      </div>
+    </div>
+
+
+
+
+    
     </>
   );
 };

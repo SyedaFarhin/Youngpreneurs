@@ -16,38 +16,45 @@ const mediaItems = [
   {
     logo: businessStandard,
     desc: "Three US-based entrepreneurs’ mission to make leaders out of Indian teens...",
-    button: "Read More"
+    button: "Read More",
+    link: "https://www.business-standard.com/article/companies/us-based-entrepreneurs-eyes-indian-teens-to-create-future-leaders-117061200838_1.html"
   },
   {
     logo: bussinessworld,
     desc: "Our Mission Is To Connect Education And Entrepreneur Ecosystem In India...",
-    button: "Read More"
+    button: "Read More",
+    link: "https://www.businessworld.in/article/%E2%80%98our-mission-is-to-connect-education-and-entrepreneur-ecosystem-in-india%E2%80%99-122972"
   },
   {
     logo: et,
     desc: "Meet eight budding teenpreneurs who are giving wings to their startup ideas...",
-    button: "Read More"
+    button: "Read More",
+    link: "https://economictimes.indiatimes.com/small-biz/entrepreneurship/meet-eight-budding-teenpreneurs-who-are-giving-wings-to-their-startup-ideas/articleshow/59007317.cms?from=mdr"
   },
   
   {
     logo: ibns,
     desc: "Kolkata: Students get hands-on training at the Youngpreneurs India Camp...",
-    button: "Read More"
+    button: "Read More",
+    link: "https://indiablooms.com/life/kolkata-students-get-hands-on-training-at-the-youngpreneurs-india-camp/details"
   },
   {
     logo: enterpreneurIndia,
     desc: "It's Time The Indian Students' Entrepreneurship Streak Is Tapped in School...",
-    button: "Read More"
+    button: "Read More",
+    link: "https://www.entrepreneur.com/en-in/starting-a-business/its-time-the-indian-students-entrepreneurship-streak-is/294662"
   },
   {
     logo: telegraph,
     desc: "",
-    button: "Read More"
+    button: "Read More",
+    link: "https://youngpreneurs.in/the-telegraph/"
   },
   {
     logo: cnbc,
     desc: "",
-    button: "Watch Now"
+    button: "Watch Now",
+    link: "https://www.facebook.com/watch/?v=1062508397224697"
   },
 ];
 
@@ -66,20 +73,27 @@ const Media = () => {
       </div>
 
       <div className="media-section">
-        {mediaItems.map((item, index) => (
-          <div className="media-card" key={index}>
-            <img src={item.logo} alt="media logo" className="media-logo" />
-            {item.desc && (
-              <p className="media-desc">
-                <a href="#">{item.desc}</a>
-              </p>
-            )}
-            <a href="#" className="media-button">
-              {item.button}
-            </a>
-          </div>
-        ))}
-      </div>
+  {mediaItems.map((item, index) => (
+    <div className="media-card" key={index}>
+      <img src={item.logo} alt="media logo" className="media-logo" />
+      {item.desc && (
+        <p className="media-desc">
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
+            {item.desc}
+          </a>
+        </p>
+      )}
+      <a
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="media-button"
+      >
+        {item.button}
+      </a>
+    </div>
+  ))}
+</div>
 
       <style>{`
 
@@ -130,7 +144,7 @@ const Media = () => {
         .media-section {
           display: flex;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 70px;
           justify-content: center;
           padding: 40px 20px;
           margin-top:20px
