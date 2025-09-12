@@ -7,12 +7,24 @@ import classImage from '../assets/classroom.jpg';
 import juliya from '../assets/juliya.jpeg';
 import sandipan from '../assets/sandipan.jpeg';
 import suman from '../assets/suman.jpeg';
+import fred from '../assets/fred.jpeg';
+import partha from '../assets/partha.jpg';
+import devika from '../assets/devika.jpeg';
+
 import presentation from '../assets/presentation.jpg';
 import academyHeaderBg from '../assets/academyHeaderBg.png';
 
 
 
 const testimonials = [
+  {
+    name: "Devika Majumder",
+    title:
+      "Founder & CEO",
+    image: devika,
+    quote:
+      "As a founder, I believe in the power of an innovator’s eye, a founder’s grit, and an entrepreneurial mindset—not just for building businesses, but for shaping fearless, future-ready individuals. And that’s exactly what Future Titans is here to do—equip the next generation with the mindset, skills, and platform to think big, take risks, and create impact.",
+  },
   {
     name: "Suman Bose",
     title: "Ex- CEO & MD Siemens",
@@ -35,6 +47,26 @@ const testimonials = [
     quote:
       "Equipping our youth with an entrepreneurial mindset, combined with a clear moral compass and the ability to think beyond silos, will be instrumental in creating a generation of future leaders who can connect the dots and solve today’s complex problems.",
   },
+
+
+
+
+
+  {
+    name: "Fred Katz",
+    title: "Senior Professional Faculty, Johns Hopkins Carey Business School",
+    image: fred,
+    quote:
+      "I am thrilled to be the Senior Advisor for Future Titans—a movement shaping the next generation of innovators and leaders in India! Entrepreneurship is about thinking big, understanding risks, and solving real-world problems that may make the world a better place. Future Titans is giving young minds the platform, mentorship, and exposure they need to develop this creative mindset and will impose lasting impact for years to come. I can’t wait to witness the groundbreaking, creative and innovative ideas that emerge! Thank you, The Times of India for your support of the Future Titians program",
+  },
+  {
+    name: "Dr. Partha Ghosh ",
+    title: "Founder, Partha Ghosh Leadership Academy | Ex-Senior Partner at McKinsey | Former Professor at MIT | IIT Kharagpur Alumni",
+    image: partha,
+    quote:
+      "Digitization knows no boundaries, and knowledge has always been borderless, as a result in today’s business environment to succeed leaders have to think and act beyond borders, keeping in focus the locale – both in terms of the requirements and the assets",
+  },
+ 
 ];
 
 const Competition = () => {
@@ -85,7 +117,14 @@ const Competition = () => {
               That’s the mission behind Future Titans, brought to you by Youngpreneurs — a national movement to unlock the potential of teenagers across India.
               This isn’t just another competition. It’s a nationwide call to action to spark innovation, creativity, and leadership among students from Class 8 to 12.
             </p>
-            <button className="register-btn">REGISTER NOW</button>
+           
+            
+            <button
+  className="register-btn"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+REGISTER NOW
+</button>
           </div>
           <div className="image-column">
             <div className="image-container" style={{width: '100%', height: '100%'}}>
@@ -321,7 +360,15 @@ const Competition = () => {
         <p className="cta-highlight">
           Do you have what it takes to be the next big name in entrepreneurship? Let’s find out!
         </p>
-        <a href="#register" className="cta-register-button">REGISTER NOW</a>
+       
+        
+        <button
+  className="register-btn"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+REGISTER NOW
+</button>
+
       </div>
       <style>{`
 

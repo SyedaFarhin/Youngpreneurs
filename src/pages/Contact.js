@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Alert , Card} from 'react-bootstrap';
 import contactHeaderBg from "../assets/contactHeaderBg.jpg"
-
+import { TelephoneFill, EnvelopeFill } from "react-bootstrap-icons";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,7 +9,7 @@ const Contact = () => {
     email: '',
     phone: '',
     message: '',
-    category: '',
+    
   });
 
   const [showMessage, setShowMessage] = useState(false);
@@ -97,11 +97,11 @@ background-repeat: no-repeat;
 
       <section>
       <div className="hero-section">
-        {/* You can place overlay text, buttons, or other elements here */}
+        
       </div>
       </section>
 
-      <section className="section">
+      {/* <section className="section">
         <Container>
           <Row>
             <Col lg={6} className="mb-5">
@@ -187,22 +187,7 @@ background-repeat: no-repeat;
                   />
                 </Form.Group>
                 
-                <Form.Group className="mb-3">
-                  <Form.Label>I am a:</Form.Label>
-                  <Form.Select 
-                    name="category" 
-                    value={formData.category} 
-                    onChange={handleChange}
-                  >
-                    <option value="">Please select</option>
-                    <option value="student">Student</option>
-                    <option value="parent">Parent</option>
-                    <option value="teacher">Teacher/Educator</option>
-                    <option value="school">School Representative</option>
-                    <option value="partner">Potential Partner</option>
-                    <option value="other">Other</option>
-                  </Form.Select>
-                </Form.Group>
+                
                 
                 <Form.Group className="mb-3">
                   <Form.Label>Message *</Form.Label>
@@ -216,14 +201,71 @@ background-repeat: no-repeat;
                   />
                 </Form.Group>
                 
-                <Button variant="primary" type="submit" className="w-100">
-                  Send Message
-                </Button>
+                <Button
+  variant="primary"
+  type="submit"
+  className="w-100"
+  style={{ color: "blue" }}
+>
+  Send Message
+</Button>
               </Form>
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
+      <section style={{ padding: "60px 0", backgroundColor: "#fff" }}>
+      <Container>
+        {/* Section Title */}
+        <div className="text-center mb-5">
+          <p style={{ color: "red", fontWeight: "bold", marginBottom: "5px" }}>
+            CONTACT US
+          </p>
+          <h2 style={{ fontWeight: "700", color: "#2f4f4f" }}>
+            Get In Touch With Youngpreneurs
+          </h2>
+        </div>
+
+        {/* Contact Cards */}
+        <Row className="g-4 justify-content-center">
+          {/* Phone */}
+          <Col xs={12} md={6} lg={5}>
+            <Card
+              className="text-center shadow-md border-2"
+              style={{ borderRadius: "15px", padding: "30px" }}
+            >
+              <Card.Body>
+                <TelephoneFill
+                  size={40}
+                  style={{ color: "red", marginBottom: "15px" }}
+                />
+                <Card.Title style={{ fontWeight: "600" }}>Phone Number</Card.Title>
+                <Card.Text style={{ color: "gray" }}>+91-9038428532</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          {/* Email */}
+          <Col xs={12} md={6} lg={5}>
+            <Card
+              className="text-center shadow-sm border-2"
+              style={{ borderRadius: "15px", padding: "30px" }}
+            >
+              <Card.Body>
+                <EnvelopeFill
+                  size={40}
+                  style={{ color: "red", marginBottom: "15px" }}
+                />
+                <Card.Title style={{ fontWeight: "600" }}>Email Us</Card.Title>
+                <Card.Text style={{ color: "gray" }}>
+                  youngpreneursfuturetitans@gmail.com
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </section>
     </>
   );
 };

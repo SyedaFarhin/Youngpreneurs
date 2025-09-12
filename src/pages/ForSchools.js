@@ -80,7 +80,14 @@ const ForSchools = () => {
               students today will be the institutions that shape tomorrow.
             </p>
             <p><strong>Is your school ready to make history?</strong></p>
-            <button>JOIN THE MOVEMENT</button>
+            
+            <button
+ 
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+JOIN THE MOVEMENT
+</button>
+
           </div>
         </div>
       </div>
