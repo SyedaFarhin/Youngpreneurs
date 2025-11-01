@@ -222,7 +222,7 @@ background-repeat: no-repeat;
         }
 
         button {
-          background-color: #e50914;
+          background-color: #dcae1a;
           color: white;
           border: none;
           padding: 14px 24px;
@@ -234,7 +234,7 @@ background-repeat: no-repeat;
         }
 
         button:hover {
-          background-color: #c20710;
+          background-color: #dcae1a;
         }
 
         @media (max-width: 768px) {
@@ -270,7 +270,7 @@ background-repeat: no-repeat;
     .school-benefits-heading {
       font-size: 38px;
       font-weight: bold;
-      color: #d31937; /* Bright red like in the image */
+      color: #dcae1a; /* Bright red like in the image */
       margin: 0;
     }
 

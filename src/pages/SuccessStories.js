@@ -131,7 +131,7 @@ const SuccessStories = () => {
         .future-titans-heading {
           font-size: 2.5rem;
           font-weight: bold;
-          color: #e60023;
+          color: #dcae1a;
           margin-bottom: 10px;
         }
 
@@ -190,7 +190,7 @@ const SuccessStories = () => {
         }
 
         .text-content h2 {
-          color: #e60023;
+          color: #dcae1a;
           font-size: 1.5rem;
           margin-bottom: 10px;
         }
@@ -263,7 +263,7 @@ const SuccessStories = () => {
         .belief-title {
           font-size: 2.2rem;
           font-weight: bold;
-          color: #e60023;
+          color: #dcae1a;
           margin-bottom: 20px;
         }
 
@@ -361,7 +361,7 @@ const SuccessStories = () => {
           background: none;
           border: none;
           cursor: pointer;
-          color: #e60023;
+          color: #dcae1a;
           margin: 0 20px;
           transition: transform 0.2s;
         }

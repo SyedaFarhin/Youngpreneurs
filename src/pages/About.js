@@ -56,7 +56,7 @@ const AboutUs = () => {
   }
 
   .about-heading {
-    color: #e63946;
+    color: #dcae1a;
     font-weight: bold;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -114,7 +114,7 @@ const AboutUs = () => {
   }
 
   .vision-card {
-    background: linear-gradient(to bottom right, #b30000, #8b0000);
+    background: linear-gradient(to bottom right, #dcae1a, #dcae1a);
     color: #ffffff;
   }
 
@@ -178,7 +178,7 @@ const AboutUs = () => {
 
   /* NEW: Entrepreneurial section styles */
   .entrepreneurial-wrapper {
-    background: linear-gradient(to bottom right, #450000, #000000);
+    background: linear-gradient(to bottom right, rgba(220, 175, 26, 0.85),rgb(121, 96, 15));
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -200,7 +200,7 @@ const AboutUs = () => {
 
   .info-box {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 20px;
     font-size: 16px;

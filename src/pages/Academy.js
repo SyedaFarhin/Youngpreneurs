@@ -136,7 +136,7 @@ const Academy = () => {
         }
 
         .text-column h2 {
-          color: #e30613;
+          color: #dcae1a;
           font-size: 32px;
           font-weight: 700;
           line-height: 1.3;
@@ -155,7 +155,7 @@ const Academy = () => {
         }
 
         .register-button {
-          background-color: #e30613;
+          background-color: #dcae1a;
           color: white;
           font-weight: bold;
           padding: 12px 25px;
@@ -170,7 +170,7 @@ const Academy = () => {
         }
 
         .register-button:hover {
-          background-color: #c00510;
+          background-color: #dcae1a;
         }
 
         @media (max-width: 768px) {
@@ -206,7 +206,7 @@ const Academy = () => {
 
         .text-section h2 {
           font-size: 32px;
-          color: #e30613;
+          color: #dcae1a;
           font-weight: bold;
           margin-bottom: 30px;
         }
@@ -278,7 +278,7 @@ const Academy = () => {
 
         .curriculum-text h2 {
           font-size: 36px;
-          color: #e30613;
+          color: #dcae1a;
           font-weight: bold;
           margin-bottom: 20px;
           line-height: 1.3;
@@ -308,7 +308,7 @@ const Academy = () => {
         }
 
         .curriculum-item .icon {
-          color: #e30613;
+          color: #dcae1a;
           font-size: 20px;
           margin-top: 4px;
         }

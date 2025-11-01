@@ -218,7 +218,7 @@ background-repeat: no-repeat;
       <Container>
         {/* Section Title */}
         <div className="text-center mb-5">
-          <p style={{ color: "red", fontWeight: "bold", marginBottom: "5px" }}>
+          <p style={{ color: "#dcae1a", fontWeight: "bold", marginBottom: "5px" }}>
             CONTACT US
           </p>
           <h2 style={{ fontWeight: "700", color: "#2f4f4f" }}>
@@ -237,7 +237,7 @@ background-repeat: no-repeat;
               <Card.Body>
                 <TelephoneFill
                   size={40}
-                  style={{ color: "red", marginBottom: "15px" }}
+                  style={{ color: "#dcae1a", marginBottom: "15px" }}
                 />
                 <Card.Title style={{ fontWeight: "600" }}>Phone Number</Card.Title>
                 <Card.Text style={{ color: "gray" }}>+91-9038428532</Card.Text>
@@ -254,7 +254,7 @@ background-repeat: no-repeat;
               <Card.Body>
                 <EnvelopeFill
                   size={40}
-                  style={{ color: "red", marginBottom: "15px" }}
+                  style={{ color: "#dcae1a", marginBottom: "15px" }}
                 />
                 <Card.Title style={{ fontWeight: "600" }}>Email Us</Card.Title>
                 <Card.Text style={{ color: "gray" }}>
