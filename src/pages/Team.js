@@ -217,7 +217,7 @@ const Team = () => {
         }
 
         .team-heading {
-          color: #e63946;
+          color: #dcae1a;
           font-size: 32px;
           font-weight: bold;
           margin-top: 50px;
@@ -364,7 +364,7 @@ const Team = () => {
 
 
     <div className="team-section">
-    <h2 className="team-heading">MEET THE TEAM</h2>
+    <h2 className="team-heading">MEET THE DOERS</h2>
     <div className="team-container">
       {doers.map((member, index) => (
         <div key={index} className="team-card">

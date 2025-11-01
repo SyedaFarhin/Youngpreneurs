@@ -44,11 +44,11 @@ const Header = () => {
         }
 
         .navbar-nav .nav-link-item:hover {
-          color: #d21f26 !important; /* red hover */
+          color: #dcae1a !important; /* red hover */
         }
 
         .navbar-nav .active {
-          color: #d21f26 !important; /* red active */
+          color: #dcae1a !important; /* red active */
         }
 
         .join-btn {
@@ -91,7 +91,7 @@ const Header = () => {
 
         @media (max-width: 991px) {
           .navbar-collapse {
-            background-color: #d21f26 ;
+            background-color: #dcae1a ;
             padding: 1rem 0;
           }
 
@@ -108,7 +108,7 @@ const Header = () => {
             border-left: none;
             margin-left: 0;
             padding-left: 12px;
-            color: #d21f26 !important;
+            color: #dcae1a !important;
           }
         }
       `}</style>

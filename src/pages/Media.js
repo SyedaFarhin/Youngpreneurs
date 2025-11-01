@@ -131,7 +131,7 @@ const Media = () => {
         .media-heading {
           font-size: 24px;
           font-weight: bold;
-          color: #e50914;
+          color: #dcae1a;
           max-width: 1000px;
           margin: 0 auto;
         }
@@ -182,7 +182,7 @@ const Media = () => {
         }
 
         .media-button {
-          background-color: #e50914;
+          background-color: #dcae1a;
           color: white;
           padding: 10px 20px;
           border-radius: 5px;
@@ -192,7 +192,7 @@ const Media = () => {
         }
 
         .media-button:hover {
-          background-color: #c20710;
+          background-color: #dcae1a;
         }
 
         @media (max-width: 768px) {

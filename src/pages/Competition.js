@@ -12,7 +12,7 @@ import partha from '../assets/partha.jpg';
 import devika from '../assets/devika.jpeg';
 
 import presentation from '../assets/presentation.jpg';
-import academyHeaderBg from '../assets/academyHeaderBg.png';
+import academyHeaderBg from '../assets/academyHeaderBg.jpg';
 
 
 
@@ -424,7 +424,7 @@ REGISTER NOW
         }
 
         .highlight {
-          color: #d62828;
+          color: #dcae1a;
           font-weight: bold;
         }
 
@@ -446,7 +446,7 @@ REGISTER NOW
         }
 
         .register-btn {
-          background-color: #e4002b;
+          background-color: #dcae1a;
           color: #fff;
           padding: 12px 24px;
           border: none;
@@ -457,7 +457,7 @@ REGISTER NOW
         }
 
         .register-btn:hover {
-          background-color: #c70024;
+          background-color: #dcae1a;
         }
 
         .image-column {
@@ -491,7 +491,7 @@ REGISTER NOW
         }
 
         .workshop-title {
-          color: #e12727;
+          color: #dcae1a;
           font-size: 26px;
           font-weight: bold;
         }
@@ -523,7 +523,7 @@ REGISTER NOW
         }
 
         .card.red-border {
-          border-color: #e12727;
+          border-color: #dcae1a;
         }
 
         .card h4 {
@@ -681,7 +681,7 @@ REGISTER NOW
 /* Optional: Customize arrow icons */
 .slick-prev:before,
 .slick-next:before {
-  color: red !important;
+  color: #dcae1a !important;
   font-size: 30px;
 }
 
@@ -703,7 +703,7 @@ REGISTER NOW
         }
 
         .card h3 {
-          color: #e60023;
+          color: #dcae1a;
           margin-bottom: 16px;
           font-size: 20px;
         }
@@ -739,7 +739,7 @@ REGISTER NOW
           content: '✔';
           position: absolute;
           left: 0;
-          color: red;
+          color: #dcae1a;
         }
 
         @media (max-width: 768px) {
@@ -767,7 +767,7 @@ REGISTER NOW
         }
 
         .live-pitch-text h2 {
-          color: #e60023;
+          color: #dcae1a;
           font-size: 24px;
           margin-bottom: 24px;
         }
@@ -781,7 +781,7 @@ REGISTER NOW
         .icon-box {
           width: 32px;
           height: 32px;
-          background-color: #f44336;
+          background-color: #dcae1a;
           color: white;
           font-size: 18px;
           border-radius: 6px;
@@ -859,7 +859,7 @@ REGISTER NOW
         }
 
         .criteria-content h2 {
-          color: #e60023;
+          color: #dcae1a;
           font-size: 24px;
           margin-bottom: 24px;
         }
@@ -873,7 +873,7 @@ REGISTER NOW
         .icon-box {
           width: 32px;
           height: 32px;
-          background-color: #f44336;
+          background-color: #dcae1a;
           color: white;
           font-size: 18px;
           border-radius: 6px;
@@ -919,7 +919,7 @@ REGISTER NOW
 
         .cta-section h2 {
           font-size: 28px;
-          color: #e60023;
+          color: #dcae1a;
           font-weight: 700;
           margin-bottom: 20px;
         }
@@ -943,7 +943,7 @@ REGISTER NOW
 
         .cta-register-button {
           display: inline-block;
-          background-color: #e60023;
+          background-color: #dcae1a;
           color: white;
           font-weight: bold;
           padding: 12px 28px;
@@ -955,7 +955,7 @@ REGISTER NOW
         }
 
         .cta-register-button:hover {
-          background-color: #cc001f;
+          background-color: #dcae1a;
         }
 
         @media (max-width: 768px) {

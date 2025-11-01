@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 30px;
   height: 2px;
-  background-color: #ec2027;
+  background-color: #dcae1a;
   bottom: 0;
   left: 0;
 }
@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-links a:hover {
-  background-color: #ec2027;
+  background-color: #dcae1a;
   transform: translateY(-3px);
 }
 
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-info i {
   margin-right: 10px;
-  color: #ec2027;
+  color: #dcae1a;
 }
 
 .footer-bottom {

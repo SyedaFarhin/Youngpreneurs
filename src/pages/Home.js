@@ -321,7 +321,7 @@ ENROLL TODAY
         }
 
         .intro {
-          color: #d31937;
+          color: #dcae1a;
           font-weight: 600;
           margin-bottom: 10px;
         }
@@ -341,7 +341,7 @@ ENROLL TODAY
 
         .start-button {
           margin-top: 20px;
-          background-color: #d31937;
+          background-color: #dcae1a;
           color: #fff;
           padding: 12px 24px;
           border: none;
@@ -440,7 +440,7 @@ ENROLL TODAY
         }
 
         .titans-left h4 {
-          color: #e30613;
+          color: #dcae1a;
           font-weight: 600;
           font-size: 16px;
           margin-bottom: 10px;
@@ -465,7 +465,7 @@ ENROLL TODAY
         }
 
         .register-button {
-          background-color: #e30613;
+          background-color: #dcae1a;
           color: #fff;
           padding: 12px 30px;
           font-size: 14px;
@@ -477,7 +477,7 @@ ENROLL TODAY
         }
 
         .register-button:hover {
-          background-color: #c00410;
+          background-color: #dcae1a;
         }
 
         .titans-right {
@@ -521,7 +521,7 @@ ENROLL TODAY
         }
 
         .game-changer-section h2 {
-          color: #e30613;
+          color: #dcae1a;
           font-size: 28px;
           margin-bottom: 40px;
           font-weight: 700;
@@ -846,7 +846,7 @@ ENROLL TODAY
         .curriculum-right {
           flex: 1;
           min-width: 300px;
-          background: linear-gradient(to bottom right, #d40000, #a30000);
+          background: linear-gradient(to bottom right, #dcae1a, #dcae1a);
           color: #fff;
           padding: 60px 40px;
           display: flex;
@@ -879,8 +879,8 @@ ENROLL TODAY
 
         .curriculum-topic p {
           margin: 5px 0 0 0;
-          font-size: 15px;
-          color: #ddd;
+          font-size: 18px;
+          color:#103120;
           line-height: 1.4;
         }
 
@@ -914,7 +914,7 @@ ENROLL TODAY
     .connect-title {
       font-size: 28px;
       font-weight: bold;
-      color: #d31937;
+      color: #dcae1a;
       margin-bottom: 30px;
     }
 

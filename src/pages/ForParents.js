@@ -104,7 +104,7 @@ REGISTER NOW
           display: flex;
           flex-wrap: wrap;
           padding: 50px 30px;
-          background-color:rgb(192, 11, 11);
+          background-color: #103120;
           color: white;
           justify-content: center;
         }
@@ -135,7 +135,7 @@ REGISTER NOW
 
         .cta-btn {
           background: white;
-          color: #ec5c5c;
+          color: #dcae1a;
           border: none;
           padding: 12px 25px;
           font-weight: bold;
@@ -178,7 +178,7 @@ REGISTER NOW
         }
 
         .card.red-card {
-          background-color:rgb(238, 176, 176);
+          background-color: #dcae1a;
           color: white;
         }
 
@@ -239,13 +239,13 @@ REGISTER NOW
 
         .cta-team {
           font-size: 22px;
-          color: #ec1e26;
+          color: #dcae1a;
           font-weight: bold;
           margin-bottom: 30px;
         }
 
         .cta-button {
-          background-color: #ec1e26;
+          background-color: #dcae1a;
           color: white;
           padding: 12px 30px;
           font-size: 14px;
@@ -257,7 +257,7 @@ REGISTER NOW
         }
 
         .cta-button:hover {
-          background-color: #c81b21;
+          background-color: #dcae1a;
         }
 
         @media (max-width: 768px) {
