@@ -11,13 +11,18 @@ const ForParents = () => {
     <section className="game-changer">
       {/* Left Content */}
       <div className="left-content">
-        <h5>A MESSAGE TO PARENTS</h5>
-        <p>
-          Imagine a future where your child stands out not just for their academic achievements, but for their ability to innovate, lead, and turn ideas into real-world solutions.
+        <h3>A Message to Parents </h3>
+        <p style={{fontSize:"15px"}}>
+        Every great change in the world started with a young mind daring to imagine. At <strong>Future Titans by YoungPreneurs</strong>, we give your child the space, guidance, and mentorship to become that change-maker.
+         This is where curiosity sparks action, ideas find their wings, and potential unfolds into impact.As the world accelerates with AI, automation, and constant innovation, the most valuable gift you can give your child isn’t answers — it’s<strong>the ability to question, create, and take bold steps</strong>. Here, they will experiment,
+          explore, and discover the capabilities they never knew they had.
+          This is more than a program. It’s a <strong>movement of young innovators, problem-solvers, and creators</strong>  — a journey that shapes character,
+           ignites purpose, and lights the path to a future they can define.
+           By joining <strong>Future Titans</strong>,your child isn’t just preparing for what comes next — they are <strong>becoming the person who creates it.</strong>
         </p>
-        <p>
-          <strong>Future Titans – India’s Entrepreneurial Hunt</strong>, in collaboration with <strong>The Times of India</strong> and <strong>Youngpreneurs</strong>, offers more than just a competition—it’s a transformative opportunity for young minds to shape their entrepreneurial journey.
-        </p>
+        
+       
+        
        
         <button
   className="cta-button"
@@ -30,34 +35,29 @@ GET STARTED
 
       {/* Right Content */}
       <div className="right-content">
-        <h4>WHY THIS COMPETITION A GAME-CHANGER</h4>
+        <h4>Why Support Your Child’s Journey with Future Titans?</h4>
         <div className="cards">
           <div className="card red-card">
-            <div className="icon">📶</div>
-            <h5>Real-World Learning</h5>
-            <p>They’ll learn to think critically, solve real-world problems, and create innovative solutions through hands-on workshops and mentoring.</p>
+         
+               <p>Future Titans is not just any competition — it’s India’s first national entrepreneurship movement for school students, where ideas meet opportunity and innovation is celebrated at every step.</p>
           </div>
           <div className="card">
-            <div className="icon">🛠️</div>
-            <h5>Prestigious Platform</h5>
-            <p>As part of an TOI-backed competition, they’ll gain national recognition and credibility.</p>
+            <p>Here, your child will explore uncharted challenges, test their own solutions, and discover what they’re truly capable of.</p>
           </div>
           <div className="card">
-            <div className="icon">📺</div>
-            <h5>Unparalleled Opportunities</h5>
-            <p>The winners will receive ₹5 lakhs in funding to kickstart their entrepreneurial journey!</p>
+          <p>It’s a journey that nurtures vision, courage, and leadership, preparing them not just to compete, but to create, impact, and lead in a rapidly changing world.</p>
           </div>
-          <div className="card">
-            <div className="icon">💰</div>
-            <h5>Skill Development</h5>
-            <p>From pitching to problem-solving, your child will master skills that colleges and employers value.</p>
-          </div>
+          
         </div>
+
+        {/* <p>
+        Future Titans is not just any competition — it’s India’s first national entrepreneurship movement for school students, where ideas meet opportunity and innovation is celebrated at every step. Here, your child will explore uncharted challenges, test their own solutions, and discover what they’re truly capable of. It’s a journey that nurtures vision, courage, and leadership, preparing them not just to compete, but to create, impact, and lead in a rapidly changing world.
+        </p> */}
       </div>
 
       <section className="cta-section">
       <p className="cta-text">
-        Don’t let your child miss this opportunity to shine, learn, and grow into the leader of tomorrow.
+      Don’t let your child miss this opportunity to shine, learn, and grow into the leader of tomorrow.
       </p>
       <p className="cta-team"><strong>Youngpreneurs Competition Team</strong></p>
    

@@ -13,8 +13,8 @@ const Footer = () => {
           <Col md={4} className="footer-section">
             <img src={logo} alt="Youngpreneurs Logo" className="footer-logo" />
             <p className="footer-description">
-              Youngpreneurs is dedicated to fostering entrepreneurship in young minds, 
-              developing future leaders, and empowering them to drive change.
+            YoungPreneurs ignites a movement of future leaders — creating a launchpad where ideas take flight,
+             innovation is born, and the next generation of changemakers rise.
             </p>
             <div className="social-links">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">

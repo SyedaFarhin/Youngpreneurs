@@ -279,23 +279,21 @@ const Team = () => {
           display: block;
         }
 
-        .linkedin-icon {
-          position: absolute;
-         margin-top: 10px;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: #204d40;
-          color: white;
-          font-size: 14px;
-          border-radius: 50%;
-          width: 28px;
-          height: 28px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-decoration: none;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        }
+       .linkedin-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #204d40;
+  color: white;
+  font-size: 14px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  
+  margin-top: 10px;   /* moves it slightly down from the top */
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
 
         .team-info {
           padding: 20px;
