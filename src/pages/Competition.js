@@ -107,15 +107,24 @@ const Competition = () => {
         <div className="welcome-content">
           <div className="text-column">
             <h2>
-              <span className="highlight">Welcome to Future Titans – USA, INDIA Initiative:</span><br />
+              <span className="highlight">Welcome to Future Titans – India’s Entrepreneurial Hunt</span><br />
+              <p style={{fontSize:"15px", color: "#204e3d"}}>A USA–India initiative
+              In Association with <span className="highlight">The Times of India</span></p>
+              <p style={{fontSize:"15px",color: "#204e3d"}}>Ecosystem Partners: <br/><span className="highlight">Startup India 
+<br/>Association of Indian Principals 
+<br/>AIC BIMTECH</span></p>
+    
               <span className="subheading">Building India’s Tomorrow, Today</span>
             </h2>
-            <p className="theme">Theme: Build Like a Titan</p>
+            
             <p>
-              In the age of AI and the creator economy, an entrepreneurial mindset is no longer optional — it’s a life skill.
-              Whether you start a business or not, thinking like a creator, innovator, and problem-solver is what will set you apart.
-              That’s the mission behind Future Titans, brought to you by Youngpreneurs — a national movement to unlock the potential of teenagers across India.
-              This isn’t just another competition. It’s a nationwide call to action to spark innovation, creativity, and leadership among students from Class 8 to 12.
+            We’re entering an age where AI creates faster than we can imagine and automation replaces routine in seconds.
+In this new world, success won’t belong to those who simply follow — it will belong to those who think differently, build fearlessly, and lead with purpose.
+It’s not about learning business — it’s about learning how to think: to question, to create, and to convert ideas into action.
+Because in the world ahead, every innovator is a leader, and every leader is an entrepreneur at heart.
+Before stepping into the competition, every participant goes through a 5-part “Build Like a Titan” workshop series — a hands-on, globally benchmarked journey that transforms ideas into action.
+
+
             </p>
            
             
@@ -136,46 +145,45 @@ REGISTER NOW
       </section>
 
       <div className="workshop-container">
-        <div className="workshop-title">The Workshop Series: Build Like a Titan</div>
-        <div className="workshop-subtitle">
-          Each 90-minute session blends Design Thinking, Business Model Canvas,<br />
-          and real-world application — making it actionable and future-ready.
-        </div>
+        <div className="workshop-title">The Learning Ladder: Build Like a Titan</div>
+       
 
         <div className="cards-wrapper">
           <div className="card">
             <h4>Discover & Define</h4>
             <p><i>Turning Problems into Possibilities</i></p>
-            <p>Empathy-driven exploration of real-world challenges</p>
-            <i>Design Thinking: Empathize + Define | BMC: Market/Customer Segmentation, SWOT</i>
+            <p>Students learn empathy-driven exploration of real-world challenges.</p>
+            <i>Design Thinking: Empathize + Define | BMC: Market Segmentation, SWOT Analysis</i>
           </div>
 
           <div className="card red-border">
             <h4>Design the Difference</h4>
             <p><i>Crafting Bold Ideas That Matter</i></p>
-            <p>Ideation tools to uncover what makes your solution stand out</p>
+            <p>They master ideation tools to uncover what makes their solution stand out.</p>
             <i>Design Thinking: Ideate | BMC: Value Proposition</i>
           </div>
 
           <div className="card">
-            <h4>Prototype to Pitch</h4>
+            <h4>Prototype to Pitch — Build, Test, Improve — Fast!</h4>
             <p><i>Build, Test, Improve — Fast!</i></p>
-            <p>Create MVPs using no-code tools + rapid feedback</p>
+            <p>They bring ideas to life using no-code tools, rapid testing, and iteration.</p>
             <i>Design Thinking: Prototype + Test | BMC: Key Activities, Channels</i>
           </div>
 
           <div className="card red-border">
             <h4>Map Your Model</h4>
             <p><i>Make It Work, Make It Worth It</i></p>
-            <p>Turn ideas into scalable models with smart monetization</p>
-            <i>BMC: Revenue, Cost Structure, Customer Relationships</i>
+            <p>Students learn monetization and scalability — turning ideas into viable models.</p>
+            <i>BMC: Revenue Streams, Cost Structure, Customer Relationships</i>
           </div>
 
           <div className="card">
             <h4>Pitch Like a Pro</h4>
             <p><i>Storytelling That Wins Judges & Investors</i></p>
-            <p>Narrative tools + peer feedback + pitch frameworks</p>
-            <i>Full BMC Review + Media Training</i>
+            <p>	
+A masterclass in influence and communication, refining delivery and confidence.
+</p>
+            <i>Full BMC Review + Media & Pitch Training</i>
           </div>
         </div>
       </div>
@@ -203,162 +211,53 @@ REGISTER NOW
       </Slider>
       </div>
 
-
+      <div style={{textAlign: "center",  color: "#dcae1a",fontSize: "26px",fontWeight: "bold"}}>The Competition Format: Where Ideas Take Flight</div>
       <div className="competition-section">
-        {/* Card 1 */}
+       
         <div className="card">
-          <h3>Competition Format</h3>
-          <p><strong>Round 1: Idea Submission (Virtual)</strong></p>
-          <h4>Task</h4>
-          <p>Submit a 1–3 page business idea proposal or a 2–3 page pitch deck</p>
-          <h4>Details to Include</h4>
-          <p>Problem statement, proposed solution, target audience, feasibility and innovation</p>
-          <h4>Judging Criteria</h4>
-          <p>Clarity of idea, relevance to the problem, innovation, and scalability</p>
+          <p><strong>Phase 1 — Idea Submission (Virtual)</strong></p>
+          <p>After completing the Build Like a Titan series, 
+            students submit their ideas through our digital platform.</p>
+          
         </div>
 
-        {/* Card 2 */}
+
         <div className="card">
-          <h3>Key Takeaways</h3>
-          <ul className="check-list">
-            <li>Exclusive Access to 2 High-Impact Workshops (2–3 hours each) on Idea Validation</li>
-            <li>Step-by-Step Guidance on Crafting a Winning Business Proposal</li>
-            <li>Master the Art of Defining a Problem and Presenting a Strong Solution</li>
-            <li>Exclusive Insights with two of India’s Leading Celebrity Entrepreneurs</li>
-            <li>Certificate of Participation</li>
-          </ul>
+        
+          <p><strong>Phase 2 — Pitch Video (Virtual)</strong></p>
+          <p>Participants bring their ideas to life in a short, 
+            impactful video pitch that showcases their prototype, validation, and vision.</p>
+          
         </div>
-
-        {/* Card 3 */}
         <div className="card">
-          <h3>Competition Format</h3>
-          <p><strong>Round 2: Business Plan (Virtual)</strong></p>
-          <h4>Task</h4>
-          <p>Shortlisted participants will develop a detailed business plan covering market research, operational strategy, financial model, and marketing.</p>
-          <h4>Submission Format</h4>
-          <p>Written business plan (4–5 pages) OR recorded pitch video</p>
-          <h4>Judging Criteria</h4>
-          <p>Feasibility, depth of research, and financial viability</p>
+         
+          <p><strong>Phase 3 — The Grand Finale (Live Bootcamp)</strong></p>
+          <p>The Top 50 teams from across India enter an intensive 3-day bootcamp, working with mentors and pitching 
+            their ventures to a national jury of entrepreneurs, investors, and innovators.</p>
+          
         </div>
 
-        {/* Card 4 */}
-        <div className="card">
-          <h3>Key Takeaways</h3>
-          <ul className="check-list">
-            <li>2 Expert-Led Workshops (2–3 hours each) on market research and finances</li>
-            <li>Guidance on Crafting a Winning Business Plan or Video Pitch</li>
-            <li>Exclusive Insights from two of India’s Leading Investors</li>
-            <li>Certificate of Participation</li>
-          </ul>
-        </div>
-      </div>
 
 
-      <div className="live-pitch-section">
-        <div className="live-pitch-text">
-          <h2>Live Pitch (Finale)</h2>
 
-          <div className="info-block">
-            <div className="icon-box">🚀</div>
-            <div className="info-content">
-              <h4>Task</h4>
-              <p>Present a compelling business pitch, covering budgeting, pricing, and profitability.</p>
-            </div>
-          </div>
-
-          <div className="info-block">
-            <div className="icon-box purple">📽</div>
-            <div className="info-content">
-              <h4>Setup</h4>
-              <p>Physical or virtual presentation with slides, demos, or props.</p>
-            </div>
-          </div>
-
-          <div className="info-block">
-            <div className="icon-box">⏸</div>
-            <div className="info-content">
-              <h4>Scoring</h4>
-              <p>Judges will evaluate each pitch on a scale of 1–10 across all criteria.</p>
-            </div>
-          </div>
-
-          <div className="info-block">
-            <div className="icon-box">⏯</div>
-            <div className="info-content">
-              <h4>Advancement</h4>
-              <p>Top-scoring entries (e.g., top 20%) move to the next round.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="live-pitch-image">
-          <img src={presentation} alt="Pitch Presentation" />
-          {/* Replace the image URL above with your actual image path if needed */}
-        </div>
-      </div>
+       
       
-
-      <div className="criteria-section">
-        <div className="criteria-image">
-          <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg" alt="Team working on UI" />
-          {/* Replace with your image path if local */}
-        </div>
-
-        <div className="criteria-content">
-          <h2>Judging Criteria</h2>
-
-          <div className="criteria-item">
-            <div className="icon-box">🚀</div>
-            <div className="criteria-text">
-              <h4>Creativity and Innovation (30%)</h4>
-              <p>Is the idea fresh, unique, and impactful?</p>
-            </div>
-          </div>
-
-          <div className="criteria-item">
-            <div className="icon-box purple">📽</div>
-            <div className="criteria-text">
-              <h4>Problem Relevance (20%)</h4>
-              <p>Does it solve a real-world issue?</p>
-            </div>
-          </div>
-
-          <div className="criteria-item">
-            <div className="icon-box">⏸</div>
-            <div className="criteria-text">
-              <h4>Feasibility (20%)</h4>
-              <p>Can this be built and scaled?</p>
-            </div>
-          </div>
-
-          <div className="criteria-item">
-            <div className="icon-box">⏸</div>
-            <div className="criteria-text">
-              <h4>Impact (20%)</h4>
-              <p>What change does it bring?</p>
-            </div>
-          </div>
-
-          <div className="criteria-item">
-            <div className="icon-box">⏸</div>
-            <div className="criteria-text">
-              <h4>Presentation (10%)</h4>
-              <p>How well is the idea communicated?</p>
-            </div>
-          </div>
-        </div>
       </div>
 
+
+     
 
       <div className="cta-section">
-        <h2>Ready to Build, Pitch and Scale?</h2>
-        <p>
-          This isn’t just a competition—it’s a launchpad for 
-          <strong> India’s future entrepreneurs.</strong> If you have the vision, the passion, and the drive to build something extraordinary, 
-          <strong> Future Titans is where your journey begins.</strong>
+       
+        <p style={{fontSize:"23px",color:"#204e3d",fontWeight:"bold"}}>
+        This is more than a competition — it’s a launchpad for India’s next generation of builders.
+Where ideas find direction, young leaders find their voice, and the journey to becoming a changemaker truly begins.
+
         </p>
         <p className="cta-highlight">
-          Do you have what it takes to be the next big name in entrepreneurship? Let’s find out!
+        Never before has a curriculum of this scale, depth, and international caliber been made available to school students at this level.
+Future Titans isn’t just preparing students for the future — it’s empowering them to build it.
+
         </p>
        
         
@@ -424,6 +323,7 @@ REGISTER NOW
         }
 
         .highlight {
+       font-size: 24px;
           color: #dcae1a;
           font-weight: bold;
         }
@@ -533,7 +433,7 @@ REGISTER NOW
         }
 
         .card p {
-          font-size: 14px;
+          font-size: 10px;
           color: #555;
           margin: 8px 0;
         }
@@ -804,7 +704,7 @@ REGISTER NOW
         .info-content p {
           margin: 4px 0 0;
           color: #555;
-          font-size: 14px;
+          font-size: 10px;
         }
 
         .live-pitch-image {
@@ -912,7 +812,7 @@ REGISTER NOW
           .cta-section {
           background-color: #f2f2f2;
           text-align: center;
-          padding: 60px 20px;
+          padding: 50px 80px;
           position: relative;
           overflow: hidden;
         }
@@ -927,7 +827,7 @@ REGISTER NOW
         .cta-section p {
           font-size: 16px;
           color: #555;
-          max-width: 800px;
+          max-width: 1000px;
           margin: 0 auto 16px auto;
           line-height: 1.6;
         }

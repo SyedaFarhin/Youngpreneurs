@@ -79,7 +79,7 @@ const AboutUs = () => {
   .about-image {
     flex: 1;
     min-width: 300px;
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
   .about-image img {
@@ -237,16 +237,19 @@ const AboutUs = () => {
     <div className="about-us">
         <div className="about-text">
           <h4 className="about-heading">ABOUT US</h4>
-          <h2 className="about-title">Youngpreneurs – Empowering Tomorrow’s Leaders</h2>
+          <h2 className="about-title">YoungPreneurs – Igniting India’s Young Innovators</h2>
           <p className="about-paragraph">
-            The future belongs to those who dare to dream, build, and lead. At <strong>Youngpreneurs</strong>, we don’t just teach
-            entrepreneurship—we <strong>ignite it</strong>. Our mission is to equip young minds with the mindset, skills, and confidence
-            to turn bold ideas into real-world ventures.
+          The future belongs to those who don’t wait for change—they create it. YoungPreneurs is more than a program—
+          it’s India’s first patent-pending entrepreneurial ecosystem that transforms ideas into action and students into innovators, leaders, and changemakers.
           </p>
           <p className="about-paragraph">
-            Entrepreneurship isn’t a talent you’re born with—it’s <strong>a mindset you develop</strong>. Through immersive workshops,
-            business simulations, and expert mentorship, students cultivate resilience, problem-solving skills, and the power to lead.
+          Through immersive workshops, hands-on startup frameworks, and real-world challenges, students move from creative sparks to tangible ventures. They learn to think critically, solve complex problems, and launch scalable solutions,
+           guided by structured models like IDEA DNA and the SURGE Framework, while their growth is benchmarked through the Student Startup Index (SSI).
           </p>
+          <p className="about-paragraph">
+          Backed by The Times of India, YoungPreneurs powers Future Titans, India’s premier entrepreneurship challenge for school students. Winners gain funding to bring their ideas to life, national recognition, and a platform to step confidently into the world of innovation.
+          </p>
+         
         </div>
         <div className="about-image">
           <img src={teamImage} alt="Young team of entrepreneurs" />
@@ -258,14 +261,14 @@ const AboutUs = () => {
           <img src={missionIcon} alt="Vision Icon" style={{ display: "block", margin: "0 auto 20px auto" }}/>
           <div className="card-title">Our Vision</div>
           <div className="card-text">
-            Create the next generation of global thinkers and entrepreneurs equipped to tackle 21st century challenges.
+          To redefine education by making entrepreneurial thinking a core life skill —empowering students to turn ideas into impact and shape a future driven by innovation and purpose.
           </div>
         </div>
         <div className="card mission-card">
           <img src={visionIcon} alt="Mission Icon" style={{ display: "block", margin: "0 auto 20px auto",height: "50px",width: "100px", }}/>
           <div className="card-title">Our Mission</div>
           <div className="card-text">
-            Our goal is simple: To train young people in the entrepreneurial mindset and business principles, empowering them to innovate, solve problems, and lead with confidence.
+          To bring India’s first patent-pending entrepreneurial ecosystem into classrooms — enabling schools to nurture creativity, problem-solving, and leadership from an early age.
           </div>
         </div>
       </div>
@@ -277,19 +280,20 @@ const AboutUs = () => {
   <h2 style={{color: 'white'}}>Building an Entrepreneurial India, One Teen at a Time</h2>
   <div className="grid-container">
   <div className="info-box">
-          In an age powered by AI and automation, where traditional roles are rapidly evolving, one mindset stands out as future-proof — the entrepreneurial mindset. It is not just about launching startups. It’s about being a problem solver, a creator, a leader, and a change-maker.
+  The world is changing faster than ever. AI, automation, and emerging technologies are redefining careers, industries, and opportunities. In this landscape, the skill that stands the test of time isn’t a degree — it’s the entrepreneurial mindset: the ability to solve problems, create solutions, and lead with impact.
         </div>
         <div className="info-box">
-          Future Titans by Youngpreneurs is a national movement to inspire, equip, and empower students from Classes 8 to 12 to think like entrepreneurs — and act like one. We’re shifting India from a job-seeking economy to a creator economy by nurturing entrepreneurial skills early on — critical thinking, empathy, risk-taking, resilience, and innovation.
+        Future Titans by YoungPreneurs is India’s national entrepreneurship movement that empowers students from Classes 8–12 to think boldly, act decisively, and innovate relentlessly.This is not a competition — it’s a launchpad. Students learn to navigate complex challenges, turn ideas into prototypes, and explore strategies for ventures that can scale. Every step of the journey is guided by proven frameworks like IDEA DNA and SURGE,
+         with progress tracked through the Student Startup Index (SSI).
         </div>
         <div className="info-box">
-          To kickstart this journey, every participant attends 5 power-packed, globally-led online workshops taught by:
+        Participants gain access to five transformative, globally-led workshops taught by world-class mentors:
           <br /><br />
-          Prof. Fred Katz, Professor of Entrepreneurship, Johns Hopkins University (USA)<br />
-          Sandipan Chattopadhyay, Ex-CTO of Justdial, MD of Xelpmoc (India’s innovation engine)
+          Prof. Fred Katz, Johns Hopkins University (USA)<br />
+          Sandipan Chattopadhyay, Ex-CTO, Justdial & MD, Xelpmoc
         </div>
         <div className="info-box">
-          Our mission is clear: stir creativity, spark purpose, and seed the next generation of nation-builders.
+        Here, students build solutions that matter — blending creativity, critical thinking, empathy, and leadership to solve real problems in an AI-driven world. Winners receive funding, recognition, and a platform to launch ventures that impact communities, industries, and the nation.
         </div>
   </div>
 </div>

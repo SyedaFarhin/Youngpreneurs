@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import heroVideo from '../assets/videoplayback.mp4';
-import vision from '../assets/ourVision.png';
-import mission from '../assets/ourMission.png';
+import vision from '../assets/ourVision.jpg';
+import mission from '../assets/ourMission.jpg';
 import rightImg from '../assets/home1.png';
 import mentor1 from '../assets/fred.jpg';
 import mentor2 from '../assets/sandipan.jpeg';
@@ -44,15 +44,20 @@ const Home = () => {
       </section>
 
   
+     
+
+
       <div className="container">
       <div className="content">
         <div className="text-column">
           <p className="intro">Welcome to Youngpreneurs</p>
           <h1 className="heading">
-            NOT JUST A PROGRAM—A MOVEMENT FOR FUTURE LEADERS
+          Not Just a Program — A Movement that Awakens the Leader Within
           </h1>
           <p className="description">
-            The world doesn’t wait for leaders—it creates them. Youngpreneurs is more than a program; it’s a movement that empowers students to think, build, and lead like entrepreneurs.
+          The future doesn’t belong to those who wait for change — it belongs to those who create it.
+          Every great leader began with a single idea, a spark of curiosity that dared to challenge the norm.
+
           </p>
          
           <button
@@ -62,9 +67,30 @@ const Home = () => {
 Start Your Journey
 </button>
 
+
+
+
+
+
+
+
+
+
+
         </div>
 
-        <div className="card-column">
+
+        
+
+
+
+
+
+
+
+</div>
+
+<div className="card-column">
           <div className="card">
             <img src={vision} alt="Our Vision" style={{width: '380px', height: '100%'}}/>
             
@@ -74,21 +100,32 @@ Start Your Journey
             <img src={mission} alt="Mission" />
             
           </div>
-        </div>
-      </div>
 
-      <p className="footer-note">
+          {/* <p className="footer-note">
         Entrepreneurship isn’t a talent you’re born with—it’s <span>a mindset you develop.</span>
-      </p>
+      </p> */}
+        </div>
+
+
+      {/* <p className="footer-note">
+        Entrepreneurship isn’t a talent you’re born with—it’s <span>a mindset you develop.</span>
+      </p> */}
 </div>
+
+
+
+
+
+
+
 
 
 <div className="titans-section">
         <div className="titans-left">
-          <h4>Future Titans 2025 – India’s Entrepreneurial Hunt</h4>
+          <h4>Future Titans 2025 – India’s Biggest Hunt for Young Entrepreneurs </h4>
           <h2>Compete. Win. Launch Your Startup</h2>
           <p>
-            This is not just a competition—it’s a launchpad for young visionaries.
+          This isn’t just a competition — it’s a national launchpad for India’s brightest young visionaries. 
             The Times of India and Youngpreneurs bring you Future Titans, India’s
             most prestigious entrepreneurship challenge for school students.
           </p>
@@ -111,34 +148,40 @@ REGISTER NOW
 
 
       <section className="game-changer-section">
-        <h2>Why is this competition a game changer?</h2>
+        <h2>What Makes Future Titans a True Game Changer</h2>
         <div className="card-container">
           <div className="info-card">
-            <h3>Real-World Learning</h3>
-            <p>They’ll learn to think critically, solve real-world problems, and create innovative solutions through hands-on workshops and mentoring.</p>
+            <h3>A Revolution in Learning</h3>
+            <p>Future Titans isn’t just another school competition — it’s India’s first platform built on a patent-pending entrepreneurial ecosystem that transforms learning into real-world creation. 
+              Students don’t just participate — they build, test, and launch their ideas using the IDEA DNA and SURGE Framework.</p>
           </div>
           <div className="info-card">
-            <h3>Prestigious Platform</h3>
-            <p>As part of an TOI-backed competition, they’ll gain national recognition and credibility.</p>
+            <h3>A Plug-n-Play Model for Schools</h3>
+            <p>Seamlessly integrated into the classroom, the YoungPreneurs model empowers schools to deliver entrepreneurship education without additional infrastructure 
+              — making 21st-century innovation accessible to every student.</p>
           </div>
           <div className="info-card">
-            <h3>Unparalleled Opportunities</h3>
-            <p>The winners will receive <strong>₹10 lakhs</strong> in funding to kickstart their entrepreneurial journey!</p>
+            <h3>Measured Growth. Real Outcomes</h3>
+            <p>Through the Student Startup Index (SSI), every participant’s journey is tracked and benchmarked 
+              — providing measurable insights into creativity, leadership, and entrepreneurial growth.</p>
           </div>
           <div className="info-card">
-            <h3>Skill Development</h3>
-            <p>From pitching to problem-solving, your child will master skills that colleges and employers value.</p>
+            <h3>National Recognition & Opportunity</h3>
+            <p>In partnership with The Times of India, Future Titans gives students a national platform to showcase their ideas, gain recognition, and connect with real-world mentors.
+               The winners will receive ₹10 lakhs in funding to kickstart their entrepreneurial journey!
+            </p>
           </div>
           <div className="info-card">
-            <h3>Confidence and Leadership</h3>
-            <p>They’ll build self-belief, collaborate with like-minded peers, and unlock their full potential.</p>
+            <h3>Building the Leaders of Tomorrow</h3>
+            <p>Beyond competition, it’s a movement that builds confidence, collaboration, and leadership 
+              — shaping students into purpose-driven thinkers ready to change the world.</p>
           </div>
         </div>
       </section>
 
 
       <section className="mentorship-section">
-        <h2>Why Should Schools and Parents Encourage Participation?</h2>
+        <h2>Why Should Schools and Parents Encourage Participation? </h2>
         <p>The future belongs to those who create it!</p>
         <p>What if the next Ratan Tata or Falguni Nayar is your child?</p>
         <div className="highlight">
@@ -163,7 +206,7 @@ REGISTER NOW
 
 
       <section className="workshop-section">
-        <h2>5 Power-Packed Workshops to Build Future Leaders</h2>
+        <h2>Five Transformative Workshops to Shape the Entrepreneurs of Tomorrow</h2>
         <ul className="workshop-list">
           <li>Learn market research to spot billion-dollar opportunities.</li>
           <li>Master ideation and brainstorming like a disruptor.</li>
@@ -188,16 +231,37 @@ REGISTER NOW
       <section className="academy-section">
         <div className="overlay"></div>
         <div className="academy-content">
-          <h2>Youngpreneur Academy – Build, Innovate, Lead</h2>
+          <h2>YoungPreneur Academy – Build. Innovate. Lead.</h2>
           <p>
-            Entrepreneurship isn’t just a subject—it’s a way of thinking. At Youngpreneur Academy, we train future CEOs through experiential learning, business challenges, and expert mentorship.
+          Entrepreneurship isn’t just a subject — it’s a mindset.
+           At YoungPreneur Academy, students go beyond textbooks to experience what it truly means to think, build, and lead like CEOs. Through immersive learning, real business challenges, and expert mentorship, they develop the skills that define tomorrow’s leaders.
+
           </p>
-          <ul className="points">
-            <li>Startup Fundamentals</li>
+
+          {/* <div>
+            <p style={{ color: "#dcae1a",fontSize: "22px" }}>Startup Fundamentals </p>
+            <h6 style={{ color: "white" }}>Understanding ideas, markets, and business models.</h6>
+
+          </div> */}
+          <div className="curriculum-topic">
+            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Startup Fundamentals</h4>
+            <p style={{ color: "white" }}>Understanding ideas, markets, and business models.</p>
+            <br/>
+            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Pitching & Storytelling </h4>
+            <p style={{ color: "white" }}>Communicating vision with clarity and impact.</p>
+            <br/>
+            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Financial & Business Strategy </h4>
+            <p style={{ color: "white" }}>Learning the art of smart decision-making.</p>
+            <br/>
+            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Leadership & Communication </h4>
+            <p style={{ color: "white" }}>Building confidence, teamwork, and influence.</p>
+          </div>
+          {/* <ul className="points">
+            <li>Startup Fundamentals – Understanding ideas, markets, and business models.</li>
             <li>Pitching and Storytelling</li>
             <li>Financial and Business Strategy</li>
             <li>Leadership and Communication</li>
-          </ul>
+          </ul> */}
           
           <button
   className="enroll-btn"
@@ -212,44 +276,52 @@ ENROLL TODAY
       <div className="curriculum-section">
         <div className="curriculum-left"></div>
         <div className="curriculum-right">
-          <h2>The Youngpreneur Entrepreneurship Curriculum</h2>
+          <h2>The YoungPreneur Entrepreneurship Curriculum</h2>
           <p className="intro">
-            Our carefully designed curriculum lays the foundation for a lifelong entrepreneurial journey. Students explore:
+          Built on the world’s first patent-pending entrepreneurial ecosystem, the YoungPreneur Curriculum takes students through a complete innovation journey — from idea conception to real-world implementation.
+Every module combines global entrepreneurship frameworks with hands-on application, empowering students to think like founders and act like leaders.
+
           </p>
 
           <div className="curriculum-topic">
-            <h4>What is Entrepreneurship?</h4>
-            <p>Understanding the startup world and its opportunities.</p>
+            <h4>Foundations of Entrepreneurship</h4>
+            <p>Explore how today’s startups are redefining industries and creating opportunities. Understand what it truly means to think, build,
+               and lead like an entrepreneur in a rapidly changing world.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>The Entrepreneurial Mindset</h4>
-            <p>Developing resilience, adaptability, and risk-taking skills.</p>
+            <p>Develop the ability to adapt, take initiative, and convert challenges into opportunities — nurturing the core traits of resilience,
+               agility, and purposeful risk-taking.</p>
           </div>
 
           <div className="curriculum-topic">
-            <h4>Lateral Thinking and Creative Problem-Solving</h4>
-            <p>Finding innovative solutions to challenges.</p>
+            <h4>Lateral Thinking & Creative Problem-Solving</h4>
+            <p>Learn to challenge assumptions, think laterally, and identify real-world opportunities
+               — the spark that begins every IDEA DNA journey.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>Idea Generation to Prototyping</h4>
-            <p>Turning ideas into tangible business concepts.</p>
+            <p>Use the IDEA DNA Framework to structure, validate, and prototype ideas
+               — transforming imagination into viable innovation.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>Lean Launchpad and Business Model Canvas</h4>
-            <p>Structuring and testing business ideas.</p>
+            <p>Apply global startup tools to test value propositions and customer fit within our Plug-n-Play School Ecosystem 
+              — a ready-to-implement platform for innovation learning.</p>
           </div>
 
           <div className="curriculum-topic">
-            <h4>Business Plan Basics</h4>
-            <p>Learning financial planning, budgeting, and scalability.</p>
+            <h4>Business Plan & Strategy</h4>
+            <p>Master financial planning, budgeting, and scalability while applying the SURGE Framework to refine,
+               grow, and sustain ventures.</p>
           </div>
 
           <div className="curriculum-topic">
-            <h4>The Art of Pitching</h4>
-            <p>Crafting and delivering a compelling business pitch.</p>
+            <h4>Pitch, Present & Lead</h4>
+            <p>Build influence and leadership presence — translating vision into a pitch that inspires action.</p>
           </div>
         </div>
       </div>
@@ -301,6 +373,7 @@ ENROLL TODAY
 
 
 .container {
+
           padding: 60px 20px;
           max-width: 1300px;
           margin: auto;
@@ -351,7 +424,7 @@ ENROLL TODAY
         }
 
         .card-column {
-          flex: 1 1 600px;
+          flex: 1 1 200px;
           display: flex;
           gap: 30px;
           flex-wrap: wrap;
@@ -855,6 +928,7 @@ ENROLL TODAY
         }
 
         .curriculum-right h2 {
+        color:rgb(5, 59, 39);
           font-size: 32px;
           margin-bottom: 20px;
           font-weight: 700;
@@ -863,7 +937,7 @@ ENROLL TODAY
         .curriculum-right p.intro {
           font-size: 16px;
           margin-bottom: 30px;
-          color: #f2f2f2;
+        color:rgb(255, 255, 255);
           line-height: 1.6;
         }
 
@@ -875,6 +949,7 @@ ENROLL TODAY
           margin: 0;
           font-size: 18px;
           font-weight: 600;
+          color:rgb(5, 59, 39);
         }
 
         .curriculum-topic p {
@@ -882,6 +957,7 @@ ENROLL TODAY
           font-size: 18px;
           color:#103120;
           line-height: 1.4;
+            color:rgb(255, 255, 255);
         }
 
         @media (max-width: 768px) {
@@ -956,7 +1032,7 @@ ENROLL TODAY
       }
 
       .connect-title {
-        font-size: 22px;
+        font-size: 23px;
       }
     }
 

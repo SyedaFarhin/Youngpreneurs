@@ -10,75 +10,55 @@ const ForSchools = () => {
       </div>
 
       <div className="school-benefits-section">
-  <h2 className="school-benefits-heading">What’s in it for Your School?</h2>
+  <h2 className="school-benefits-heading">Why Should Your School Join Future Titans?</h2>
   </div>
       <div className="cards-container">
         <div className="card">
-          <h3>Workshops and Bootcamps That Matter</h3>
+          <h3>Be a Flagbearer of Innovation</h3>
           <p>
-            Students don’t just compete—they <strong>learn, build, and pitch like real entrepreneurs</strong>. 
-            Our exclusive training ensures they master problem-solving, leadership, and business strategy.
+          Position your school at the forefront of a national transformation in education. In partnership with <strong>The Times of India</strong>, YoungPreneurs recognizes visionary institutions as <strong>Torchbearers of Innovation </strong>— schools that go beyond academics to shape creators, leaders, and problem-solvers for the 21st century.
           </p>
         </div>
         <div className="card">
-          <h3>Train-the-Trainer Program</h3>
+          <h3>Empower Your Educators</h3>
           <p>
-            <strong>Empower your educators to shape young innovators!</strong> 
-            We provide <strong>specialized training sessions</strong> for teachers, equipping them with 
-            <strong> entrepreneurial frameworks, real-world business strategies</strong>, and 
-            <strong> hands-on teaching methodologies</strong>. This ensures they can 
-            <strong> mentor students effectively</strong>, foster problem-solving skills, and create a dynamic learning 
-            environment that <strong>turns classrooms into innovation hubs!</strong>
+          Through our <strong>Train-the-Trainer Program</strong>, your educators gain hands-on exposure to global entrepreneurial frameworks such as <strong>Design Thinking, Business Model Canvas,</strong> and <strong>IDEADNA</strong>.These sessions go beyond theory, equipping teachers to mentor student innovators, integrate real-world learning into everyday lessons, and build a thriving innovation culture within your school.
           </p>
         </div>
         <div className="card">
-          <h3>Be the Torchbearer of Innovation!</h3>
+          <h3>Certification & Recognition</h3>
           <p>
-            [Title Sponsor], in partnership with The Times of India and Youngpreneurs, proudly presents 
-            the “Torchbearer of Innovation” award—an accolade that recognizes schools championing entrepreneurial 
-            spirit among students. 
-            <br /><br />
-            By encouraging participation in the Future Titans competition, your institution will be celebrated as a 
-            true torchbearer of innovation, receiving a prestigious trophy and certificate in honor of your commitment 
-            to fostering young visionaries.
+          Partner schools receive an official certification from The Times of India and YoungPreneurs Academy,
+           recognizing their commitment to fostering innovation, leadership, and entrepreneurship within their ecosystem.
+           
           </p>
         </div>
         <div className="card">
-          <h3>Official Recognition and Certification</h3>
+          <h3>Seamless Implementation. Continuous Support</h3>
           <p>
-            Get an <strong>exclusive certification</strong> from 
-            <strong> The Times of India and Youngpreneurs Academy</strong>, proving your school nurtures innovation and 
-            leadership. Stand out as a <strong>pioneer in shaping future-ready education!</strong>
+          Built on a plug-and-play model, Future Titans integrates effortlessly into your existing system — with complete resources, simple evaluation through the Student Startup Index (SSI), and dedicated support for both faculty and students at every step,
+           innovation becomes easy to execute and impossible to ignore.
           </p>
         </div>
         <div className="card">
-          <h3>National Media Spotlight</h3>
+          <h3>National Recognition & Lasting Impact</h3>
           <p>
-            Partner schools get featured in <strong>The Times of India and top media platforms</strong>. 
-            <strong> Boost your school’s reputation</strong>, attract top students, and become the 
-            <strong> go-to institution for future leaders.</strong>
+          Your school earns visibility and distinction on a national level — celebrated for fostering innovation, leadership, and the entrepreneurial spirit that drives India’s next generation forward.
           </p>
         </div>
-        <div className="card">
-          <h3>Real-World Impact</h3>
-          <p>
-            Schools producing top talent will be <strong>honoured for their contribution to nurturing young changemakers.</strong> 
-            <strong> Your students succeed, your school shines.</strong>
-          </p>
-        </div>
+        
       </div>
       <div className="encouragement-section"  style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="overlay">
           <div className="content">
             <h2>Why Encourage Your Students?</h2>
             <p>
-              With ₹40 Lakhs in funding, incubation, and mentorship from India’s top entrepreneurs, 
-              Future Titans is where big dreams turn into real-world success stories.
+            The next CEO, innovator, or changemaker might be sitting in your classroom right now.
+Future Titans gives them the chance — and your school, the legacy.
+With national exposure, investor-backed mentorship, and real startup funding on the line, this is more than participation — it’s a chance to put your school’s name in India’s innovation story.
+
             </p>
-            <p>
-              This is bigger than a competition—it’s a revolution. And the schools that back their 
-              students today will be the institutions that shape tomorrow.
-            </p>
+           
             <p><strong>Is your school ready to make history?</strong></p>
             
             <button
