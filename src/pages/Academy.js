@@ -361,6 +361,67 @@ const Academy = () => {
             text-align: left;
           }
         }
+          .cta-section {
+          background-color: #f2f2f2;
+          text-align: center;
+          padding: 50px 80px;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .cta-section h2 {
+          font-size: 28px;
+          color: #dcae1a;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .cta-section p {
+          font-size: 16px;
+          color: #555;
+          max-width: 1000px;
+          margin: 0 auto 16px auto;
+          line-height: 1.6;
+        }
+
+        .cta-section p strong {
+          color: #333;
+        }
+
+        .cta-highlight {
+          color: #2d2d2d;
+          font-weight: bold;
+        }
+
+        .register-btn {
+          background-color: #dcae1a;
+          color: #fff;
+          padding: 12px 24px;
+          border: none;
+          font-weight: bold;
+          border-radius: 25px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .register-btn:hover {
+          background-color: #dcae1a;
+        }
+
+        @media (max-width: 768px) {
+          .cta-section h2 {
+            font-size: 22px;
+          }
+
+          .cta-section p {
+            font-size: 14px;
+          }
+
+          .cta-register-button {
+            font-size: 13px;
+            padding: 10px 24px;
+          }
+        }
       `}</style>
 
 
@@ -369,17 +430,25 @@ const Academy = () => {
         <div className="youngpreneur-overlay" />
         <div className="youngpreneur-content">
           <h2 className="youngpreneur-title">
-            YOUNGPRENEUR – The Entrepreneurship Academy for Promising Youth
+          YoungPreneurs Academy<br/>
+India’s Innovation Engine for the Next Generation
+
           </h2>
           <p className="youngpreneur-description">
-            We believe in the research-backed truth: <strong>“Entrepreneurs aren’t born; they are made.”</strong><br />
-            Through <strong>experiential learning, mentorship, and real-world challenges</strong>, we train young minds to think like entrepreneurs, solve problems creatively, and turn ideas into thriving ventures.
+          The world is evolving faster than ever — AI is rewriting industries, automation is redefining jobs, and creativity has become the new currency.
+In this era of constant change, one mindset stands undefeated — the entrepreneurial mindset.
+<br/>
+That’s what <strong>YoungPreneurs Academy</strong> was built to ignite —
+the courage to question, the curiosity to create, and the capability to turn ideas into impact.
+<br/>
+We believe entrepreneurship is not a subject — it’s a way of thinking.
+A mindset that teaches students to <strong>spot opportunities, solve problems, and lead change</strong> in any field they choose — science, art, technology, or business.
           </p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1" className="register-button">REGISTER NOW</a>
         </div>
       </div>
 
-      <div className="entrepreneurship-container">
+      {/* <div className="entrepreneurship-container">
         <div className="image-column">
           <img src={aca1} alt="Group of students studying" />
           <img src={aca2} alt="Students at computers" style={{marginTop: '10px',marginRight: '500px'}}/>
@@ -401,23 +470,26 @@ REGISTER NOW
 </button>
 
         </div>
-      </div>
+      </div> */}
 
 
       <div className="gain-wrapper">
         <div className="text-section">
-          <h2>What Youngpreneurs Gain</h2>
-          <h4>Entrepreneurial Thinking</h4>
-          <p>A “Can-Do” attitude that turns obstacles into opportunities.</p>
+          <h2>What Makes Us Different</h2>
+          <h4>Global Learning. Indian Roots</h4>
+          <p>Our programs bring world-class entrepreneurial education — the kind taught at leading global universities — directly to Indian classrooms.
+Students learn to think critically, act creatively, and build confidently.
+</p>
 
-          <h4>Business & Leadership Skills</h4>
-          <p>Understanding business models, pitching, and strategy.</p>
+          <h4>Future-Focused Curriculum</h4>
+          <p>From Design Thinking to the Business Model Canvas, from ideation to pitching — every framework is adapted from what real founders, innovators, and changemakers use.</p>
 
-          <h4>Creative Problem–Solving</h4>
-          <p>Innovation-driven techniques to design real-world solutions.</p>
+          <h4>Learning by Building</h4>
+          <p>Every YoungPreneurs experience is hands-on.
+Students don’t just learn about ideas — they build them, test them, and pitch them to real mentors and investors.
+</p>
 
-          <h4>Confidence & Communication</h4>
-          <p>Mastering the art of storytelling, persuasion, and leadership.</p>
+          
         </div>
 
         <div className="image-section">
@@ -428,44 +500,106 @@ REGISTER NOW
 
 
       <div className="curriculum-section">
-        <div className="curriculum-text">
-          <h2>The Youngpreneur<br />Entrepreneurship Curriculum</h2>
-          <p>
-            Our carefully designed curriculum lays the <strong>foundation for a lifelong entrepreneurial journey</strong>. Students explore:
-          </p>
-          <div className="curriculum-list">
-            {[
-              {
-                title: "What is Entrepreneurship?",
-                desc: "Understanding the startup world and its opportunities.",
-              },
-              {
-                title: "The Entrepreneurial Mindset",
-                desc: "Developing resilience, adaptability, and risk-taking skills.",
-              },
-              {
-                title: "Lateral Thinking & Creative Problem–Solving",
-                desc: "Finding innovative solutions to challenges.",
-              },
-              {
-                title: "Idea Generation to Prototyping",
-                desc: "Turning ideas into tangible business concepts.",
-              }
-            ].map((item, index) => (
-              <div className="curriculum-item" key={index}>
-                <FontAwesomeIcon icon={faCheckCircle} className="icon" />
-                <div className="curriculum-item-content">
-                  <h4>{item.title}</h4>
-                  <p>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+       
+      <div className="text-section">
+          <h2>Our Signature Programs</h2>
+          <h4>Future Titans — India’s Biggest School Entrepreneurship Challenge</h4>
+          <p>A nationwide movement where young minds dream, design, and deliver innovation.
+From virtual workshops to a live national pitch, students go through the full entrepreneurial journey — guided by mentors, entrepreneurs, and global educators.
 
+</p>
+
+          <h4>Build Like a Titan — 5-Step Innovation Journey</h4>
+          <p>A powerful workshop series that transforms curiosity into capability:Discover problems → Design solutions → Prototype ideas → Model viability → Pitch like pros.
+Every participant earns a Globally Recognized Certificate proving their mastery in innovation and problem-solving.
+</p>
+
+          <h4>Train-the-Trainer — Empowering Educators Nationwide</h4>
+          <p>We don’t just inspire students; we equip teachers too.
+Our Train-the-Trainer initiative empowers educators with entrepreneurial frameworks, teaching methodologies, and tools to turn classrooms into innovation labs.
+
+</p>
+
+          
+        </div>
         <div className="curriculum-image">
           <img src={rightImg} alt="Young entrepreneur" />
         </div>
+      </div>
+
+      <div className="gain-wrapper">
+      <div className="image-section">
+          <img src={aca1} alt="Students walking" style={{}}/>
+          {/* <img src={aca2} alt="Classroom activity" style={{marginTop:'-120px',marginLeft:"80px"}}/> */}
+        </div>
+        <div className="text-section">
+          <h2>Our Vision</h2>
+          
+          <p>To make entrepreneurial thinking as fundamental as math and science —
+so every student in India learns not just to find a job, but to create impact.
+<br/>
+Because the future won’t be built by those who wait —
+it’ll be built by those who start.
+
+</p>
+
+          <h4>Future-Focused Curriculum</h4>
+          <p>From Design Thinking to the Business Model Canvas, from ideation to pitching — every framework is adapted from what real founders, innovators, and changemakers use.</p>
+
+          <h4>Learning by Building</h4>
+          <p>Every YoungPreneurs experience is hands-on.
+Students don’t just learn about ideas — they build them, test them, and pitch them to real mentors and investors.
+</p>
+
+          
+        </div>
+
+      
+      </div>
+
+
+
+      <div className="curriculum-section">
+       
+      <div className="text-section">
+          <h2>Our Partnerships</h2>
+          
+          <p>In association with The Times of India, and powered by our Ecosystem Partners — Startup India, Association of Indian Principals, and AIC BIMTECH —
+YoungPreneurs Academy is on a mission to empower 1 million student innovators to think boldly, build fearlessly, and shape India’s tomorrow, today.
+
+
+</p>
+
+         
+
+          
+        </div>
+        <div className="curriculum-image">
+          <img src={aca2} alt="Young entrepreneur" />
+        </div>
+      </div>
+
+      <div className="cta-section">
+       
+        <h1 style={{fontSize:"23px",color:"#204e3d",fontWeight:"bold"}}>
+        Join the Movement
+
+        </h1>
+        <p className="cta-highlight">
+        Be part of the revolution transforming how India learns.
+Whether you’re a student ready to build, a teacher ready to inspire, or a school ready to lead — your journey begins here.
+
+
+        </p>
+       
+        
+        <button
+  className="register-btn"
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+>
+Join YoungPreneurs Academy
+</button>
+
       </div>
     </>
   );
