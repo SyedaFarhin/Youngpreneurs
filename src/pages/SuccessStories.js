@@ -124,19 +124,20 @@ const SuccessStories = () => {
 
  .future-titans-container {
           text-align: center;
-          padding: 40px 20px;
+          padding: 20px 90px;
           margin-top:80px
         }
 
         .future-titans-heading {
-          font-size: 2.5rem;
+          font-size: 1.9rem;
           font-weight: bold;
           color: #dcae1a;
           margin-bottom: 10px;
+          
         }
 
         .future-titans-subtitle {
-          font-size: 1.25rem;
+          font-size: 1.2rem;
           color: #2f4f4f;
         }
 
@@ -396,14 +397,21 @@ const SuccessStories = () => {
 
 
 <div className="future-titans-container">
-        <h2 className="future-titans-heading">Future Titans in the Making</h2>
-        <p className="future-titans-subtitle">Success isn’t born—it’s built.</p>
+        <h2 className="future-titans-heading">Where Success Finds Its True Meaning — Beyond Trophies, Toward Transformation</h2>
+        <p className="future-titans-subtitle">Success, at YoungPreneurs, is not a trophy — it’s a turning point.
+It’s when curiosity becomes courage.
+When ideas find wings.
+When education becomes empowerment.<br/>
+Every Future Titan begins with one belief — that they can build something bigger than themselves.
+Through immersive workshops, national challenges, and a world-class curriculum, we’re not just teaching entrepreneurship — we’re nurturing changemakers, innovators, and leaders who redefine what success truly means.
+
+</p>
       </div>
 
 
-      <div className="section-container">
+      {/* <div className="section-container">
 
-        {/* First Section */}
+       
         <div className="section">
           <div className="text-content">
             <h2>Igniting Young Minds with Entrepreneurial Spirit</h2>
@@ -422,7 +430,7 @@ const SuccessStories = () => {
           </div>
         </div>
 
-        {/* Second Section */}
+      
         <div className="section reverse">
           <div className="text-content">
             <h2>Camp Delta E: Where Ideas Take Flight</h2>
@@ -440,7 +448,7 @@ const SuccessStories = () => {
             <button className="carousel-button right" onClick={() => scrollCarousel(carousel2Ref, "right")}>&#8250;</button>
           </div>
         </div>
-{/* Third Section */}
+
         <div className="section">
           <div className="text-content">
             <h2>Igniting Young Minds with Entrepreneurial Spirit</h2>
@@ -460,7 +468,7 @@ const SuccessStories = () => {
         </div>
 
         
-      </div>
+      </div> */}
 
       <div className="belief-section">
         <h2 className="belief-title">Greatness Begins with Belief</h2>
