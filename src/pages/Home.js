@@ -1,7 +1,23 @@
 import React, { useEffect } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
+
+
+
+
+
+
+
+
+
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import heroVideo from '../assets/videoplayback.mp4';
@@ -17,21 +33,45 @@ import insta from '../assets/insta.jpg';
 import linkedin from '../assets/linkedin.jpg';
 import email from '../assets/email.jpg';
 import youtube from '../assets/youtube.jpg';
-
+const images = ["/slide1.png", "/slide2.png", "/slide3.png"];
 const Home = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: false,
+  //   });
+  // }, []);
+
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 600,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   arrows: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: { arrows: false }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: { arrows: false }
+  //     }
+  //   ],
+  // };
+  
+
 
   return (
     <>
     
-      <section className="hero-section" style={{ position: "relative", overflow: "hidden" }}>
-        
-        <video
+   
+
+
+        {/* <video
           autoPlay
           muted
           loop
@@ -40,8 +80,30 @@ const Home = () => {
         >
           <source src={heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
-      </section>
+        </video> */}
+
+
+<Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      navigation
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 3000 }}
+      loop={true}
+      slidesPerView={1}
+      style={{ width: "100%", height: "auto" }}
+    >
+      <SwiperSlide>
+        <img src="/slide1.png" alt="1" style={{ width: "100%" }} />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <img src="/slide2.png" alt="2" style={{ width: "100%" }} />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <img src="/slide3.png" alt="3" style={{ width: "100%" }} />
+      </SwiperSlide>
+    </Swiper>
 
   
      
@@ -238,30 +300,21 @@ REGISTER NOW
 
           </p>
 
-          {/* <div>
-            <p style={{ color: "#dcae1a",fontSize: "22px" }}>Startup Fundamentals </p>
-            <h6 style={{ color: "white" }}>Understanding ideas, markets, and business models.</h6>
-
-          </div> */}
+      
           <div className="curriculum-topic">
-            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Startup Fundamentals</h4>
-            <p style={{ color: "white" }}>Understanding ideas, markets, and business models.</p>
+            <h4 style={{ color: " #dcae1a",fontSize: "20px" }}>Startup Fundamentals</h4>
+            <p style={{ color: "rgb(255, 255, 255)" }}>Understanding ideas, markets, and business models.</p>
             <br/>
-            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Pitching & Storytelling </h4>
-            <p style={{ color: "white" }}>Communicating vision with clarity and impact.</p>
+            <h4 style={{ color: "  #dcae1a",fontSize: "20px" }}>Pitching & Storytelling </h4>
+            <p style={{ color: " rgb(255, 255, 255)" }}>Communicating vision with clarity and impact.</p>
             <br/>
-            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Financial & Business Strategy </h4>
-            <p style={{ color: "white" }}>Learning the art of smart decision-making.</p>
+            <h4 style={{ color: "  #dcae1a",fontSize: "20px" }}>Financial & Business Strategy </h4>
+            <p style={{ color: "rgb(255, 255, 255)" }}>Learning the art of smart decision-making.</p>
             <br/>
-            <h4 style={{ color: "#dcae1a",fontSize: "20px" }}>Leadership & Communication </h4>
-            <p style={{ color: "white" }}>Building confidence, teamwork, and influence.</p>
+            <h4 style={{ color: "  #dcae1a",fontSize: "20px" }}>Leadership & Communication </h4>
+            <p style={{ color: " rgb(255, 255, 255)" }}>Building confidence, teamwork, and influence.</p>
           </div>
-          {/* <ul className="points">
-            <li>Startup Fundamentals – Understanding ideas, markets, and business models.</li>
-            <li>Pitching and Storytelling</li>
-            <li>Financial and Business Strategy</li>
-            <li>Leadership and Communication</li>
-          </ul> */}
+          
           
           <button
   className="enroll-btn"
@@ -375,9 +428,10 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
 .container {
 
           padding: 60px 20px;
-          max-width: 1300px;
-          margin: auto;
-          font-family: 'Segoe UI', sans-serif;
+          // max-width: 1300px;
+          // margin: auto;
+          // font-family: 'Segoe UI', sans-serif;
+         
         }
 
         .content {
@@ -463,8 +517,8 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           bottom: 0;
           width: 100%;
           padding: 15px;
-          background: rgba(0, 0, 0, 0.55);
-          color: white;
+          // background: rgba(178, 174, 174, 0.9);
+          // color: white;
           font-size: 14px;
           line-height: 1.4;
           backdrop-filter: blur(4px);
@@ -594,7 +648,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         }
 
         .game-changer-section h2 {
-          color: #dcae1a;
+          color: #305c4d;
           font-size: 28px;
           margin-bottom: 40px;
           font-weight: 700;
@@ -658,20 +712,20 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         }
 
         .mentorship-section p {
-          font-size: 16px;
+          font-size: 20px;
           margin-bottom: 10px;
           color: #e0e0e0;
         }
 
         .highlight {
           font-weight: bold;
-          font-size: 18px;
+          font-size: 25px;
           color: #fff;
           margin-top: 20px;
         }
 
         .logo {
-          width: 120px;
+          width: 200px;
           margin: 20px auto;
         }
 
@@ -689,8 +743,8 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
   align-items: center;    /* Center items horizontally */
  
   text-align: center;
-  max-width: 200px;
-  height: 300px; /* Add a height if vertical centering is needed */
+  max-width: 400px;
+  height: 200px; /* Add a height if vertical centering is needed */
  
 }
         .mentor-card img {
@@ -704,12 +758,12 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
 
         .mentor-card h4 {
           margin: 10px 0 5px;
-          font-size: 16px;
+          font-size: 22px;
         }
 
         .mentor-card span {
-          font-size: 14px;
-          color: #ccc;
+          font-size: 18px;
+          color: #e0e0e0;
         }
 
         @media (max-width: 768px) {
@@ -722,19 +776,21 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           }
         }
            .workshop-section {
-          background: linear-gradient(rgba(6, 131, 131, 0.6), rgba(0, 63, 63, 0.6));
+          background: linear-gradient(rgba(220, 175, 26, 0.62), rgba(220, 175, 26, 0.28));
           padding: 60px 20px;
+          
           color: #fff;
           text-align: center;
           border-radius: 30px;
           max-width: 900px;
-          margin: 40px auto;
+          margin: 90px auto;
         }
 
         .workshop-section h2 {
           font-size: 26px;
-          font-weight: 700;
-          margin-bottom: 30px;
+          font-weight: 600;
+          margin-bottom: 50px;
+          color: #104040
         }
 
         .workshop-list {
@@ -743,14 +799,15 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           margin: 0 auto 30px;
           max-width: 700px;
           text-align: left;
+          
         }
 
         .workshop-list li {
           margin-bottom: 16px;
-          font-size: 17px;
+          font-size: 20px;
           position: relative;
           padding-left: 32px;
-          color: #f0f0f0;
+          color: #104040
         }
 
         .workshop-list li::before {
@@ -759,11 +816,13 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           position: absolute;
           left: 0;
           top: 0;
+           color: #104040
         }
 
         .subtext {
-          font-size: 16px;
-          color: #d5e5e5;
+          font-size: 20px;
+           font-weight: 600;
+        color: #104040;
           margin-bottom: 30px;
           max-width: 700px;
           margin-left: auto;
@@ -773,12 +832,12 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         .cta-text {
           font-size: 22px;
           font-weight: 700;
-          color: #fff;
+          color: #104040;
           margin-bottom: 20px;
         }
 
         .cta-button {
-          background-color: #1b1b1b;
+          background-color: #104040;
           color: #fff;
           padding: 12px 30px;
           font-weight: 600;
@@ -828,7 +887,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           left: 0;
           height: 100%;
           width: 100%;
-          background: rgba(0, 0, 0, 0.6);
+          background:rgba(17, 16, 10, 0.41);
           z-index: 1;
         }
 
@@ -841,14 +900,16 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         }
 
         .academy-content h2 {
-          font-size: 32px;
+          font-size: 35px;
           font-weight: 700;
           margin-bottom: 20px;
+          color:rgb(242, 210, 104);
+
         }
 
         .academy-content p {
-          font-size: 16px;
-          color: #e0e0e0;
+          font-size: 20px;
+          color:rgba(255, 255, 255, 0.84);
           margin-bottom: 30px;
           line-height: 1.6;
         }
@@ -874,11 +935,11 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         }
 
         .enroll-btn {
-          background-color: #fff;
-          color: #104040;
+          background-color: #dcae1a;
+          color:rgb(255, 255, 255);
           padding: 12px 28px;
           font-weight: 600;
-          font-size: 14px;
+          font-size: 18px;
           border: none;
           border-radius: 30px;
           cursor: pointer;
@@ -919,7 +980,8 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         .curriculum-right {
           flex: 1;
           min-width: 300px;
-          background: linear-gradient(to bottom right, #dcae1a, #dcae1a);
+          background: linear-gradient(to bottom right,rgba(220, 175, 26, 0.7), #dcae1a);
+          // background:rgba(250, 228, 158, 0.26);
           color: #fff;
           padding: 60px 40px;
           display: flex;
@@ -948,16 +1010,16 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         .curriculum-topic h4 {
           margin: 0;
           font-size: 18px;
-          font-weight: 600;
-          color:rgb(5, 59, 39);
+          // font-weight: 600;
+          // color:rgb(5, 59, 39);
         }
 
         .curriculum-topic p {
           margin: 5px 0 0 0;
-          font-size: 18px;
-          color:#103120;
-          line-height: 1.4;
+          font-size: 20px;
             color:rgb(255, 255, 255);
+         
+          line-height: 1.4;
         }
 
         @media (max-width: 768px) {
@@ -1038,7 +1100,21 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
 
 
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+}
 
+/* Change Swiper pagination bullets to white */
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+  opacity: 1;
+}
 
 
 
