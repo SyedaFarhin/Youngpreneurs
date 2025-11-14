@@ -327,8 +327,11 @@ ENROLL TODAY
       </section>
     
       <div className="curriculum-section">
+
         <div className="curriculum-left"></div>
         <div className="curriculum-right">
+      <div className="overlay"></div>
+
           <h2>The YoungPreneur Entrepreneurship Curriculum</h2>
           <p className="intro">
           Built on the world’s first patent-pending entrepreneurial ecosystem, the YoungPreneur Curriculum takes students through a complete innovation journey — from idea conception to real-world implementation.
@@ -698,11 +701,11 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           }
         }
            .mentorship-section {
-          background: linear-gradient(rgba(0, 63, 63, 0.6),rgba(0, 63, 63, 0.6));
+          background: #305c4d;
           padding: 60px 20px;
           color: #fff;
           text-align: center;
-          border-radius: 20px;
+          // border-radius: 20px;
         }
 
         .mentorship-section h2 {
@@ -980,7 +983,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         .curriculum-right {
           flex: 1;
           min-width: 300px;
-          background: linear-gradient(to bottom right,rgba(220, 175, 26, 0.7), #dcae1a);
+          background: linear-gradient(to bottom right,rgba(220, 175, 26, 0.7),rgba(220, 175, 26, 0.78));
           // background:rgba(250, 228, 158, 0.26);
           color: #fff;
           padding: 60px 40px;
@@ -1011,7 +1014,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           margin: 0;
           font-size: 18px;
           // font-weight: 600;
-          // color:rgb(5, 59, 39);
+          color:rgb(5, 59, 39);
         }
 
         .curriculum-topic p {
