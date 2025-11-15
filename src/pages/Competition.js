@@ -102,24 +102,119 @@ const Competition = () => {
     <div className="hero-section">
         {/* You can place overlay text, buttons, or other elements here */}
       </div>
+
+      <div className="section-container">
+<style>{`
+.section-container {
+width: 100%;
+padding: 40px 20px;
+background: linear-gradient(135deg,rgba(10, 19, 52, 0.71), #1b4d3e);
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: 'Poppins', sans-serif;
+}
+
+
+.main-title {
+font-size: 2.5rem;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+
+.subtitle {
+font-size: 1.2rem;
+font-weight: 300;
+margin-bottom: 30px;
+}
+
+
+.partners {
+background: rgba(255, 255, 255, 0.1);
+padding: 20px;
+border-radius: 12px;
+max-width: 500px;
+width: 100%;
+}
+
+
+.partners h3 {
+font-size: 1.4rem;
+margin-bottom: 10px;
+font-weight: 600;
+}
+
+
+.partners ul {
+list-style: none;
+padding: 0;
+}
+
+
+.partners ul li {
+font-size: 1rem;
+padding: 6px 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.partners ul li:last-child {
+border-bottom: none;
+}
+
+
+@media (max-width: 600px) {
+.main-title {
+font-size: 2rem;
+}
+
+
+.subtitle {
+font-size: 1rem;
+}
+}
+`}</style>
+
+
+<h1 className="main-title">Welcome to Future Titans – India’s Entrepreneurial Hunt</h1>
+<p className="subtitle">A USA–India initiative<br />In Association with The Times of India</p>
+
+
+<div className="partners">
+<h3>Ecosystem Partners:</h3>
+<ul>
+<li>Startup India</li>
+<li>Association of Indian Principals</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
       <section className="welcome-section">
         <div className="welcome-content">
           <div className="text-column">
             <h2>
-              <span className="highlight">Welcome to Future Titans – India’s Entrepreneurial Hunt</span><br />
-              <p style={{fontSize:"15px", color: "#204e3d"}}>A USA–India initiative
-              In Association with <span className="highlight">The Times of India</span></p>
-              <p style={{fontSize:"15px",color: "#204e3d"}}>Ecosystem Partners: <br/><span className="highlight">Startup India 
-<br/>Association of Indian Principals 
-<br/>AIC BIMTECH</span></p>
+             
     
-              <span className="subheading">Building India’s Tomorrow, Today</span>
+              Building India’s Tomorrow, Today
             </h2>
             
             <p>
             We’re entering an age where AI creates faster than we can imagine and automation replaces routine in seconds.
-In this new world, success won’t belong to those who simply follow — it will belong to those who think differently, build fearlessly, and lead with purpose.
-It’s not about learning business — it’s about learning how to think: to question, to create, and to convert ideas into action.
+Today, the future belongs to young innovators who see possibilities where others see limits, craft solutions with courage, and lead with vision that inspires change. 
+<br/>
+That’s where Future Titans by YoungPreneurs comes in — a national challenge designed to equip India’s teens (Classes 8-12) with the one mindset that will always stay relevant: the solution-seekingmindset.
+<br/>
+This journey isn’t about memorizing business lessons —it’s about forging a mindset that thrives in uncertainty, turns challenges into opportunities, and shapes the future on their own terms.
 Because in the world ahead, every innovator is a leader, and every leader is an entrepreneur at heart.
 Before stepping into the competition, every participant goes through a 5-part “Build Like a Titan” workshop series — a hands-on, globally benchmarked journey that transforms ideas into action.
 
@@ -244,9 +339,34 @@ A masterclass in influence and communication, refining delivery and confidence.
       </div>
 
 
-     
+      <section className="launchpad-section">
+      <div className="content-box">
+        <h2 className="section-title">Future Titans</h2>
 
-      <div className="cta-section">
+        <p className="section-text">
+          This is more than a competition — it’s a launchpad for India’s next
+          generation of builders. Where ideas find direction, young leaders find
+          their voice, and the journey to becoming a changemaker truly begins.
+        </p>
+
+        <p className="section-text">
+          Never before has a curriculum of this scale, depth, and international
+          caliber been made available to school students at this level. Future
+          Titans isn’t just preparing students for the future — it’s empowering
+          them to build it.
+        </p>
+
+        <p className="section-highlight">
+          You’ve dreamed. You’ve imagined.  
+          <br />
+          Now it’s time to build, pitch, and rise.  
+          <br />
+          <strong>The next big name in entrepreneurship could be yours.</strong>
+        </p>
+      </div>
+    </section>
+
+      {/* <div className="cta-section">
        
         <p style={{fontSize:"23px",color:"#204e3d",fontWeight:"bold"}}>
         This is more than a competition — it’s a launchpad for India’s next generation of builders.
@@ -267,14 +387,33 @@ Future Titans isn’t just preparing students for the future — it’s empoweri
 REGISTER NOW
 </button>
 
-      </div>
+      </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
       <style>{`
 
       .hero-section {
          background-image: url(${academyHeaderBg});
   background-size: cover;
   
-  height: 920px;
+  height: 825px;
   width: 100%;
   position: relative;
   padding-top: 90px;
@@ -301,7 +440,7 @@ REGISTER NOW
         }
 
         .welcome-content {
-          max-width: 1200px;
+          max-width: 1400px;
           margin: 0 auto;
           display: flex;
           flex-wrap: wrap;
@@ -313,6 +452,8 @@ REGISTER NOW
         .text-column {
           flex: 1 1 55%;
           padding: 20px;
+          color: #2e6f57;
+
         }
 
         .text-column h2 {
@@ -345,7 +486,7 @@ REGISTER NOW
         }
 
         .register-btn {
-          background-color: #dcae1a;
+          background-color: #2e6f57;
           color: #fff;
           padding: 12px 24px;
           border: none;
@@ -360,13 +501,13 @@ REGISTER NOW
         }
 
         .image-column {
-          flex: 1 1 40%;
-          padding: 20px;
+          flex: 1 1 30%;
+          // padding: 15px;
           position: relative;
         }
 
       .image-container {
-    flex: 1.2;
+    flex: 1.5;
     min-width: 350px;
     display: flex;
     justify-content: flex-end;
@@ -871,6 +1012,92 @@ REGISTER NOW
             padding: 10px 24px;
           }
         }
+
+
+        .launchpad-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: linear-gradient(
+    135deg,
+    #fdf7ff 0%,
+    #f8f3ff 40%,
+    #fff 100%
+  );
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.content-box {
+  max-width: 900px;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0b3d2e;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.section-title::after {
+  content: "";
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(to right, #d4af37, #f9d67a);
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+  border-radius: 10px;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin: 18px 0;
+}
+
+.section-highlight {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #0b3d2e;
+  background: rgba(212, 175, 55, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #d4af37;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-text,
+  .section-highlight {
+    font-size: 16px;
+  }
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
       `}</style>
     </>
   );

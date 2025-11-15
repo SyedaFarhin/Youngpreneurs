@@ -431,65 +431,44 @@ const Academy = () => {
         <div className="youngpreneur-content">
           <h2 className="youngpreneur-title">
           YoungPreneurs Academy<br/>
-India’s Innovation Engine for the Next Generation
+          India’s Innovation Engine for the Next Generation
 
           </h2>
           <p className="youngpreneur-description">
-          The world is evolving faster than ever — AI is rewriting industries, automation is redefining jobs, and creativity has become the new currency.
-In this era of constant change, one mindset stands undefeated — the entrepreneurial mindset.
+          Innovation starts with curiosity, but curiosity alone isn’t enough. At YoungPreneurs Academy, we turn curiosity into discovery, ideas into experiments, and experiments into breakthroughs. This is a place where students are challenged to explore beyond what’s taught, question the obvious, and uncover solutions no one has imagined before.
+Every project, every workshop, every challenge is designed to stretch the mind, ignite creativity, and reveal the hidden potential in every student. Here, learning is not about following instructions — it’s about crafting new possibilities, testing them in the real world, and refining them until they work.
+
 <br/>
-That’s what <strong>YoungPreneurs Academy</strong> was built to ignite —
-the courage to question, the curiosity to create, and the capability to turn ideas into impact.
+Students graduate with more than knowledge; they develop an internal framework for problem-solving and innovation, one that can be applied in science, technology, arts, or business. It’s not about preparing for a career — it’s about shaping a mindset that can create opportunities, confront challenges, and make ideas matter.
 <br/>
-We believe entrepreneurship is not a subject — it’s a way of thinking.
-A mindset that teaches students to <strong>spot opportunities, solve problems, and lead change</strong> in any field they choose — science, art, technology, or business.
+At YoungPreneurs Academy, the future isn’t just something students step into. It’s something they invent, define, and drive forward.
           </p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1" className="register-button">REGISTER NOW</a>
         </div>
       </div>
 
-      {/* <div className="entrepreneurship-container">
-        <div className="image-column">
-          <img src={aca1} alt="Group of students studying" />
-          <img src={aca2} alt="Students at computers" style={{marginTop: '10px',marginRight: '500px'}}/>
-        </div>
-        <div className="text-column">
-          <h2>Why Entrepreneurship Matters Today</h2>
-          <p>
-            In today’s fast-changing innovation economy, success demands more than just academic excellence. Young minds need a <strong>visionary mindset</strong>—one that sees problems as opportunities and is driven by initiative and creativity. An entrepreneurial outlook empowers youth to unlock their potential and take charge of their future.
-          </p>
-          <p>
-            At Youngpreneur, students experience the <strong>power of entrepreneurship</strong> firsthand by <strong>bringing their own ideas to life</strong>. Our immersive programs extend beyond textbooks, offering hands-on learning through engaging activities, business simulations, and interactive workshops.
-          </p>
-         
-          <button
-  className="register-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1", "_blank")}
->
-REGISTER NOW
-</button>
-
-        </div>
-      </div> */}
 
 
       <div className="gain-wrapper">
         <div className="text-section">
           <h2>What Makes Us Different</h2>
-          <h4>Global Learning. Indian Roots</h4>
-          <p>Our programs bring world-class entrepreneurial education — the kind taught at leading global universities — directly to Indian classrooms.
-Students learn to think critically, act creatively, and build confidently.
+          <h4>Global Learning. Indian Roots. Future-Ready Minds.</h4>
+          <p>At YoungPreneurs Academy, we bring world-class entrepreneurial education, the kind taught at leading universities and incubators globally, directly to Indian classrooms — tailored for the next generation of innovators. Students don’t just learn concepts; they develop the mindset, methodology, and metrics that real-world founders use to turn ideas into impact.
 </p>
 
-          <h4>Future-Focused Curriculum</h4>
-          <p>From Design Thinking to the Business Model Canvas, from ideation to pitching — every framework is adapted from what real founders, innovators, and changemakers use.</p>
+          <h4>A Curriculum Built for the Future</h4>
+          <p>Our programs are rooted in the IDEA DNA™ Mindset Engine (LP00581) and guided by the S.U.R.G.E.™ execution framework, ensuring every student learns how to think critically, break down complexity, and convert ideas into actionable solutions. From ideation to prototyping, from market testing to pitching, students engage with frameworks used by global changemakers — all adapted to create solutions that work in the real world.</p>
 
-          <h4>Learning by Building</h4>
-          <p>Every YoungPreneurs experience is hands-on.
-Students don’t just learn about ideas — they build them, test them, and pitch them to real mentors and investors.
+          <h4>Learning by Building, Measured by Growth</h4>
+          <p>Every experience at YoungPreneurs is hands-on. Students design, test, and iterate their own ideas, receiving mentorship from global faculty and industry experts. Their progress is tracked through the Solution-Seeking Index (SSI™) — India’s first quantified metric for entrepreneurial mindset, problem-solving ability, and innovation growth. This ensures learning is not just theoretical, but measurable, meaningful, and transformative.
 </p>
 
-          
+<h4>Mentorship That Matters</h4>
+          <p>Students connect with global thought leaders, professors from top universities, and seasoned entrepreneurs who guide them through challenges, provide real-time feedback, and help them refine ideas into investable ventures. This exposure develops not only skills but the confidence and vision to lead change in any field — science, technology, arts, or business.
+</p>
+<h4>Turning Ideas into Impact</h4>
+          <p>YoungPreneurs Academy is more than a learning program — it is a launchpad for India’s next generation of innovators. Students graduate with the ability to not just dream, but execute, measure, and scale their ideas, creating tangible impact in the world around them.
+</p>    
         </div>
 
         <div className="image-section">

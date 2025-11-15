@@ -178,8 +178,8 @@ const AboutUs = () => {
 
   /* NEW: Entrepreneurial section styles */
   .entrepreneurial-wrapper {
-    background: linear-gradient(to bottom right, rgba(220, 175, 26, 0.85),rgb(121, 96, 15));
-    color: white;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1),rgb(167, 166, 164));
+    color: #264653;
     padding: 60px 20px;
     text-align: center;
   }
@@ -188,22 +188,22 @@ const AboutUs = () => {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 40px;
+    
   }
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1500px;
     margin: auto;
   }
 
   .info-box {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.32);
     border-radius: 10px;
-    padding: 20px;
-    font-size: 16px;
+    padding: 40px;
+    font-size: 20px;
     text-align: left;
     line-height: 1.6;
   }
@@ -239,15 +239,15 @@ const AboutUs = () => {
           <h4 className="about-heading">ABOUT US</h4>
           <h2 className="about-title">YoungPreneurs – Igniting India’s Young Innovators</h2>
           <p className="about-paragraph">
-          The future belongs to those who don’t wait for change—they create it. YoungPreneurs is more than a program—
-          it’s India’s first patent-pending entrepreneurial ecosystem that transforms ideas into action and students into innovators, leaders, and changemakers.
+          The future belongs not to those who wait for opportunities, but to those who create them.
+YoungPreneurs™ is India’s first patent-pending neuro-adaptive entrepreneurial ecosystem, designed to transform young minds into innovators, problem-solvers, and future leaders. Powered by our proprietary IDEA DNA™ Mindset Engine (LP00581) and the S.U.R.G.E.™ execution framework, it builds the internal architecture of innovation — teaching students to generate ideas, navigate complexity, and convert challenges into actionable solutions.
+
           </p>
           <p className="about-paragraph">
-          Through immersive workshops, hands-on startup frameworks, and real-world challenges, students move from creative sparks to tangible ventures. They learn to think critically, solve complex problems, and launch scalable solutions,
-           guided by structured models like IDEA DNA and the SURGE Framework, while their growth is benchmarked through the Student Startup Index (SSI).
+          Through immersive workshops, structured innovation models, real-world challenges, and guided execution, students progress from sparks of imagination to validated, scalable solutions. Their growth is tracked using the Solution-Seeking Index (SSI™) — India’s first metric to quantify entrepreneurial mindset, problem-solving ability, and innovation readiness.
           </p>
           <p className="about-paragraph">
-          Backed by The Times of India, YoungPreneurs powers Future Titans, India’s premier entrepreneurship challenge for school students. Winners gain funding to bring their ideas to life, national recognition, and a platform to step confidently into the world of innovation.
+          Guided by global experts and backed by The Times of India, YoungPreneurs™ fuels Future Titans™, India’s premier entrepreneurship challenge for school students. Winners gain national recognition, funding, incubation opportunities, and a platform to confidently enter the world of innovation.
           </p>
          
         </div>
@@ -261,14 +261,14 @@ const AboutUs = () => {
           <img src={missionIcon} alt="Vision Icon" style={{ display: "block", margin: "0 auto 20px auto" }}/>
           <div className="card-title">Our Vision</div>
           <div className="card-text">
-          To redefine education by making entrepreneurial thinking a core life skill —empowering students to turn ideas into impact and shape a future driven by innovation and purpose.
+          A Generation That Sees Problems as Opportunities. A future where every teen looks at a challenge and thinks — “Let’s solve it.” Where every classroom becomes a catalyst for change, and education becomes the engine of a nation that innovates its own tomorrow.
           </div>
         </div>
         <div className="card mission-card">
           <img src={visionIcon} alt="Mission Icon" style={{ display: "block", margin: "0 auto 20px auto",height: "50px",width: "100px", }}/>
           <div className="card-title">Our Mission</div>
           <div className="card-text">
-          To bring India’s first patent-pending entrepreneurial ecosystem into classrooms — enabling schools to nurture creativity, problem-solving, and leadership from an early age.
+          Our mission is to build a nation of solution-seekers, not just job-seekers. By fusing AI, neuroscience, and education, we inspire every teen to see possibilities where others see problems, create meaningful solutions, and shape the future.
           </div>
         </div>
       </div>
@@ -277,24 +277,26 @@ const AboutUs = () => {
 
 
       <div className="entrepreneurial-wrapper">
-  <h2 style={{color: 'white'}}>Building an Entrepreneurial India, One Teen at a Time</h2>
+  <h2 style={{color: ' #264653'}}>Building an Entrepreneurial India, One Teen at a Time</h2>
   <div className="grid-container">
   <div className="info-box">
-  The world is changing faster than ever. AI, automation, and emerging technologies are redefining careers, industries, and opportunities. In this landscape, the skill that stands the test of time isn’t a degree — it’s the entrepreneurial mindset: the ability to solve problems, create solutions, and lead with impact.
+  The world is evolving faster than ever. AI, automation, and emerging technologies are reshaping careers and industries. In this new landscape, the skill that matters most is the entrepreneurial mindset: the ability to solve problems, create solutions, and lead with purpose.
         </div>
         <div className="info-box">
-        Future Titans by YoungPreneurs is India’s national entrepreneurship movement that empowers students from Classes 8–12 to think boldly, act decisively, and innovate relentlessly.This is not a competition — it’s a launchpad. Students learn to navigate complex challenges, turn ideas into prototypes, and explore strategies for ventures that can scale. Every step of the journey is guided by proven frameworks like IDEA DNA and SURGE,
-         with progress tracked through the Student Startup Index (SSI).
+        Future Titans™ by YoungPreneurs™ is India’s national entrepreneurship movement for students from Classes 8–12 — a launchpad empowering young innovators to act decisively, think boldly, and build solutions that matter.
         </div>
         <div className="info-box">
-        Participants gain access to five transformative, globally-led workshops taught by world-class mentors:
-          <br /><br />
+        Students transform problems into prototypes and ideas into ventures using the proven YoungPreneurs framework:
+          <h5>IDEA DNA™ → S.U.R.G.E.™ → SSI™</h5>
+          
+          They are guided through five transformative workshops led by global faculty, including:
+          <br />
           Prof. Fred Katz, Johns Hopkins University (USA)<br />
-          Sandipan Chattopadhyay, Ex-CTO, Justdial & MD, Xelpmoc
+          Sandipan Chattopadhyay, Ex-CTO, Justdial & MD, Xelpmocz
+          <br/>
+          They are guided through five transformative workshops led by global faculty, including:
         </div>
-        <div className="info-box">
-        Here, students build solutions that matter — blending creativity, critical thinking, empathy, and leadership to solve real problems in an AI-driven world. Winners receive funding, recognition, and a platform to launch ventures that impact communities, industries, and the nation.
-        </div>
+       
   </div>
 </div>
 

@@ -11,14 +11,12 @@ const ForParents = () => {
     <section className="game-changer">
       {/* Left Content */}
       <div className="left-content">
-        <h3>A Message to Parents </h3>
-        <p style={{fontSize:"15px"}}>
-        Every great change in the world started with a young mind daring to imagine. At <strong>Future Titans by YoungPreneurs</strong>, we give your child the space, guidance, and mentorship to become that change-maker.
-         This is where curiosity sparks action, ideas find their wings, and potential unfolds into impact.As the world accelerates with AI, automation, and constant innovation, the most valuable gift you can give your child isn’t answers — it’s<strong>the ability to question, create, and take bold steps</strong>. Here, they will experiment,
-          explore, and discover the capabilities they never knew they had.
-          This is more than a program. It’s a <strong>movement of young innovators, problem-solvers, and creators</strong>  — a journey that shapes character,
-           ignites purpose, and lights the path to a future they can define.
-           By joining <strong>Future Titans</strong>,your child isn’t just preparing for what comes next — they are <strong>becoming the person who creates it.</strong>
+        <h4>A Message to Parents </h4>
+        <p>
+        Every great change in the world started with a young mind daring to imagine. At Future Titans by YoungPreneurs, we provide your child not just guidance, but the space, mentorship, and tools to become a true change-maker. This is where curiosity sparks action, ideas find their wings, and potential unfolds into impact.<br/><br/>
+        As the world accelerates with AI, automation, and constant innovation, the most valuable gift you can give your child isn’t answers — it’s the ability to question, create, and take bold steps. Here, they experiment, explore, and discover capabilities they never knew they had — building not only skills but a solution-seeking mindset that will serve them for life.<br/><br/>
+        Future Titans is more than a challenge. It’s a movement of young innovators, problem-solvers, and creators — a journey that shapes character, ignites purpose, and equips them to lead in a world defined by constant change.<br/>
+        By joining Future Titans, your child isn’t just preparing for what comes next — they are becoming the person who defines it.
         </p>
         
        
@@ -41,6 +39,7 @@ GET STARTED
          
                <p>Future Titans is not just any competition — it’s India’s first national entrepreneurship movement for school students, where ideas meet opportunity and innovation is celebrated at every step.</p>
           </div>
+         
           <div className="card">
             <p>Here, your child will explore uncharted challenges, test their own solutions, and discover what they’re truly capable of.</p>
           </div>
@@ -50,9 +49,7 @@ GET STARTED
           
         </div>
 
-        {/* <p>
-        Future Titans is not just any competition — it’s India’s first national entrepreneurship movement for school students, where ideas meet opportunity and innovation is celebrated at every step. Here, your child will explore uncharted challenges, test their own solutions, and discover what they’re truly capable of. It’s a journey that nurtures vision, courage, and leadership, preparing them not just to compete, but to create, impact, and lead in a rapidly changing world.
-        </p> */}
+       
       </div>
 
       <section className="cta-section">
@@ -104,7 +101,7 @@ REGISTER NOW
           display: flex;
           flex-wrap: wrap;
           padding: 50px 30px;
-          background-color: #103120;
+          background-color:rgba(189, 195, 192, 0.26);
           color: white;
           justify-content: center;
         }
@@ -112,20 +109,24 @@ REGISTER NOW
         .left-content {
           flex: 1 1 40%;
           padding: 20px;
-          max-width: 500px;
-          margin-top: 150px;
+          max-width: 800px;
+          margin-top: 110px;
         }
 
-        .left-content h5 {
-          font-size: 14px;
+        .left-content h4 {
+          
           text-transform: uppercase;
-          letter-spacing: 1px;
+          color: #134734;
+        
           margin-bottom: 15px;
         }
 
         .left-content p {
-          font-size: 18px;
-          line-height: 1.6;
+          
+          color:rgb(141, 141, 141);
+
+          font-size: 20px;
+          // line-height: 1.6;
           margin-bottom: 20px;
         }
 
@@ -152,12 +153,13 @@ REGISTER NOW
         .right-content {
           flex: 1 1 55%;
           padding: 20px;
-          max-width: 700px;
+          max-width: 600px;
           margin-top: 100px;
         }
 
         .right-content h4 {
-          font-size: 18px;
+          font-size: 20px;
+          color: #134734;
           text-transform: uppercase;
           font-weight: bold;
           margin-bottom: 30px;
@@ -165,22 +167,19 @@ REGISTER NOW
 
         .cards {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr ;
           gap: 20px;
         }
 
         .card {
           background-color: white;
-          color: #333;
+          color: #134734;
           border-radius: 12px;
           padding: 20px;
           box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
-        .card.red-card {
-          background-color: #dcae1a;
-          color: white;
-        }
+       
 
         .card .icon {
           font-size: 24px;
@@ -193,8 +192,8 @@ REGISTER NOW
         }
 
         .card p {
-          font-size: 14px;
-          line-height: 1.5;
+          font-size: 18px;
+          // line-height: 1.5;
         }
 
         @media (max-width: 900px) {
@@ -219,8 +218,8 @@ REGISTER NOW
   width: 100vw;
   margin: 0;
   padding: 100px 20px;
-  background-color: white;
-  
+  background-color: #dcae1a;
+  margin-top:30px;
   text-align: center;
   position: relative;
   left: 50%;
@@ -239,13 +238,13 @@ REGISTER NOW
 
         .cta-team {
           font-size: 22px;
-          color: #dcae1a;
+          color:  #2c4a3f;
           font-weight: bold;
           margin-bottom: 30px;
         }
 
         .cta-button {
-          background-color: #dcae1a;
+          background-color: #2c4a3f;
           color: white;
           padding: 12px 30px;
           font-size: 14px;
