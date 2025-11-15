@@ -8,19 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 
-
-
-
-
-
-
-
-
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import heroVideo from '../assets/videoplayback.mp4';
 import vision from '../assets/ourVision.jpg';
 import mission from '../assets/ourMission.jpg';
 import rightImg from '../assets/home1.png';
@@ -33,55 +22,21 @@ import insta from '../assets/insta.jpg';
 import linkedin from '../assets/linkedin.jpg';
 import email from '../assets/email.jpg';
 import youtube from '../assets/youtube.jpg';
-const images = ["/slide1.png", "/slide2.png", "/slide3.png"];
+// const images = ["/1.png", "/2.png", "/3.png","/4.png","/5.png","/Six.png"];
 const Home = () => {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: false,
-  //   });
-  // }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 600,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   arrows: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: { arrows: false }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: { arrows: false }
-  //     }
-  //   ],
-  // };
+  
   
 
 
   return (
     <>
-    
-   
-
-
-        {/* <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="hero-video"
-        >
-          <source src={heroVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> */}
-
 
 <Swiper
       modules={[Navigation, Pagination, Autoplay]}
@@ -93,86 +48,47 @@ const Home = () => {
       style={{ width: "100%", height: "auto" }}
     >
       <SwiperSlide>
-        <img src="/slide1.png" alt="1" style={{ width: "100%" }} />
+        <img src="/1.png" alt="1" style={{ width: "100%" }} />
       </SwiperSlide>
 
       <SwiperSlide>
-        <img src="/slide2.png" alt="2" style={{ width: "100%" }} />
+        <img src="/2.png" alt="2" style={{ width: "100%" }} />
       </SwiperSlide>
 
       <SwiperSlide>
-        <img src="/slide3.png" alt="3" style={{ width: "100%" }} />
-      </SwiperSlide>
-    </Swiper>
+        <img src="/3.png" alt="3" style={{ width: "100%" }} />
+      </SwiperSlide> 
+      
+      <SwiperSlide>
+        <img src="/4.png" alt="3" style={{ width: "100%" }} />
+      </SwiperSlide> 
 
-  
+      <SwiperSlide>
+        <img src="/5.png" alt="3" style={{ width: "100%" }} />
+      </SwiperSlide> 
+      
+      <SwiperSlide>
+        <img src="/SIX.png" alt="3" style={{ width: "100%" }} />
+      </SwiperSlide> 
+      
+
+
+      </Swiper>
+
+     
+    
+
+
+
+
+
+
+
+
      
 
 
-      <div className="container">
-      <div className="content">
-        <div className="text-column">
-          <p className="intro">Welcome to Youngpreneurs</p>
-          <h1 className="heading">
-          Not Just a Program — A Movement that Awakens the Leader Within
-          </h1>
-          <p className="description">
-          The future doesn’t belong to those who wait for change — it belongs to those who create it.
-          Every great leader began with a single idea, a spark of curiosity that dared to challenge the norm.
-
-          </p>
-         
-          <button
-  className="start-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
->
-Start Your Journey
-</button>
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-
-        
-
-
-
-
-
-
-
-</div>
-
-<div className="card-column">
-          <div className="card">
-            <img src={vision} alt="Our Vision" style={{width: '380px', height: '100%'}}/>
-            
-          </div>
-
-          <div className="card" style={{width: '280px', height: '90%'}}>
-            <img src={mission} alt="Mission" />
-            
-          </div>
-
-          {/* <p className="footer-note">
-        Entrepreneurship isn’t a talent you’re born with—it’s <span>a mindset you develop.</span>
-      </p> */}
-        </div>
-
-
-      {/* <p className="footer-note">
-        Entrepreneurship isn’t a talent you’re born with—it’s <span>a mindset you develop.</span>
-      </p> */}
-</div>
+     
 
 
 
@@ -184,15 +100,15 @@ Start Your Journey
 
 <div className="titans-section">
         <div className="titans-left">
-          <h4>Future Titans 2025 – India’s Biggest Hunt for Young Entrepreneurs </h4>
-          <h2>Compete. Win. Launch Your Startup</h2>
+          <h4>The YoungPreneurs™ Ecosystem </h4>
+          <h2>Where Innovation, Neuroscience, and Purpose Converge</h2>
           <p>
-          This isn’t just a competition — it’s a national launchpad for India’s brightest young visionaries. 
-            The Times of India and Youngpreneurs bring you Future Titans, India’s
-            most prestigious entrepreneurship challenge for school students.
+          The YoungPreneurs™ ecosystem is more than a program — it’s a living, adaptive innovation network built to nurture solution-seeking capability in every student.
           </p>
           <p>
-            <strong>Bold ideas. Young innovators. Awards worth ₹40 Lakhs</strong> to fuel your dreams!
+          Powered by insights from neuroscience, artificial intelligence, and design thinking, it redefines how young minds learn, think, and lead — turning classrooms into launchpads for innovation.
+At its core lies the patent-pending Mindset Engine™, a neuro-adaptive system that decodes how students think, adapt, and create — helping them build measurable growth in curiosity, creativity, and resilience through the SSI™ Mindset Score (Solution-Seeking Index™).
+
           </p>
          
           <button
@@ -210,48 +126,57 @@ REGISTER NOW
 
 
       <section className="game-changer-section">
-        <h2>What Makes Future Titans a True Game Changer</h2>
+        <h2>Surrounding this core are four innovation engines that power the YoungPreneurs™ experience:</h2>
         <div className="card-container">
           <div className="info-card">
-            <h3>A Revolution in Learning</h3>
-            <p>Future Titans isn’t just another school competition — it’s India’s first platform built on a patent-pending entrepreneurial ecosystem that transforms learning into real-world creation. 
-              Students don’t just participate — they build, test, and launch their ideas using the IDEA DNA and SURGE Framework.</p>
+            <h3>IDEA DNA™ — The Science of Innovation</h3>
+            <p>A cognitive framework that teaches students to deconstruct complex challenges and rebuild them into scalable, real-world solutions.
+From idea spark to impact, it transforms imagination into disciplined innovation.
+</p>
           </div>
           <div className="info-card">
-            <h3>A Plug-n-Play Model for Schools</h3>
-            <p>Seamlessly integrated into the classroom, the YoungPreneurs model empowers schools to deliver entrepreneurship education without additional infrastructure 
-              — making 21st-century innovation accessible to every student.</p>
+            <h3>S.U.R.G.E.™ — The Mindset Accelerator</h3>
+            <p>A neuroscience-informed growth model that strengthens five essential traits — Self-belief, Uncertainty, Resilience, Growth, and Empathy.
+It helps students stay curious, confident, and courageous in an unpredictable world.
+</p>
           </div>
           <div className="info-card">
-            <h3>Measured Growth. Real Outcomes</h3>
-            <p>Through the Student Startup Index (SSI), every participant’s journey is tracked and benchmarked 
-              — providing measurable insights into creativity, leadership, and entrepreneurial growth.</p>
+            <h3>AI Co-Founder™ — The Future of Learning</h3>
+            <p>An intelligent innovation partner that helps students ideate, research, and prototype — not by supplying answers, but by sparking better questions.
+It fuses human creativity with AI precision to make learning more immersive and future-ready.
+</p>
           </div>
           <div className="info-card">
-            <h3>National Recognition & Opportunity</h3>
-            <p>In partnership with The Times of India, Future Titans gives students a national platform to showcase their ideas, gain recognition, and connect with real-world mentors.
-               The winners will receive ₹10 lakhs in funding to kickstart their entrepreneurial journey!
+            <h3>Future Titans™ — The Real-World Playground</h3>
+            <p>The culmination of the YoungPreneurs™ journey — where students put their ideas to the test, pitch to experts, and experience the thrill of real innovation.
+It’s more than a competition; it’s a nationwide movement redefining what young minds can achieve.
+Together, these pillars form the YoungPreneurs™ Ecosystem — an interconnected, measurable, and future-ready learning architecture that turns potential into purpose.
+Where students don’t just prepare for the future —
+they begin to create it.
+
             </p>
           </div>
-          <div className="info-card">
-            <h3>Building the Leaders of Tomorrow</h3>
-            <p>Beyond competition, it’s a movement that builds confidence, collaboration, and leadership 
-              — shaping students into purpose-driven thinkers ready to change the world.</p>
-          </div>
+          
         </div>
       </section>
 
 
       <section className="mentorship-section">
         <h2>Why Should Schools and Parents Encourage Participation? </h2>
-        <p>The future belongs to those who create it!</p>
-        <p>What if the next Ratan Tata or Falguni Nayar is your child?</p>
+        <p>Entrepreneurship isn’t just about launching companies — it’s about cultivating a solution-seeking mindset:<br/> the ability to notice problems, take initiative, and create meaningful impact.<br/>
+Through Future Titans™, students learn to transform ideas into real-world projects, gaining the confidence and capability to lead in any path they choose — <br/>whether as founders or as intrapreneurs shaping innovation within organizations.
+</p>
+       
+       <p>Because inside every classroom sits a potential pioneer — <br/>someone who could become the next Ratan Tata or FalguniNayar, waiting for the right platform to rise.</p>
+       
+        
+        
         <div className="highlight">
-          Future Titans – India’s Premier Platform to Make Students Investor-Ready!
+        Future Titans™ gives them that platform — India’s premier stage for young innovators:
         </div>
-        <p>National Exposure in association with</p>
+        <p>national exposure in association with</p>
         <img className="logo" src={times} alt="Times of India Logo" />
-        <div className="highlight">Expert Mentorship from global leaders</div>
+        <div className="highlight">Expert Mentorship from Global Luminaries</div>
         <div className="mentors">
           <div className="mentor-card">
             <img src={mentor1} alt="Fred Katz" />
@@ -264,22 +189,23 @@ REGISTER NOW
             <span>Ex-CTO Justdial, CEO Xelpmoc</span>
           </div>
         </div>
+        <h2 style={{marginTop:"50px"}}>Empower one young innovator — <br/>and you ignite a ripple that can transform an entire generation.</h2>
       </section>
 
 
       <section className="workshop-section">
-        <h2>Five Transformative Workshops to Shape the Entrepreneurs of Tomorrow</h2>
+        <h2>Five Transformative Workshops to Shape the Solution-Seekers of Tomorrow</h2>
         <ul className="workshop-list">
-          <li>Learn market research to spot billion-dollar opportunities.</li>
-          <li>Master ideation and brainstorming like a disruptor.</li>
-          <li>Understand your target audience to drive business success.</li>
-          <li>Get the basics of financial planning, pricing, and budgeting.</li>
-          <li>Perfect your pitch and storytelling to impress investors.</li>
+          <li>Learn market research to uncover real, high-value opportunities.</li>
+          <li>Master ideation and creative problem-solving like a future disruptor.</li>
+          <li>Understand your target audience to build solutions that truly matter.</li>
+          <li>Grasp the fundamentals of financial planning, pricing, and budgeting.</li>
+          <li>Perfect your pitch and storytelling to win hearts—and investors.</li>
         </ul>
         <p className="subtext">
-          Pitch to top investors, founders, and industry leaders, with ₹40 Lakhs in prizes, incubation, and mentorship.
+        Pitch to top investors, founders, and industry leaders, with ₹40 Lakhs in prizes, incubation, and mentorship.
         </p>
-        <p className="cta-text">Will your child get the chance to shape the future?</p>
+        <p className="cta-text">Will your child get the opportunity to shape the future?	</p>
         <button
   className="cta-button"
   onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
@@ -326,6 +252,65 @@ ENROLL TODAY
         </div>
       </section>
     
+
+
+
+      <section className="game-changer-section">
+        <h2>What Makes Future Titans a True Game Changer</h2>
+        <div className="card-container">
+          <div className="info-card">
+            <h3>A Revolution in Learning</h3>
+            <p>Future Titans™ is powered by the world’s first neuro-adaptive, patent-pending entrepreneurial ecosystem — a system built to turn learning into creation.
+Using IDEA DNA™ and the S.U.R.G.E.™ framework, students don’t just think of ideas — they build, test, and refine them like real innovators.
+
+</p>
+          </div>
+          <div className="info-card">
+            <h3>A Plug-n-Play Model for Schools</h3>
+            <p>The YoungPreneurs™ model fits effortlessly into any classroom — empowering schools to deliver world-class entrepreneurship education without additional infrastructure. A plug-n-play ecosystem that makes 21st-century innovation accessible to every student.
+</p>
+          </div>
+          <div className="info-card">
+            <h3>Measured Growth. Real Outcomes</h3>
+            <p>Through the Student Startup Index (SSI), every participant’s journey is tracked and benchmarked — providing measurable insights into creativity, leadership, and entrepreneurial growth.
+</p>
+          </div>
+          <div className="info-card">
+            <h3>Powered by Intelligent Tools</h3>
+            <p>At the heart of Future Titans™ is the AI Co-Founder™ — a breakthrough intelligence partner that helps every student think sharper, build faster, and innovate with real-world precision.
+
+            </p>
+          </div>
+          
+          <div className="info-card">
+            <h3>National Recognition & Opportunity</h3>
+            <p>In partnership with The Times of India, Future Titans™ offers students a national platform to showcase their ventures, gain visibility, and learn from global dignitaries and industry luminaries.
+Winners receive ₹10 lakhs in funding to kickstarttheir entrepreneurial journey.
+
+
+            </p>
+          </div>
+
+          <div className="info-card">
+            <h3>Building the Leaders of Tomorrow</h3>
+            <p>More than a competition, it’s a movement — designed to strengthen confidence, collaboration, and purpose-driven leadership in a rapidly accelerating AI world.
+Because the future won’t be led by those who simply adapt to change, but by those who create it.
+
+
+
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
       <div className="curriculum-section">
 
         <div className="curriculum-left"></div>
@@ -333,46 +318,43 @@ ENROLL TODAY
       <div className="overlay"></div>
 
           <h2>The YoungPreneur Entrepreneurship Curriculum</h2>
-          <p className="intro">
-          Built on the world’s first patent-pending entrepreneurial ecosystem, the YoungPreneur Curriculum takes students through a complete innovation journey — from idea conception to real-world implementation.
-Every module combines global entrepreneurship frameworks with hands-on application, empowering students to think like founders and act like leaders.
+          <h4>Where Ideas Evolve, Strengthen, and Launch.</h4>
+          <p className="intro" style={{fontSize:"20px"}}>
+          Powered by the world’s first neuro-adaptive Mindset Engine — a patent-pending innovation that adapts to how students think and create.
+The YoungPreneurs™ Curriculum guides learners from their first spark of an idea to real-world execution — combining global innovation frameworks with hands-on application to cultivate minds that decode problems, engineer solutions, and leave a mark that truly counts.
+
+
 
           </p>
 
           <div className="curriculum-topic">
             <h4>Foundations of Entrepreneurship</h4>
-            <p>Explore how today’s startups are redefining industries and creating opportunities. Understand what it truly means to think, build,
-               and lead like an entrepreneur in a rapidly changing world.</p>
+            <p>Explore how today’s startups are redefining industries and creating opportunities. Understand what it truly means to think, build, and lead like an entrepreneur in a rapidly changing world.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>The Entrepreneurial Mindset</h4>
-            <p>Develop the ability to adapt, take initiative, and convert challenges into opportunities — nurturing the core traits of resilience,
-               agility, and purposeful risk-taking.</p>
+            <p>Develop the ability to adapt, take initiative, and convert challenges into opportunities — nurturing the core traits of resilience, agility, and purposeful risk-taking.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>Lateral Thinking & Creative Problem-Solving</h4>
-            <p>Learn to challenge assumptions, think laterally, and identify real-world opportunities
-               — the spark that begins every IDEA DNA journey.</p>
+            <p>Learn to challenge assumptions, think laterally, and identify real-world opportunities — the spark that begins every IDEA DNA™ journey.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>Idea Generation to Prototyping</h4>
-            <p>Use the IDEA DNA Framework to structure, validate, and prototype ideas
-               — transforming imagination into viable innovation.</p>
+            <p>Use the IDEA DNA™ Framework to shape, validate, and prototype ideas — turning raw concepts into practical innovation.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>Lean Launchpad and Business Model Canvas</h4>
-            <p>Apply global startup tools to test value propositions and customer fit within our Plug-n-Play School Ecosystem 
-              — a ready-to-implement platform for innovation learning.</p>
+            <p>Apply global startup tools to test value propositions and customer fit within our Plug-n-Play School Ecosystem — a ready-to-implement platform for innovation learning.</p>
           </div>
 
           <div className="curriculum-topic">
             <h4>Business Plan & Strategy</h4>
-            <p>Master financial planning, budgeting, and scalability while applying the SURGE Framework to refine,
-               grow, and sustain ventures.</p>
+            <p>Master financial planning, budgeting, and scalability while applying the SURGE Framework™ to refine, grow, and sustain ventures.</p>
           </div>
 
           <div className="curriculum-topic">
@@ -452,9 +434,11 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
 
         .intro {
           color: #dcae1a;
-          font-weight: 600;
+          font-weight: 400;
+           
           margin-bottom: 10px;
         }
+          
 
         .heading {
           font-size: 28px;
@@ -466,7 +450,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         .description {
           color: #666;
           line-height: 1.6;
-          font-size: 16px;
+          font-size: 46px;
         }
 
         .start-button {
@@ -570,15 +554,17 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         }
 
         .titans-left h4 {
-          color: #dcae1a;
           font-weight: 600;
-          font-size: 16px;
+          font-size: 25px;
           margin-bottom: 10px;
+          color: #305c4d;
+
         }
 
         .titans-left h2 {
-          font-size: 32px;
-          color: #305c4d;
+          font-size: 18px;
+          color: #dcae1a;
+
           font-weight: 700;
           margin-bottom: 20px;
         }
@@ -646,7 +632,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         }
           .game-changer-section {
           background-color: #f9f9f9;
-          padding: 60px 20px;
+          padding: 60px 40px;
           text-align: center;
         }
 
@@ -661,7 +647,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 20px;
+          gap: 30px;
         }
 
         .info-card {
@@ -669,7 +655,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
           border-radius: 12px;
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
           padding: 30px 20px;
-          width: 250px;
+          width: 350px;
           transition: transform 0.3s ease;
         }
 
@@ -715,6 +701,8 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         }
 
         .mentorship-section p {
+       display:flex;
+       justify-content:center;
           font-size: 20px;
           margin-bottom: 10px;
           color: #e0e0e0;
@@ -983,7 +971,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         .curriculum-right {
           flex: 1;
           min-width: 300px;
-          background: linear-gradient(to bottom right,rgba(220, 175, 26, 0.7),rgba(220, 175, 26, 0.78));
+          background: linear-gradient(to bottom right,rgba(113, 110, 99, 0.94),rgba(178, 183, 183, 0.91));
           // background:rgba(250, 228, 158, 0.26);
           color: #fff;
           padding: 60px 40px;
@@ -995,6 +983,12 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
         .curriculum-right h2 {
         color:rgb(5, 59, 39);
           font-size: 32px;
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+          .curriculum-right h4 {
+        color:rgb(5, 59, 39);
+          
           margin-bottom: 20px;
           font-weight: 700;
         }
@@ -1055,7 +1049,7 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
     .connect-title {
       font-size: 28px;
       font-weight: bold;
-      color: #dcae1a;
+      color: #104040;
       margin-bottom: 30px;
     }
 
@@ -1121,19 +1115,228 @@ Every module combines global entrepreneurship frameworks with hands-on applicati
 
 
 
+/* MAIN LAYOUT */
+.yp-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 5%;
+  gap: 50px;
+}
+
+/* LEFT SIDE */
+.yp-left {
+  flex: 1;
+  max-width: 520px;
+}
+
+.welcome {
+  color: #d62828;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.title {
+  color: #0b3d2e;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.desc {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* RIGHT SIDE */
+.yp-right {
+  flex: 1;
+  max-width: 520px;  /* IMPORTANT: controls exact width like design */
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 4 / 3.7;   /* exact shape like sample */
+  display: flex;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* prevents stretched face */
+  border-radius: 22px;
+}
+
+/* TAG */
+.tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 7px 26px;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  backdrop-filter: blur(8px);
+}
+
+/* GLASS BOX */
+.glass-box {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  padding: 25px 25px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(18px);
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 1024px) {
+  .yp-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .yp-right {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+  .glass-box {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .yp-container {
+    padding: 40px 20px;
+  }
+  .tag {
+    font-size: 16px;
+    right: 12px;
+  }
+  .glass-box {
+    width: 92%;
+    padding: 18px;
+    font-size: 15px;
+  }
+}
 
 
 
+.yp-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 20px;
+  width: 100%;
+  background: #f8f9fc;
+  box-sizing: border-box;
+}
 
+.yp-left {
+  width: 55%;
+  font-family: "Poppins", sans-serif;
+}
 
+.yp-left h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
+.yp-left p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
 
+/* RIGHT SIDE */
+.yp-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
 
+.image-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
 
+.img-box {
+  width: 50%;
+  max-width: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+}
 
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .yp-container {
+    flex-direction: column;
+  }
 
+  .yp-left,
+  .yp-right {
+    width: 100%;
+  }
 
+  .image-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .img-box {
+    width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-box {
+    width: 90%;
+    max-width: 350px;
+  }
+}
 
 
 

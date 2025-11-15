@@ -152,7 +152,7 @@ const Team = () => {
     <div className="team-section">
       <h2 className="team-heading">MEET THE TEAM</h2>
       <p className="team-subtext">
-        Great mentors don’t just teach; they inspire, guide, and unlock potential. Meet the experts shaping the entrepreneurs of tomorrow!
+        Great mentors don’t just teach; they inspire, guide, and unlock potential. Meet the experts shaping the solution-seekers of tomorrow!
       </p>
 
       <div className="team-container">
