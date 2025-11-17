@@ -43,9 +43,9 @@ const AboutUs = () => {
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
   }
 
@@ -79,6 +79,8 @@ const AboutUs = () => {
   .about-image {
     flex: 1;
     min-width: 300px;
+    max-width: 600px;
+
     margin-top: 200px;
   }
 

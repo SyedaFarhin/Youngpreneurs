@@ -9,7 +9,7 @@ import enterpreneurIndia from "../assets/enterpreneurIndia.png"
 
 
 
-import mediaHeaderBg from "../assets/mediaHeaderBg.jpg"
+import mediaHeaderBg from "../assets/mediaHeaderBg.png"
 
 
 const mediaItems = [
@@ -101,7 +101,7 @@ const Media = () => {
   background-image: url(${mediaHeaderBg});
   background-size: cover;
   background-position: center top; /* Align from top */
-  height: 620px;
+  height: 1080px;
   width: 100%;
   position: relative;
   padding-top: 80px; /* Push content/image downward */

@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundImage from '../assets/forschools.jpg';
-import forSchoolsHeaderBg from "../assets/forSchoolsHeaderBg.jpg"
+import forSchoolsHeaderBg from "../assets/forSchoolsHeaderBg.png"
 
 const ForSchools = () => {
   return (
@@ -77,7 +77,7 @@ JOIN THE MOVEMENT
         background-image: url(${forSchoolsHeaderBg});
 background-size: cover;
 background-position: center top; /* Align from top */
-height: 620px;
+height: 1080px;
 width: 100%;
 position: relative;
 padding-top: 80px; /* Push content/image downward */

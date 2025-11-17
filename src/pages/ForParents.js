@@ -1,5 +1,5 @@
 import React from 'react';
-import forParentsHeader from "../assets/forParentsHeader.jpg"
+import forParentsHeader from "../assets/forParentsHeader.png"
 const ForParents = () => {
   return (
 
@@ -77,7 +77,7 @@ REGISTER NOW
          background-image: url(${forParentsHeader});
   background-size: cover;
   
-  height: 720px;
+  height: 1070px;
   width: 100%;
   position: relative;
   padding-top: 90px;
