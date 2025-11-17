@@ -15,7 +15,7 @@ import diya from '../assets/diya.jpg';
 import chitresh from '../assets/chitresh.jpg';
 import prashant from '../assets/prashant.jpg';
 
-import teamHeaderBg from "../assets/teamHeaderBg.jpg"
+import teamHeaderBg from "../assets/teamHeaderBg.png"
 
 
 const Team = () => {

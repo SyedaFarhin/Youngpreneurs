@@ -12,6 +12,7 @@ import Mark from '../assets/Mark-Zuckerberg.png';
 import Advait from '../assets/Advait-Thakur.png';
 import kaivalya from '../assets/kaivalya.png';
 import Aadithyan from '../assets/Aadithyan.png';
+import campDelta from '../assets/campDelta.jpg';
 
 import successStoriesHeaderBg from "../assets/successStoriesHeaderBg.jpg"
 
@@ -389,14 +390,92 @@ const SuccessStories = () => {
             font-size: 0.95rem;
           }
         }
-      `}</style>
+          /* Section Background */
+.success-section {
+  padding: 60px 20px;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Container */
+.success-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1400px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* IMAGE STYLE */
+.success-image-wrapper {
+  flex: 1;
+  min-width: 280px;
+}
+
+.success-image {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.success-image:hover {
+  transform: scale(1.02);
+}
+
+/* TEXT CONTENT */
+.success-content {
+  flex: 1.2;
+  min-width: 300px;
+}
+
+.success-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.success-title span {
+  color: #dcae1a; /* Red highlight */
+}
+
+.success-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE DESIGN (Mobile) */
+@media (max-width: 768px) {
+  .success-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .success-title {
+    font-size: 1.8rem;
+  }
+
+  .success-text {
+    font-size: 1rem;
+  }
+}
+
+      `}
+      
+      </style>
 
 <div className="hero-section">
         {/* You can place overlay text, buttons, or other elements here */}
       </div>
 
 
-<div className="future-titans-container">
+{/* <div className="future-titans-container">
         <h2 className="future-titans-heading">Where Success Finds Its True Meaning — Beyond Trophies, Toward Transformation</h2>
         <p className="future-titans-subtitle">Success, at YoungPreneurs, is not a trophy — it’s a turning point.
 It’s when curiosity becomes courage.
@@ -406,69 +485,52 @@ Every Future Titan begins with one belief — that they can build something bigg
 Through immersive workshops, national challenges, and a world-class curriculum, we’re not just teaching entrepreneurship — we’re nurturing changemakers, innovators, and leaders who redefine what success truly means.
 
 </p>
-      </div>
+      </div> */}
 
 
-      {/* <div className="section-container">
+    
+<section className="success-section">
+      <div className="success-container">
+ {/* Text Content */}
+ <div className="success-content">
+          <h2 className="success-title">
+            Where Success Finds Its True Meaning — <br />
+            <span>Beyond Trophies, Toward Transformation</span>
+          </h2>
+
+          <p className="success-text">
+            Success, at YoungPreneurs, is not a trophy — it’s a turning point.
+            It’s when curiosity becomes courage. When ideas find wings. When
+            education becomes empowerment.
+          </p>
+
+          <p className="success-text">
+            Every Future Titan begins with one belief — that they can build
+            something bigger than themselves. Through immersive workshops,
+            national challenges, and a world-class curriculum, we’re not just
+            teaching entrepreneurship — we’re nurturing changemakers,
+            innovators, and leaders who redefine what success truly means.
+          </p>
+        </div>
+        {/* Image */}
+        <div className="success-image-wrapper">
+          <img src={campDelta} alt="Camp Delta" className="success-image" />
+        </div>
 
        
-        <div className="section">
-          <div className="text-content">
-            <h2>Igniting Young Minds with Entrepreneurial Spirit</h2>
-            <p>
-              At Youngpreneurs, we bring your child dynamic workshops, immersive camps, and hands-on experiences designed to unlock their true potential. By fostering innovation, problem-solving, and leadership, we help them build an entrepreneurial mindset and become responsible global citizens.
-            </p>
-          </div>
-          <div className="carousel-container">
-            <button className="carousel-button left" onClick={() => scrollCarousel(carousel1Ref, "left")}>&#8249;</button>
-            <div className="carousel-track" ref={carousel1Ref}>
-              {demoImages1.map((src, index) => (
-                <img key={index} src={src} alt={`carousel-1-${index}`} />
-              ))}
-            </div>
-            <button className="carousel-button right" onClick={() => scrollCarousel(carousel1Ref, "right")}>&#8250;</button>
-          </div>
-        </div>
 
-      
-        <div className="section reverse">
-          <div className="text-content">
-            <h2>Camp Delta E: Where Ideas Take Flight</h2>
-            <p>
-              At Camp Delta E, students don’t just learn about entrepreneurship—they experience it! Through interactive lessons, engaging activities, and a real-world business simulation, they develop critical thinking, leadership, and communication skills.
-            </p>
-          </div>
-          <div className="carousel-container">
-            <button className="carousel-button left" onClick={() => scrollCarousel(carousel2Ref, "left")}>&#8249;</button>
-            <div className="carousel-track" ref={carousel2Ref}>
-              {demoImages2.map((src, index) => (
-                <img key={index} src={src} alt={`carousel-2-${index}`} />
-              ))}
-            </div>
-            <button className="carousel-button right" onClick={() => scrollCarousel(carousel2Ref, "right")}>&#8250;</button>
-          </div>
-        </div>
+      </div>
+    </section>
 
-        <div className="section">
-          <div className="text-content">
-            <h2>Igniting Young Minds with Entrepreneurial Spirit</h2>
-            <p>
-              At Youngpreneurs, we bring your child dynamic workshops, immersive camps, and hands-on experiences designed to unlock their true potential. By fostering innovation, problem-solving, and leadership, we help them build an entrepreneurial mindset and become responsible global citizens.
-            </p>
-          </div>
-          <div className="carousel-container">
-            <button className="carousel-button left" onClick={() => scrollCarousel(carousel1Ref, "left")}>&#8249;</button>
-            <div className="carousel-track" ref={carousel1Ref}>
-              {demoImages1.map((src, index) => (
-                <img key={index} src={src} alt={`carousel-1-${index}`} />
-              ))}
-            </div>
-            <button className="carousel-button right" onClick={() => scrollCarousel(carousel1Ref, "right")}>&#8250;</button>
-          </div>
-        </div>
 
-        
-      </div> */}
+
+
+
+
+
+
+
+
 
       <div className="belief-section">
         <h2 className="belief-title">Greatness Begins with Belief</h2>

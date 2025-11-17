@@ -244,8 +244,7 @@ Through Future Titans™, students learn to transform ideas into real-world proj
         <div className="mentor-card">
             <img src={mentor3} alt="Sandipan Chattopadhyay" />
             <h4>Devika Majumder</h4>
-            <span>Founder & CEO
-            Wall Street Journal Featured | Nominated by Business Today as one of the most powerful women in business</span>
+            <span>Founder & CEO | Wall Street Journal Featured | Nominated by Business Today as one of the most powerful women in business</span>
           </div>
           <div className="mentor-card">
             <img src={mentor1} alt="Fred Katz" />

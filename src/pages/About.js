@@ -2,7 +2,7 @@ import React from 'react';
 import teamImage from '../assets/about-main.jpg'; 
 import visionIcon from '../assets/vision.png';  
 import missionIcon from '../assets/mission.png'; 
-import headerBg from "../assets/headerBg.jpg"
+import headerBg from "../assets/headerBg.png"
 const AboutUs = () => {
   return (
 <div>
@@ -13,7 +13,7 @@ const AboutUs = () => {
           background-image: url(${headerBg});
           background-size: cover;
           background-position: center;
-          height: 520px; /* Same as your screenshot image */
+          height: 920px; /* Same as your screenshot image */
           width: 100%;
           position: relative;
         }
@@ -293,13 +293,15 @@ YoungPreneurs™ is India’s first patent-pending neuro-adaptive entrepreneuria
           <br />
          <b>Prof. Fred Katz</b>, Johns Hopkins University (USA) <br />
         <b> Sandipan Chattopadhyay</b> , Former CTO, Justdial & MD, Xelpmoc
-          <br/>
-          With mentorship from innovators and leaders from MIT, IIT, Fortune 50 companies, Siemens, Justdial, students gain early exposure to world-class thinking and entrepreneurial rigor
+          
+         
         </div>
        
   </div>
 
-  <h4 style={{color: ' #264653',marginTop:"50px"}}>Here, innovation is not just learned — it is experienced, built, and embodied</h4>
+  <h4 style={{color: ' #264653',marginTop:"50px",padding:"50px"}}> With mentorship from innovators and leaders from MIT, IIT, Fortune 50 companies,
+     Siemens, Justdial, students gain early exposure to world-class thinking and entrepreneurial rigor.
+    Here, innovation is not just learned — it is experienced, built, and embodied</h4>
 
 </div>
 
