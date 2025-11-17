@@ -12,6 +12,11 @@ import devika from '../assets/devika.jpeg';
 
 import presentation from '../assets/presentation.jpg';
 import academyHeaderBg from '../assets/academyHeaderBg.jpg';
+import AIPlogo from "../assets/AIPlogo.png";
+import AIClogo from "../assets/AIClogo.png";
+
+import startUpIndiaLogo from "../assets/startUpIndiaLogo.png";
+import ttoi from "../assets/ttoi.png";
 
 
 
@@ -108,7 +113,7 @@ const Competition = () => {
 .section-container {
 width: 100%;
 padding: 40px 20px;
-background: linear-gradient(135deg,rgba(10, 19, 52, 0.71), #1b4d3e);
+background: linear-gradient(135deg,rgba(10, 19, 52, 0.92),rgba(27, 77, 62, 0.56));
 color: white;
 text-align: center;
 display: flex;
@@ -119,78 +124,123 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-.main-title {
-font-size: 2.5rem;
-font-weight: 700;
-margin-bottom: 10px;
+.hero-container {
+  text-align: center;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+ 
 }
 
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
 
 .subtitle {
-font-size: 1.2rem;
-font-weight: 300;
-margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 35px;
 }
 
+.center-logo {
+  display: block;
+  margin: 10px auto;
+}
 
 .partners {
-background: rgba(255, 255, 255, 0.1);
-padding: 20px;
-border-radius: 12px;
-max-width: 500px;
-width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
 }
-
 
 .partners h3 {
-font-size: 1.4rem;
-margin-bottom: 10px;
-font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
-
 
 .partners ul {
-list-style: none;
-padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 
 .partners ul li {
-font-size: 1rem;
-padding: 6px 0;
-border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 
 .partners ul li:last-child {
-border-bottom: none;
+  border-bottom: none;
 }
 
+.partner-logo {
+  width: 300px;
+  height: auto;
+}
 
 @media (max-width: 600px) {
-.main-title {
-font-size: 2rem;
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .partner-logo {
+    width: 160px;
+  }
 }
 
 
-.subtitle {
-font-size: 1rem;
-}
-}
 `}</style>
 
 
-<h1 className="main-title">Welcome to Future Titans – India’s Entrepreneurial Hunt</h1>
-<p className="subtitle">A USA–India initiative<br />In Association with The Times of India</p>
+<div className="hero-container" >
+      <h1 className="main-title">Welcome to Future Titans – India’s Entrepreneurial Hunt</h1>
 
+      <p className="subtitle">
+        A USA–India initiative <br />
+        <img src={ttoi} alt="The Times of India" className="center-logo" />
+      </p>
 
-<div className="partners">
-<h3>Ecosystem Partners:</h3>
-<ul>
-<li>Startup India</li>
-<li>Association of Indian Principals</li>
-</ul>
-</div>
+      <div className="partners">
+        <h3>Ecosystem Partners:</h3>
+
+        <ul>
+          <li>
+            <img
+              src={startUpIndiaLogo}
+              alt="Startup India"
+              className="partner-logo center-logo"
+            />
+          </li>
+
+          <li>
+            <img
+              src={AIPlogo}
+              alt="Association of Indian Principals"
+              className="partner-logo center-logo"
+            />
+          </li>
+
+          <li>
+            <img
+              src={AIClogo}
+              alt="Association of Indian Principals"
+              className="partner-logo center-logo"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
 </div>
 
 
@@ -237,6 +287,70 @@ REGISTER NOW
           </div>
         </div>
       </section>
+
+
+
+      <section className="game-changer-section">
+        <h2>The Framework That Powers <span style={{color:" #dcae1a",fontSize:"30px"}}>Future Titans™</span></h2>
+        <p style={{fontSize:"22px",color:"#264653",fontWeight:"bold"}}>A patent-pending innovation architecture designed for the next generation of thinkers and builders</p>
+        <p style={{fontSize:"20px",color:"#264653",paddingRight:"100px",paddingLeft:"100px"}}>Future Titans™ is built on YoungPreneurs’ proprietary cognitive architecture — a research-grounded system that standardises how students analyse challenges, design solutions, and translate ideas into testable output.
+This architecture integrates three core components:
+</p>
+        <div className="card-container">
+          <div className="info-card">
+            <h3>IDEA DNA™ — The Structured Innovation Pipeline</h3>
+            <p>IDEA DNA™ provides a defined pathway for how a concept evolves — from the moment a student notices a meaningful problem to the moment they test an initial solution.
+It follows a four-stage progression:
+<b>Innovate → Design → Experiment → Apply</b>
+This ensures that every participant moves through a clear, structured, and repeatable innovation sequence, mirroring real-world product development environments.
+
+</p>
+          </div>
+          <div className="info-card">
+            <h3>S.U.R.G.E.™ — The Cognitive Sequencing Protocol</h3>
+            <p>S.U.R.G.E.™ is our proprietary five-step cognitive protocol used to guide how students process challenges and convert them into actionable steps.
+It brings structure to thinking, helping students move from observation to execution through a disciplined sequence.
+This model is the backbone of how participants navigate ambiguity, refine their ideas, and progress through each phase of the competition.
+
+</p>
+          </div>
+          <div className="info-card">
+            <h3>SSI™ — The Solution-Seeking Index™</h3>
+            <p>The SSI™ is YoungPreneurs’ proprietary measurement index that captures the strength of a student’s solution-seeking capability.
+It reflects:
+<ul>
+  <li>•	clarity in framing challenges</li>
+  <li>•	quality of idea design</li>
+  <li>•	approach to experimentation</li>
+  <li>•	ability to apply insights</li>
+
+</ul>
+Every participant develops an SSI™ profile through the program, forming a unique credential that reflects their innovation capability.
+</p>
+          </div>
+          <div className="info-card">
+            <h3>AI Co-Founder — A Guided Thinking Companion</h3>
+            <p>Throughout the journey, participants interact with a guided AI Co-Founder — a structured assistant built to support:
+            <ul>
+  <li>•	problem analysis</li>
+  <li>•	idea refinement</li>
+  <li>•	step-by-step breakdown of actions</li>
+  <li>•	pitch clarity and articulation</li>
+
+</ul>
+It introduces students to the human–AI collaboration model that defines modern innovation.
+            </p>
+          </div>
+          
+        </div>
+      </section>
+
+
+
+
+
+
+
 
       <div className="workshop-container">
         <div className="workshop-title">The Learning Ladder: Build Like a Titan</div>
@@ -305,13 +419,16 @@ A masterclass in influence and communication, refining delivery and confidence.
       </Slider>
       </div>
 
-      <div style={{textAlign: "center",  color: "#dcae1a",fontSize: "26px",fontWeight: "bold"}}>The Competition Format: Where Ideas Take Flight</div>
+      <div style={{textAlign: "center",  color: "#dcae1a",fontSize: "26px",fontWeight: "bold"}}>
+        The Competition Format: Where Ideas Take Flight
+      </div>
       <div className="competition-section">
        
         <div className="card">
           <p><strong>Phase 1 — Idea Submission (Virtual)</strong></p>
-          <p>After completing the Build Like a Titan series, 
-            students submit their ideas through our digital platform.</p>
+          <p>After completing the workshops, participants submit their refined concepts — shaped using IDEA DNA™, S.U.R.G.E.™, and early-level experimentation.
+This ensures that every submission comes through a defined, structured process.
+</p>
           
         </div>
 
@@ -319,15 +436,30 @@ A masterclass in influence and communication, refining delivery and confidence.
         <div className="card">
         
           <p><strong>Phase 2 — Pitch Video (Virtual)</strong></p>
-          <p>Participants bring their ideas to life in a short, 
-            impactful video pitch that showcases their prototype, validation, and vision.</p>
+          <p>Participants communicate their concept through a short video pitch that showcases:
+            <ul>
+              <li>•	their problem insight</li>
+              <li>•	their structured approach</li>
+              <li>•	their prototype or validation</li>
+              <li>•	their articulation supported by the AI Co-Founder</li>
+
+            </ul>
+          </p>
           
         </div>
         <div className="card">
          
           <p><strong>Phase 3 — The Grand Finale (Live Bootcamp)</strong></p>
-          <p>The Top 50 teams from across India enter an intensive 3-day bootcamp, working with mentors and pitching 
-            their ventures to a national jury of entrepreneurs, investors, and innovators.</p>
+          <p>The Top 50 teams join a national bootcamp where they:
+            <ul>
+              <li>•	deepen their innovation models</li>
+              <li>•	work through advanced design sequences</li>
+              <li>•	receive guidance from mentors, industry leaders, and ecosystem experts</li>
+              <li>•	pitch to a national jury</li>
+
+            </ul>
+            This is where structured thinking meets real-world evaluation.
+          </p>
           
         </div>
 
@@ -341,27 +473,27 @@ A masterclass in influence and communication, refining delivery and confidence.
 
       <section className="launchpad-section">
       <div className="content-box">
-        <h2 className="section-title">Future Titans</h2>
+        <h2 className="section_title">More Than a Competition — A National Innovation Platform</h2>
 
         <p className="section-text">
-          This is more than a competition — it’s a launchpad for India’s next
-          generation of builders. Where ideas find direction, young leaders find
-          their voice, and the journey to becoming a changemaker truly begins.
+        Future Titans™ brings a research-backed innovation ecosystem to schools — one that introduces students to rigorous frameworks, contemporary tools, and structured methodologies used in leading global environments.
         </p>
 
         <p className="section-text">
-          Never before has a curriculum of this scale, depth, and international
-          caliber been made available to school students at this level. Future
-          Titans isn’t just preparing students for the future — it’s empowering
-          them to build it.
+        It replaces guesswork with a clear, engineered pathway—so students work through defined processes, not vague creativity.
         </p>
-
+        <p className="section-text">
+        Never before has a curriculum of this scale, depth, and international caliber been available to school students at this level.
+        </p>
+        <h2 className="section-title">The Journey Begins Here</h2>
         <p className="section-highlight">
-          You’ve dreamed. You’ve imagined.  
+        You’ve observed challenges.
           <br />
-          Now it’s time to build, pitch, and rise.  
+          You’ve imagined possibilities.
+          <br/>
+          Now it’s time to build with structure, articulate with clarity, and rise with purpose. 
           <br />
-          <strong>The next big name in entrepreneurship could be yours.</strong>
+          <strong>The next emerging innovator could be you.</strong>
         </p>
       </div>
     </section>
@@ -1043,6 +1175,15 @@ REGISTER NOW
   display: inline-block;
   margin-bottom: 25px;
 }
+  .section_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0b3d2e;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+}
 
 .section-title::after {
   content: "";
@@ -1054,6 +1195,7 @@ REGISTER NOW
   left: 20%;
   border-radius: 10px;
 }
+  
 
 .section-text {
   font-size: 18px;
@@ -1097,7 +1239,78 @@ REGISTER NOW
     transform: translateY(0);
   }
 }
+.game-changer-section {
+          background-color: #f9f9f9;
+          padding: 60px 40px;
+          text-align: center;
+        }
 
+        .game-changer-section h2 {
+          color: #305c4d;
+          font-size: 28px;
+          // margin-bottom: 40px;
+          font-weight: 700;
+        }
+
+        .card-container {
+           margin-top: 60px;
+
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+        }
+
+        .info-card {
+          background-color: #fff;
+          border-radius: 12px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+          padding: 30px 20px;
+          width: 350px;
+          transition: transform 0.3s ease;
+        }
+          .info_card{
+           background-color:rgba(220, 175, 26, 0.24);
+          border-radius: 12px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+          padding: 30px 20px;
+          width: 350px;
+          transition: transform 0.3s ease;
+          }
+
+        .info-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .info-card h3 {
+          font-size: 18px;
+          color: #305c4d;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+           .info_card h3 {
+          font-size: 20px;
+          color: #305c4d;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+
+        .info-card p {
+          font-size: 15px;
+          color: #555;
+          line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+          .card-container {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .info-card {
+            width: 90%;
+          }
+        }
       `}</style>
     </>
   );

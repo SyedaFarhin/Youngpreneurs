@@ -200,7 +200,7 @@ const Academy = () => {
         .text-section {
           flex: 1;
           min-width: 300px;
-          max-width: 600px;
+          max-width: 1000px;
           padding: 20px 30px;
         }
 
@@ -218,7 +218,7 @@ const Academy = () => {
         }
 
         .text-section p {
-          font-size: 15px;
+          font-size: 18px;
           color: #666;
           margin-bottom: 20px;
         }
@@ -226,11 +226,11 @@ const Academy = () => {
         .image-section {
           flex: 1;
           min-width: 300px;
-          max-width: 500px;
+          max-width: 600px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 20px;
+          gap: 60px;
           padding: 20px;
         }
 
@@ -440,8 +440,7 @@ Every project, every workshop, every challenge is designed to stretch the mind, 
 
 <br/>
 Students graduate with more than knowledge; they develop an internal framework for problem-solving and innovation, one that can be applied in science, technology, arts, or business. It’s not about preparing for a career — it’s about shaping a mindset that can create opportunities, confront challenges, and make ideas matter.
-<br/>
-At YoungPreneurs Academy, the future isn’t just something students step into. It’s something they invent, define, and drive forward.
+
           </p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1" className="register-button">REGISTER NOW</a>
         </div>
@@ -489,7 +488,7 @@ From virtual workshops to a live national pitch, students go through the full en
 </p>
 
           <h4>Build Like a Titan — 5-Step Innovation Journey</h4>
-          <p>A powerful workshop series that transforms curiosity into capability:Discover problems → Design solutions → Prototype ideas → Model viability → Pitch like pros.
+          <p>A powerful workshop series that transforms curiosity into capability: Discover problems → Design solutions → Prototype ideas → Model viability → Pitch like pros.
 Every participant earns a Globally Recognized Certificate proving their mastery in innovation and problem-solving.
 </p>
 

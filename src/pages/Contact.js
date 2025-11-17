@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert , Card} from 'react-bootstrap';
 import contactHeaderBg from "../assets/contactHeaderBg.jpg"
 import { TelephoneFill, EnvelopeFill } from "react-bootstrap-icons";
-
+import emailjs from "emailjs-com";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -62,6 +62,38 @@ const Contact = () => {
     });
   };
 
+  //New Form
+
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    emailjs
+      .sendForm(
+        "service_c7slref",
+        "template_vf1quro",
+        e.target,
+        "E8lk4udkqNof2HatE"
+      )
+      .then(
+        (result) => {
+          setStatus("Message Sent Successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          setStatus("Failed to send message. Try again!");
+        }
+      );
+  };
+
+
+
+
+
+
+
   return (
     <>
 
@@ -90,6 +122,78 @@ background-repeat: no-repeat;
       height: 280px;
     }
   }
+    .contact-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff7b7b;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #ff4747;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e63b3b;
+}
+
+.status-msg {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: green;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .contact-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 24px;
+  }
+}
+
  `}</style>
 
 
@@ -266,6 +370,47 @@ background-repeat: no-repeat;
         </Row>
       </Container>
     </section>
+
+
+    <div className="contact-container">
+      <h2>Contact Us</h2>
+
+      <form onSubmit={sendEmail} className="contact-form">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <input
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          required
+        />
+
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+
+        {status && <p className="status-msg">{status}</p>}
+      </form>
+    </div>
+
+
     </>
   );
 };

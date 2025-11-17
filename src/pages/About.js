@@ -291,13 +291,16 @@ YoungPreneurs™ is India’s first patent-pending neuro-adaptive entrepreneuria
           
           They are guided through five transformative workshops led by global faculty, including:
           <br />
-          Prof. Fred Katz, Johns Hopkins University (USA)<br />
-          Sandipan Chattopadhyay, Ex-CTO, Justdial & MD, Xelpmocz
+         <b>Prof. Fred Katz</b>, Johns Hopkins University (USA) <br />
+        <b> Sandipan Chattopadhyay</b> , Ex-CTO, Justdial & MD, Xelpmoc
           <br/>
-          They are guided through five transformative workshops led by global faculty, including:
+          With mentorship from innovators and leaders from MIT, IIT, Fortune 50 companies, Siemens, Justdial, students gain early exposure to world-class thinking and entrepreneurial rigor
         </div>
        
   </div>
+
+  <h4 style={{color: ' #264653',marginTop:"50px"}}>Here, innovation is not just learned — it is experienced, built, and embodied</h4>
+
 </div>
 
     </div>

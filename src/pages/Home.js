@@ -15,6 +15,10 @@ import mission from '../assets/ourMission.jpg';
 import rightImg from '../assets/home1.png';
 import mentor1 from '../assets/fred.jpg';
 import mentor2 from '../assets/sandipan.jpeg';
+import mentor3 from '../assets/devika.jpeg';
+import mentor4 from '../assets/partha.jpg';
+
+
 import times from '../assets/ttoi.png';
 import home2 from '../assets/home2.jpg';
 import home4 from '../assets/home4.jpg';
@@ -126,7 +130,7 @@ REGISTER NOW
 
 
       <section className="game-changer-section">
-        <h2>Surrounding this core are four innovation engines that power the YoungPreneurs™ experience:</h2>
+        <h2>Surrounding this core are four innovation engines that power the <span style={{color:" #dcae1a",fontSize:"30px"}}>YoungPreneurs™</span> experience:</h2>
         <div className="card-container">
           <div className="info-card">
             <h3>IDEA DNA™ — The Science of Innovation</h3>
@@ -161,23 +165,86 @@ they begin to create it.
       </section>
 
 
+      <section className="game-changer-section">
+        <h2 >What Makes <span style={{color:" #dcae1a",fontSize:"35px"}}>Future Titans</span>  a True Game Changer</h2>
+        <div className="card-container">
+          <div className="info_card">
+            <h3>A Revolution in Learning</h3>
+            <p>Future Titans™ is powered by the world’s first neuro-adaptive, patent-pending entrepreneurial ecosystem — a system built to turn learning into creation.
+Using IDEA DNA™ and the S.U.R.G.E.™ framework, students don’t just think of ideas — they build, test, and refine them like real innovators.
+
+</p>
+          </div>
+          <div className="info_card">
+            <h3>A Plug-n-Play Model for Schools</h3>
+            <p>The YoungPreneurs™ model fits effortlessly into any classroom — empowering schools to deliver world-class entrepreneurship education without additional infrastructure. A plug-n-play ecosystem that makes 21st-century innovation accessible to every student.
+</p>
+          </div>
+          <div className="info_card">
+            <h3>Measured Growth. Real Outcomes</h3>
+            <p>Through the Solution Seeking  Index (SSI), every participant’s journey is tracked and benchmarked — providing measurable insights into creativity, leadership, and entrepreneurial growth.
+</p>
+          </div>
+          <div className="info_card">
+            <h3>Powered by Intelligent Tools</h3>
+            <p>At the heart of Future Titans™ is the AI Co-Founder™ — a breakthrough intelligence partner that helps every student think sharper, build faster, and innovate with real-world precision.
+
+            </p>
+          </div>
+          
+          <div className="info_card">
+            <h3>National Recognition & Opportunity</h3>
+            <p>In partnership with The Times of India, Future Titans™ offers students a national platform to showcase their ventures, gain visibility, and learn from global dignitaries and industry luminaries.
+Winners receive ₹10 lakhs in funding to kickstart their entrepreneurial journey.
+
+
+            </p>
+          </div>
+
+          <div className="info_card">
+            <h3>Building the Leaders of Tomorrow</h3>
+            <p>More than a competition, it’s a movement — designed to strengthen confidence, collaboration, and purpose-driven leadership in a rapidly accelerating AI world.
+Because the future won’t be led by those who simply adapt to change, but by those who create it.
+
+
+
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
       <section className="mentorship-section">
         <h2>Why Should Schools and Parents Encourage Participation? </h2>
         <p>Entrepreneurship isn’t just about launching companies — it’s about cultivating a solution-seeking mindset:<br/> the ability to notice problems, take initiative, and create meaningful impact.<br/>
 Through Future Titans™, students learn to transform ideas into real-world projects, gaining the confidence and capability to lead in any path they choose — <br/>whether as founders or as intrapreneurs shaping innovation within organizations.
 </p>
        
-       <p>Because inside every classroom sits a potential pioneer — <br/>someone who could become the next Ratan Tata or FalguniNayar, waiting for the right platform to rise.</p>
+       <p>Because inside every classroom sits a potential pioneer — <br/>someone who could become the next Ratan Tata or Falguni Nayar, waiting for the right platform to rise.</p>
        
         
         
         <div className="highlight">
         Future Titans™ gives them that platform — India’s premier stage for young innovators:
         </div>
-        <p>national exposure in association with</p>
+        <p>National exposure in association with</p>
         <img className="logo" src={times} alt="Times of India Logo" />
         <div className="highlight">Expert Mentorship from Global Luminaries</div>
         <div className="mentors">
+        <div className="mentor-card">
+            <img src={mentor3} alt="Sandipan Chattopadhyay" />
+            <h4>Devika Majumder</h4>
+            <span>Founder & CEO</span>
+          </div>
           <div className="mentor-card">
             <img src={mentor1} alt="Fred Katz" />
             <h4>Fred Katz</h4>
@@ -186,7 +253,13 @@ Through Future Titans™, students learn to transform ideas into real-world proj
           <div className="mentor-card">
             <img src={mentor2} alt="Sandipan Chattopadhyay" />
             <h4>Sandipan Chattopadhyay</h4>
-            <span>Ex-CTO Justdial, CEO Xelpmoc</span>
+            <span>Former CTO Justdial, CEO Xelpmoc</span>
+          </div>
+         
+          <div className="mentor-card">
+            <img src={mentor4} alt="Sandipan Chattopadhyay" />
+            <h4>Partha Ghosh</h4>
+            <span>Advisor</span>
           </div>
         </div>
         <h2 style={{marginTop:"50px"}}>Empower one young innovator — <br/>and you ignite a ripple that can transform an entire generation.</h2>
@@ -255,53 +328,7 @@ ENROLL TODAY
 
 
 
-      <section className="game-changer-section">
-        <h2>What Makes Future Titans a True Game Changer</h2>
-        <div className="card-container">
-          <div className="info-card">
-            <h3>A Revolution in Learning</h3>
-            <p>Future Titans™ is powered by the world’s first neuro-adaptive, patent-pending entrepreneurial ecosystem — a system built to turn learning into creation.
-Using IDEA DNA™ and the S.U.R.G.E.™ framework, students don’t just think of ideas — they build, test, and refine them like real innovators.
-
-</p>
-          </div>
-          <div className="info-card">
-            <h3>A Plug-n-Play Model for Schools</h3>
-            <p>The YoungPreneurs™ model fits effortlessly into any classroom — empowering schools to deliver world-class entrepreneurship education without additional infrastructure. A plug-n-play ecosystem that makes 21st-century innovation accessible to every student.
-</p>
-          </div>
-          <div className="info-card">
-            <h3>Measured Growth. Real Outcomes</h3>
-            <p>Through the Student Startup Index (SSI), every participant’s journey is tracked and benchmarked — providing measurable insights into creativity, leadership, and entrepreneurial growth.
-</p>
-          </div>
-          <div className="info-card">
-            <h3>Powered by Intelligent Tools</h3>
-            <p>At the heart of Future Titans™ is the AI Co-Founder™ — a breakthrough intelligence partner that helps every student think sharper, build faster, and innovate with real-world precision.
-
-            </p>
-          </div>
-          
-          <div className="info-card">
-            <h3>National Recognition & Opportunity</h3>
-            <p>In partnership with The Times of India, Future Titans™ offers students a national platform to showcase their ventures, gain visibility, and learn from global dignitaries and industry luminaries.
-Winners receive ₹10 lakhs in funding to kickstarttheir entrepreneurial journey.
-
-
-            </p>
-          </div>
-
-          <div className="info-card">
-            <h3>Building the Leaders of Tomorrow</h3>
-            <p>More than a competition, it’s a movement — designed to strengthen confidence, collaboration, and purpose-driven leadership in a rapidly accelerating AI world.
-Because the future won’t be led by those who simply adapt to change, but by those who create it.
-
-
-
-            </p>
-          </div>
-        </div>
-      </section>
+     
 
 
 
@@ -658,6 +685,14 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
           width: 350px;
           transition: transform 0.3s ease;
         }
+          .info_card{
+           background-color:rgba(220, 175, 26, 0.24);
+          border-radius: 12px;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+          padding: 30px 20px;
+          width: 350px;
+          transition: transform 0.3s ease;
+          }
 
         .info-card:hover {
           transform: translateY(-5px);
@@ -665,6 +700,12 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
 
         .info-card h3 {
           font-size: 18px;
+          color: #305c4d;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+           .info_card h3 {
+          font-size: 20px;
           color: #305c4d;
           font-weight: 700;
           margin-bottom: 15px;

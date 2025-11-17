@@ -36,7 +36,7 @@ const ForSchools = () => {
         <div className="card">
           <h3>Seamless Implementation. Continuous Support</h3>
           <p>
-          Built on a plug-and-play model, Future Titans integrates effortlessly into your existing system — with complete resources, simple evaluation through the Student Startup Index (SSI), and dedicated support for both faculty and students at every step,
+          Built on a plug-and-play model, Future Titans integrates effortlessly into your existing system — with complete resources, simple evaluation through the Solution Seeking Index (SSI), and dedicated support for both faculty and students at every step,
            innovation becomes easy to execute and impossible to ignore.
           </p>
         </div>
