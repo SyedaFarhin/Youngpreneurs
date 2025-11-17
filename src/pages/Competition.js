@@ -38,7 +38,7 @@ const testimonials = [
   },
   {
     name: "Sandipan Chattopadhyay",
-    title: "Ex-CTO Justdial",
+    title: "Former CTO Justdial",
     image: sandipan,
     quote:
       "Entrepreneurship is about problem-solving, adaptability, and resilience. It’s the ability to see opportunities where others see obstacles and the courage to take action despite uncertainty. Future Titans is here to ignite that mindset in young minds—equipping them with the skills, exposure, and confidence to lead, innovate, and shape the world of tomorrow.",
@@ -65,7 +65,7 @@ const testimonials = [
   },
   {
     name: "Dr. Partha Ghosh ",
-    title: "Founder, Partha Ghosh Leadership Academy | Ex-Senior Partner at McKinsey | Former Professor at MIT | IIT Kharagpur Alumni",
+    title: "Founder, Partha Ghosh Leadership Academy | Former Senior Partner at McKinsey | Former Professor at MIT | IIT Kharagpur Alumni",
     image: partha,
     quote:
       "Digitization knows no boundaries, and knowledge has always been borderless, as a result in today’s business environment to succeed leaders have to think and act beyond borders, keeping in focus the locale – both in terms of the requirements and the assets",
@@ -262,11 +262,11 @@ font-family: 'Poppins', sans-serif;
             We’re entering an age where AI creates faster than we can imagine and automation replaces routine in seconds.
 Today, the future belongs to young innovators who see possibilities where others see limits, craft solutions with courage, and lead with vision that inspires change. 
 <br/>
-That’s where Future Titans by YoungPreneurs comes in — a national challenge designed to equip India’s teens (Classes 8-12) with the one mindset that will always stay relevant: the solution-seekingmindset.
+That’s where Future Titans by YoungPreneurs comes in — a national challenge designed to equip India’s teens (Classes 8-12) with the one mindset that will always stay relevant: the solution-seeking mindset.
 <br/>
 This journey isn’t about memorizing business lessons —it’s about forging a mindset that thrives in uncertainty, turns challenges into opportunities, and shapes the future on their own terms.
 Because in the world ahead, every innovator is a leader, and every leader is an entrepreneur at heart.
-Before stepping into the competition, every participant goes through a 5-part “Build Like a Titan” workshop series — a hands-on, globally benchmarked journey that transforms ideas into action.
+<br/>Before stepping into the competition, every participant goes through a 5-part “Build Like a Titan” workshop series — a hands-on, globally benchmarked journey that transforms ideas into action.
 
 
             </p>
@@ -300,8 +300,8 @@ This architecture integrates three core components:
           <div className="info-card">
             <h3>IDEA DNA™ — The Structured Innovation Pipeline</h3>
             <p>IDEA DNA™ provides a defined pathway for how a concept evolves — from the moment a student notices a meaningful problem to the moment they test an initial solution.
-It follows a four-stage progression:
-<b>Innovate → Design → Experiment → Apply</b>
+It follows a four-stage progression:<br/>
+<b>Innovate → Design → Experiment → Apply</b><br/>
 This ensures that every participant moves through a clear, structured, and repeatable innovation sequence, mirroring real-world product development environments.
 
 </p>
@@ -450,7 +450,7 @@ This ensures that every submission comes through a defined, structured process.
         <div className="card">
          
           <p><strong>Phase 3 — The Grand Finale (Live Bootcamp)</strong></p>
-          <p>The Top 50 teams join a national bootcamp where they:
+          <p>The Top 50 Titans join a national bootcamp where they:
             <ul>
               <li>•	deepen their innovation models</li>
               <li>•	work through advanced design sequences</li>

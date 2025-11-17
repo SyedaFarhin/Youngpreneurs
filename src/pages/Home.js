@@ -12,10 +12,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import vision from '../assets/ourVision.jpg';
 import mission from '../assets/ourMission.jpg';
-import rightImg from '../assets/home1.png';
+import rightImg from '../assets/home1.jpg';
 import mentor1 from '../assets/fred.jpg';
 import mentor2 from '../assets/sandipan.jpeg';
-import mentor3 from '../assets/devika.jpeg';
+import mentor3 from '../assets/devika.jpg';
 import mentor4 from '../assets/partha.jpg';
 
 
@@ -154,14 +154,15 @@ It fuses human creativity with AI precision to make learning more immersive and 
             <h3>Future Titans™ — The Real-World Playground</h3>
             <p>The culmination of the YoungPreneurs™ journey — where students put their ideas to the test, pitch to experts, and experience the thrill of real innovation.
 It’s more than a competition; it’s a nationwide movement redefining what young minds can achieve.
-Together, these pillars form the YoungPreneurs™ Ecosystem — an interconnected, measurable, and future-ready learning architecture that turns potential into purpose.
-Where students don’t just prepare for the future —
-they begin to create it.
+
 
             </p>
           </div>
           
         </div>
+        <p style={{fontSize:"25px",textAlign:"center",marginTop:"30px",color:" #2c4a3f",fontWeight:"initial"}}>Together, these pillars form the YoungPreneurs™ Ecosystem —<br/> an interconnected, measurable, and future-ready learning architecture that turns potential into purpose.
+<br/>Where students don’t just prepare for the future —
+they begin to create it.</p>
       </section>
 
 
@@ -243,7 +244,8 @@ Through Future Titans™, students learn to transform ideas into real-world proj
         <div className="mentor-card">
             <img src={mentor3} alt="Sandipan Chattopadhyay" />
             <h4>Devika Majumder</h4>
-            <span>Founder & CEO</span>
+            <span>Founder & CEO
+            Wall Street Journal Featured | Nominated by Business Today as one of the most powerful women in business</span>
           </div>
           <div className="mentor-card">
             <img src={mentor1} alt="Fred Katz" />
@@ -259,7 +261,7 @@ Through Future Titans™, students learn to transform ideas into real-world proj
           <div className="mentor-card">
             <img src={mentor4} alt="Sandipan Chattopadhyay" />
             <h4>Partha Ghosh</h4>
-            <span>Advisor</span>
+            <span>Founder, Partha Ghosh Leadership Academy IIT Kharagpur | Former McKinsey Senior Partner | Prof. Of Leadership, MIT USA</span>
           </div>
         </div>
         <h2 style={{marginTop:"50px"}}>Empower one young innovator — <br/>and you ignite a ripple that can transform an entire generation.</h2>

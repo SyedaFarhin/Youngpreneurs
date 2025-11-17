@@ -1,5 +1,5 @@
 import React from "react";
-import devika from '../assets/devika.jpeg';
+import devika from '../assets/devika.jpg';
 import fred from '../assets/fred.jpeg';
 import sandipan from '../assets/sandipan.jpeg'; 
 import suman from '../assets/suman.jpeg';
@@ -40,7 +40,7 @@ const Team = () => {
       name: "Sandipan Chattopadhyay",
       title: "Chief Mentor",
       description:
-        "Ex-CTO Justdial | CEO & MD Xelpmoc | IIM | Indian Statistical Institute",
+        "Former CTO Justdial | CEO & MD Xelpmoc | IIM | Indian Statistical Institute",
       image: sandipan,
       linkedin: "https://www.linkedin.com/in/csandipan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
@@ -48,7 +48,7 @@ const Team = () => {
       name: "Suman Bose",
       title: "Advisor",
       description:
-        "Founder, Project KREEA | Ex-CEO & MD Siemens | Building India's Deeptech Hub",
+        "Founder, Project KREEA | Former CEO & MD Siemens | Building India's Deeptech Hub",
       image: suman, // Replace with real image path or import
       linkedin: "https://www.linkedin.com/in/sumanbose?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
