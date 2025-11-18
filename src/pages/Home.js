@@ -28,12 +28,12 @@ import email from '../assets/email.jpg';
 import youtube from '../assets/youtube.jpg';
 // const images = ["/1.png", "/2.png", "/3.png","/4.png","/5.png","/Six.png"];
 const Home = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: false,
+  //   });
+  // }, []);
 
   
   
@@ -49,7 +49,7 @@ const Home = () => {
       autoplay={{ delay: 6000 }}
       loop={true}
       slidesPerView={1}
-      style={{ width: "100%", height: "auto" }}
+      style={{ width: "100%", height: "auto", }}
     >
       <SwiperSlide>
         <img src="/1.png" alt="1" style={{ width: "100%" }} />

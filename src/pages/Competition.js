@@ -553,33 +553,31 @@ REGISTER NOW
 
 .hero-section {
   background-image: url(${academyHeaderBg});
-  background-size: cover;            /* ensures full coverage without stretching */
-  background-position: center top;   /* better positioning for tall mobile screens */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 40vh;                  /* gives a tall hero on desktop */                /* gives a tall hero on desktop */
-  height: 90dvh;
+  height: 100dvh; /* Correct mobile height */
   position: relative;
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   .hero-section {
-    min-height: 50vh;                /* slightly smaller */
-    background-position: top center; /* focus top part of image */
+    height: 100dvh; /* keep full height on tablet */
+    background-position: center;
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
   .hero-section {
-    min-height: 20vh;                /* prevent extreme zoom-in */
-    background-size: contain;        /* show full image */
-    background-position: center;     /* center align */
-    background-repeat: no-repeat;
-    background-color: #000;          /* optional fallback behind image */
+    height: 100dvh; /* FULL exact screen height */
+    background-size: cover;   /* important: remove contain */
+    background-position: center;
   }
 }
+
 
 
 
