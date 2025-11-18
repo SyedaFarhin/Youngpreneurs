@@ -167,8 +167,8 @@ they begin to create it.</p>
 
 
       <section className="game-changer-section">
-        <h2 >What Makes <span style={{color:" #dcae1a",fontSize:"35px"}}>Future Titans</span>  a True Game Changer</h2>
-        <div className="card-container">
+        <h2 >What Makes <span style={{color:" #dcae1a",fontSize:"35px"}}>Future Titans</span>  a True Game Changer?</h2>
+        {/* <div className="card-container">
           <div className="info_card">
             <h3>A Revolution in Learning</h3>
             <p>Future Titans™ is powered by the world’s first neuro-adaptive, patent-pending entrepreneurial ecosystem — a system built to turn learning into creation.
@@ -211,7 +211,64 @@ Because the future won’t be led by those who simply adapt to change, but by th
 
             </p>
           </div>
-        </div>
+        </div> */}
+        <div className="card-container">
+  <div className="info_card">
+    <h3>A Revolution in Learning</h3>
+    <p>
+      Future Titans™ is powered by the world’s first neuro-adaptive,
+      patent-pending entrepreneurial ecosystem — a system built to turn
+      learning into creation. Using IDEA DNA™ and the S.U.R.G.E.™ framework,
+      students don’t just think of ideas — they build, test, and refine them
+      like real innovators.
+    </p>
+  </div>
+
+  <div className="info_card">
+    <h3>A Plug-n-Play Model for Schools</h3>
+    <p>
+      The YoungPreneurs™ model fits effortlessly into any classroom —
+      empowering schools to deliver world-class entrepreneurship education
+      without infrastructure.
+    </p>
+  </div>
+
+  <div className="info_card">
+    <h3>Measured Growth. Real Outcomes</h3>
+    <p>
+      Through the Solution Seeking Index (SSI), every participant’s journey is
+      tracked and benchmarked — providing measurable insights into creativity,
+      leadership, and entrepreneurial growth.
+    </p>
+  </div>
+
+  <div className="info_card">
+    <h3>Powered by Intelligent Tools</h3>
+    <p>
+      At the heart of Future Titans™ is the AI Co-Founder™ — a breakthrough
+      intelligence partner that helps students think sharper, build faster, and
+      innovate with precision.
+    </p>
+  </div>
+
+  <div className="info_card">
+    <h3>National Recognition & Opportunity</h3>
+    <p>
+      In partnership with The Times of India, Future Titans™ offers students a
+      national platform to showcase ventures. Winners receive ₹10 lakhs in
+      funding.
+    </p>
+  </div>
+
+  <div className="info_card">
+    <h3>Building the Leaders of Tomorrow</h3>
+    <p>
+      More than a competition, it’s a movement — designed to strengthen
+      confidence, collaboration, and leadership in an AI world.
+    </p>
+  </div>
+</div>
+
       </section>
 
 
@@ -237,7 +294,7 @@ Through Future Titans™, students learn to transform ideas into real-world proj
         <div className="highlight">
         Future Titans™ gives them that platform — India’s premier stage for young innovators:
         </div>
-        <p>National exposure in association with</p>
+        <p>National Exposure in association with</p>
         <img className="logo" src={times} alt="Times of India Logo" />
         <div className="highlight">Expert Mentorship from Global Luminaries</div>
         <div className="mentors">
@@ -686,14 +743,30 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
           width: 350px;
           transition: transform 0.3s ease;
         }
-          .info_card{
-           background-color:rgba(220, 175, 26, 0.24);
-          border-radius: 12px;
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-          padding: 30px 20px;
-          width: 350px;
-          transition: transform 0.3s ease;
-          }
+          .info_card {
+  background-color: rgba(220, 175, 26, 0.24);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
+
+  width: 100%;               /* Full width on mobile */
+  max-width: 350px;          /* But don’t exceed 350px */
+  
+  transition: transform 0.3s ease;
+}
+
+/* Optional hover effect for desktop */
+.info_card:hover {
+  transform: translateY(-4px);
+}
+
+/* Tablet and large screens alignment stays perfect */
+@media (min-width: 768px) {
+  .info_card {
+    width: 350px;
+  }
+}
+
 
         .info-card:hover {
           transform: translateY(-5px);

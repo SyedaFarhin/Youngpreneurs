@@ -30,7 +30,7 @@ const Header = () => {
         }
 
         .brand-logo {
-          height: 60px;
+          height: 38px;
           width: auto;
         }
 

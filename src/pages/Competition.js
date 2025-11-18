@@ -31,7 +31,7 @@ const testimonials = [
   },
   {
     name: "Suman Bose",
-    title: "Ex- CEO & MD Siemens",
+    title: "Former CEO & MD Siemens",
     image: suman,
     quote:
       "In a world that’s changing faster than ever, an entrepreneurial mindset isn’t just an advantage—it’s a necessity. Future Titans isn’t just about building businesses; it’s about building fearless, future-ready leaders who create opportunities instead of waiting for them!",
