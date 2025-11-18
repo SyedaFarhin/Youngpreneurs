@@ -557,7 +557,7 @@ REGISTER NOW
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 60vh;                  /* gives a tall hero on desktop */
+  min-height: 40vh;                  /* gives a tall hero on desktop */
   max-height: 90vh;                  /* gives a tall hero on desktop */
 
   // height: auto;
@@ -575,7 +575,7 @@ REGISTER NOW
 /* Mobile */
 @media (max-width: 480px) {
   .hero-section {
-    min-height: 40vh;                /* prevent extreme zoom-in */
+    min-height: 20vh;                /* prevent extreme zoom-in */
     background-size: contain;        /* show full image */
     background-position: center;     /* center align */
     background-repeat: no-repeat;

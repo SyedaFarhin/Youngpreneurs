@@ -437,6 +437,7 @@ const SuccessStories = () => {
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 20px;
+  color: #2f4f4f
 }
 
 .success-title span {
