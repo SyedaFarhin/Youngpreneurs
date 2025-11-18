@@ -557,10 +557,8 @@ REGISTER NOW
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 40vh;                  /* gives a tall hero on desktop */
-  max-height: 90vh;                  /* gives a tall hero on desktop */
-
-  // height: auto;
+  min-height: 40vh;                  /* gives a tall hero on desktop */                /* gives a tall hero on desktop */
+  height: 90dvh;
   position: relative;
 }
 

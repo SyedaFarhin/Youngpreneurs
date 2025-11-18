@@ -127,12 +127,12 @@ const AboutUs = () => {
   }
 
   .vision-card {
-   background-color: #ffffff;
+   background-color:rgba(220, 175, 26, 0.66);
     color: #333333;
   }
 
   .mission-card {
-    background-color: #ffffff;
+    background-color: rgba(220, 175, 26, 0.66);
     color: #333333;
   }
 
