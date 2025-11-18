@@ -105,7 +105,6 @@ const Competition = () => {
   return (
     <>
     <div className="hero-section">
-        {/* You can place overlay text, buttons, or other elements here */}
       </div>
 
       <div className="section-container">
@@ -291,11 +290,20 @@ REGISTER NOW
 
 
       <section className="game-changer-section">
-        <h2>The Framework That Powers <span style={{color:" #dcae1a",fontSize:"30px"}}>Future Titans™</span></h2>
-        <p style={{fontSize:"22px",color:"#264653",fontWeight:"bold"}}>A patent-pending innovation architecture designed for the next generation of thinkers and builders</p>
-        <p style={{fontSize:"20px",color:"#264653",paddingRight:"100px",paddingLeft:"100px"}}>Future Titans™ is built on YoungPreneurs’ proprietary cognitive architecture — a research-grounded system that standardises how students analyse challenges, design solutions, and translate ideas into testable output.
-This architecture integrates three core components:
+      <h2 className="framework-title">
+  The Framework That Powers 
+  <span className="highlight"> Future Titans™</span>
+</h2>
+
+<p className="framework-subtitle">
+  A patent-pending innovation architecture designed for the next generation of thinkers and builders
 </p>
+
+<p className="framework-description">
+  Future Titans™ is built on YoungPreneurs’ proprietary cognitive architecture — a research-grounded system that standardises how students analyse challenges, design solutions, and translate ideas into testable output.
+  This architecture integrates three core components:
+</p>
+
         <div className="card-container">
           <div className="info-card">
             <h3>IDEA DNA™ — The Structured Innovation Pipeline</h3>
@@ -359,39 +367,39 @@ It introduces students to the human–AI collaboration model that defines modern
         <div className="cards-wrapper">
           <div className="card">
             <h4>Discover & Define</h4>
-            <p><i>Turning Problems into Possibilities</i></p>
+            <p>Turning Problems into Possibilities</p>
             <p>Students learn empathy-driven exploration of real-world challenges.</p>
-            <i>Design Thinking: Empathize + Define | BMC: Market Segmentation, SWOT Analysis</i>
+           Design Thinking: Empathize + Define | BMC: Market Segmentation, SWOT Analysis
           </div>
 
           <div className="card red-border">
             <h4>Design the Difference</h4>
-            <p><i>Crafting Bold Ideas That Matter</i></p>
+            <p>Crafting Bold Ideas That Matter</p>
             <p>They master ideation tools to uncover what makes their solution stand out.</p>
-            <i>Design Thinking: Ideate | BMC: Value Proposition</i>
+            Design Thinking: Ideate | BMC: Value Proposition
           </div>
 
           <div className="card">
             <h4>Prototype to Pitch — Build, Test, Improve — Fast!</h4>
-            <p><i>Build, Test, Improve — Fast!</i></p>
+            <p>Build, Test, Improve — Fast!</p>
             <p>They bring ideas to life using no-code tools, rapid testing, and iteration.</p>
-            <i>Design Thinking: Prototype + Test | BMC: Key Activities, Channels</i>
+            Design Thinking: Prototype + Test | BMC: Key Activities, Channels
           </div>
 
           <div className="card red-border">
             <h4>Map Your Model</h4>
-            <p><i>Make It Work, Make It Worth It</i></p>
+            <p>Make It Work, Make It Worth It</p>
             <p>Students learn monetization and scalability — turning ideas into viable models.</p>
-            <i>BMC: Revenue Streams, Cost Structure, Customer Relationships</i>
+            BMC: Revenue Streams, Cost Structure, Customer Relationships
           </div>
 
           <div className="card">
             <h4>Pitch Like a Pro</h4>
-            <p><i>Storytelling That Wins Judges & Investors</i></p>
+            <p>Storytelling That Wins Judges & Investors</p>
             <p>	
 A masterclass in influence and communication, refining delivery and confidence.
 </p>
-            <i>Full BMC Review + Media & Pitch Training</i>
+            Full BMC Review + Media & Pitch Training
           </div>
         </div>
       </div>
@@ -541,28 +549,54 @@ REGISTER NOW
       
       <style>{`
 
-      .hero-section {
-         background-image: url(${academyHeaderBg});
+  //     .hero-section {
+  //        background-image: url(${academyHeaderBg});
+  // background-size: cover;
+  
+  // height: 825px;
+  // width: 100%;
+  // position: relative;
+  // padding-top: 90px;
+  
+  //       }
+
+  //       @media (max-width: 768px) {
+  //         .hero-section {
+  //           height: 380px;
+  //         }
+  //       }
+
+  //       @media (max-width: 480px) {
+  //         .hero-section {
+  //           height: 280px;
+  //         }
+  //       }
+
+.hero-section {
+  background-image: url(${academyHeaderBg});
   background-size: cover;
-  
-  height: 825px;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  aspect-ratio: 16 / 9; /* Responsive height automatically */
   position: relative;
-  padding-top: 90px;
-  
-        }
+}
 
-        @media (max-width: 768px) {
-          .hero-section {
-            height: 380px;
-          }
-        }
+@media (max-width: 768px) {
+  .hero-section {
+    aspect-ratio: 4 / 3;
+  }
+}
 
-        @media (max-width: 480px) {
-          .hero-section {
-            height: 280px;
-          }
-        }
+@media (max-width: 480px) {
+  .hero-section {
+    aspect-ratio: 1 / 1; /* Square on very small screens */
+  }
+}
+
+
+
+
 
         .welcome-section {
           background: #f8f8f8;
@@ -705,7 +739,7 @@ REGISTER NOW
         }
 
         .card p {
-          font-size: 10px;
+          font-size: 18px;
           color: #555;
           margin: 8px 0;
         }
@@ -887,12 +921,12 @@ REGISTER NOW
           margin-bottom: 8px;
         }
 
-        .card p {
-          margin: 6px 0;
-          color: #333;
-          font-size: 14px;
-          line-height: 1.6;
-        }
+        // .card p {
+        //   margin: 6px 0;
+        //   color: #333;
+        //   font-size: 14px;
+        //   line-height: 1.6;
+        // }
 
         .check-list {
           list-style: none;
@@ -1311,6 +1345,80 @@ REGISTER NOW
             width: 90%;
           }
         }
+          .framework-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.framework-title .highlight {
+  color: #dcae1a;
+  font-size: 34px; /* Slightly larger for emphasis */
+}
+
+.framework-subtitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #264653;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.framework-description {
+  font-size: 20px;
+  color: #264653;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px; /* Mobile-friendly padding */
+  line-height: 1.6;
+}
+
+
+/* ---------------------------- */
+/* 📱 Responsive Styles         */
+/* ---------------------------- */
+
+@media (max-width: 768px) {
+  .framework-title {
+    font-size: 26px;
+  }
+
+  .framework-title .highlight {
+    font-size: 28px;
+  }
+
+  .framework-subtitle {
+    font-size: 18px;
+  }
+
+  .framework-description {
+    font-size: 17px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .framework-title {
+    font-size: 22px;
+  }
+
+  .framework-title .highlight {
+    font-size: 24px;
+  }
+
+  .framework-subtitle {
+    font-size: 16px;
+  }
+
+  .framework-description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
       `}</style>
     </>
   );

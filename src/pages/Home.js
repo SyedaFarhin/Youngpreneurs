@@ -20,7 +20,7 @@ import mentor4 from '../assets/partha.jpg';
 
 
 import times from '../assets/ttoi.png';
-import home2 from '../assets/home2.jpg';
+import home2 from '../assets/home2.png';
 import home4 from '../assets/home4.jpg';
 import insta from '../assets/insta.jpg';
 import linkedin from '../assets/linkedin.jpg';
@@ -263,7 +263,7 @@ Through Future Titans™, students learn to transform ideas into real-world proj
             <span>Founder, Partha Ghosh Leadership Academy IIT Kharagpur | Former McKinsey Senior Partner | Prof. Of Leadership, MIT USA</span>
           </div>
         </div>
-        <h2 style={{marginTop:"50px"}}>Empower one young innovator — <br/>and you ignite a ripple that can transform an entire generation.</h2>
+        <h2 style={{marginTop:"80px"}}>Empower one young innovator — <br/>and you ignite a ripple that can transform an entire generation.</h2>
       </section>
 
 
@@ -762,52 +762,91 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
           margin: 20px auto;
         }
 
-        .mentors {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 40px;
-          margin-top: 40px;
-        }
+       .mentors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
 
 .mentor-card {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Center items horizontally */
- 
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 400px;
-  height: 200px; /* Add a height if vertical centering is needed */
- 
+
+  width: 100%;
+  max-width: 320px; /* perfect card width for all screens */
+  padding: 20px;
+
+  background: #0d0d0d00; /* remove if not needed */
+  border-radius: 12px;
 }
-        .mentor-card img {
-          width: 100px;
-          height: 100px;
-          border-radius: 50%;
-          object-fit: cover;
-          margin-bottom: 10px;
-          border: 3px solid #fff;
-        }
 
-        .mentor-card h4 {
-          margin: 10px 0 5px;
-          font-size: 22px;
-        }
+/* Mentor Image */
+.mentor-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #fff;
+}
 
-        .mentor-card span {
-          font-size: 18px;
-          color: #e0e0e0;
-        }
+/* Name */
+.mentor-card h4 {
+  margin: 8px 0 6px;
+  font-size: 20px;
+  line-height: 1.2;
+}
 
-        @media (max-width: 768px) {
-          .mentorship-section {
-            padding: 40px 15px;
-          }
+/* Description */
+.mentor-card span {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #e0e0e0;
+}
 
-          .mentor-card {
-            max-width: 100%;
-          }
-        }
+/* ------------------------------- */
+/* 📱 Mobile Responsive Styling    */
+/* ------------------------------- */
+@media (max-width: 768px) {
+
+  .mentors {
+    gap: 30px;
+  }
+
+  .mentor-card {
+    max-width: 100%;
+  }
+
+  .mentor-card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .mentor-card h4 {
+    font-size: 18px;
+  }
+
+  .mentor-card span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentor-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mentor-card span {
+    font-size: 14px;
+  }
+}
+
            .workshop-section {
           background: linear-gradient(rgba(220, 175, 26, 0.62), rgba(220, 175, 26, 0.28));
           padding: 60px 20px;
@@ -910,7 +949,7 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
            .academy-section {
           background: url(${home2}) no-repeat center center/cover;
           position: relative;
-          padding: 80px 20px;
+          padding: 50px 20px;
           color: #fff;
         }
 

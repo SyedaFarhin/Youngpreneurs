@@ -22,7 +22,7 @@ const ForSchools = () => {
         <div className="card">
           <h3>Empower Your Educators</h3>
           <p>
-          Through our <strong>Train-the-Trainer Program</strong>, your educators gain hands-on exposure to global entrepreneurial frameworks such as <strong>Design Thinking, Business Model Canvas,</strong> and <strong>IDEADNA</strong>.These sessions go beyond theory, equipping teachers to mentor student innovators, integrate real-world learning into everyday lessons, and build a thriving innovation culture within your school.
+          Through our <strong>Train-the-Trainer Program</strong>, your educators gain hands-on exposure to global entrepreneurial frameworks such as <strong>Design Thinking, Business Model Canvas,</strong> and <strong>IDEA DNA</strong>.These sessions go beyond theory, equipping teachers to mentor student innovators, integrate real-world learning into everyday lessons, and build a thriving innovation culture within your school.
           </p>
         </div>
         <div className="card">
@@ -36,7 +36,7 @@ const ForSchools = () => {
         <div className="card">
           <h3>Seamless Implementation. Continuous Support</h3>
           <p>
-          Built on a plug-and-play model, Future Titans integrates effortlessly into your existing system — with complete resources, simple evaluation through the Solution Seeking Index (SSI), and dedicated support for both faculty and students at every step,
+          Built on a plug-and-play model, Future Titans integrates effortlessly into your existing system. With complete resources, simple evaluation through the Solution Seeking Index (SSI), and dedicated support for both faculty and students at every step,
            innovation becomes easy to execute and impossible to ignore.
           </p>
         </div>

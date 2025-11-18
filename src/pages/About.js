@@ -1,5 +1,5 @@
 import React from 'react';
-import teamImage from '../assets/about-main.jpg'; 
+import teamImage from '../assets/about-main.png'; 
 import visionIcon from '../assets/vision.png';  
 import missionIcon from '../assets/mission.png'; 
 import headerBg from "../assets/headerBg.png"
@@ -9,28 +9,49 @@ const AboutUs = () => {
 <style>
 {`
 
- .hero-section {
-          background-image: url(${headerBg});
-          background-size: cover;
-          background-position: center;
-          height: 920px; /* Same as your screenshot image */
-          width: 100%;
-          position: relative;
-        }
+//  .hero-section {
+//           background-image: url(${headerBg});
+//           background-size: cover;
+//           background-position: center;
+//           height: 920px; /* Same as your screenshot image */
+//           width: 100%;
+//           position: relative;
+//         }
 
-        @media (max-width: 768px) {
-          .hero-section {
-            height: 380px;
-          }
-        }
+//         @media (max-width: 768px) {
+//           .hero-section {
+//             height: 380px;
+//           }
+//         }
 
-        @media (max-width: 480px) {
-          .hero-section {
-            height: 280px;
-          }
-        }
+//         @media (max-width: 480px) {
+//           .hero-section {
+//             height: 280px;
+//           }
+//         }
 
 
+.hero-section {
+  background-image: url(${headerBg});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Responsive height automatically */
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    aspect-ratio: 1 / 1; /* Square on very small screens */
+  }
+}
 
 
 
@@ -70,10 +91,12 @@ const AboutUs = () => {
   }
 
   .about-paragraph {
-    color: #555;
+    color: #264653;
     line-height: 1.6;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
+    
+
   }
 
   .about-image {
@@ -81,7 +104,7 @@ const AboutUs = () => {
     min-width: 300px;
     max-width: 600px;
 
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .about-image img {
@@ -116,8 +139,8 @@ const AboutUs = () => {
   }
 
   .vision-card {
-    background: linear-gradient(to bottom right, #dcae1a, #dcae1a);
-    color: #ffffff;
+   background-color: #ffffff;
+    color: #333333;
   }
 
   .mission-card {
@@ -202,7 +225,7 @@ const AboutUs = () => {
   }
 
   .info-box {
-    background: rgba(255, 255, 255, 0.32);
+    background: rgba(255, 255, 255, 0.57);
     border-radius: 10px;
     padding: 40px;
     font-size: 20px;
@@ -232,7 +255,7 @@ const AboutUs = () => {
 
 
 <div className="hero-section">
-        {/* You can place overlay text, buttons, or other elements here */}
+      
       </div>
 
 
