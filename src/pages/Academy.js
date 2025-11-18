@@ -39,7 +39,7 @@ const Academy = () => {
     background-repeat: no-repeat;
     background-color: #000;                /* prevent white gaps */
     min-height: 120dvh;                    /* remove top/bottom gaps */
-    padding-top: 120px;                    /* push text below image */
+    padding-top: 150px;                    /* push text below image */
   }
 }
 
