@@ -56,7 +56,7 @@ const Team = () => {
       name: "Partha Ghosh",
       title: "Advisor",
       description:
-        "Founder, Partha Ghosh Leadership Academy IIT Kharagpur | Ex - Senior Partner McKinsey & Company | Ex -- MIT | IIT Alumni MD, Partha S Ghosh & Associates | Prof. Of Leadership MIT (Massachusetts Institute of Technology)",
+        "Founder, Partha Ghosh Leadership Academy IIT Kharagpur | Former - Senior Partner McKinsey & Company | Former -- MIT | IIT Alumni MD, Partha S Ghosh & Associates | Prof. Of Leadership MIT (Massachusetts Institute of Technology)",
       image: partha,
       linkedin: "https://www.linkedin.com/in/partha-ghosh-820b4a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
@@ -88,7 +88,7 @@ const Team = () => {
       name: "Sachin Kapoor",
       title: "Advisor",
       description:
-        "Former Sr Director & Head of Business Development, LinkedIn India | Ex- Yahoo | Ex- Samsung | Founder & CEO Trumsy.Ai",
+        "Former Sr Director & Head of Business Development, LinkedIn India | Former- Yahoo | Former- Samsung | Founder & CEO Trumsy.Ai",
       image: sachin,
       linkedin: "https://www.linkedin.com/in/sachinkapoor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
@@ -147,7 +147,7 @@ const Team = () => {
   return (
     <>
     <div className="hero-section">
-        {/* You can place overlay text, buttons, or other elements here */}
+        {/* You can place overlay tFormert, buttons, or other elements here */}
       </div>
     <div className="team-section">
       <h2 className="team-heading">MEET THE TEAM</h2>

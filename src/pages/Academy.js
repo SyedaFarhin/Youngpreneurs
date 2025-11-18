@@ -19,20 +19,30 @@ const Academy = () => {
 
 
         .youngpreneur-wrapper {
-           position: relative;
-          width: 100%;
-          background-image: url(${academy});
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          color: white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          min-height: 100vh;
-          padding: 60px 20px;
-          flex-wrap: wrap;
-        }
+  position: relative;
+  width: 100%;
+  background-image: url(${academy});
+  background-size: cover;
+  background-position: right center;  /* keep person visible */
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 60px 20px;
+}
+@media (max-width: 480px) {
+  .youngpreneur-wrapper {
+    background-size: contain !important;   /* show full image */
+    background-position: top center;       /* image sits properly */
+    background-repeat: no-repeat;
+    background-color: #000;                /* prevent white gaps */
+    min-height: 120dvh;                    /* remove top/bottom gaps */
+    padding-top: 120px;                    /* push text below image */
+  }
+}
+
 
         .youngpreneur-overlay {
           position: absolute;

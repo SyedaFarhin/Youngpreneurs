@@ -325,27 +325,27 @@ This model is the backbone of how participants navigate ambiguity, refine their 
           <div className="info-card">
             <h3>SSI™ — The Solution-Seeking Index™</h3>
             <p>The SSI™ is YoungPreneurs’ proprietary measurement index that captures the strength of a student’s solution-seeking capability.
-It reflects:
-<ul>
-  <li>•	clarity in framing challenges</li>
-  <li>•	quality of idea design</li>
-  <li>•	approach to experimentation</li>
-  <li>•	ability to apply insights</li>
+It reflects:<br/>
 
-</ul>
+•	clarity in framing challenges<br/>
+•	quality of idea design<br/>
+•	approach to experimentation<br/>
+•	ability to apply insights<br/>
+
+
 Every participant develops an SSI™ profile through the program, forming a unique credential that reflects their innovation capability.
 </p>
           </div>
           <div className="info-card">
             <h3>AI Co-Founder — A Guided Thinking Companion</h3>
-            <p>Throughout the journey, participants interact with a guided AI Co-Founder — a structured assistant built to support:
-            <ul>
-  <li>•	problem analysis</li>
-  <li>•	idea refinement</li>
-  <li>•	step-by-step breakdown of actions</li>
-  <li>•	pitch clarity and articulation</li>
+            <p>Throughout the journey, participants interact with a guided AI Co-Founder — a structured assistant built to support:<br/>
+          
+  •	problem analysis<br/>
+  •	idea refinement<br/>
+  •	step-by-step breakdown of actions<br/>
+  •	pitch clarity and articulation<br/>
 
-</ul>
+
 It introduces students to the human–AI collaboration model that defines modern innovation.
             </p>
           </div>
@@ -444,28 +444,28 @@ This ensures that every submission comes through a defined, structured process.
         <div className="card">
         
           <p><strong>Phase 2 — Pitch Video (Virtual)</strong></p>
-          <p>Participants communicate their concept through a short video pitch that showcases:
-            <ul>
-              <li>•	their problem insight</li>
-              <li>•	their structured approach</li>
-              <li>•	their prototype or validation</li>
-              <li>•	their articulation supported by the AI Co-Founder</li>
+          <p>Participants communicate their concept through a short video pitch that showcases:<br/>
+            
+             •	their problem insight<br/>
+             •	their structured approach<br/>
+             •	their prototype or validation<br/>
+             •	their articulation supported by the AI Co-Founder<br/>
 
-            </ul>
+           
           </p>
           
         </div>
         <div className="card">
          
           <p><strong>Phase 3 — The Grand Finale (Live Bootcamp)</strong></p>
-          <p>The Top 50 Titans join a national bootcamp where they:
-            <ul>
-              <li>•	deepen their innovation models</li>
-              <li>•	work through advanced design sequences</li>
-              <li>•	receive guidance from mentors, industry leaders, and ecosystem experts</li>
-              <li>•	pitch to a national jury</li>
+          <p>The Top 50 Titans join a national bootcamp where they:<br/>
+           
+          • deepen their innovation models<br/>
+          • work through advanced design sequences<br/>
+          • receive guidance from mentors, industry leaders, and ecosystem experts<br/>
+          •  pitch to a national jury<br/>
 
-            </ul>
+           
             This is where structured thinking meets real-world evaluation.
           </p>
           
@@ -551,33 +551,17 @@ REGISTER NOW
 
      
 
-.hero-section {
-  background-image: url(${academyHeaderBg});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100dvh; /* Correct mobile height */
-  position: relative;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-  .hero-section {
-    height: 100dvh; /* keep full height on tablet */
-    background-position: center;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .hero-section {
-    height: 100dvh; /* FULL exact screen height */
-    background-size: cover;   /* important: remove contain */
-    background-position: center;
-  }
-}
-
+.hero-section 
+{ 
+background-image: url(${academyHeaderBg}); 
+background-size: cover; /* ensures full coverage without stretching */ background-position: center top; /* better positioning for tall mobile screens */ 
+background-repeat: no-repeat; 
+width: 100%; 
+min-height: 40vh; /* gives a tall hero on desktop */ /* gives a tall hero on desktop */
+ height: 90dvh; 
+ position: relative; } /* Tablet */ 
+ @media (max-width: 768px) 
+ { .hero-section { min-height: 50vh; /* slightly smaller */ background-position: top center; /* focus top part of image */ } } /* Mobile */ @media (max-width: 480px) { .hero-section { min-height: 20vh; /* prevent extreme zoom-in */ background-size: contain; /* show full image */ background-position: center; /* center align */ background-repeat: no-repeat; background-color: #000; /* optional fallback behind image */ } }
 
 
 
