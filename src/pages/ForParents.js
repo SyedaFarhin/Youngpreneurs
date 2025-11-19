@@ -262,7 +262,7 @@ REGISTER NOW
   width: 100vw;
   margin: 0;
   padding: 100px 20px;
-  background-color: #dcae1a;
+  background-color:rgba(220, 175, 26, 0.21);
   margin-top:30px;
   text-align: center;
   position: relative;

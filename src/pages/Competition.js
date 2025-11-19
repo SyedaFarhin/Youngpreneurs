@@ -10,7 +10,7 @@ import fred from '../assets/fred.jpeg';
 import partha from '../assets/partha.jpg';
 import devika from '../assets/devika.jpeg';
 
-import presentation from '../assets/presentation.jpg';
+
 import academyHeaderBg from '../assets/academyHeaderBg.jpg';
 import AIPlogo from "../assets/AIPlogo.png";
 import AIClogo from "../assets/AIClogo.png";
