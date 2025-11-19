@@ -97,29 +97,68 @@ const Media = () => {
 
       <style>{`
 
-      .hero-section {
+//       .hero-section {
+//   background-image: url(${mediaHeaderBg});
+//   background-size: cover;
+//   background-position: center top; /* Align from top */
+//   height: 1080px;
+//   width: 100%;
+//   position: relative;
+//   padding-top: 80px; /* Push content/image downward */
+//   box-sizing: border-box;
+//   background-repeat: no-repeat;
+// }
+
+//         @media (max-width: 768px) {
+//           .hero-section {
+//             height: 380px;
+//           }
+//         }
+
+//         @media (max-width: 480px) {
+//           .hero-section {
+//             height: 280px;
+//           }
+//         }
+
+
+.hero-section {
   background-image: url(${mediaHeaderBg});
-  background-size: cover;
-  background-position: center top; /* Align from top */
-  height: 1080px;
-  width: 100%;
-  position: relative;
-  padding-top: 80px; /* Push content/image downward */
-  box-sizing: border-box;
+  background-size: cover;            /* ensures full coverage without stretching */
+  background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
+  width: 100%;
+  min-height: 60vh;                  /* gives a tall hero on desktop */
+    max-height: 100vh;                  /* gives a tall hero on desktop */
+
+  position: relative;
 }
 
-        @media (max-width: 768px) {
-          .hero-section {
-            height: 380px;
-          }
-        }
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 50vh;                /* slightly smaller */
+    background-position: top center; /* focus top part of image */
+  }
+}
 
-        @media (max-width: 480px) {
-          .hero-section {
-            height: 280px;
-          }
-        }
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 40vh;                /* prevent extreme zoom-in */
+    background-size: contain;        /* show full image */
+    background-position: center;     /* center align */
+    background-repeat: no-repeat;
+    background-color: #000;          /* optional fallback behind image */
+  }
+}
+
+
+
+
+
+
+
 
 
       .media-heading-container {
