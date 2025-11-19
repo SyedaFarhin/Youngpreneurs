@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import rightImg from '../assets/curriculum-image.jpg';
 import aca1 from '../assets/aca1.jpg';
 import aca2 from '../assets/aca2.jpg';

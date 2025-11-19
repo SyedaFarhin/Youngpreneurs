@@ -162,7 +162,7 @@ background-repeat: no-repeat;
 
 .contact-form button {
   padding: 12px;
-  background: #ff4747;
+  background: #134734;
   color: white;
   border: none;
   border-radius: 10px;
@@ -172,7 +172,7 @@ background-repeat: no-repeat;
 }
 
 .contact-form button:hover {
-  background: #e63b3b;
+  background: #dcae1a;
 }
 
 .status-msg {
@@ -373,7 +373,7 @@ background-repeat: no-repeat;
 
 
     <div className="contact-container">
-      <h2>Contact Us</h2>
+      <h2 style={{color:" #134734"}}>Contact Us</h2>
 
       <form onSubmit={sendEmail} className="contact-form">
         <input

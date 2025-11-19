@@ -26,19 +26,8 @@ import insta from '../assets/insta.jpg';
 import linkedin from '../assets/linkedin.jpg';
 import email from '../assets/email.jpg';
 import youtube from '../assets/youtube.jpg';
-// const images = ["/1.png", "/2.png", "/3.png","/4.png","/5.png","/Six.png"];
 const Home = () => {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: false,
-  //   });
-  // }, []);
-
   
-  
-
-
   return (
     <>
 
