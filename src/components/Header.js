@@ -147,6 +147,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/for-schools" className="nav-link-item">For Schools</Nav.Link>
               <Nav.Link as={Link} to="/competition-details" className="nav-link-item">Future Titans Competition</Nav.Link>
               <Nav.Link as={Link} to="/youngpreneur-academy" className="nav-link-item">Youngpreneur Academy</Nav.Link>
+              <Nav.Link as={Link} to="/youngpreneur-voices" className="nav-link-item">YoungPreneurs Voices</Nav.Link>
               <Nav.Link as={Link} to="/success-stories" className="nav-link-item">Success Stories</Nav.Link>
               <Nav.Link as={Link} to="/media-press" className="nav-link-item">Media</Nav.Link>
             </Nav>

@@ -31,13 +31,14 @@ const mediaItems = [
     button: "Read More",
     link: "https://economictimes.indiatimes.com/small-biz/entrepreneurship/meet-eight-budding-teenpreneurs-who-are-giving-wings-to-their-startup-ideas/articleshow/59007317.cms?from=mdr"
   },
-  
   {
-    logo: ibns,
-    desc: "Kolkata: Students get hands-on training at the Youngpreneurs India Camp...",
-    button: "Read More",
-    link: "https://indiablooms.com/life/kolkata-students-get-hands-on-training-at-the-youngpreneurs-india-camp/details"
+    logo: cnbc,
+    desc: "",
+    button: "Watch Now",
+    link: "https://www.facebook.com/watch/?v=1062508397224697"
   },
+  
+ 
   {
     logo: enterpreneurIndia,
     desc: "It's Time The Indian Students' Entrepreneurship Streak Is Tapped in School...",
@@ -51,11 +52,12 @@ const mediaItems = [
     link: "https://youngpreneurs.in/the-telegraph/"
   },
   {
-    logo: cnbc,
-    desc: "",
-    button: "Watch Now",
-    link: "https://www.facebook.com/watch/?v=1062508397224697"
-  },
+    logo: ibns,
+    desc: "Kolkata: Students get hands-on training at the Youngpreneurs India Camp...",
+    button: "Read More",
+    link: "https://indiablooms.com/life/kolkata-students-get-hands-on-training-at-the-youngpreneurs-india-camp/details"
+  }
+ 
 ];
 
 const Media = () => {
@@ -97,29 +99,7 @@ const Media = () => {
 
       <style>{`
 
-//       .hero-section {
-//   background-image: url(${mediaHeaderBg});
-//   background-size: cover;
-//   background-position: center top; /* Align from top */
-//   height: 1080px;
-//   width: 100%;
-//   position: relative;
-//   padding-top: 80px; /* Push content/image downward */
-//   box-sizing: border-box;
-//   background-repeat: no-repeat;
-// }
 
-//         @media (max-width: 768px) {
-//           .hero-section {
-//             height: 380px;
-//           }
-//         }
-
-//         @media (max-width: 480px) {
-//           .hero-section {
-//             height: 280px;
-//           }
-//         }
 
 
 .hero-section {

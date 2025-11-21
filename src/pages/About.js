@@ -18,7 +18,7 @@ const AboutUs = () => {
   background-repeat: no-repeat;
   width: 100%;
   min-height: 60vh;                  /* gives a tall hero on desktop */
-  height: auto;
+   max-height: 100vh;  
   position: relative;
 }
 

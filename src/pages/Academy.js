@@ -4,7 +4,7 @@ import aca1 from '../assets/aca1.jpg';
 import aca2 from '../assets/aca2.jpg';
 import aca3 from '../assets/aca3.jpg';
 import aca4 from '../assets/aca4.jpg';
-import academy from '../assets/academy.jpg';
+import academy from '../assets/academy.png';
 
 
 
@@ -436,7 +436,7 @@ const Academy = () => {
 
       <div className="youngpreneur-wrapper">
         <div className="youngpreneur-overlay" />
-        <div className="youngpreneur-content">
+        {/* <div className="youngpreneur-content">
           <h2 className="youngpreneur-title">
           YoungPreneurs Academy<br/>
           India’s Innovation Engine for the Next Generation
@@ -451,7 +451,7 @@ Students graduate with more than knowledge; they develop an internal framework f
 
           </p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1" className="register-button">REGISTER NOW</a>
-        </div>
+        </div> */}
       </div>
 
 

@@ -2,7 +2,7 @@ import React from "react";
 import devika from '../assets/devika.jpg';
 import fred from '../assets/fred.jpeg';
 import sandipan from '../assets/sandipan.jpeg'; 
-import suman from '../assets/suman.jpeg';
+import suman from '../assets/suman.jpg';
 import partha from '../assets/partha.jpg';
 import juliya from '../assets/juliya.jpeg';
 import pankaj from '../assets/pankaj.jpg';

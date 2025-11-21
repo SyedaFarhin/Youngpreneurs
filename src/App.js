@@ -19,6 +19,7 @@ import Academy from './pages/Academy';
 import SuccessStories from './pages/SuccessStories';
 import Media from './pages/Media';
 import Contact from './pages/Contact';
+import YoungPreneursVoices from './pages/YoungPreneursVoices';
 
 
 
@@ -58,6 +59,7 @@ function App() {
             <Route path="/for-schools" element={<ForSchools />} />
             <Route path="/competition-details" element={<Competition />} />
             <Route path="/youngpreneur-academy" element={<Academy />} />
+            <Route path="/youngpreneur-voices" element={<YoungPreneursVoices />} />
             <Route path="/success-stories" element={<SuccessStories />} />
             <Route path="/media-press" element={<Media />} />
             <Route path="/contact" element={<Contact />} />

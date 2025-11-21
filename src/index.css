@@ -1,4 +1,6 @@
-@import './styles/global.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Additional base resets and overrides */
 body {
