@@ -1,5 +1,10 @@
 import React from "react";
 import voicesBanner from "../assets/voicesBanner.png"
+import naishaVoice from "../assets/naishaVoice.mp4"
+import KrishikaVoice from "../assets/KrishikaVoice.mp4"
+import kshitijVoice from "../assets/kshitijVoice.mp4"
+import ShivayVoice from "../assets/ShivayVoice.mp4"
+
 
 const ambassadors = [
   {
@@ -7,24 +12,34 @@ const ambassadors = [
     quote: "Innovation begins the moment you decide to look deeper.",
     description:
       "Naisha shares how observing the world around her led her to identify meaningful problems and channel her curiosity into building something of value.",
-  },
+    videoUrl: naishaVoice,
+  
+  
+    },
+    {
+      name: "Shivay",
+      quote: "Once you start building, the world starts opening up.",
+      description:
+        "Shivay reflects on how experimenting with ideas broadened his perspective, helping him recognise opportunities hidden in everyday challenges.",
+      videoUrl: ShivayVoice,
+  
+    },
   {
     name: "Krishika",
     quote: "You find clarity when you start creating, not when you wait.",
     description:
       "Krishika talks about how taking her first step brought focus, structure, and direction — helping her understand her own potential as a builder.",
+    videoUrl: KrishikaVoice,
+
   },
-  {
-    name: "Shivay",
-    quote: "Once you start building, the world starts opening up.",
-    description:
-      "Shivay reflects on how experimenting with ideas broadened his perspective, helping him recognise opportunities hidden in everyday challenges.",
-  },
+ 
   {
     name: "Kshitij",
     quote: "Every big journey starts with one small spark.",
     description:
       "Kshitij describes the moment that ignited his passion to create — and how that first spark transformed into a journey of curiosity and continuous growth.",
+    videoUrl: kshitijVoice,
+
   },
 ];
 
@@ -129,22 +144,26 @@ const YoungPreneursVoices = () => {
           {ambassadors.map((ambassador) => (
             <article
               key={ambassador.name}
-              className="flex flex-col bg-white rounded-3xl border border-[#e4e9ee] p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="flex flex-col bg-white font-bold rounded-3xl border border-[#e4e9ee] p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex flex-col gap-3">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#9aa6ac]">
+                <p className="text-sm  font-bold uppercase tracking-[0.2em] text-[#9aa6ac]">
                   {ambassador.name}
                 </p>
-                <p className="text-lg italic text-[#0f272c]">
+                <p className="text-lg  text-[#0f272c]">
                   “{ambassador.quote}”
                 </p>
               </div>
 
-              <div className="mt-6 mb-5 w-full aspect-video bg-[#f1f4f7] rounded-2xl border border-dashed border-[#c8d3dd] flex items-center justify-center text-sm uppercase tracking-[0.4em] text-[#95a2ac]">
-                Video Placeholder
-              </div>
+              <div className="mt-6 mb-5 w-full aspect-video bg-[#f1f4f7] rounded-2xl border border-dashed border-[#c8d3dd] overflow-hidden">
+  <video
+    src={ambassador.videoUrl}
+    controls
+    className="w-full h-full object-cover"
+  />
+</div>
 
-              <p className="text-sm text-[#4a5a61] leading-relaxed">
+              <p className="text-lg font-bold text-[#4a5a61] leading-relaxed">
                 {ambassador.description}
               </p>
             </article>
