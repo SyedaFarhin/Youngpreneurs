@@ -48,7 +48,7 @@ const Header = () => {
         }
 
         .navbar-nav .active {
-          color: #dcae1a !important; /* red active */
+          color: #134734 !important; /* red active */
         }
 
         .join-btn {
