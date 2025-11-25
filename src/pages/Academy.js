@@ -435,23 +435,8 @@ const Academy = () => {
 
 
       <div className="youngpreneur-wrapper">
-        <div className="youngpreneur-overlay" />
-        {/* <div className="youngpreneur-content">
-          <h2 className="youngpreneur-title">
-          YoungPreneurs Academy<br/>
-          India’s Innovation Engine for the Next Generation
-
-          </h2>
-          <p className="youngpreneur-description">
-          Innovation starts with curiosity, but curiosity alone isn’t enough. At YoungPreneurs Academy, we turn curiosity into discovery, ideas into experiments, and experiments into breakthroughs. This is a place where students are challenged to explore beyond what’s taught, question the obvious, and uncover solutions no one has imagined before.
-Every project, every workshop, every challenge is designed to stretch the mind, ignite creativity, and reveal the hidden potential in every student. Here, learning is not about following instructions — it’s about crafting new possibilities, testing them in the real world, and refining them until they work.
-
-<br/>
-Students graduate with more than knowledge; they develop an internal framework for problem-solving and innovation, one that can be applied in science, technology, arts, or business. It’s not about preparing for a career — it’s about shaping a mindset that can create opportunities, confront challenges, and make ideas matter.
-
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?pli=1" className="register-button">REGISTER NOW</a>
-        </div> */}
+        {/* <div className="youngpreneur-overlay" /> */}
+       
       </div>
 
 

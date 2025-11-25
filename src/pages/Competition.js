@@ -506,48 +506,7 @@ This ensures that every submission comes through a defined, structured process.
       </div>
     </section>
 
-      {/* <div className="cta-section">
-       
-        <p style={{fontSize:"23px",color:"#204e3d",fontWeight:"bold"}}>
-        This is more than a competition — it’s a launchpad for India’s next generation of builders.
-Where ideas find direction, young leaders find their voice, and the journey to becoming a changemaker truly begins.
-
-        </p>
-        <p className="cta-highlight">
-        Never before has a curriculum of this scale, depth, and international caliber been made available to school students at this level.
-Future Titans isn’t just preparing students for the future — it’s empowering them to build it.
-
-        </p>
-       
-        
-        <button
-  className="register-btn"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
->
-REGISTER NOW
-</button>
-
-      </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      <style>{`
+         <style>{`
 
      
 

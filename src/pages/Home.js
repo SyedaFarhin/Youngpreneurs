@@ -2,16 +2,11 @@ import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import vision from '../assets/ourVision.jpg';
-import mission from '../assets/ourMission.jpg';
 import rightImg from '../assets/home1.jpg';
 import mentor1 from '../assets/fred.jpg';
 import mentor2 from '../assets/sandipan.jpeg';
@@ -389,7 +384,7 @@ ENROLL TODAY
 
         <div className="curriculum-left"></div>
         <div className="curriculum-right">
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div> */}
 
           <h2>The YoungPreneur Entrepreneurship Curriculum</h2>
           <h4>Where Ideas Evolve, Strengthen, and Launch.</h4>

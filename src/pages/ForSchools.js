@@ -6,7 +6,6 @@ const ForSchools = () => {
   return (
     <>
     <div className="hero-section">
-        {/* You can place overlay text, buttons, or other elements here */}
       </div>
 
       <div className="school-benefits-section">
