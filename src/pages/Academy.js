@@ -30,16 +30,30 @@ const Academy = () => {
   min-height: 100dvh;
   padding: 60px 20px;
 }
+
+
 @media (max-width: 480px) {
   .youngpreneur-wrapper {
-    background-size: contain !important;   /* show full image */
-    background-position: top center;       /* image sits properly */
+    background-size: contain !important;
+    background-position: top center;
     background-repeat: no-repeat;
-    background-color: #000;                /* prevent white gaps */
-    min-height: 120dvh;                    /* remove top/bottom gaps */
-    padding-top: 150px;                    /* push text below image */
+    background-color: #000;
+    min-height: auto;
+    // height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 20px;
   }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
         .youngpreneur-overlay {
@@ -253,6 +267,7 @@ const Academy = () => {
           .gain-wrapper {
             flex-direction: column;
             align-items: center;
+            
           }
 
           .text-section {
@@ -435,7 +450,6 @@ const Academy = () => {
 
 
       <div className="youngpreneur-wrapper">
-        {/* <div className="youngpreneur-overlay" /> */}
        
       </div>
 
