@@ -16,30 +16,76 @@ const Academy = () => {
       
 
 
-        .youngpreneur-wrapper {
-  position: relative;
-  width: 100%;
+//         .youngpreneur-wrapper {
+//   position: relative;
+//   width: 100%;
+//   background-image: url(${academy});
+//   background-size: cover;
+//   background-position: right center;  /* keep person visible */
+//   background-repeat: no-repeat;
+//   color: white;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-height: 100dvh;
+//   padding: 60px 20px;
+// }
+// @media (max-width: 480px) {
+//   .youngpreneur-wrapper {
+//     background-size: contain !important;   /* show full image */
+//     background-position: top center;       /* image sits properly */
+//     background-repeat: no-repeat;
+//     background-color: #000;                /* prevent white gaps */
+//     min-height: 120dvh;                    /* remove top/bottom gaps */
+//     padding-top: 150px;                    /* push text below image */
+//   }
+// }
+
+
+.hero-section {
   background-image: url(${academy});
-  background-size: cover;
-  background-position: right center;  /* keep person visible */
+  background-size: cover;            /* ensures full coverage without stretching */
+  background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100dvh;
-  padding: 60px 20px;
+  width: 100%;
+  min-height: 60vh;                  /* gives a tall hero on desktop */
+    max-height: 100vh;                  /* gives a tall hero on desktop */
+
+  position: relative;
 }
-@media (max-width: 480px) {
-  .youngpreneur-wrapper {
-    background-size: contain !important;   /* show full image */
-    background-position: top center;       /* image sits properly */
-    background-repeat: no-repeat;
-    background-color: #000;                /* prevent white gaps */
-    min-height: 120dvh;                    /* remove top/bottom gaps */
-    padding-top: 150px;                    /* push text below image */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 50vh;                /* slightly smaller */
+    background-position: top center; /* focus top part of image */
   }
 }
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 40vh;                /* prevent extreme zoom-in */
+    background-size: contain;        /* show full image */
+    background-position: center;     /* center align */
+    background-repeat: no-repeat;
+    background-color: #000;          /* optional fallback behind image */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         .youngpreneur-overlay {
@@ -414,6 +460,15 @@ const Academy = () => {
 
         .register-btn:hover {
           background-color: #dcae1a;
+        }
+
+        /* Ensure hero background fully covers mobile viewport */
+        @media (max-width: 480px) {
+          .youngpreneur-wrapper {
+            min-height: 100dvh;
+            background-size: cover !important;
+            background-position: top center;
+          }
         }
 
         @media (max-width: 768px) {
