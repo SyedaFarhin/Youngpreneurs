@@ -13,65 +13,42 @@ const Academy = () => {
     <>
       <style>{`
 
-      
-
-
-//         .youngpreneur-wrapper {
-//   position: relative;
-//   width: 100%;
-//   background-image: url(${academy});
-//   background-size: cover;
-//   background-position: right center;  /* keep person visible */
-//   background-repeat: no-repeat;
-//   color: white;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   min-height: 100dvh;
-//   padding: 60px 20px;
-// }
-// @media (max-width: 480px) {
-//   .youngpreneur-wrapper {
-//     background-size: contain !important;   /* keep entire visual in frame */
-//     background-position: top center;
-//     background-repeat: no-repeat;
-//     background-color: transparent;
-//     min-height: auto;
-//     height: auto;
-//     padding: 0 20px 40px;
-//   }
-
- 
-
-// }
-
-
-
-
-.youngpreneur-wrapper {
+.hero{
+  position: relative;
   width: 100%;
   background-image: url(${academy});
-  background-size: contain;       
-  background-position: top center;
+  background-size: cover;
+  background-position: right center;
   background-repeat: no-repeat;
-  background-color: #000;          /* fills below area */
-  
-  /* Maintain real image shape */
-  aspect-ratio: 16/9;              /* adjust to your image ratio */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 60px 20px;
+  margin-bottom: 0;
 }
 
-/* Tablet */
-@media (max-width: 768px) {
-  .youngpreneur-wrapper {
-    aspect-ratio: 4/5;             /* taller for tablet */
+@media (max-width: 600px) {
+  .hero{
+    background-image: none;                /* let pseudo handle rendering */
+    background-color: transparent;
+    min-height: 0;
+    height: auto;
+    padding: 0;
+    display: block;
+    margin-bottom: 0;
   }
-}
 
-/* Mobile */
-@media (max-width: 480px) {
-  .youngpreneur-wrapper {
-    aspect-ratio: 3/4;             /* perfect for vertical mobile */
-    background-size: contain;      /* shows whole image */
+  .hero:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 56.25%;                /* 16:9 ratio keeps full image */
+    background-image: url(${academy});
+    background-size: cover;              /* fills block without empty bands */
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -314,6 +291,16 @@ const Academy = () => {
             padding: 20px 0;
           }
         }
+        @media (max-width: 600px) {
+          .gain-wrapper {
+            padding-top: 0;
+            margin-top: -20px; /* overlap hero pseudo block slightly */
+          }
+          .gain-wrapper .text-section {
+            padding-top: 0;
+            margin-top: -10px;
+          }
+        }
           .curriculum-section {
           display: flex;
           flex-wrap: wrap;
@@ -489,7 +476,7 @@ const Academy = () => {
 
 
 
-      <div className="youngpreneur-wrapper">
+      <div className="hero">
        
       </div>
 

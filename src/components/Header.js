@@ -38,8 +38,8 @@ const Header = () => {
           color:rgb(255, 255, 255) !important;
           font-weight: 500;
           padding: 0 12px;
-          font-size: 14px;
-          text-transform: uppercase;
+          font-size: 15px;
+          // text-transform: uppercase;
           transition: all 0.2s ease-in-out;
         }
 
@@ -70,7 +70,7 @@ const Header = () => {
         .custom-toggler-icon::after,
         .custom-toggler-icon div {
           content: '';
-          background-color: #333;
+          background-color: #fff;
           height: 3px;
           width: 100%;
           position: absolute;
@@ -140,19 +140,19 @@ const Header = () => {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto menu-links">
-              <Nav.Link as={Link} to="/" className={location.pathname === "/" ? "nav-link-item active" : "nav-link-item"}>Home</Nav.Link>
-              <Nav.Link as={Link} to="/about-us" className="nav-link-item">About Us</Nav.Link>
-              <Nav.Link as={Link} to="/team" className="nav-link-item">Our Team</Nav.Link>
-              <Nav.Link as={Link} to="/a-message-to-parents" className="nav-link-item">For Parents</Nav.Link>
-              <Nav.Link as={Link} to="/for-schools" className="nav-link-item">For Schools</Nav.Link>
-              <Nav.Link as={Link} to="/competition-details" className="nav-link-item">Future Titans Competition</Nav.Link>
-              <Nav.Link as={Link} to="/youngpreneur-academy" className="nav-link-item">Youngpreneur Academy</Nav.Link>
-              <Nav.Link as={Link} to="/youngpreneur-voices" className="nav-link-item">YoungPreneurs Voices</Nav.Link>
-              <Nav.Link as={Link} to="/success-stories" className="nav-link-item">Success Stories</Nav.Link>
-              <Nav.Link as={Link} to="/media-press" className="nav-link-item">Media</Nav.Link>
+              <Nav.Link as={Link} to="/" className={location.pathname === "/" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Home</Nav.Link>
+              <Nav.Link as={Link} to="/about-us" className="nav-link-item" onClick={handleNavCollapse}>About Us</Nav.Link>
+              <Nav.Link as={Link} to="/team" className="nav-link-item" onClick={handleNavCollapse}>Our Team</Nav.Link>
+              <Nav.Link as={Link} to="/a-message-to-parents" className="nav-link-item" onClick={handleNavCollapse}>For Parents</Nav.Link>
+              <Nav.Link as={Link} to="/for-schools" className="nav-link-item" onClick={handleNavCollapse}>For Schools</Nav.Link>
+              <Nav.Link as={Link} to="/competition-details" className="nav-link-item" onClick={handleNavCollapse}>Future Titans Competition</Nav.Link>
+              <Nav.Link as={Link} to="/youngpreneur-academy" className="nav-link-item" onClick={handleNavCollapse}>Youngpreneur Academy</Nav.Link>
+              <Nav.Link as={Link} to="/youngpreneur-voices" className="nav-link-item" onClick={handleNavCollapse}>YoungPreneurs Voices</Nav.Link>
+              <Nav.Link as={Link} to="/success-stories" className="nav-link-item" onClick={handleNavCollapse}>Success Stories</Nav.Link>
+              <Nav.Link as={Link} to="/media-press" className="nav-link-item" onClick={handleNavCollapse}>Media</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link as={Link} to="/contact" className="nav-link-item join-btn">Join Us</Nav.Link>
+              <Nav.Link as={Link} to="/contact" className="nav-link-item join-btn" onClick={handleNavCollapse}>Join Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

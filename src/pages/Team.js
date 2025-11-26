@@ -175,27 +175,58 @@ const Team = () => {
 
       <style>{`
 
- .hero-section {
-          background-image: url(${teamHeaderBg});
-          background-size: cover;
-          background-position: center;
-          height: 520px; /* Same as your screenshot image */
-          width: 100%;
-          position: relative;
-        }
+//  .hero-section {
+//           background-image: url(${teamHeaderBg});
+//           background-size: cover;
+//           background-position: center;
+//           height: 520px; /* Same as your screenshot image */
+//           width: 100%;
+//           position: relative;
+//         }
 
-        @media (max-width: 768px) {
-          .hero-section {
-            height: 380px;
-          }
-        }
+//         @media (max-width: 768px) {
+//           .hero-section {
+//             height: 380px;
+//           }
+//         }
 
-        @media (max-width: 480px) {
-          .hero-section {
-            height: 280px;
-          }
-        }
+//         @media (max-width: 480px) {
+//           .hero-section {
+//             height: 280px;
+//           }
+//         }
 
+
+.hero-section {
+  background-image: url(${teamHeaderBg});
+  background-size: cover;            /* ensures full coverage without stretching */
+  background-position: center top;   /* better positioning for tall mobile screens */
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 60vh;                  /* gives a tall hero on desktop */
+    max-height: 100vh;                  /* gives a tall hero on desktop */
+
+  position: relative;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 50vh;                /* slightly smaller */
+    background-position: top center; /* focus top part of image */
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 40vh;                /* prevent extreme zoom-in */
+    background-size: contain;        /* show full image */
+    background-position: center;     /* center align */
+    background-repeat: no-repeat;
+    background-color: #000;          /* optional fallback behind image */
+  }
+}
 
 
 
