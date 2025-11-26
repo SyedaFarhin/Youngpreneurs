@@ -32,48 +32,48 @@ const Academy = () => {
 // }
 // @media (max-width: 480px) {
 //   .youngpreneur-wrapper {
-//     background-size: contain !important;   /* show full image */
-//     background-position: top center;       /* image sits properly */
+//     background-size: contain !important;   /* keep entire visual in frame */
+//     background-position: top center;
 //     background-repeat: no-repeat;
-//     background-color: #000;                /* prevent white gaps */
-//     min-height: 120dvh;                    /* remove top/bottom gaps */
-//     padding-top: 150px;                    /* push text below image */
+//     background-color: transparent;
+//     min-height: auto;
+//     height: auto;
+//     padding: 0 20px 40px;
 //   }
+
+ 
+
 // }
 
 
-.hero-section {
-  background-image: url(${academy});
-  background-size: cover;            /* ensures full coverage without stretching */
-  background-position: center top;   /* better positioning for tall mobile screens */
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 60vh;                  /* gives a tall hero on desktop */
-    max-height: 100vh;                  /* gives a tall hero on desktop */
 
-  position: relative;
+
+.youngpreneur-wrapper {
+  width: 100%;
+  background-image: url(${academy});
+  background-size: contain;       
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000;          /* fills below area */
+  
+  /* Maintain real image shape */
+  aspect-ratio: 16/9;              /* adjust to your image ratio */
 }
 
 /* Tablet */
 @media (max-width: 768px) {
-  .hero-section {
-    min-height: 50vh;                /* slightly smaller */
-    background-position: top center; /* focus top part of image */
+  .youngpreneur-wrapper {
+    aspect-ratio: 4/5;             /* taller for tablet */
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-  .hero-section {
-    min-height: 40vh;                /* prevent extreme zoom-in */
-    background-size: contain;        /* show full image */
-    background-position: center;     /* center align */
-    background-repeat: no-repeat;
-    background-color: #000;          /* optional fallback behind image */
+  .youngpreneur-wrapper {
+    aspect-ratio: 3/4;             /* perfect for vertical mobile */
+    background-size: contain;      /* shows whole image */
   }
 }
-
-
 
 
 
