@@ -440,7 +440,7 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
     <a href="https://www.youtube.com/@youngpreneursindia4413" target="_blank" rel="noopener noreferrer">
       <img src={youtube} alt="YouTube" />
     </a>
-    <a href="https://www.instagram.com/youngpreneurs.india?igsh=MThlOW93dXJtYjRpeQ==" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/youngpreneurs.ai?igsh=YjN1bG5zeG1xYzV1&utm_source=qr" target="_blank" rel="noopener noreferrer">
       <img src={insta} alt="Instagram" />
     </a>
     <a href="mailto:youngpreneursfuturetitans@gmail.com">

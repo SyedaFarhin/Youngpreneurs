@@ -8,7 +8,7 @@ import ShivayVoice from "../assets/ShivayVoice.mp4"
 
 const ambassadors = [
   {
-    name: "Naisha",
+    name: "Naisha Kapoor",
     quote: "Innovation begins the moment you decide to look deeper.",
     description:
       "Naisha shares how observing the world around her led her to identify meaningful problems and channel her curiosity into building something of value.",
@@ -17,7 +17,7 @@ const ambassadors = [
   
     },
     {
-      name: "Shivay",
+      name: "Shivay Dhar",
       quote: "Once you start building, the world starts opening up.",
       description:
         "Shivay reflects on how experimenting with ideas broadened his perspective, helping him recognise opportunities hidden in everyday challenges.",
@@ -25,7 +25,7 @@ const ambassadors = [
   
     },
   {
-    name: "Krishika",
+    name: "Krishika Shaw",
     quote: "You find clarity when you start creating, not when you wait.",
     description:
       "Krishika talks about how taking her first step brought focus, structure, and direction — helping her understand her own potential as a builder.",
@@ -34,7 +34,7 @@ const ambassadors = [
   },
  
   {
-    name: "Kshitij",
+    name: "Kshitij Manish Kalunke",
     quote: "Every big journey starts with one small spark.",
     description:
       "Kshitij describes the moment that ignited his passion to create — and how that first spark transformed into a journey of curiosity and continuous growth.",

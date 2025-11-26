@@ -15,7 +15,31 @@ const Academy = () => {
 
       
 
-.youngpreneur-wrapper { position: relative; width: 100%; background-image: url(${academy}); background-size: cover; background-position: right center; /* keep person visible */ background-repeat: no-repeat; color: white; display: flex; align-items: center; justify-content: center; min-height: 100dvh; padding: 60px 20px; } @media (max-width: 480px) { .youngpreneur-wrapper { background-size: contain !important; /* show full image */ background-position: top center; /* image sits properly */ background-repeat: no-repeat; background-color: #000; /* prevent white gaps */ min-height: 120dvh; /* remove top/bottom gaps */ padding-top: 150px; /* push text below image */ } }
+
+        .youngpreneur-wrapper {
+  position: relative;
+  width: 100%;
+  background-image: url(${academy});
+  background-size: cover;
+  background-position: right center;  /* keep person visible */
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 60px 20px;
+}
+@media (max-width: 480px) {
+  .youngpreneur-wrapper {
+    background-size: contain !important;   /* show full image */
+    background-position: top center;       /* image sits properly */
+    background-repeat: no-repeat;
+    background-color: #000;                /* prevent white gaps */
+    min-height: 120dvh;                    /* remove top/bottom gaps */
+    padding-top: 150px;                    /* push text below image */
+  }
+}
 
 
         .youngpreneur-overlay {
@@ -171,11 +195,79 @@ const Academy = () => {
           .text-column h2 {
             font-size: 24px;
           }
-        }  
-          
-        
+        }    
+          .gain-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 60px 20px;
+          background-color: white;
+        }
 
-         .gain-wrapper { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; padding: 60px 20px; background-color: white; } .text-section { flex: 1; min-width: 300px; max-width: 1000px; padding: 20px 30px; } .text-section h2 { font-size: 32px; color: #dcae1a; font-weight: bold; margin-bottom: 30px; } .text-section h4 { font-size: 18px; color: #305c4d; margin-bottom: 5px; } .text-section p { font-size: 18px; color: #666; margin-bottom: 20px; } .image-section { flex: 1; min-width: 300px; max-width: 600px; display: flex; flex-direction: column; align-items: center; gap: 60px; padding: 20px; } .image-section img { width: 100%; height: auto; border-radius: 5px; object-fit: cover; } @media (max-width: 768px) { .gain-wrapper { flex-direction: column; align-items: center; } .text-section { padding: 20px 15px; text-align: center; } .text-section h2 { font-size: 26px; } .image-section { padding: 20px 0; } }
+        .text-section {
+          flex: 1;
+          min-width: 300px;
+          max-width: 1000px;
+          padding: 20px 30px;
+        }
+
+        .text-section h2 {
+          font-size: 32px;
+          color: #dcae1a;
+          font-weight: bold;
+          margin-bottom: 30px;
+        }
+
+        .text-section h4 {
+          font-size: 18px;
+          color: #305c4d;
+          margin-bottom: 5px;
+        }
+
+        .text-section p {
+          font-size: 18px;
+          color: #666;
+          margin-bottom: 20px;
+        }
+
+        .image-section {
+          flex: 1;
+          min-width: 300px;
+          max-width: 600px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 60px;
+          padding: 20px;
+        }
+
+        .image-section img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+          object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+          .gain-wrapper {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .text-section {
+            padding: 20px 15px;
+            text-align: center;
+          }
+
+          .text-section h2 {
+            font-size: 26px;
+          }
+
+          .image-section {
+            padding: 20px 0;
+          }
+        }
           .curriculum-section {
           display: flex;
           flex-wrap: wrap;
@@ -343,7 +435,6 @@ const Academy = () => {
 
 
       <div className="youngpreneur-wrapper">
-        {/* <div className="youngpreneur-overlay" /> */}
        
       </div>
 
