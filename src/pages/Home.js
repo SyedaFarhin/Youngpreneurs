@@ -5,9 +5,9 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
-import rightImg from '../assets/home1.jpg';
+import rightImg from '../assets/home1.png';
 import mentor1 from '../assets/fred.jpg';
 import mentor2 from '../assets/sandipan.jpeg';
 import mentor3 from '../assets/devika.jpg';
