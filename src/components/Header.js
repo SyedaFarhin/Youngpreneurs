@@ -48,7 +48,7 @@ const Header = () => {
         }
 
         .navbar-nav .active {
-          color: #134734 !important; /* red active */
+          color:rgb(168, 173, 171) !important; /* red active */
         }
 
         .join-btn {
@@ -91,7 +91,7 @@ const Header = () => {
 
         @media (max-width: 991px) {
           .navbar-collapse {
-            background-color: #dcae1a ;
+            background-color: #134734 ;
             padding: 1rem 0;
           }
 
@@ -101,7 +101,7 @@ const Header = () => {
 
           .nav-link-item {
             color:  #333!important;
-            padding: 10px 0;
+            padding: 2px 0;
           }
 
           .join-btn {

@@ -175,28 +175,6 @@ const Team = () => {
 
       <style>{`
 
-//  .hero-section {
-//           background-image: url(${teamHeaderBg});
-//           background-size: cover;
-//           background-position: center;
-//           height: 520px; /* Same as your screenshot image */
-//           width: 100%;
-//           position: relative;
-//         }
-
-//         @media (max-width: 768px) {
-//           .hero-section {
-//             height: 380px;
-//           }
-//         }
-
-//         @media (max-width: 480px) {
-//           .hero-section {
-//             height: 280px;
-//           }
-//         }
-
-
 .hero-section {
   background-image: url(${teamHeaderBg});
   background-size: cover;            /* ensures full coverage without stretching */
