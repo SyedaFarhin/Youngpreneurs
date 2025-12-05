@@ -17,16 +17,14 @@ const Footer = () => {
              innovation is born, and the next generation of changemakers rise.
             </p>
             <div className="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/16jUKyEemq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              
+              <a href="https://www.instagram.com/youngpreneurs.ai?igsh=MWtlMW9weHU0NnUwOA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/youngpreneurs-ai/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
@@ -47,12 +45,12 @@ const Footer = () => {
             <h4 className="footer-title">Contact Us</h4>
             <ul className="contact-info">
               <li>
-                <i className="fas fa-map-marker-alt"></i>
+                <i className="fas fa-map-marker-alt" style={{marginTop:'5px'}}></i>
                 <span>Youngpreneurs Future Titans, India</span>
               </li>
               <li>
-                <i className="fas fa-envelope"></i>
-                <span>info@youngpreneurs.in</span>
+                <i className="fas fa-envelope" style={{marginTop:'5px'}}></i>
+                <span>youngpreneursfuturetitans@gmail.com</span>
               </li>
             </ul>
           </Col>
