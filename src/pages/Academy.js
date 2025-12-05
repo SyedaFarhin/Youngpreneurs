@@ -607,7 +607,7 @@ Whether you’re a student ready to build, a teacher ready to inspire, or a scho
         
         <button
   className="register-btn"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
 Join YoungPreneurs Academy
 </button>

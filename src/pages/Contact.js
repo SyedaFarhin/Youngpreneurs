@@ -370,7 +370,7 @@ const Contact = () => {
                   style={{ color: "#dcae1a", marginBottom: "15px" }}
                 />
                 <Card.Title style={{ fontWeight: "600" }}>Phone Number</Card.Title>
-                <Card.Text style={{ color: "gray" }}>+91-9038428532</Card.Text>
+                <Card.Text style={{ color: "gray" }}>+91-9433677814</Card.Text>
               </Card.Body>
             </Card>
           </Col>

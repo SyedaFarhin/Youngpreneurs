@@ -273,7 +273,7 @@ Because in the world ahead, every innovator is a leader, and every leader is an 
             
             <button
   className="register-btn"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
 REGISTER NOW
 </button>

@@ -62,7 +62,7 @@ With national exposure, investor-backed mentorship, and real startup funding on 
             
             <button
  
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
 JOIN THE MOVEMENT
 </button>

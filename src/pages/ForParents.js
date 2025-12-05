@@ -24,7 +24,7 @@ const ForParents = () => {
        
         <button
   className="cta-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?usp=header", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
 GET STARTED
 </button>
@@ -60,7 +60,7 @@ GET STARTED
    
       <button
   className="cta-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdGtYyt5jrjCOXa4sagyEVFD6-d5RKGvIEnAuXs8yTYCGn3QQ/viewform?usp=header", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
 REGISTER NOW
 </button>
@@ -113,73 +113,7 @@ REGISTER NOW
 
 
 
-        // .game-changer {
-        //   display: flex;
-        //   flex-wrap: wrap;
-        //   padding: 50px 30px;
-        //   background-color:rgba(189, 195, 192, 0.26);
-        //   color: white;
-        //   justify-content: center;
-        // }
-
-        // .left-content {
-        //   flex: 1 1 40%;
-        //   padding: 20px;
-        //   max-width: 800px;
-        //   margin-top: 110px;
-        // }
-
-        // .left-content h4 {
-          
-        //   text-transform: uppercase;
-        //   color: #134734;
-        
-        //   margin-bottom: 15px;
-        // }
-
-        // .left-content p {
-          
-        //   color:rgb(141, 141, 141);
-
-        //   font-size: 20px;
-        //   // line-height: 1.6;
-        //   margin-bottom: 20px;
-        // }
-
-        // .left-content strong {
-        //   font-weight: bold;
-        // }
-
-        // .cta-btn {
-        //   background: white;
-        //   color: #dcae1a;
-        //   border: none;
-        //   padding: 12px 25px;
-        //   font-weight: bold;
-        //   border-radius: 30px;
-        //   cursor: pointer;
-        //   font-size: 14px;
-        //   text-transform: uppercase;
-        // }
-
-        // .cta-btn:hover {
-        //   background-color: #f5f5f5;
-        // }
-
-        // .right-content {
-        //   flex: 1 1 55%;
-        //   padding: 20px;
-        //   max-width: 600px;
-        //   margin-top: 100px;
-        // }
-
-        // .right-content h4 {
-        //   font-size: 20px;
-        //   color: #134734;
-        //   text-transform: uppercase;
-        //   font-weight: bold;
-        //   margin-bottom: 30px;
-        // }
+       
 
 
         .game-changer {

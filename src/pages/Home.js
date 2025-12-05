@@ -101,7 +101,7 @@ At its core lies the patent-pending Mindset Engine™, a neuro-adaptive system t
          
           <button
   className="register-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSc3BKaEPIgCi_Wn2oGtxLWB4cDtzn-8cDtf0drcLqDTlgFRFg/viewform", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
 REGISTER NOW
 </button>
@@ -323,7 +323,7 @@ Through Future Titans™, students learn to transform ideas into real-world proj
         <p className="cta-text">Will your child get the opportunity to shape the future?	</p>
         <button
   className="cta-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSc3BKaEPIgCi_Wn2oGtxLWB4cDtzn-8cDtf0drcLqDTlgFRFg/viewform", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
   SECURE YOUR SPOT NOW
 </button>
@@ -359,7 +359,7 @@ Through Future Titans™, students learn to transform ideas into real-world proj
           
           <button
   className="enroll-btn"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSc3BKaEPIgCi_Wn2oGtxLWB4cDtzn-8cDtf0drcLqDTlgFRFg/viewform", "_blank")}
+  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
 >
 ENROLL TODAY
 </button>
