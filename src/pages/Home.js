@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import 'aos/dist/aos.css';
+import AOS from 'aos';
 import rightImg from '../assets/home1.png';
 import mentor1 from '../assets/fred.jpg';
 import mentor2 from '../assets/sandipan.jpeg';
@@ -22,6 +23,13 @@ import linkedin from '../assets/linkedin.jpg';
 import email from '../assets/email.jpg';
 import youtube from '../assets/youtube.jpg';
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  }, []);
   
   return (
     <>
@@ -86,7 +94,7 @@ const Home = () => {
 
 
 
-<div className="titans-section">
+<div className="titans-section" data-aos="fade-up">
         <div className="titans-left">
           <h4>The YoungPreneurs™ Ecosystem </h4>
           <h2>Where Innovation, Neuroscience, and Purpose Converge</h2>
@@ -113,7 +121,7 @@ REGISTER NOW
       </div>
 
 
-      <section className="game-changer-section">
+      <section className="game-changer-section" data-aos="fade-up" data-aos-delay="100">
         <h2>Surrounding this core are four innovation engines that power the <span style={{color:" #dcae1a",fontSize:"30px"}}>YoungPreneurs™</span> experience:</h2>
         <div className="card-container">
           <div className="info-card">
@@ -150,7 +158,7 @@ they begin to create it.</p>
       </section>
 
 
-      <section className="game-changer-section">
+      <section className="game-changer-section" data-aos="fade-up" data-aos-delay="200">
         <h2 >What Makes <span style={{color:" #dcae1a",fontSize:"35px"}}>Future Titans</span>  a True Game Changer?</h2>
         {/* <div className="card-container">
           <div className="info_card">
@@ -265,7 +273,7 @@ Because the future won’t be led by those who simply adapt to change, but by th
 
 
 
-      <section className="mentorship-section">
+      <section className="mentorship-section" data-aos="fade-up" data-aos-delay="300">
         <h2>Why Should Schools and Parents Encourage Participation? </h2>
         <p>Entrepreneurship isn’t just about launching companies — it’s about cultivating a solution-seeking mindset:<br/> the ability to notice problems, take initiative, and create meaningful impact.<br/>
 Through Future Titans™, students learn to transform ideas into real-world projects, gaining the confidence and capability to lead in any path they choose — <br/>whether as founders or as intrapreneurs shaping innovation within organizations.
@@ -308,7 +316,7 @@ Through Future Titans™, students learn to transform ideas into real-world proj
       </section>
 
 
-      <section className="workshop-section">
+      {/* <section className="workshop-section">
         <h2>Five Transformative Workshops to Shape the Solution-Seekers of Tomorrow</h2>
         <ul className="workshop-list">
           <li>Learn market research to uncover real, high-value opportunities.</li>
@@ -369,22 +377,11 @@ ENROLL TODAY
     
 
 
-
-     
-
-
-
-
-
-
-
-
-
       <div className="curriculum-section">
 
         <div className="curriculum-left"></div>
         <div className="curriculum-right">
-      {/* <div className="overlay"></div> */}
+   
 
           <h2>The YoungPreneur Entrepreneurship Curriculum</h2>
           <h4>Where Ideas Evolve, Strengthen, and Launch.</h4>
@@ -431,10 +428,10 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
             <p>Build influence and leadership presence — translating vision into a pitch that inspires action.</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="connect-section">
+      <div className="connect-section" data-aos="fade-up" data-aos-delay="400">
   <h2 className="connect-title">Connect with Youngpreneurs</h2>
   <div className="social-icons">
     <a href="https://www.youtube.com/@youngpreneursindia4413" target="_blank" rel="noopener noreferrer">
@@ -611,8 +608,26 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
           flex-wrap: wrap;
           align-items: center;
           justify-content: center;
-          padding: 60px 20px;
-          background-color: #f8f8f8;
+          padding: 80px 20px;
+          background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .titans-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(26, 26, 26, 0.9) 100%);
+          z-index: 1;
+        }
+        
+        .titans-section > * {
+          position: relative;
+          z-index: 2;
         }
 
         .titans-left {
@@ -624,45 +639,60 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
 
         .titans-left h4 {
           font-weight: 600;
-          font-size: 25px;
-          margin-bottom: 10px;
-          color: #305c4d;
-
+          font-size: 28px;
+          margin-bottom: 15px;
+          color: #dcae1a;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          animation: fadeInUp 0.8s ease-out;
         }
 
         .titans-left h2 {
-          font-size: 18px;
-          color: #dcae1a;
-
+          font-size: 42px;
+          color: #ffffff;
           font-weight: 700;
-          margin-bottom: 20px;
+          margin-bottom: 25px;
+          line-height: 1.2;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+          animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
         .titans-left p {
-          font-size: 16px;
-          color: #555;
+          font-size: 18px;
+          color: rgba(255, 255, 255, 0.85);
           margin-bottom: 20px;
-          line-height: 1.6;
+          line-height: 1.7;
+          animation: fadeInUp 0.8s ease-out 0.4s both;
         }
 
         .titans-left p strong {
-          color: #305c4d;
+          color: #dcae1a;
+          font-weight: 600;
         }
 
         .register-button {
-          background-color: #dcae1a;
-          color: #fff;
-          padding: 12px 30px;
-          font-size: 14px;
+          background: #dcae1a;
+          color: #000000;
+          padding: 15px 40px;
+          font-size: 16px;
           font-weight: 600;
-          border: none;
-          border-radius: 25px;
+          border: 2px solid #dcae1a;
+          border-radius: 4px;
           cursor: pointer;
-          transition: background-color 0.3s ease;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(220, 174, 26, 0.2);
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          animation: fadeInUp 0.8s ease-out 0.6s both;
+          position: relative;
+          overflow: hidden;
         }
 
         .register-button:hover {
-          background-color: #dcae1a;
+          background: #000000;
+          color: #dcae1a;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
 
         .titans-right {
@@ -679,6 +709,12 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
           height: auto;
           border-radius: 20px;
           object-fit: cover;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+          transition: transform 0.3s ease;
+        }
+
+        .titans-right img:hover {
+          transform: scale(1.05);
         }
 
         @media (max-width: 768px) {
@@ -700,15 +736,16 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
           }
         }
           .game-changer-section {
-          background-color: #f9f9f9;
-          padding: 60px 40px;
+          background: #ffffff;
+          padding: 80px 40px;
           text-align: center;
+          position: relative;
         }
 
         .game-changer-section h2 {
-          color: #305c4d;
-          font-size: 28px;
-          margin-bottom: 40px;
+          color: #000000;
+          font-size: 32px;
+          margin-bottom: 50px;
           font-weight: 700;
         }
 
@@ -720,23 +757,37 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
         }
 
         .info-card {
-          background-color: #fff;
-          border-radius: 12px;
-          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-          padding: 30px 20px;
+          background: #ffffff;
+          border: 1px solid #e5e5e5;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+          padding: 35px 25px;
           width: 350px;
-          transition: transform 0.3s ease;
+          transition: all 0.3s ease;
+          position: relative;
+        }
+        
+        .info-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+          border-color: #dcae1a;
         }
           .info_card {
-  background-color: rgba(220, 175, 26, 0.24);
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  border: 1px solid #dcae1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(220, 174, 26, 0.15);
   padding: 30px 20px;
+  color: #000000;
+  width: 100%;
+  max-width: 350px;
+  transition: all 0.3s ease;
+}
 
-  width: 100%;               /* Full width on mobile */
-  max-width: 350px;          /* But don’t exceed 350px */
-  
-  transition: transform 0.3s ease;
+.info_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(220, 174, 26, 0.25);
+  border-color: #000000;
 }
 
 /* Optional hover effect for desktop */
@@ -757,22 +808,39 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
         }
 
         .info-card h3 {
-          font-size: 18px;
-          color: #305c4d;
-          font-weight: 700;
-          margin-bottom: 15px;
+          font-size: 20px;
+          color: #000000;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        
+        .info-card h3::after {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 2px;
+          background: #dcae1a;
+          margin: 8px 0 0 0;
         }
            .info_card h3 {
           font-size: 20px;
-          color: #305c4d;
-          font-weight: 700;
+          color: #000000;
+          font-weight: 600;
           margin-bottom: 15px;
         }
 
         .info-card p {
-          font-size: 15px;
-          color: #555;
+          font-size: 16px;
+          color: #333333;
           line-height: 1.6;
+          font-weight: 400;
+        }
+        
+        .info_card p {
+          font-size: 16px;
+          color: #333333;
+          line-height: 1.6;
+          font-weight: 400;
         }
 
         @media (max-width: 768px) {
@@ -786,17 +854,18 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
           }
         }
            .mentorship-section {
-          background: #305c4d;
-          padding: 60px 20px;
-          color: #fff;
+          background: #000000;
+          padding: 80px 20px;
+          color: #ffffff;
           text-align: center;
-          // border-radius: 20px;
+          position: relative;
         }
 
         .mentorship-section h2 {
-          font-size: 28px;
+          font-size: 32px;
           font-weight: 700;
-          margin-bottom: 15px;
+          margin-bottom: 25px;
+          color: #dcae1a;
         }
 
         .mentorship-section p {
@@ -804,19 +873,25 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
        justify-content:center;
           font-size: 20px;
           margin-bottom: 10px;
-          color: #e0e0e0;
+          color: rgba(255, 255, 255, 0.85);
         }
 
         .highlight {
-          font-weight: bold;
+          font-weight: 600;
           font-size: 25px;
-          color: #fff;
+          color: #dcae1a;
           margin-top: 20px;
         }
 
         .logo {
           width: 200px;
           margin: 20px auto;
+          filter: brightness(0) invert(1);
+          transition: filter 0.3s ease;
+        }
+        
+        .logo:hover {
+          filter: brightness(0) invert(1) sepia(1) saturate(100) hue-rotate(15deg);
         }
 
        .mentors {
@@ -828,18 +903,25 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
   padding: 0 20px;
 }
 
-.mentor-card {
+        .mentor-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
   width: 100%;
-  max-width: 320px; /* perfect card width for all screens */
-  padding: 20px;
+  max-width: 320px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(220, 174, 26, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
 
-  background: #0d0d0d00; /* remove if not needed */
-  border-radius: 12px;
+.mentor-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #dcae1a;
+  box-shadow: 0 8px 25px rgba(220, 174, 26, 0.15);
 }
 
 /* Mentor Image */
@@ -848,8 +930,15 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 12px;
-  border: 3px solid #fff;
+  margin-bottom: 15px;
+  border: 2px solid #dcae1a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.mentor-card:hover img {
+  transform: scale(1.05);
+  border-color: #ffffff;
 }
 
 /* Name */
@@ -1180,15 +1269,16 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
         }
           .connect-section {
       text-align: center;
-      padding: 60px 20px;
-      background-color: #fff;
+      padding: 80px 20px;
+      background: #ffffff;
+      position: relative;
     }
 
     .connect-title {
-      font-size: 28px;
-      font-weight: bold;
-      color: #104040;
-      margin-bottom: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 40px;
     }
 
     .social-icons {
@@ -1201,21 +1291,30 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
 
     .social-icons a {
       display: block;
-      border-radius: 16px;
+      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      border: 1px solid #e5e5e5;
     }
 
     .social-icons a:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      border-color: #dcae1a;
     }
 
     .social-icons img {
       width: 300px;
       height: 100%;
       object-fit: cover;
-      border-radius: 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icons a:hover img {
+      filter: grayscale(0%);
     }
 
     @media (max-width: 768px) {
@@ -1476,10 +1575,79 @@ The YoungPreneurs™ Curriculum guides learners from their first spark of an ide
   }
 }
 
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-    
-  `}</style>
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Glow effect */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(220, 174, 26, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(220, 174, 26, 0.8), 0 0 30px rgba(220, 174, 26, 0.4);
+  }
+}
+
+    `}</style>
    
     </>
   );
