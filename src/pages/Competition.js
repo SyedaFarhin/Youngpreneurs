@@ -411,7 +411,7 @@ A masterclass in influence and communication, refining delivery and confidence.
             <div className="testimonial-left">
               <img
                 src={testimonial.image}
-                alt={`Photo of ${testimonial.name}`}
+                alt={`${testimonial.name}`}
                 className="testimonial-image"
               />
               <div className="testimonial-name">{testimonial.name}</div>
