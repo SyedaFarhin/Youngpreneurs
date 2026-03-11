@@ -1,12 +1,4 @@
-import React, { useState ,useRef} from "react";
-
-import group1 from '../assets/group1.jpg';
-import group2 from '../assets/group2.jpg';
-import group3 from '../assets/group3.jpg';
-
-import speech1 from '../assets/speech1.jpg';
-import speech2 from '../assets/speech2.jpg';
-import speech3 from '../assets/speech3.jpg';
+import React, { useState } from "react";
 
 import Mark from '../assets/Mark-Zuckerberg.png';
 import Advait from '../assets/Advait-Thakur.png';
@@ -19,8 +11,6 @@ import successStoriesHeaderBg from "../assets/successStoriesHeaderBg.png"
 
  
 
-const demoImages1 = [group1, group2, group3];
-const demoImages2 = [speech1, speech2, speech3];
 
 
 
@@ -57,19 +47,6 @@ const testimonials = [
 
 
 const SuccessStories = () => {
-  const carousel1Ref = useRef(null);
-  const carousel2Ref = useRef(null);
-
-  const scrollCarousel = (ref, direction) => {
-    const scrollAmount = 420;
-    if (ref.current) {
-      ref.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth"
-      });
-    }
-  };
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {

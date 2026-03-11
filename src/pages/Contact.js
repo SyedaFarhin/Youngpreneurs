@@ -1,69 +1,9 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Alert , Card} from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import contactHeaderBg from "../assets/contactHeaderBg.jpg"
 import { TelephoneFill, EnvelopeFill } from "react-bootstrap-icons";
 import emailjs from "emailjs-com";
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    
-  });
-
-  const [showMessage, setShowMessage] = useState(false);
-  const [messageType, setMessageType] = useState('');
-  const [messageText, setMessageText] = useState('');
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Form validation
-    if (!formData.name || !formData.email || !formData.message) {
-      setMessageType('danger');
-      setMessageText('Please fill in all required fields.');
-      setShowMessage(true);
-      return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      setMessageType('danger');
-      setMessageText('Please enter a valid email address.');
-      setShowMessage(true);
-      return;
-    }
-    
-    // In a real app, you would send the data to a server here
-    console.log('Form data submitted:', formData);
-    
-    // Show success message
-    setMessageType('success');
-    setMessageText('Thank you for your message! We will get back to you soon.');
-    setShowMessage(true);
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-      category: '',
-    });
-  };
-
-  //New Form
-
   const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
