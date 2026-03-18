@@ -302,16 +302,18 @@ const Contact = () => {
           <Col xs={12} md={6} lg={5}>
             <Card
               className="text-center shadow-md border-2"
-              style={{ borderRadius: "15px", padding: "30px" }}
+              style={{ borderRadius: "15px", padding: "30px", height: "100%" }}
             >
-              <Card.Body>
-                <TelephoneFill
-                  size={40}
-                  style={{ color: "#dcae1a", marginBottom: "15px" }}
-                />
-                <Card.Title style={{ fontWeight: "600" }}>Phone Number</Card.Title>
-                <Card.Text style={{ color: "gray" }}>+91 7980783305</Card.Text>
-                <Card.Text style={{ color: "gray" }}>+91 9674908532</Card.Text>
+              <Card.Body style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div style={{ marginBottom: "15px" }}>
+                  <TelephoneFill
+                    size={40}
+                    style={{ color: "#dcae1a" }}
+                  />
+                </div>
+                <Card.Title style={{ fontWeight: "600", textAlign: "center" }}>Phone Number</Card.Title>
+                <Card.Text style={{ color: "gray", textAlign: "center", marginBottom: "4px" }}>+91 7980783305</Card.Text>
+                <Card.Text style={{ color: "gray", textAlign: "center" }}>+91 9674908532</Card.Text>
 
               </Card.Body>
             </Card>
@@ -320,17 +322,22 @@ const Contact = () => {
           {/* Email */}
           <Col xs={12} md={6} lg={5}>
             <Card
-              className="text-center shadow-sm border-2"
-              style={{ borderRadius: "15px", padding: "30px" }}
+              className="text-center shadow-md border-2"
+              style={{ borderRadius: "15px", padding: "30px", height: "100%" }}
             >
-              <Card.Body>
-                <EnvelopeFill
-                  size={40}
-                  style={{ color: "#dcae1a", marginBottom: "15px" }}
-                />
-                <Card.Title style={{ fontWeight: "600" }}>Email Us</Card.Title>
-                <Card.Text style={{ color: "gray" }}>
+              <Card.Body style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <div style={{ marginBottom: "15px" }}>
+                  <EnvelopeFill
+                    size={40}
+                    style={{ color: "#dcae1a" }}
+                  />
+                </div>
+                <Card.Title style={{ fontWeight: "600", textAlign: "center" }}>Email Us</Card.Title>
+                <Card.Text style={{ color: "gray", textAlign: "center", marginBottom: "4px" }}>
                   devika@youngpreneurs.ai
+                </Card.Text>
+                <Card.Text style={{ color: "gray", textAlign: "center" }}>
+                  diya@youngpreneurs.ai
                 </Card.Text>
               </Card.Body>
             </Card>

@@ -6,6 +6,7 @@ import telegraph from "../assets/telegraph.png"
 import cnbc from "../assets/cnbc.png"
 import ibns from "../assets/ibns.png"
 import enterpreneurIndia from "../assets/enterpreneurIndia.png"
+import statesman from "../assets/statesman.png"
 
 
 
@@ -13,6 +14,12 @@ import mediaHeaderBg from "../assets/mediaHeaderBg.png"
 
 
 const mediaItems = [
+  {
+    logo: statesman,
+    desc: "Youngpreneurs' new matntra",
+    button: "Read More",
+    link: "https://epaper.thestatesman.com/c/78671280"
+  },
   {
     logo: businessStandard,
     desc: "Three US-based entrepreneurs’ mission to make leaders out of Indian teens...",
