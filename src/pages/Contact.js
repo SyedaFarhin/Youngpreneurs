@@ -11,10 +11,16 @@ const Contact = () => {
     setStatus("Sending...");
 
     emailjs
-      .sendForm(
+      .send(
         "service_c7slref",
         "template_vf1quro",
-        e.target,
+        {
+          to_email: "devika@youngpreneurs.ai",
+          from_name: e.target.name.value,
+          from_email: e.target.email.value,
+          subject: e.target.subject.value,
+          message: e.target.message.value,
+        },
         "E8lk4udkqNof2HatE"
       )
       .then(
