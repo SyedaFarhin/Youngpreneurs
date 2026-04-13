@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <Container>
           <p className="copyright">
-            &copy; {year} Youngpreneurs Future Titans. All Rights Reserved.
+            &copy; {year} EVOFINITY CONSULTING PVT LTD. All Rights Reserved.
           </p>
         </Container>
       </div>
