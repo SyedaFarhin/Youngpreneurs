@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
-import voicesBanner from "../assets/voicesBanner.png"
-import naishaVoice from "../assets/naishaVoice.mp4"
-import KrishikaVoice from "../assets/KrishikaVoice.mp4"
-import kshitijVoice from "../assets/kshitijVoice.mp4"
-import ShivayVoice from "../assets/ShivayVoice.mp4"
+import voicesBanner from "../../assets/voicesBanner.png"
+import naishaVoice from "../../assets/naishaVoice.mp4"
+import KrishikaVoice from "../../assets/KrishikaVoice.mp4"
+import kshitijVoice from "../../assets/kshitijVoice.mp4"
+import ShivayVoice from "../../assets/ShivayVoice.mp4"
 
 
 const ambassadors = [
@@ -52,7 +53,7 @@ const YoungPreneursVoices = () => {
 
 
 .hero-section {
-  background-image: url(${voicesBanner});
+  background-image: url(${voicesBanner.src || voicesBanner});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
@@ -157,7 +158,7 @@ const YoungPreneursVoices = () => {
 
               <div className="mt-6 mb-5 w-full aspect-video bg-[#f1f4f7] rounded-2xl border border-dashed border-[#c8d3dd] overflow-hidden">
   <video
-    src={ambassador.videoUrl}
+    src={ambassador.videoUrl.src || ambassador.videoUrl}
     controls
     className="w-full h-full object-cover"
   />

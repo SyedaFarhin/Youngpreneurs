@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
-const AnimatedLink = ({ to, children, className, onClick, external }) => {
+const AnimatedLink = ({ href, children, className, onClick, external }) => {
   const combinedClassName = `animated-underline ai-pointer ${className || ''}`;
   
   if (external) {
     return (
       <a 
-        href={to}
+        href={href}
         className={combinedClassName}
         onClick={onClick}
         target="_blank"
@@ -20,7 +20,7 @@ const AnimatedLink = ({ to, children, className, onClick, external }) => {
   
   return (
     <Link
-      to={to}
+      href={href}
       className={combinedClassName}
       onClick={onClick}
     >

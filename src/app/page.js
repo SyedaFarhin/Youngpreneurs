@@ -1,14 +1,13 @@
-// import React, { useEffect } from 'react';
-// import { Swiper, SwiperSlide } from "swiper/react";
+"use client";
+// import React, { } from 'react';
+// import HeroSlider from '../components/HeroSlider';
 
-// import { Navigation, Pagination, Autoplay } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+// 
+// 
+// 
+// 
 
-// import 'aos/dist/aos.css';
-// import AOS from 'aos';
-// import rightImg from '../assets/home1.png';
+// // // import rightImg from '../assets/home1.png';
 // import mentor1 from '../assets/fred.jpg';
 // import mentor2 from '../assets/sandipan.jpeg';
 // import mentor3 from '../assets/devika.jpg';
@@ -34,42 +33,7 @@
 //   return (
 //     <>
 
-// <Swiper
-//       modules={[Navigation, Pagination, Autoplay]}
-//       navigation
-//       pagination={{ clickable: true }}
-//       autoplay={{ delay: 6000 }}
-//       loop={true}
-//       slidesPerView={1}
-//       style={{ width: "100%", height: "auto", }}
-//     >
-//       <SwiperSlide>
-//         <img src="/1.png" alt="1" style={{ width: "100%" }} />
-//       </SwiperSlide>
-
-//       <SwiperSlide>
-//         <img src="/2.png" alt="2" style={{ width: "100%" }} />
-//       </SwiperSlide>
-
-//       <SwiperSlide>
-//         <img src="/3.png" alt="3" style={{ width: "100%" }} />
-//       </SwiperSlide> 
-      
-//       <SwiperSlide>
-//         <img src="/4.png" alt="3" style={{ width: "100%" }} />
-//       </SwiperSlide> 
-
-//       <SwiperSlide>
-//         <img src="/5.png" alt="3" style={{ width: "100%" }} />
-//       </SwiperSlide> 
-      
-//       <SwiperSlide>
-//         <img src="/SIX.png" alt="3" style={{ width: "100%" }} />
-//       </SwiperSlide> 
-      
-
-
-//       </Swiper>
+// <HeroSlider />
 
      
     
@@ -107,16 +71,16 @@
 
 //           </p>
          
-//           <button
-//   className="register-button"
-//   onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
+//           <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="register-button" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}
+//   
+//   
 // >
 // REGISTER NOW
-// </button>
+// </a>
 
 //         </div>
 //         <div className="titans-right">
-//           <img src={rightImg} alt="Students discussing startup ideas" />
+//           <img src={rightImg.src || rightImg} alt="Students discussing startup ideas" />
 //         </div>
 //       </div>
 
@@ -287,27 +251,27 @@
 //         Future Titans™ gives them that platform — India’s premier stage for young innovators:
 //         </div>
 //         <p>National Exposure in association with</p>
-//         <img className="logo" src={times} alt="Times of India Logo" />
+//         <img className="logo" src={times.src || times} alt="Times of India Logo" />
 //         <div className="highlight">Expert Mentorship from Global Luminaries</div>
 //         <div className="mentors">
 //         <div className="mentor-card">
-//             <img src={mentor3} alt="Sandipan Chattopadhyay" />
+//             <img src={mentor3.src || mentor3} alt="Sandipan Chattopadhyay" />
 //             <h4>Devika Majumder</h4>
 //             <span>Founder & CEO | Wall Street Journal Featured | Nominated by Business Today as one of the most powerful women in business</span>
 //           </div>
 //           <div className="mentor-card">
-//             <img src={mentor1} alt="Fred Katz" />
+//             <img src={mentor1.src || mentor1} alt="Fred Katz" />
 //             <h4>Fred Katz</h4>
 //             <span>Professor of Entrepreneurship, Johns Hopkins (USA)</span>
 //           </div>
 //           <div className="mentor-card">
-//             <img src={mentor2} alt="Sandipan Chattopadhyay" />
+//             <img src={mentor2.src || mentor2} alt="Sandipan Chattopadhyay" />
 //             <h4>Sandipan Chattopadhyay</h4>
 //             <span>Former CTO Justdial, CEO Xelpmoc</span>
 //           </div>
          
 //           <div className="mentor-card">
-//             <img src={mentor4} alt="Sandipan Chattopadhyay" />
+//             <img src={mentor4.src || mentor4} alt="Sandipan Chattopadhyay" />
 //             <h4>Partha Ghosh</h4>
 //             <span>Founder, Partha Ghosh Leadership Academy IIT Kharagpur | Former McKinsey Senior Partner | Prof. Of Leadership, MIT USA</span>
 //           </div>
@@ -329,12 +293,12 @@
 //         Pitch to top investors, founders, and industry leaders, with ₹40 Lakhs in prizes, incubation, and mentorship.
 //         </p>
 //         <p className="cta-text">Will your child get the opportunity to shape the future?	</p>
-//         <button
-//   className="cta-button"
-//   onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
+//         <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="cta-button" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}
+//   
+//   
 // >
 //   SECURE YOUR SPOT NOW
-// </button>
+// </a>
 
 //       </section>
     
@@ -365,12 +329,12 @@
 //           </div>
           
           
-//           <button
-//   className="enroll-btn"
-//   onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
+//           <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="enroll-btn" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}
+//   
+//   
 // >
 // ENROLL TODAY
-// </button>
+// </a>
 
 //         </div>
 //       </section>
@@ -435,16 +399,16 @@
 //   <h2 className="connect-title">Connect with Youngpreneurs</h2>
 //   <div className="social-icons">
 //     <a href="https://www.youtube.com/@youngpreneursindia4413" target="_blank" rel="noopener noreferrer">
-//       <img src={youtube} alt="YouTube" />
+//       <img src={youtube.src || youtube} alt="YouTube" />
 //     </a>
 //     <a href="https://www.instagram.com/youngpreneurs.ai?igsh=YjN1bG5zeG1xYzV1&utm_source=qr" target="_blank" rel="noopener noreferrer">
-//       <img src={insta} alt="Instagram" />
+//       <img src={insta.src || insta} alt="Instagram" />
 //     </a>
 //     <a href="mailto:youngpreneursfuturetitans@gmail.com">
-//       <img src={email} alt="Email" />
+//       <img src={email.src || email} alt="Email" />
 //     </a>
 //     <a href="https://www.linkedin.com/company/youngpreneurs-ind/" target="_blank" rel="noopener noreferrer">
-//       <img src={linkedin} alt="LinkedIn" />
+//       <img src={linkedin.src || linkedin} alt="LinkedIn" />
 //     </a>
 //   </div>
 //   </div>
@@ -1093,7 +1057,7 @@
 //           }
 //         }
 //            .academy-section {
-//           background: url(${home2}) no-repeat center center/cover;
+//           background: url(${home2.src || home2}) no-repeat center center/cover;
 //           position: relative;
 //           padding: 50px 20px;
 //           color: #fff;
@@ -1192,7 +1156,7 @@
 //         .curriculum-left {
 //           flex: 1;
 //           min-width: 300px;
-//           background: url(${home4}) no-repeat center center/cover;
+//           background: url(${home4.src || home4}) no-repeat center center/cover;
 //         }
 
 //         .curriculum-right {
@@ -1657,14 +1621,12 @@
 
 
 
-import React, { useEffect } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import React, { } from 'react';
+import HeroSlider from '../components/HeroSlider';
+
+
+
+
 import rightImg from '../assets/home1.png';
 import mentor1 from '../assets/fred.jpg';
 import mentor2 from '../assets/sandipan.jpeg';
@@ -1679,28 +1641,12 @@ import email from '../assets/email.jpg';
 import youtube from '../assets/youtube.jpg';
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init({ duration: 900, once: true, offset: 80 });
-  }, []);
+  
 
   return (
     <>
       {/* ── HERO SLIDER ── */}
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 6000 }}
-        loop={true}
-        slidesPerView={1}
-        style={{ width: '100%', height: 'auto' }}
-      >
-        {['1','2','3','4','5','SIX'].map((s, i) => (
-          <SwiperSlide key={i}>
-            <img src={`/${s}.png`} alt={s} style={{ width: '100%', display: 'block' }} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <HeroSlider />
 
       {/* ── ECOSYSTEM INTRO ── */}
       <div className="yp-intro-section" data-aos="fade-up">
@@ -1714,15 +1660,12 @@ const Home = () => {
             Powered by insights from neuroscience, artificial intelligence, and design thinking, it redefines how young minds learn, think, and lead — turning classrooms into launchpads for innovation.
             At its core lies the patent-pending <strong>Mindset Engine™</strong>, a neuro-adaptive system that decodes how students think, adapt, and create — helping them build measurable growth in curiosity, creativity, and resilience through the <strong>SSI™ Mindset Score (Solution-Seeking Index™)</strong>.
           </p>
-          <button
-            className="yp-cta-btn"
-            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
-          >
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="yp-cta-btn" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}>
             Register Now
-          </button>
+          </a>
         </div>
         <div className="yp-intro-right">
-          <img src={rightImg} alt="Students discussing startup ideas" className="yp-intro-img" />
+          <img src={rightImg.src || rightImg} alt="Students discussing startup ideas" className="yp-intro-img" />
         </div>
       </div>
 
@@ -1832,7 +1775,7 @@ const Home = () => {
 
         <div className="yp-national-block">
           <p className="yp-national-label">National Exposure in association with</p>
-          <img className="yp-times-logo" src={times} alt="Times of India Logo" />
+          <img className="yp-times-logo" src={times.src || times} alt="Times of India Logo" />
         </div>
 
         <p className="yp-highlight-text">Expert Mentorship from Global Luminaries</p>
@@ -1846,7 +1789,7 @@ const Home = () => {
           ].map((m, i) => (
             <div className="yp-mentor-card" key={i}>
               <div className="yp-mentor-img-wrap">
-                <img src={m.img} alt={m.name} />
+                <img src={m.img.src || m.img} alt={m.name} />
               </div>
               <h4 className="yp-mentor-name">{m.name}</h4>
               <p className="yp-mentor-role">{m.role}</p>
@@ -1877,7 +1820,7 @@ const Home = () => {
             { href: 'https://www.linkedin.com/company/youngpreneurs-ind/', img: linkedin, alt: 'LinkedIn' }
           ].map((s, i) => (
             <a key={i} href={s.href} target={s.href.startsWith('mailto') ? undefined : '_blank'} rel="noopener noreferrer" className="yp-social-link">
-              <img src={s.img} alt={s.alt} />
+              <img src={s.img.src || s.img} alt={s.alt} />
             </a>
           ))}
         </div>

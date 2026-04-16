@@ -1,8 +1,8 @@
 import React from 'react';
-import teamImage from '../assets/about-main.png'; 
-import visionIcon from '../assets/vision.png';  
-import missionIcon from '../assets/mission.png'; 
-import headerBg from "../assets/headerBg.png"
+import teamImage from '../../assets/about-main.png'; 
+import visionIcon from '../../assets/vision.png';  
+import missionIcon from '../../assets/mission.png'; 
+import headerBg from "../../assets/headerBg.png"
 const AboutUs = () => {
   return (
 <div>
@@ -12,7 +12,7 @@ const AboutUs = () => {
 
 
 .hero-section {
-  background-image: url(${headerBg});
+  background-image: url(${headerBg.src || headerBg});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
@@ -265,20 +265,20 @@ YoungPreneurs™ is India’s first patent-pending neuro-adaptive entrepreneuria
          
         </div>
         <div className="about-image">
-          <img src={teamImage} alt="Young team of entrepreneurs" />
+          <img src={teamImage.src || teamImage} alt="Young team of entrepreneurs" />
         </div>
       </div>
 
       <div className="vision-mission-container">
         <div className="card vision-card">
-          <img src={missionIcon} alt="Vision Icon" style={{ display: "block", margin: "0 auto 20px auto" }}/>
+          <img src={missionIcon.src || missionIcon} alt="Vision Icon" style={{ display: "block", margin: "0 auto 20px auto" }}/>
           <div className="card-title">Our Vision</div>
           <div className="card-text">
           A Generation That Sees Problems as Opportunities. A future where every teen looks at a challenge and thinks — “Let’s solve it.” Where every classroom becomes a catalyst for change, and education becomes the engine of a nation that innovates its own tomorrow.
           </div>
         </div>
         <div className="card mission-card">
-          <img src={visionIcon} alt="Mission Icon" style={{ display: "block", margin: "0 auto 20px auto",height: "50px",width: "100px", }}/>
+          <img src={visionIcon.src || visionIcon} alt="Mission Icon" style={{ display: "block", margin: "0 auto 20px auto",height: "50px",width: "100px", }}/>
           <div className="card-title">Our Mission</div>
           <div className="card-text">
           Our mission is to build a nation of solution-seekers, not just job-seekers. By fusing AI, neuroscience, and education, we inspire every teen to see possibilities where others see problems, create meaningful solutions, and shape the future.

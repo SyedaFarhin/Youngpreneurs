@@ -1,21 +1,21 @@
 import React from "react";
-import devika from '../assets/devika.jpg';
-import fred from '../assets/fred.jpeg';
-import sandipan from '../assets/sandipan.jpeg'; 
-import suman from '../assets/suman.jpg';
-import partha from '../assets/partha.jpg';
-import juliya from '../assets/juliya.jpeg';
-import pankaj from '../assets/pankaj.jpg';
-import jayesh from '../assets/jayesh.png';
-import sachin from '../assets/sachin.jpeg';
-import aaliya from '../assets/aaliya.jpg';
-import samim from '../assets/samim.jpg';
-import syeda from '../assets/syeda.jpg';
-import diya from '../assets/diya.jpg';
-import chitresh from '../assets/chitresh.jpg';
-import prashant from '../assets/prashant.jpg';
+import devika from '../../assets/devika.jpg';
+import fred from '../../assets/fred.jpeg';
+import sandipan from '../../assets/sandipan.jpeg'; 
+import suman from '../../assets/suman.jpg';
+import partha from '../../assets/partha.jpg';
+import juliya from '../../assets/juliya.jpeg';
+import pankaj from '../../assets/pankaj.jpg';
+import jayesh from '../../assets/jayesh.png';
+import sachin from '../../assets/sachin.jpeg';
+import aaliya from '../../assets/aaliya.jpg';
+import samim from '../../assets/samim.jpg';
+import syeda from '../../assets/syeda.jpg';
+import diya from '../../assets/diya.jpg';
+import chitresh from '../../assets/chitresh.jpg';
+import prashant from '../../assets/prashant.jpg';
 
-import teamHeaderBg from "../assets/teamHeaderBg.png"
+import teamHeaderBg from "../../assets/teamHeaderBg.png"
 
 
 const Team = () => {
@@ -158,7 +158,7 @@ const Team = () => {
       <div className="team-container">
       {teamMembers.map((member, index) => (
         <div key={index} className="team-card">
-          <img src={member.image} alt={member.name} className="team-image" />
+          <img src={member.image.src || member.image} alt={member.name} className="team-image" />
           <a href={member.linkedin} className="linkedin-icon" target="_blank" rel="noreferrer">
             <span>in</span>
           </a>
@@ -176,7 +176,7 @@ const Team = () => {
       <style>{`
 
 .hero-section {
-  background-image: url(${teamHeaderBg});
+  background-image: url(${teamHeaderBg.src || teamHeaderBg});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
@@ -375,7 +375,7 @@ const Team = () => {
     <div className="team-container">
       {doers.map((member, index) => (
         <div key={index} className="team-card">
-          <img src={member.image} alt={member.name} className="team-image" />
+          <img src={member.image.src || member.image} alt={member.name} className="team-image" />
          
           <div className="team-info">
           

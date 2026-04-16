@@ -1,17 +1,20 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import logo from '../assets/ypLogo.png';
 
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   const handleNavCollapse = () => setExpanded(false);
 
   useEffect(() => {
     setExpanded(false);
-  }, [location]);
+  }, [pathname]);
 
   return (
     <>
@@ -120,11 +123,12 @@ const Header = () => {
         className="custom-navbar"
       >
         <Container fluid className="px-4 custom-container">
-          <Navbar.Brand as={Link} to="/" className="brand-container">
-            <img
+          <Navbar.Brand as={Link} href="/" className="brand-container">
+            <Image
               src={logo}
               alt="Youngpreneurs Logo"
               className="brand-logo"
+              priority
             />
           </Navbar.Brand>
 
@@ -140,19 +144,19 @@ const Header = () => {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto menu-links">
-              <Nav.Link as={Link} to="/" className={location.pathname === "/" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Home</Nav.Link>
-              <Nav.Link as={Link} to="/about-us" className="nav-link-item" onClick={handleNavCollapse}>About Us</Nav.Link>
-              <Nav.Link as={Link} to="/team" className="nav-link-item" onClick={handleNavCollapse}>Our Team</Nav.Link>
-              <Nav.Link as={Link} to="/a-message-to-parents" className="nav-link-item" onClick={handleNavCollapse}>For Parents</Nav.Link>
-              <Nav.Link as={Link} to="/for-schools" className="nav-link-item" onClick={handleNavCollapse}>For Schools</Nav.Link>
-              <Nav.Link as={Link} to="/competition-details" className="nav-link-item" onClick={handleNavCollapse}>Future Titans Competition</Nav.Link>
-              <Nav.Link as={Link} to="/youngpreneur-academy" className="nav-link-item" onClick={handleNavCollapse}>Youngpreneur Academy</Nav.Link>
-              <Nav.Link as={Link} to="/youngpreneur-voices" className="nav-link-item" onClick={handleNavCollapse}>YoungPreneurs Voices</Nav.Link>
-              <Nav.Link as={Link} to="/success-stories" className="nav-link-item" onClick={handleNavCollapse}>Success Stories</Nav.Link>
-              <Nav.Link as={Link} to="/media-press" className="nav-link-item" onClick={handleNavCollapse}>Media</Nav.Link>
+              <Nav.Link as={Link} href="/" className={pathname === "/" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Home</Nav.Link>
+              <Nav.Link as={Link} href="/about-us" className={pathname === "/about-us" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>About Us</Nav.Link>
+              <Nav.Link as={Link} href="/team" className={pathname === "/team" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Our Team</Nav.Link>
+              <Nav.Link as={Link} href="/a-message-to-parents" className={pathname === "/a-message-to-parents" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>For Parents</Nav.Link>
+              <Nav.Link as={Link} href="/for-schools" className={pathname === "/for-schools" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>For Schools</Nav.Link>
+              <Nav.Link as={Link} href="/competition-details" className={pathname === "/competition-details" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Future Titans Competition</Nav.Link>
+              <Nav.Link as={Link} href="/youngpreneur-academy" className={pathname === "/youngpreneur-academy" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Youngpreneur Academy</Nav.Link>
+              <Nav.Link as={Link} href="/youngpreneur-voices" className={pathname === "/youngpreneur-voices" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>YoungPreneurs Voices</Nav.Link>
+              <Nav.Link as={Link} href="/success-stories" className={pathname === "/success-stories" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Success Stories</Nav.Link>
+              <Nav.Link as={Link} href="/media-press" className={pathname === "/media-press" ? "nav-link-item active" : "nav-link-item"} onClick={handleNavCollapse}>Media</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link as={Link} to="/contact" className="nav-link-item join-btn" onClick={handleNavCollapse}>Join Us</Nav.Link>
+              <Nav.Link as={Link} href="/contact" className="nav-link-item join-btn" onClick={handleNavCollapse}>Join Us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

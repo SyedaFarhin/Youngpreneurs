@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import Image from 'next/image';
 import logo from '../assets/ypLogo.png';
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
       <Container>
         <Row className="footer-content" >
           <Col md={4} className="footer-section">
-            <img src={logo} alt="Youngpreneurs Logo" className="footer-logo" />
+            <Image src={logo} alt="Youngpreneurs Logo" className="footer-logo" />
             <p className="footer-description">
             YoungPreneurs ignites a movement of future leaders — creating a launchpad where ideas take flight,
              innovation is born, and the next generation of changemakers rise.
@@ -33,11 +34,11 @@ const Footer = () => {
           <Col md={4} className="footer-section">
             <h4 className="footer-title">Quick Links</h4>
             <ul className="footer-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about-us">About Us</Link></li>
-              <li><Link to="/competition-details">Future Titans Competition</Link></li>
-              <li><Link to="/youngpreneur-academy">YoungPreneur Academy</Link></li>
-              <li><Link to="/contact">Join Us</Link></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about-us">About Us</Link></li>
+              <li><Link href="/competition-details">Future Titans Competition</Link></li>
+              <li><Link href="/youngpreneur-academy">YoungPreneur Academy</Link></li>
+              <li><Link href="/contact">Join Us</Link></li>
             </ul>
           </Col>
           

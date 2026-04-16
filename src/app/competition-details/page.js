@@ -1,22 +1,23 @@
+"use client";
 import React from 'react';
 import Slider from "react-slick";
 
 
-import classImage from '../assets/classroom.jpg';
-import juliya from '../assets/juliya.jpeg';
-import sandipan from '../assets/sandipan.jpeg';
-import suman from '../assets/suman.jpeg';
-import fred from '../assets/fred.jpeg';
-import partha from '../assets/partha.jpg';
-import devika from '../assets/devika.jpeg';
+import classImage from '../../assets/classroom.jpg';
+import juliya from '../../assets/juliya.jpeg';
+import sandipan from '../../assets/sandipan.jpeg';
+import suman from '../../assets/suman.jpeg';
+import fred from '../../assets/fred.jpeg';
+import partha from '../../assets/partha.jpg';
+import devika from '../../assets/devika.jpeg';
 
 
-import academyHeaderBg from '../assets/academyHeaderBg.jpg';
-import AIPlogo from "../assets/AIPlogo.png";
-import AIClogo from "../assets/AIClogo.png";
+import academyHeaderBg from '../../assets/academyHeaderBg.jpg';
+import AIPlogo from "../../assets/AIPlogo.png";
+import AIClogo from "../../assets/AIClogo.png";
 
-import startUpIndiaLogo from "../assets/startUpIndiaLogo.png";
-import ttoi from "../assets/ttoi.png";
+import startUpIndiaLogo from "../../assets/startUpIndiaLogo.png";
+import ttoi from "../../assets/ttoi.png";
 
 
 
@@ -207,7 +208,7 @@ font-family: 'Poppins', sans-serif;
 
       <p className="subtitle">
         A USA–India initiative <br />
-        <img src={ttoi} alt="The Times of India" className="center-logo" />
+        <img src={ttoi.src || ttoi} alt="The Times of India" className="center-logo" />
       </p>
 
       <div className="partners">
@@ -216,7 +217,7 @@ font-family: 'Poppins', sans-serif;
         <ul>
           <li>
             <img
-              src={startUpIndiaLogo}
+              src={startUpIndiaLogo.src || startUpIndiaLogo}
               alt="Startup India"
               className="partner-logo center-logo"
             />
@@ -224,7 +225,7 @@ font-family: 'Poppins', sans-serif;
 
           <li>
             <img
-              src={AIPlogo}
+              src={AIPlogo.src || AIPlogo}
               alt="Association of Indian Principals"
               className="partner-logo center-logo"
             />
@@ -232,7 +233,7 @@ font-family: 'Poppins', sans-serif;
 
           <li>
             <img
-              src={AIClogo}
+              src={AIClogo.src || AIClogo}
               alt="Association of Indian Principals"
               className="partner-logo center-logo"
             />
@@ -271,16 +272,13 @@ Because in the world ahead, every innovator is a leader, and every leader is an 
             </p>
            
             
-            <button
-  className="register-btn"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="register-btn" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}>
 REGISTER NOW
-</button>
+</a>
           </div>
           <div className="image-column">
             <div className="image-container" style={{width: '100%', height: '100%'}}>
-              <img src={classImage} alt="Classroom"  />
+              <img src={classImage.src || classImage} alt="Classroom"  />
              
             </div>
           </div>
@@ -410,7 +408,7 @@ A masterclass in influence and communication, refining delivery and confidence.
           <div className="testimonial-card" key={index}>
             <div className="testimonial-left">
               <img
-                src={testimonial.image}
+                src={testimonial.image.src || testimonial.image}
                 alt={`${testimonial.name}`}
                 className="testimonial-image"
               />
@@ -515,7 +513,7 @@ This ensures that every submission comes through a defined, structured process.
 
 
 .hero-section {
-  background-image: url(${academyHeaderBg});
+  background-image: url(${academyHeaderBg.src || academyHeaderBg});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;

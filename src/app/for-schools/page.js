@@ -1,6 +1,6 @@
 import React from 'react';
-import backgroundImage from '../assets/forschools.jpg';
-import forSchoolsHeaderBg from "../assets/forSchoolsHeaderBg.png"
+import backgroundImage from '../../assets/forschools.jpg';
+import forSchoolsHeaderBg from "../../assets/forSchoolsHeaderBg.png"
 
 const ForSchools = () => {
   return (
@@ -47,7 +47,7 @@ const ForSchools = () => {
         </div>
         
       </div>
-      <div className="encouragement-section"  style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className="encouragement-section"  style={{ backgroundImage: `url(${backgroundImage.src || backgroundImage})` }}>
         <div className="overlay">
           <div className="content">
             <h2>Why Encourage Your Students?</h2>
@@ -60,12 +60,9 @@ With national exposure, investor-backed mentorship, and real startup funding on 
            
             <p><strong>Is your school ready to make history?</strong></p>
             
-            <button
- 
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
->
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', backgroundColor: '#dcae1a', color: 'white', padding: '14px 24px', borderRadius: '30px', fontSize: '14px', fontWeight: 'bold', textDecoration: 'none', textAlign: 'center' }}>
 JOIN THE MOVEMENT
-</button>
+</a>
 
           </div>
         </div>
@@ -73,7 +70,7 @@ JOIN THE MOVEMENT
 
       <style>{`
       .hero-section {
-        background-image: url(${forSchoolsHeaderBg});
+        background-image: url(${forSchoolsHeaderBg.src || forSchoolsHeaderBg});
 background-size: cover;
 background-position: center top; /* Align from top */
 height: 1080px;

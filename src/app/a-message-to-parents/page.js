@@ -1,5 +1,5 @@
 import React from 'react';
-import forParentsHeader from "../assets/forParentsHeader.png"
+import forParentsHeader from "../../assets/forParentsHeader.png"
 const ForParents = () => {
   return (
 
@@ -22,12 +22,9 @@ const ForParents = () => {
        
         
        
-        <button
-  className="cta-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="cta-button" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}>
 GET STARTED
-</button>
+</a>
 
       </div>
 
@@ -58,12 +55,9 @@ GET STARTED
       </p>
       <p className="cta-team"><strong>Youngpreneurs Competition Team</strong></p>
    
-      <button
-  className="cta-button"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="cta-button" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}>
 REGISTER NOW
-</button>
+</a>
 
        </section>
 
@@ -75,7 +69,7 @@ REGISTER NOW
 
 
 .hero-section {
-  background-image: url(${forParentsHeader});
+  background-image: url(${forParentsHeader.src || forParentsHeader});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;

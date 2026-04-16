@@ -1,16 +1,16 @@
 import React from "react";
-import businessStandard from "../assets/businesStandard.png"
-import bussinessworld from "../assets/bussinessworld.png"
-import et from "../assets/et.png"
-import telegraph from "../assets/telegraph.png"
-import cnbc from "../assets/cnbc.png"
-import ibns from "../assets/ibns.png"
-import enterpreneurIndia from "../assets/enterpreneurIndia.png"
-import statesman from "../assets/statesman.png"
+import businessStandard from "../../assets/businesStandard.png"
+import bussinessworld from "../../assets/bussinessworld.png"
+import et from "../../assets/et.png"
+import telegraph from "../../assets/telegraph.png"
+import cnbc from "../../assets/cnbc.png"
+import ibns from "../../assets/ibns.png"
+import enterpreneurIndia from "../../assets/enterpreneurIndia.png"
+import statesman from "../../assets/statesman.png"
 
 
 
-import mediaHeaderBg from "../assets/mediaHeaderBg.png"
+import mediaHeaderBg from "../../assets/mediaHeaderBg.png"
 
 
 const mediaItems = [
@@ -84,7 +84,7 @@ const Media = () => {
       <div className="media-section">
   {mediaItems.map((item, index) => (
     <div className="media-card" key={index}>
-      <img src={item.logo} alt="media logo" className="media-logo" />
+      <img src={item.logo.src || item.logo} alt="media logo" className="media-logo" />
       {item.desc && (
         <p className="media-desc">
           <a href={item.link} target="_blank" rel="noopener noreferrer">
@@ -110,7 +110,7 @@ const Media = () => {
 
 
 .hero-section {
-  background-image: url(${mediaHeaderBg});
+  background-image: url(${mediaHeaderBg.src || mediaHeaderBg});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;

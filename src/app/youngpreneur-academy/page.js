@@ -1,10 +1,10 @@
 import React from 'react';
-import rightImg from '../assets/curriculum-image.jpg';
-import aca1 from '../assets/aca1.jpg';
-import aca2 from '../assets/aca2.jpg';
-import aca3 from '../assets/aca3.jpg';
-import aca4 from '../assets/aca4.jpg';
-import academy from '../assets/academy.png';
+import rightImg from '../../assets/curriculum-image.jpg';
+import aca1 from '../../assets/aca1.jpg';
+import aca2 from '../../assets/aca2.jpg';
+import aca3 from '../../assets/aca3.jpg';
+import aca4 from '../../assets/aca4.jpg';
+import academy from '../../assets/academy.png';
 
 
 
@@ -16,7 +16,7 @@ const Academy = () => {
 .hero{
   position: relative;
   width: 100%;
-  background-image: url(${academy});
+  background-image: url(${academy.src || academy});
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ const Academy = () => {
     display: block;
     width: 100%;
     padding-top: 56.25%;                /* 16:9 ratio keeps full image */
-    background-image: url(${academy});
+    background-image: url(${academy.src || academy});
     background-size: cover;              /* fills block without empty bands */
     background-position: top center;
     background-repeat: no-repeat;
@@ -505,8 +505,8 @@ const Academy = () => {
         </div>
 
         <div className="image-section">
-          <img src={aca3} alt="Students walking" />
-          <img src={aca4} alt="Classroom activity" style={{marginTop:'-120px',marginLeft:"80px"}}/>
+          <img src={aca3.src || aca3} alt="Students walking" />
+          <img src={aca4.src || aca4} alt="Classroom activity" style={{marginTop:'-120px',marginLeft:"80px"}}/>
         </div>
       </div>
 
@@ -535,14 +535,14 @@ Our Train-the-Trainer initiative empowers educators with entrepreneurial framewo
           
         </div>
         <div className="curriculum-image">
-          <img src={rightImg} alt="Young entrepreneur" />
+          <img src={rightImg.src || rightImg} alt="Young entrepreneur" />
         </div>
       </div>
 
       <div className="gain-wrapper">
       <div className="image-section">
-          <img src={aca1} alt="Students walking" style={{}}/>
-          {/* <img src={aca2} alt="Classroom activity" style={{marginTop:'-120px',marginLeft:"80px"}}/> */}
+          <img src={aca1.src || aca1} alt="Students walking" style={{}}/>
+          {/* <img src={aca2.src || aca2} alt="Classroom activity" style={{marginTop:'-120px',marginLeft:"80px"}}/> */}
         </div>
         <div className="text-section">
           <h2>Our Vision</h2>
@@ -587,7 +587,7 @@ YoungPreneurs Academy is on a mission to empower 1 million student innovators to
           
         </div>
         <div className="curriculum-image">
-          <img src={aca2} alt="Young entrepreneur" />
+          <img src={aca2.src || aca2} alt="Young entrepreneur" />
         </div>
       </div>
 
@@ -605,12 +605,9 @@ Whether you’re a student ready to build, a teacher ready to inspire, or a scho
         </p>
        
         
-        <button
-  className="register-btn"
-  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform", "_blank")}
->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5kqAas0Q84ygmKTdkKxi-9RFJ8MgeAcDqyF3SDKsvpEhFSQ/viewform" target="_blank" rel="noopener noreferrer" className="register-btn" style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}>
 Join YoungPreneurs Academy
-</button>
+</a>
 
       </div>
     </>

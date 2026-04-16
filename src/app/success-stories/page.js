@@ -1,12 +1,13 @@
+"use client";
 import React, { useState } from "react";
 
-import Mark from '../assets/Mark-Zuckerberg.png';
-import Advait from '../assets/Advait-Thakur.png';
-import kaivalya from '../assets/kaivalya.png';
-import Aadithyan from '../assets/Aadithyan.png';
-import campDelta from '../assets/campDelta.png';
+import Mark from '../../assets/Mark-Zuckerberg.png';
+import Advait from '../../assets/Advait-Thakur.png';
+import kaivalya from '../../assets/kaivalya.png';
+import Aadithyan from '../../assets/Aadithyan.png';
+import campDelta from '../../assets/campDelta.png';
 
-import successStoriesHeaderBg from "../assets/successStoriesHeaderBg.png"
+import successStoriesHeaderBg from "../../assets/successStoriesHeaderBg.png"
 
 
  
@@ -69,7 +70,7 @@ const SuccessStories = () => {
 
 
 .hero-section {
-  background-image: url(${successStoriesHeaderBg});
+  background-image: url(${successStoriesHeaderBg.src || successStoriesHeaderBg});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
@@ -500,7 +501,7 @@ Through immersive workshops, national challenges, and a world-class curriculum, 
         </div>
         {/* Image */}
         <div className="success-image-wrapper">
-          <img src={campDelta} alt="Camp Delta" className="success-image" />
+          <img src={campDelta.src || campDelta} alt="Camp Delta" className="success-image" />
         </div>
 
        

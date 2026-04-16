@@ -1,6 +1,7 @@
+"use client";
 import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import contactHeaderBg from "../assets/contactHeaderBg.jpg"
+import contactHeaderBg from "../../assets/contactHeaderBg.jpg"
 import { TelephoneFill, EnvelopeFill } from "react-bootstrap-icons";
 import emailjs from "emailjs-com";
 const Contact = () => {
@@ -50,7 +51,7 @@ const Contact = () => {
 
 
 .hero-section {
-  background-image: url(${contactHeaderBg});
+  background-image: url(${contactHeaderBg.src || contactHeaderBg});
   background-size: cover;            /* ensures full coverage without stretching */
   background-position: center top;   /* better positioning for tall mobile screens */
   background-repeat: no-repeat;
