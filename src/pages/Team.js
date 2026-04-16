@@ -36,14 +36,14 @@ const Team = () => {
       image: fred,
       linkedin: "https://www.linkedin.com/in/fred-katz-748b242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
-    {
-      name: "Sandipan Chattopadhyay",
-      title: "Chief Mentor",
-      description:
-        "Former CTO Justdial | CEO & MD Xelpmoc | IIM | Indian Statistical Institute",
-      image: sandipan,
-      linkedin: "https://www.linkedin.com/in/csandipan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    },
+    // {
+    //   name: "Sandipan Chattopadhyay",
+    //   title: "Chief Mentor",
+    //   description:
+    //     "Former CTO Justdial | CEO & MD Xelpmoc | IIM | Indian Statistical Institute",
+    //   image: sandipan,
+    //   linkedin: "https://www.linkedin.com/in/csandipan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    // },
     {
       name: "Suman Bose",
       title: "Advisor",
