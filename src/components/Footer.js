@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
               <li>
                 <i className="fas fa-envelope" style={{marginTop:'5px'}}></i>
-                <span>youngpreneursfuturetitans@gmail.com</span>
+                <span>yes@youngpreneurs.ai</span>
               </li>
             </ul>
           </Col>

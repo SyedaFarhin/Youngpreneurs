@@ -340,11 +340,9 @@ const Contact = () => {
                 </div>
                 <Card.Title style={{ fontWeight: "600", textAlign: "center" }}>Email Us</Card.Title>
                 <Card.Text style={{ color: "gray", textAlign: "center", marginBottom: "4px" }}>
-                  devika@youngpreneurs.ai
+                yes@youngpreneurs.ai
                 </Card.Text>
-                <Card.Text style={{ color: "gray", textAlign: "center" }}>
-                  diya@youngpreneurs.ai
-                </Card.Text>
+               
               </Card.Body>
             </Card>
           </Col>

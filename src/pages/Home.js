@@ -1841,7 +1841,7 @@ const Home = () => {
           {[
             { img: mentor3, name: 'Devika Majumder', role: 'Founder & CEO | Wall Street Journal Featured | Nominated by Business Today as one of the most powerful women in business' },
             { img: mentor1, name: 'Fred Katz', role: 'Professor of Entrepreneurship, Johns Hopkins (USA)' },
-            { img: mentor2, name: 'Sandipan Chattopadhyay', role: 'Former CTO Justdial, CEO Xelpmoc' },
+            // { img: mentor2, name: 'Sandipan Chattopadhyay', role: 'Former CTO Justdial, CEO Xelpmoc' },
             { img: mentor4, name: 'Partha Ghosh', role: 'Founder, Partha Ghosh Leadership Academy IIT Kharagpur | Former McKinsey Senior Partner | Prof. Of Leadership, MIT USA' }
           ].map((m, i) => (
             <div className="yp-mentor-card" key={i}>
